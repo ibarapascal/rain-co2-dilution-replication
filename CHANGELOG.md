@@ -2,6 +2,14 @@
 
 Changes to the released data and code, newest first. Dates are JST.
 
+## [0.9.1] — metadata fix
+
+- `CITATION.cff`: `license` is now a single identifier (`CC-BY-4.0`), so that Zenodo can read the file; the code in `code/` stays
+  under the MIT License (`LICENSE`), as stated in the README. Version 0.9.0 was not archived on Zenodo for this reason.
+- `docs/third-party-data.md`: acknowledgment wording for GTMBA, IMOS and ERA5 brought in line with the current text requested by
+  each provider.
+- Data and code are unchanged.
+
 ## [0.9.0] — first public version
 
 ### Contents

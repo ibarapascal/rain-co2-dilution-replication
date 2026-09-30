@@ -2,16 +2,15 @@ cff-version: 1.2.0
 message: "If you use these data or this code, please cite them as below."
 title: "Rain freshening at ocean moorings and the RIM-3 rain dilution scheme: derived data and code"
 type: dataset
-version: "0.9.0"
+version: "0.9.1"
 authors:
   - family-names: "Jing"
     given-names: "Jiawei"
     orcid: "https://orcid.org/0009-0000-8365-367X"
     affiliation: "Makuhari Development Corporation"
 repository-code: "https://github.com/ibarapascal/rain-co2-dilution-replication"
-license:
-  - MIT
-  - CC-BY-4.0
+# Data and documentation: CC BY 4.0 (LICENSE-DATA). Code in code/: MIT (LICENSE).
+license: CC-BY-4.0
 keywords:
   - ocean carbon sink
   - rain

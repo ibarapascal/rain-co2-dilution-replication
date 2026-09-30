@@ -1,7 +1,7 @@
 # Rain freshening at ocean moorings and the RIM-3 rain dilution scheme: derived data and code
 
 This repository contains derived data on rain-induced freshening of the upper ocean and the scripts that compute them from public
-raw data. Version 0.9.0.
+raw data. Version 0.9.1.
 
 ## What the data are
 
