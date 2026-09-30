@@ -1,0 +1,78 @@
+{
+ "version": "dw13a-2026-09-29a",
+ "rule": "value-by-value comparison excluding run-record fields; numeric tolerance <= 1 unit in the last digit (for >= 3 decimals); STRICT lists must be identical",
+ "strict": [
+  "primary.R_RIM_1m.point",
+  "primary.R_RIM_1m.ci95",
+  "primary.R_RIM_1m.ci90",
+  "primary.R_S20_05m.point",
+  "primary.R_S20_05m.ci95",
+  "D3.verdict",
+  "exit"
+ ],
+ "summary": {
+  "n": 670,
+  "exact": 669,
+  "tol": 1,
+  "fail_n": 0,
+  "max_abs_diff": 9.999999974752427e-06,
+  "within_tol": [
+   {
+    "path": "exploratory_k27.R_RIM_0.5m.sum_den",
+    "orig": -157.18557,
+    "new": -157.18558
+   }
+  ],
+  "fail": [],
+  "skipped": [
+   "D3.written_utc",
+   "cmorph.bytes_this_run",
+   "cmorph.downloaded_this_run",
+   "cmorph.http_requests",
+   "cmorph.pixels",
+   "cmorph.seconds",
+   "inputs.resume_from",
+   "run_utc",
+   "runtime_s"
+  ],
+  "n_within_tol_listed": 1,
+  "n_fail": 0
+ },
+ "d3": {
+  "n": 24,
+  "exact": 24,
+  "tol": 0,
+  "fail_n": 0,
+  "max_abs_diff": 0.0,
+  "within_tol": [],
+  "fail": [],
+  "skipped": [
+   "written_utc"
+  ],
+  "n_within_tol_listed": 0,
+  "n_fail": 0
+ },
+ "events_csv": {
+  "n": 14212,
+  "exact": 14212,
+  "tol": 0,
+  "fail_n": 0,
+  "max_abs_diff": 0.0,
+  "within_tol": [],
+  "fail": [],
+  "skipped": [],
+  "n_within_tol_listed": 0,
+  "n_fail": 0
+ },
+ "sha256_orig": {
+  "p2_summary.json": "246bb0d57eb5edc84fa37221bc46696edfe17909e01e51571d4bb2ebbe3fbc31",
+  "p2_d3.json": "40d933570bdc88a2bb7bca8badac4c42bdd229c9cd374c2b190a02ca62f5fac2",
+  "p2_events.csv": "f7804c011a0f75f4f8046f13bd09d39acd1655fa812035917efe9b62c7655428"
+ },
+ "sha256_nominal": {
+  "p2_summary.json": "26e930179afa7298a1b674986d74a0b76e0ec63e95801635ecebfe2f68ac8d50",
+  "p2_d3.json": "9698e1c677fecfc64e7c217ed808ff0ad3cb5d38c2831d9d368f898213563538",
+  "p2_events.csv": "f7804c011a0f75f4f8046f13bd09d39acd1655fa812035917efe9b62c7655428"
+ },
+ "pass": true
+}

@@ -1,0 +1,283 @@
+{
+ "version": "p3-2026-09-27b",
+ "code_sha256": "dfc246541424a47bfe3882f67e9f194cc8947f719b7f65ea33463ccbaddaa422",
+ "written_utc": "2026-09-26T23:30:59+00:00",
+ "reads_p2": false,
+ "note_L23": "no P2 product was read before or while writing this file; P3c may run only after this file exists.",
+ "months": [
+  200001,
+  200002,
+  200003,
+  200004,
+  200005,
+  200006,
+  200007,
+  200008,
+  200009,
+  200010,
+  200011,
+  200012
+ ],
+ "all_pass": true,
+ "gates": [
+  {
+   "item": "wind_PgC",
+   "target": -1.468,
+   "value": -1.4418973769419672,
+   "error_type": "rel",
+   "error": 0.017781078377406535,
+   "tolerance": 0.05,
+   "pass": true
+  },
+  {
+   "item": "dilution_RIM_pct",
+   "target": 7.97,
+   "value": 7.930757236440593,
+   "error_type": "rel",
+   "error": 0.004923809731418644,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "item": "interfacial_RIM_pct",
+   "target": 9.67,
+   "value": 9.58931027617328,
+   "error_type": "rel",
+   "error": 0.008344335452608148,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "item": "deposition_pct",
+   "target": 3.88,
+   "value": 3.9445301096007563,
+   "error_type": "rel",
+   "error": 0.016631471546586715,
+   "tolerance": 0.05,
+   "pass": true
+  },
+  {
+   "item": "dilution_ratio_RIM_S20",
+   "target": 2.05,
+   "value": 2.108208291249671,
+   "error_type": "rel",
+   "error": 0.028394288414473702,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "item": "turbulence_pct",
+   "target": 0.14,
+   "value": 0.12139608218363593,
+   "error_type": "abs",
+   "error": 0.018603917816364085,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "item": "U1_pp",
+   "target": 10.65,
+   "value": 10.657047302922052,
+   "error_type": "abs",
+   "error": 0.007047302922051912,
+   "tolerance": 1.0,
+   "pass": true
+  }
+ ],
+ "table_pct_of_wind": {
+  "wind_PgC": -1.4418973769419672,
+  "interfacial_RIM": 9.58931027617328,
+  "dilution_RIM": 7.930757236440593,
+  "turbulence": 0.12139608218363593,
+  "deposition": 3.9445301096007563,
+  "total_RIM": 13.533840385774035,
+  "interfacial_S20": 4.533212219138409,
+  "dilution_S20": 3.761847095165119,
+  "total_S20": 8.477742328739165,
+  "U1_reconstructed": 10.657047302922052
+ },
+ "table_PgC_uptake_positive": {
+  "interfacial_RIM": 0.13826801333896904,
+  "dilution_RIM": 0.11435338056387216,
+  "turbulence": 0.0017504069247161614,
+  "deposition": 0.05687607618301942,
+  "interfacial_S20": 0.06536426807896947,
+  "dilution_S20": 0.05424197458975344
+ },
+ "witte_fig1": {
+  "wind_PgC": -1.468,
+  "interfacial_RIM": 9.67,
+  "dilution_RIM": 7.97,
+  "turbulence": 0.14,
+  "deposition": 3.88,
+  "total_RIM": 13.56,
+  "interfacial_S20": 4.5,
+  "dilution_S20": 3.88,
+  "total_S20": 8.38,
+  "U1": 10.65
+ },
+ "non_gate": {
+  "z5_capture_of_interfacial": 0.6341213541656922,
+  "witte_z5_capture": 0.62,
+  "z5_capture_excluding_s0_term": 0.517079096260087,
+  "skin_term_nonD_pct": 1.2963923454586177,
+  "interfacial_at_s0_whole_pct": 2.3240959705592084,
+  "dilution_at_s0_whole_pct": 2.1870828704780703,
+  "note_L30": "in the capsule dilution case the atmospheric side does not add the 0.1 psu skin salinity (TB L498 vs L501/L504), so rain-free pixels also produce an s-independent interfacial term; dilution_at_s0_whole_pct is its global amount."
+ },
+ "diagnostics": {
+  "paired_denominator": {
+   "dilution_RIM": {
+    "denominator_paired_PgC": -1.4417393693571694,
+    "pct_paired_denominator": 7.9316264086524235,
+    "missing_frac": 0.0003430217951313124
+   },
+   "interfacial_RIM": {
+    "denominator_paired_PgC": -1.4417393693571694,
+    "pct_paired_denominator": 9.590361217687965,
+    "missing_frac": 0.0003430217951313124
+   },
+   "dilution_S20": {
+    "denominator_paired_PgC": -1.4418597814760872,
+    "pct_paired_denominator": 3.7619451826462518,
+    "missing_frac": 4.388739543459051e-05
+   },
+   "interfacial_S20": {
+    "denominator_paired_PgC": -1.4418597814760872,
+    "pct_paired_denominator": 4.5333304194152335,
+    "missing_frac": 4.388739543459051e-05
+   }
+  },
+  "witte_style_unpaired_pct": {
+   "dilution_RIM_pct": 7.919798926416303,
+   "interfacial_RIM_pct": 9.578351966148945,
+   "dilution_S20_pct": 3.759239734441593,
+   "interfacial_S20_pct": 4.530604858414864,
+   "turbulence_pct": 0.11878872146011167,
+   "deposition_pct": 3.95899978362757
+  },
+  "coverage": {
+   "pixel_steps_ocean": 103378105440.0,
+   "pixel_steps_wind_valid": 100621510032.0,
+   "wind_valid_frac": 0.9733348236914643,
+   "rain_history_D_frac": 0.34098639927077656,
+   "current_rain_frac": 0.0730359185393148,
+   "precip_nan_frac": 5.8456410806516325e-05,
+   "precip_gt200_count": 18.0,
+   "u10_zero_count": 0.0,
+   "u10_nan_frac": 0.0,
+   "precip_u10_both_zero_count": 0.0,
+   "rim_missing_frac_of_wind_valid": 0.0003430217951313124,
+   "dep_missing_frac": 4.388739543459051e-05,
+   "turb_missing_frac": 4.388739543459051e-05
+  },
+  "l25_fallback_frac": {
+   "whole_0": 0.0,
+   "whole_0.25": 0.00015997363426795158,
+   "whole_0.5": 0.0009873381747768726,
+   "whole_0.75": 0.002400053617651741,
+   "whole_1": 0.0,
+   "whole_1.25": 0.006249465704863658,
+   "whole_1.5": 0.00852269471840061,
+   "whole_1.75": 0.01097569464941501,
+   "whole_2": 0.013583303540798338,
+   "whole_2.5": 0.019188181518797105,
+   "whole_3": 0.025196371346582664,
+   "hist_0": 0.00010120293439708459,
+   "hist_0.25": 0.00042045126372796505,
+   "hist_0.5": 0.0012930495955457398,
+   "hist_0.75": 0.002592500455281394,
+   "hist_1": 0.0,
+   "hist_1.25": 0.006007970653321534,
+   "hist_1.5": 0.008003149200125584,
+   "hist_1.75": 0.010147904263414886,
+   "hist_2": 0.012422170187843674,
+   "hist_2.5": 0.017301108094983402,
+   "hist_3": 0.022538572231576244,
+   "s20_1": 0.0,
+   "z5_1": 5.369028242764455e-05
+  },
+  "negative_salinity_clipped": {
+   "whole_0": 0.0,
+   "whole_0.25": 0.0,
+   "whole_0.5": 0.0,
+   "whole_0.75": 0.0,
+   "whole_1": 0.0,
+   "whole_1.25": 8956.0,
+   "whole_1.5": 79448.0,
+   "whole_1.75": 280030.0,
+   "whole_2": 659438.0,
+   "whole_2.5": 2080521.0,
+   "whole_3": 4452384.0
+  },
+  "watson_fco2_source": "pco2_fugacity_L46",
+  "watson_fugfac": {
+   "sea": {
+    "min": 0.9954976141278532,
+    "max": 0.9972105234792786,
+    "mean": 0.996515860540955,
+    "n_pixel_days": 2103443129
+   },
+   "air": {
+    "min": 0.9954871955680569,
+    "max": 0.9972049727644867,
+    "mean": 0.9965083460266735,
+    "n_pixel_days": 2102158865
+   },
+   "temperature": {
+    "sea": "SST used for sea-side solubility (CMORPH pixels, daily)",
+    "air": "SST - 0.17 K (SKIN_DT, TB L498)"
+   }
+  },
+  "cmorph_missing_halfhours": 0,
+  "wind_persist_last": 0,
+  "l25_max_rel_bench_checks": {}
+ },
+ "inputs": {
+  "month_ready": {
+   "200001": [],
+   "200002": [],
+   "200003": [],
+   "200004": [],
+   "200005": [],
+   "200006": [],
+   "200007": [],
+   "200008": [],
+   "200009": [],
+   "200010": [],
+   "200011": [],
+   "200012": []
+  }
+ },
+ "static": {
+  "N": 5884455,
+  "nreg": 264,
+  "nbasin": 11,
+  "watson": {
+   "fco2_source": "pco2_fugacity_L46",
+   "sea_var": "spco2",
+   "air_var": "pco2atm",
+   "air_substituted": false,
+   "units": {
+    "sf": "uatm",
+    "fa": "microatmospheres"
+   },
+   "files": {
+    "sea": "watson/spco2_UOEX_Wat20_1985-2019_v20211204.nc",
+    "air": "watson/pco2atm_UOEX_Wat20_1985-2019_v20211204.nc"
+   },
+   "time_assumed": "monthly from 1985-01 (units not decodable)",
+   "time_check_days_since_1980": {
+    "sf": true,
+    "fa": true
+   }
+  },
+  "glodap_files": {
+   "TAlk": "glodap/GLODAPv2.2016b.TAlk.nc",
+   "TCO2": "glodap/GLODAPv2.2016b.TCO2.nc",
+   "salinity": "glodap/GLODAPv2.2016b.salinity.nc",
+   "temperature": "glodap/GLODAPv2.2016b.temperature.nc"
+  },
+  "area_ocean_m2": 319689107507309.6
+ }
+}

@@ -1,0 +1,410 @@
+{
+ "version": "p3-2026-09-27b",
+ "code_sha256": "dfc246541424a47bfe3882f67e9f194cc8947f719b7f65ea33463ccbaddaa422",
+ "config_hash": "c35e80417c2be28e",
+ "months": [
+  200001,
+  200002,
+  200003,
+  200004,
+  200005,
+  200006,
+  200007,
+  200008,
+  200009,
+  200010,
+  200011,
+  200012
+ ],
+ "results": [
+  {
+   "ym": 200002,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200001,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200003,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200004,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200006,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200005,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200007,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200008,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200009,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200010,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200011,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200012,
+   "ok": true,
+   "resumed": false
+  }
+ ],
+ "wall_seconds": 25004.6,
+ "static_build_s": 5.7,
+ "selftest_s": 29.4,
+ "month_info": {
+  "200001": {
+   "seconds": 4334.1,
+   "peak_rss_bytes": 4358438912,
+   "timing_s": {
+    "spinup": 6.04,
+    "day_read": 12.07,
+    "day_coefs": 103.99,
+    "read_cmorph": 86.77,
+    "wind": 68.49,
+    "steps": 4055.98,
+    "eng_entries": 59.04,
+    "eng_history": 837.54,
+    "eng_dense": 164.7,
+    "eng_d_base": 178.21,
+    "eng_d_exact": 271.62,
+    "eng_d_cases": 2502.75,
+    "eng_push": 0.48
+   },
+   "entries_per_step": {
+    "mean": 453123.4225260417,
+    "max": 554510.0
+   },
+   "D_frac": {
+    "mean": 0.3433842647042445,
+    "max": 0.3791153131428484
+   }
+  },
+  "200002": {
+   "seconds": 4177.3,
+   "peak_rss_bytes": 4350181376,
+   "timing_s": {
+    "spinup": 6.4,
+    "day_read": 11.12,
+    "day_coefs": 96.74,
+    "read_cmorph": 82.19,
+    "wind": 63.84,
+    "steps": 3916.45,
+    "eng_entries": 54.6,
+    "eng_history": 779.3,
+    "eng_dense": 153.41,
+    "eng_d_base": 172.33,
+    "eng_d_exact": 267.58,
+    "eng_d_cases": 2449.0,
+    "eng_push": 0.41
+   },
+   "entries_per_step": {
+    "mean": 449668.1638888889,
+    "max": 514804.0
+   },
+   "D_frac": {
+    "mean": 0.36244600472624555,
+    "max": 0.39878272499322365
+   }
+  },
+  "200003": {
+   "seconds": 4361.5,
+   "peak_rss_bytes": 4371152896,
+   "timing_s": {
+    "spinup": 6.32,
+    "day_read": 11.79,
+    "day_coefs": 102.89,
+    "read_cmorph": 86.24,
+    "wind": 67.76,
+    "steps": 4085.69,
+    "eng_entries": 55.64,
+    "eng_history": 781.21,
+    "eng_dense": 159.75,
+    "eng_d_base": 179.23,
+    "eng_d_exact": 282.53,
+    "eng_d_cases": 2586.8,
+    "eng_push": 0.33
+   },
+   "entries_per_step": {
+    "mean": 424931.8098958333,
+    "max": 532719.0
+   },
+   "D_frac": {
+    "mean": 0.35757206626593707,
+    "max": 0.3888693175493737
+   }
+  },
+  "200004": {
+   "seconds": 4229.6,
+   "peak_rss_bytes": 4326260736,
+   "timing_s": {
+    "spinup": 6.03,
+    "day_read": 11.25,
+    "day_coefs": 100.14,
+    "read_cmorph": 83.48,
+    "wind": 65.42,
+    "steps": 3962.59,
+    "eng_entries": 55.04,
+    "eng_history": 768.96,
+    "eng_dense": 155.42,
+    "eng_d_base": 173.38,
+    "eng_d_exact": 271.55,
+    "eng_d_cases": 2498.37,
+    "eng_push": 0.33
+   },
+   "entries_per_step": {
+    "mean": 431812.1673387097,
+    "max": 523333.0
+   },
+   "D_frac": {
+    "mean": 0.35520506276943054,
+    "max": 0.394076426788887
+   }
+  },
+  "200005": {
+   "seconds": 4350.1,
+   "peak_rss_bytes": 4259119104,
+   "timing_s": {
+    "spinup": 6.27,
+    "day_read": 16.04,
+    "day_coefs": 105.96,
+    "read_cmorph": 88.76,
+    "wind": 72.23,
+    "steps": 4059.86,
+    "eng_entries": 58.36,
+    "eng_history": 841.31,
+    "eng_dense": 161.87,
+    "eng_d_base": 189.84,
+    "eng_d_exact": 271.45,
+    "eng_d_cases": 2496.85,
+    "eng_push": 0.48
+   },
+   "entries_per_step": {
+    "mean": 433916.83984375,
+    "max": 516173.0
+   },
+   "D_frac": {
+    "mean": 0.33986622985786785,
+    "max": 0.38161325050493206
+   }
+  },
+  "200006": {
+   "seconds": 4189.4,
+   "peak_rss_bytes": 4194861056,
+   "timing_s": {
+    "spinup": 6.43,
+    "day_read": 11.51,
+    "day_coefs": 102.41,
+    "read_cmorph": 85.83,
+    "wind": 71.78,
+    "steps": 3910.79,
+    "eng_entries": 55.0,
+    "eng_history": 792.92,
+    "eng_dense": 157.03,
+    "eng_d_base": 184.54,
+    "eng_d_exact": 264.49,
+    "eng_d_cases": 2418.35,
+    "eng_push": 0.59
+   },
+   "entries_per_step": {
+    "mean": 420646.0416666667,
+    "max": 501495.0
+   },
+   "D_frac": {
+    "mean": 0.34154023621464424,
+    "max": 0.3631281061712597
+   }
+  },
+  "200007": {
+   "seconds": 4163.3,
+   "peak_rss_bytes": 4359929856,
+   "timing_s": {
+    "spinup": 6.12,
+    "day_read": 11.59,
+    "day_coefs": 102.82,
+    "read_cmorph": 86.03,
+    "wind": 66.41,
+    "steps": 3889.6,
+    "eng_entries": 54.7,
+    "eng_history": 756.68,
+    "eng_dense": 160.5,
+    "eng_d_base": 172.72,
+    "eng_d_exact": 265.58,
+    "eng_d_cases": 2440.22,
+    "eng_push": 0.42
+   },
+   "entries_per_step": {
+    "mean": 416891.5677083333,
+    "max": 545607.0
+   },
+   "D_frac": {
+    "mean": 0.3362825223908924,
+    "max": 0.38588637350442817
+   }
+  },
+  "200008": {
+   "seconds": 4063.2,
+   "peak_rss_bytes": 4163272704,
+   "timing_s": {
+    "spinup": 5.89,
+    "day_read": 11.8,
+    "day_coefs": 102.76,
+    "read_cmorph": 85.32,
+    "wind": 66.73,
+    "steps": 3790.13,
+    "eng_entries": 52.95,
+    "eng_history": 720.71,
+    "eng_dense": 159.13,
+    "eng_d_base": 170.0,
+    "eng_d_exact": 259.95,
+    "eng_d_cases": 2389.49,
+    "eng_push": 0.41
+   },
+   "entries_per_step": {
+    "mean": 396620.201171875,
+    "max": 452630.0
+   },
+   "D_frac": {
+    "mean": 0.3293373948773707,
+    "max": 0.35412710267985736
+   }
+  },
+  "200009": {
+   "seconds": 3943.5,
+   "peak_rss_bytes": 4309434368,
+   "timing_s": {
+    "spinup": 5.96,
+    "day_read": 11.2,
+    "day_coefs": 99.14,
+    "read_cmorph": 81.03,
+    "wind": 60.88,
+    "steps": 3684.7,
+    "eng_entries": 51.92,
+    "eng_history": 692.7,
+    "eng_dense": 146.67,
+    "eng_d_base": 163.56,
+    "eng_d_exact": 254.9,
+    "eng_d_cases": 2339.69,
+    "eng_push": 0.24
+   },
+   "entries_per_step": {
+    "mean": 414867.1948924731,
+    "max": 507420.0
+   },
+   "D_frac": {
+    "mean": 0.33463336652341724,
+    "max": 0.37507449712845115
+   }
+  },
+  "200010": {
+   "seconds": 4024.3,
+   "peak_rss_bytes": 4386865152,
+   "timing_s": {
+    "spinup": 6.33,
+    "day_read": 11.66,
+    "day_coefs": 102.58,
+    "read_cmorph": 82.93,
+    "wind": 62.77,
+    "steps": 3757.52,
+    "eng_entries": 53.53,
+    "eng_history": 719.66,
+    "eng_dense": 151.52,
+    "eng_d_base": 166.22,
+    "eng_d_exact": 257.3,
+    "eng_d_cases": 2372.94,
+    "eng_push": 0.23
+   },
+   "entries_per_step": {
+    "mean": 417569.705078125,
+    "max": 527894.0
+   },
+   "D_frac": {
+    "mean": 0.3274681719503664,
+    "max": 0.36869650630347245
+   }
+  },
+  "200011": {
+   "seconds": 3913.0,
+   "peak_rss_bytes": 4324589568,
+   "timing_s": {
+    "spinup": 5.97,
+    "day_read": 11.66,
+    "day_coefs": 99.26,
+    "read_cmorph": 81.79,
+    "wind": 62.51,
+    "steps": 3651.3,
+    "eng_entries": 51.49,
+    "eng_history": 700.36,
+    "eng_dense": 147.36,
+    "eng_d_base": 161.99,
+    "eng_d_exact": 250.61,
+    "eng_d_cases": 2304.17,
+    "eng_push": 0.23
+   },
+   "entries_per_step": {
+    "mean": 413176.36559139786,
+    "max": 507687.0
+   },
+   "D_frac": {
+    "mean": 0.328215795307769,
+    "max": 0.3657082941410887
+   }
+  },
+  "200012": {
+   "seconds": 4025.1,
+   "peak_rss_bytes": 4273061888,
+   "timing_s": {
+    "spinup": 6.21,
+    "day_read": 12.22,
+    "day_coefs": 102.75,
+    "read_cmorph": 84.38,
+    "wind": 64.76,
+    "steps": 3754.26,
+    "eng_entries": 54.72,
+    "eng_history": 752.04,
+    "eng_dense": 150.67,
+    "eng_d_base": 166.46,
+    "eng_d_exact": 256.87,
+    "eng_d_cases": 2336.53,
+    "eng_push": 0.24
+   },
+   "entries_per_step": {
+    "mean": 433978.8912760417,
+    "max": 516660.0
+   },
+   "D_frac": {
+    "mean": 0.3266297003752268,
+    "max": 0.3582717515895695
+   }
+  }
+ }
+}

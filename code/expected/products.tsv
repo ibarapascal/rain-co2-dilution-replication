@@ -1,0 +1,91 @@
+# products.tsv — used by tools/diff_expected.py to compare the outputs of a re-run with the data released in this repository.
+# sha256: SHA-256 of the reference-run output (full, prefix, or 'prefix…suffix'); a re-run file with this SHA-256 is 'same'.
+# expect_identical: whether a re-run is expected to give a byte-identical file ("yes" = confirmed by the full re-run of
+# 2026-09-30; "no (...)" = always differs, reason given; a SHA-256 difference on a row that does not start with "no" is a failure
+# unless the row is compared leaf by leaf). compare: sha (default); rows = compare the multiset of lines (SHA-256 of all lines
+# sorted bytewise, each followed by a newline: rows_sha256; empty = file not released, so only a full-SHA match can pass);
+# json = on a SHA-256 difference compare leaf by leaf with the released copy in data/products/ (numbers within 1e-12 + 1e-9*|old|,
+# strings and keys through docs/translation-table.tsv), skipping the leaf paths in ignore (comma-separated fnmatch patterns on
+# the pipeline's own key names; '[[]' and '[]]' match literal brackets). Ignored are run records (times, code hashes, input
+# paths and input hashes, download counts) and text fields whose key or wording in the reference-run outputs differs from what
+# the current scripts write (data/products/MANIFEST.tsv, treatment). Some ignore entries are key names that exist only in the
+# reference-run outputs (historical keys of fields the current scripts no longer write); they are kept only so that those outputs
+# can still be compared. No numeric field is ignored; any other leaf difference is a failure. Rows of stages that are not part of
+# run.py --all (dw33-bench) are reported as not-run when the stage directory is absent.
+stage	code	file	sha256	expect_identical	compare	rows_sha256	ignore
+p1	P1S	p1_summary.json	e5074419	no (contains run metadata)	json		.downloads.*,.run_utc,.runtime_s,.design_ref,.gates.D5.on_fail_note,.gates.D4_info.note,.branch_no05m_info.note
+p1	P1E	p1_events.csv	6fae39d2	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p1b	P1bS	p1b_summary.json	f3499247	no (contains run metadata)	json		.downloads.*,.p1_events_csv,.run_utc,.runtime_s,.prereg,.design_ref,.verdict_note
+p1b	P1bE	p1b_events_new.csv	6d78cea4	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p1b	P1bST	p1b_stations.json	fd93ee92	no (byte-identical in the full re-run of 2026-09-30; the current script writes fewer or reworded text fields; compared leaf by leaf)	json		.prereg,.o_group.excluded_upfront[[]1[]].reason
+p2	P2S	p2_summary.json	246bb0d5	no (contains run metadata)	json		.D3.written_utc,.cmorph.bytes_this_run,.cmorph.http_requests,.cmorph.seconds,.cmorph.downloaded_this_run,.inputs.*,.run_utc,.runtime_s,.design_ref,.implementation_choices,.exit.journal,.sensitivity.status,.exploratory_k27.status,.exploratory_k27.reference_main_path_R_RIM_0.5m_point.note,.descriptive_info.note
+p2	P2E	p2_events.csv	f7804c01	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p2	P2D3	p2_d3.json	40d93357	no (contains written_utc)	json		.written_utc
+p2	D-P2PIX	cmorph_pixels.csv	8e58c8c95ab68a7e	no (row order follows the order in which download threads finish; same rows)	rows	d0c7e80dc86979306647e31b4633c6f3d0e5b0d163cb02693b95f332b8b0ea3a	
+p2-sens	P2SENS	p2_sensitivity.json	c911b96a8f06c893615093190771fad8f5d1daa4016ec9599ad1f7fa8a335c1f	no (contains run metadata)	json		.cmorph.bytes_this_run,.cmorph.http_requests,.cmorph.seconds,.cmorph.downloaded_this_run,.inputs.*,.primary_d3_reference.sha256,.primary_d3_reference.source,.primary_d3_reference.written_utc,.run_utc,.runtime_s,.design_ref,.status
+p2-sens		p2_d3_from_primary.json	40d93357	no (contains written_utc)	json		
+p2-sens		p2_plan_sensitivity.json	4817c883	no (the note text in parts.basis was reworded after the reference run; not released)	json		
+p2-sens	D-P2SPIX	cmorph_pixels.csv	5de465db22453175	no (row order follows the order in which download threads finish; same rows)	rows	230a61f6afdcfdcd75929b25b5eb9ceb15dd5f4b3cb278a2736d33979fdd2f59	
+p3-global	P3T	selftest.json	ab0087afc498	no (contains run metadata)	json		.capsule.dir,.code_sha256,.parts.*.capsule_run.python,.parts.*.capsule_run.seconds,.seconds,.started_utc
+p3-global	P3A	p3a_repro.json	4719c0a0e979	no (contains run metadata)	json		.code_sha256,.static.basin_file,.written_utc
+p3-global	P3B	p3b_curves.json	2bdbe143ccaa	no (byte-identical in the full re-run of 2026-09-30; the current script writes fewer or reworded text fields; compared leaf by leaf)	json		.definitions.U_pp,.checks_non_gate.note
+p3-global	P3R	p3_run.json	7826022185707	no (contains run metadata)	json		.code_sha256,.config_hash,.month_info.*.peak_rss_bytes,.month_info.*.seconds,.month_info.*.timing_s.*,.results[[]*[]].info_path,.selftest_s,.static_build_s,.wall_seconds
+p3-global	P3BAND	p3_bands.csv	56b37976	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p3-global	P3REG	p3_regions.csv	9ccf4c79	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p3-global	P3MON	p3_monthly.csv	729ab390	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p3c	P3C	p3c_decision.json	8a88e2226cb491713329ed03baea17d21a3760debe927a24450d378acc80f57d	no (byte-identical in the full re-run of 2026-09-30; the current script writes fewer or reworded text fields; compared leaf by leaf)	json		.tier
+p4-explore	PX	p4_explore.json	4fb8bf94	no (contains the input directory path inputs_dir)	json		.inputs_dir,.status
+p4-mech	P4S	p4_mech_summary.json	e3e2bf7b70fadcf2b797c7e0d5c2ae9a8ff7376890aa228a5e2f076d2f710300	no (contains run metadata)	json		.run_utc,.runtime_s,.prereg,.verdict.action,.verdict.rule
+p4-mech	P4E	p4_mech_events.csv	c5feedaa508f490f70ef9ec11999966084c20f14efc9a049a09991238fce6dd7	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p4-mech		p4_mech_log.txt	ff263d98	no (contains run metadata)	sha		
+p4b	P4BS	p4b_summary.json	3a66947b	no (contains run metadata)	json		.run_utc,.runtime_s,.prereg,.E1.ii.p2_sens_reference.src,.total.label
+p4b	P4BE	p4b_events.csv	b02aa1e6	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p4c	P4C	p4c.json	f3d5e708	no (contains code hashes)	json		.sha256.*
+p4d	P4D	p4d.json	afafb228	yes (byte-identical in the full re-run of 2026-09-30)	json		
+p4e	P4ES	p4e_summary.json	0a04f55a	no (contains run metadata)	json		.run_utc,.runtime_s,.prereg
+p4f	P4F	p4f.json	78ef0912	no (contains code hashes)	json		.inputs.*
+p5-beta		p5_beta_summary.json	7e61b80f0bdc632dedd3fbd097693abe4481fe4b441ff16409276d019205cd44	no (contains run metadata)	json		.inputs.p2_dir,.inputs.p4_events,.run_utc,.runtime_s,.prereg,.synthesis.abstract_8p2.advice
+p5-beta		p5_beta_events.csv	0c426207deef307981bda21794888fc1d063135bc5a42657b0eb57f85d9edbe3	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p5-beta		p5_beta_log.txt	50f9c980	no (contains run metadata)	sha		
+p5-beta		p5_beta_selftest.json	7f74a897	yes (byte-identical in the full re-run of 2026-09-30)	json		
+p5-sss		p5_power.json	af131da8868c1d53a1a4d0dfeabc9fb3f71ec8140e3fe769e2752f65ef91970b	no (byte-identical in the full re-run of 2026-09-30; the current script writes fewer or reworded text fields; compared leaf by leaf)	json		.note
+p5-sss		p5_summary.json	e5f66e65fb13d812683eee58c0f9182906f51f1cd3356247bd284bd00385ab4f	no (contains run metadata)	json		.code_sha256.*,.run_utc,.prereg,.nature
+p5-sss		p5_events.csv	7a6d70758d575d180d9f0100579a9b7f6bc014350c9080ca9b5ab84ffd6985fa	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p5-sss		p5_fetch.json	f971a4d7	no (contains run metadata)	json		
+p5-sss		p5_selftest.json	1b4e5620	yes (byte-identical in the full re-run of 2026-09-30)	json		
+p6		p6_power.json	151db095…78a7	no (contains run metadata)	json		.code_sha256.*,.written,.note
+p6		p6_summary.json	d8fb7e89…54e3	no (contains run metadata)	json		.code_sha256.*,.elapsed_s,.prereg
+p6		p6_events.csv	2de4313d…0646	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p6		p6_selftest.json	b01e4db7…7e70	yes (byte-identical in the full re-run of 2026-09-30)	json		
+p7a		p7a_power.json	336c7ca8…bd98	no (byte-identical in the full re-run of 2026-09-30; the current script writes fewer or reworded text fields; compared leaf by leaf)	json		.note
+p7a		p7a_summary.json	8e030de8…3801	no (contains run metadata)	json		.code_sha256.*,.run_utc,.prereg,.nature
+p7a		p7a_events_jpl.csv	1b529937…f6a8	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p7a		p7a_pairs.csv	afa81fda…b553	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p7a		p7a_v0.json	890cdee3…2e08	yes (byte-identical in the full re-run of 2026-09-30)	json		
+p7c		p7c_summary.json	69aeb465e31c848a58efa99342f8d7b4a9f9ea34df532a366911989f0acd9dbb	no (contains run metadata)	json		.run_utc,.runtime_s,.prereg
+p7c		p7c_events.csv	247f05856bdeb73ad8261dba8009929298f5f77ea9fc66cf6901739d1b0ab4db	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p7d		p7d_summary.json	e55145fad491250e03a11c83cc660a413930397312b6f3c4241c31eeed7de5fb	no (contains run metadata)	json		.code_sha256.*,.inputs.p5_dir,.inputs.p5_summary_sha256,.run_utc,.prereg,.selftest[[]11[]].name,.selftest[[]13[]].name,.selftest[[]15[]].name
+p7d		p7d_bins.csv	cadda84c418ca9d11b7d1497490696f8ef7ab12d3473d5f6f6d60a0300025e0e	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p7e		p7e_power.json	8159a505…c5cc	no (contains run metadata)	json		.code_sha256.*,.written,.note
+p7e		p7e_summary.json	e7f517b1…8966	no (contains run metadata)	json		.code_sha256.*,.elapsed_s,.prereg
+p7e		p7e_piston_events.csv	114bed81…190f	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p7e		p7e_spurs1_events.csv	7c2e0a56…16d3	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p8a	P8AS	p8a_summary.json	9e51a78008e1dbe1069ac6456c084c135cb742448193d695c64674abfeefd987	no (contains run metadata)	json		.code_sha256.*,.inputs.paths.*,.inputs.sha256.*,.run_utc,.prereg
+p8a	P8AB	p8a_bins.csv	33675fbe5d43f1e414ca2bd1d1c75cb6882fc889e4531fab8dbae3392b5c7a0e	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p8a		p8a_events_wind.csv	b8952fc6…ccc2	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+p8b	P8BS	p8b_summary.json	93815d7f4131d2d3a4ff3e73e6b1d432d47baeb02deb60e612377084227065a8	no (contains run metadata)	json		.code_sha256.*,.elapsed_s,.prereg
+p8b		p8b_power.json	0f8b3838…6895	no (contains run metadata)	json		.code_sha256.*,.written,.note
+p8b		p8b_events.csv	ddba60b7…7417	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+piston-track	PISTRK	piston_track_hourly.csv	b2b69788f7d496edd0a63b372d471f1fa48fc689d25d76de3190d7e85df03e5e	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+piston-track		piston_track_extent.json	3ca84c54	yes (byte-identical in the full re-run of 2026-09-30)	json		
+cal-dw13-meta	D13M	dw13_meta.json	fd5a036b4f51743b2fb29d67eb252c2ae8f4fd91a6e330967abf2c19b92808ed	yes (byte-identical in the full re-run of 2026-09-30; metadata are re-fetched, so this changes if NCEI adds or revises files)	json		
+cal-surface-diag	C12	cal_c1_c2.json	91bcd59492a00891a9bcf93df3a4cf772347f5cf687dd2d6c6a8445983d2a556	no (contains input paths inputs.*.path)	json		.inputs.*.path
+dw33-bench	C3BENCH	dw33_bench.json	2996a135	no (contains run metadata; stage not in run.py --all)	json		
+dw33	C3B	dw33_bins.json	2a5909dfbe55fb639b98aad2de394c67fa84127f75307a1ae42d0e6ce5b00b75	no (contains run metadata)	json		.code_sha256,.p3_code_sha256
+dw33-post	C3P	dw33_post.json	98b839f4a2ead80cc0efdfde75b5653131d3e2054f001d1d17fa5ece664649e1	no (contains run metadata)	json		.inputs.*.path,.inputs.*.sha256
+dw13a	D13A	dw13a_compare.json	b688114725467a85519cd62017c113edfb349327b596afda818540ec0ca8d8ba	no (contains run metadata)	json		.measured,.nominal,.orig,.sha256_measured.*,.status
+dw13a	D13A	dw13a_gate.json	0444a7b6f96d92b12d4d267f2abc6081dd17d1ffe092a8c0131e0d923febab27	no (contains run metadata)	json		.nominal,.orig,.sha256_nominal.*,.sha256_orig.*,.rule
+dw13a	D13A	measured/p2_summary.json	e9e229c4a2973c8a5acb2cc858584d9f2a7041174b3d9288dcae104e29ac92d3	no (contains run metadata)	json		.D3.written_utc,.cmorph.bytes_this_run,.cmorph.http_requests,.cmorph.seconds,.cmorph.downloaded_this_run,.inputs.*,.run_utc,.runtime_s,.design_ref,.implementation_choices,.exit.journal,.sensitivity.status,.exploratory_k27.status,.exploratory_k27.reference_main_path_R_RIM_0.5m_point.note,.descriptive_info.note
+dw13a	D13A	measured/p2_events.csv	7d56cb7a1ce0425d535324d01928ff2bc343e2b6500717799a16e06c0b55d10e	yes (byte-identical in the full re-run of 2026-09-30)	sha		
+dw13a	D13A	measured/dw13a_heights.json	4d38be1a1f13dce22218cf05b157590cf7e4177ef6cc55d97a9f8eb3a1e1626e	yes (byte-identical in the full re-run of 2026-09-30)	json		
+dw13a	D13A	nominal/p2_events.csv	f7804c011a0f75f4f8046f13bd09d39acd1655fa812035917efe9b62c7655428	yes (byte-identical in the full re-run of 2026-09-30)	sha		

@@ -1,0 +1,24 @@
+{
+ "n": 29,
+ "clusters": 8,
+ "sum_x": -10.49584,
+ "mean_x": -0.36193,
+ "rms_x": 0.63321,
+ "n_ctrl_windows": 63,
+ "sd_ctrl_dS": 0.24827,
+ "note": "includes only the spread of model-side x and of dS in rain-free control windows (proxy for observation noise, including horizontal gradients from ship motion); information only, does not change the interpretation",
+ "se_R_if_sigma_0.1": 0.05131,
+ "se_R_if_sigma_0.2": 0.10262,
+ "se_R_if_sigma_0.4": 0.20523,
+ "se_R_ctrl": 0.12738,
+ "ci_halfwidth_ctrl": 0.24967,
+ "separable_0p3_vs_1_at_0p65": true,
+ "version": "p6-2026-09-27a",
+ "code_sha256": {
+  "p6_spurs2_profile.py": "407d2ae245124f779b487fa6ecc5d8b4c22f5a5039acb4293173b42a1311f683",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213"
+ },
+ "written": "2026-09-27T09:56:50.924146+00:00"
+}

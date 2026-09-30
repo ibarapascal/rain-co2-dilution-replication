@@ -1,0 +1,2007 @@
+{
+ "script": "p8a_sat_wind_strata.py",
+ "version": "p8a-2026-09-27a",
+ "run_utc": "2026-09-27T13:23:34Z",
+ "code_sha256": {
+  "p8a_sat_wind_strata.py": "d18be24723751f20a726f1eccc9312b409387b9b2c1b8e61baf1463227d8691b",
+  "p5_sss_sat.py": "c35c3a06a892af347e19b041028a2c7f52c09bdf9502d29cb3eeb5e942f4ae3e",
+  "raw_store.py": "8b8cc392dbca5f82b463665cc0ca9ee632155980059ec5171e78b7deb58694d0",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p4_mech.py": "cc2ff18f23e58761c9401062cf2ba0997a6b029b53cfa25eb896309769bed38f"
+ },
+ "inputs": {
+  "paths": {},
+  "sha256": {
+   "p5_events.csv": "7a6d70758d575d180d9f0100579a9b7f6bc014350c9080ca9b5ab84ffd6985fa",
+   "p5_summary.json": "e5f66e65fb13d812683eee58c0f9182906f51f1cd3356247bd284bd00385ab4f",
+   "p7a_events_jpl.csv": "1b529937eb13dbd02e79d7b66e22ed08810471a6f2087e30c3c559903c05f6a8",
+   "p7a_summary.json": "8e030de8599390dd65600657c67ac4190346264e62d5f28bd55dbc2698453801",
+   "p7c_events.csv": "247f05856bdeb73ad8261dba8009929298f5f77ea9fc66cf6901739d1b0ab4db"
+  }
+ },
+ "boot": {
+  "B": 10000,
+  "seed": 20260926,
+  "threshold": 0.65,
+  "den_nonneg_max": 0.01
+ },
+ "cuts": {
+  "CUT1": 6.031179,
+  "CUT2": 9.325534,
+  "CUT8": 8.0
+ },
+ "cut_provenance": {
+  "n": 646,
+  "q1": 6.0311793,
+  "q2": 9.3255339,
+  "ok": true
+ },
+ "selftest": [
+  {
+   "name": "synthetic ratio 0.2 point estimate",
+   "ok": true,
+   "detail": "0.2"
+  },
+  {
+   "name": "synthetic ratio 0.2 class",
+   "ok": true,
+   "detail": "upper < 0.65: compatible with R1, incompatible with R2"
+  },
+  {
+   "name": "synthetic ratio 1.3 point estimate",
+   "ok": true,
+   "detail": "1.3"
+  },
+  {
+   "name": "synthetic ratio 1.3 class",
+   "ok": true,
+   "detail": "lower > 0.65: compatible with R2, incompatible with R1"
+  },
+  {
+   "name": "rule: upper < 0.65 -> 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: lower > 0.65 -> 2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: straddles -> 3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: upper exactly 0.65 -> 3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: unstable denominator -> 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: upper < 0 -> 4",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: n < 3 -> 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "binning: cut point goes to the lower class",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "binning: 8 m/s goes to the lower class",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "binning: event u10 at 6 decimals",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "overall mapping",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "RSS CSV rows 87",
+   "ok": true,
+   "detail": "87"
+  },
+  {
+   "name": "RSS reproduces R",
+   "ok": true,
+   "detail": "1.65273 vs 1.65273"
+  },
+  {
+   "name": "RSS reproduces station x season CI",
+   "ok": true,
+   "detail": "[1.05832, 2.3908] vs [1.05832, 2.3908]"
+  },
+  {
+   "name": "RSS reproduces station-cluster CI",
+   "ok": true,
+   "detail": "[0.65053, 2.53267] vs [0.65053, 2.53267]"
+  },
+  {
+   "name": "RSS reproduces jackknife-t",
+   "ok": true,
+   "detail": "[0.32114, 2.98431] vs [0.32114, 2.98431]"
+  },
+  {
+   "name": "RSS reproduces clusters / stations",
+   "ok": true,
+   "detail": "21/7/7"
+  },
+  {
+   "name": "JPL CSV rows 96",
+   "ok": true,
+   "detail": "96"
+  },
+  {
+   "name": "JPL reproduces R",
+   "ok": true,
+   "detail": "1.12056 vs 1.12056"
+  },
+  {
+   "name": "JPL reproduces station x season CI",
+   "ok": true,
+   "detail": "[0.4839, 1.98601] vs [0.4839, 1.98601]"
+  },
+  {
+   "name": "JPL reproduces station-cluster CI",
+   "ok": true,
+   "detail": "[0.73029, 1.66143] vs [0.73029, 1.66143]"
+  },
+  {
+   "name": "JPL reproduces jackknife-t",
+   "ok": true,
+   "detail": "[0.56418, 1.67694] vs [0.56418, 1.67694]"
+  },
+  {
+   "name": "JPL reproduces clusters / stations",
+   "ok": true,
+   "detail": "22/7/7"
+  }
+ ],
+ "reproduced": {
+  "RSS": {
+   "label": "RSS all (reproduces the main result)",
+   "n": 87,
+   "stations": 7,
+   "clusters_station_season": 21,
+   "clusters_station": 7,
+   "sum_num": -49.37508,
+   "sum_den": -29.87495,
+   "R": 1.65273,
+   "ci95_station_season": [
+    1.05832,
+    2.3908
+   ],
+   "ci95_station": [
+    0.65053,
+    2.53267
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 7,
+    "evaluable": true,
+    "loo_range": [
+     1.36085,
+     2.08115
+    ],
+    "se": 0.54419,
+    "t_ci95": [
+     0.32114,
+     2.98431
+    ]
+   },
+   "slope_through_origin": 0.68046,
+   "slope_ci95_station_season": [
+    0.28852,
+    1.11964
+   ],
+   "p5_gate_met": true,
+   "kind": "selftest",
+   "judgement": {
+    "category_code": 2,
+    "category": "lower > 0.65: compatible with R2, incompatible with R1",
+    "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish",
+    "jackknife_same_side": false,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": false,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": false,
+    "jk_contains_1": true
+   }
+  },
+  "JPL": {
+   "label": "JPL all (reproduces the main result)",
+   "n": 96,
+   "stations": 7,
+   "clusters_station_season": 22,
+   "clusters_station": 7,
+   "sum_num": -38.59078,
+   "sum_den": -34.43878,
+   "R": 1.12056,
+   "ci95_station_season": [
+    0.4839,
+    1.98601
+   ],
+   "ci95_station": [
+    0.73029,
+    1.66143
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 7,
+    "evaluable": true,
+    "loo_range": [
+     1.00572,
+     1.32266
+    ],
+    "se": 0.22738,
+    "t_ci95": [
+     0.56418,
+     1.67694
+    ]
+   },
+   "slope_through_origin": 0.47234,
+   "slope_ci95_station_season": [
+    0.24129,
+    0.90195
+   ],
+   "p5_gate_met": true,
+   "kind": "selftest",
+   "judgement": {
+    "category_code": 3,
+    "category": "cannot distinguish",
+    "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+    "station_same_side": false,
+    "jackknife_category": "cannot distinguish",
+    "jackknife_same_side": true,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": false,
+    "jk_contains_1": true
+   }
+  }
+ },
+ "main": {
+  "RSS": {
+   "TL": {
+    "label": "RSS overpass wind class L",
+    "n": 27,
+    "stations": 6,
+    "clusters_station_season": 15,
+    "clusters_station": 6,
+    "sum_num": -17.09385,
+    "sum_den": -21.98783,
+    "R": 0.77742,
+    "ci95_station_season": [
+     0.33908,
+     1.30358
+    ],
+    "ci95_station": [
+     0.42024,
+     1.3996
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.68363,
+      1.01309
+     ],
+     "se": 0.24838,
+     "t_ci95": [
+      0.13895,
+      1.4159
+     ]
+    },
+    "slope_through_origin": 0.61489,
+    "slope_ci95_station_season": [
+     0.20455,
+     1.0303
+    ],
+    "p5_gate_met": false,
+    "kind": "reported",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "TM": {
+    "label": "RSS overpass wind class M",
+    "n": 25,
+    "stations": 6,
+    "clusters_station_season": 13,
+    "clusters_station": 6,
+    "sum_num": -5.57816,
+    "sum_den": -3.23802,
+    "R": 1.72271,
+    "ci95_station_season": [
+     -0.64395,
+     6.17388
+    ],
+    "ci95_station": [
+     -0.45899,
+     4.66168
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.9977,
+      2.25996
+     ],
+     "se": 1.05717,
+     "t_ci95": [
+      -0.99484,
+      4.44025
+     ]
+    },
+    "slope_through_origin": 1.01539,
+    "slope_ci95_station_season": [
+     -0.65854,
+     2.14931
+    ],
+    "p5_gate_met": false,
+    "kind": "reported",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "TH": {
+    "label": "RSS overpass wind class H",
+    "n": 35,
+    "stations": 5,
+    "clusters_station_season": 13,
+    "clusters_station": 5,
+    "sum_num": -26.70308,
+    "sum_den": -4.6491,
+    "R": 5.7437,
+    "ci95_station_season": [
+     2.10342,
+     13.57949
+    ],
+    "ci95_station": [
+     1.3727,
+     7.73824
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      4.83244,
+      7.19881
+     ],
+     "se": 1.72329,
+     "t_ci95": [
+      0.95909,
+      10.52832
+     ]
+    },
+    "slope_through_origin": 2.61845,
+    "slope_ci95_station_season": [
+     1.02966,
+     5.79525
+    ],
+    "p5_gate_met": true,
+    "kind": "main",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": false,
+     "jk_contains_1": true
+    }
+   }
+  },
+  "JPL": {
+   "TL": {
+    "label": "JPL overpass wind class L",
+    "n": 30,
+    "stations": 6,
+    "clusters_station_season": 15,
+    "clusters_station": 6,
+    "sum_num": -13.32707,
+    "sum_den": -23.81208,
+    "R": 0.55968,
+    "ci95_station_season": [
+     0.12189,
+     1.23246
+    ],
+    "ci95_station": [
+     0.24869,
+     1.18669
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.36953,
+      0.71041
+     ],
+     "se": 0.23831,
+     "t_ci95": [
+      -0.05292,
+      1.17227
+     ]
+    },
+    "slope_through_origin": 0.42261,
+    "slope_ci95_station_season": [
+     0.19805,
+     0.84816
+    ],
+    "p5_gate_met": true,
+    "kind": "reported",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "TM": {
+    "label": "JPL overpass wind class M",
+    "n": 27,
+    "stations": 6,
+    "clusters_station_season": 13,
+    "clusters_station": 6,
+    "sum_num": -3.28329,
+    "sum_den": -3.77308,
+    "R": 0.87019,
+    "ci95_station_season": [
+     -1.25157,
+     5.44603
+    ],
+    "ci95_station": [
+     -0.99969,
+     2.94224
+    ],
+    "frac_boot_den_nonneg": 0.0001,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.48872,
+      1.26061
+     ],
+     "se": 0.54831,
+     "t_ci95": [
+      -0.53928,
+      2.27966
+     ]
+    },
+    "slope_through_origin": 0.38674,
+    "slope_ci95_station_season": [
+     -1.73377,
+     2.81433
+    ],
+    "p5_gate_met": false,
+    "kind": "reported",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "TH": {
+    "label": "JPL overpass wind class H",
+    "n": 39,
+    "stations": 5,
+    "clusters_station_season": 14,
+    "clusters_station": 5,
+    "sum_num": -21.98042,
+    "sum_den": -6.85362,
+    "R": 3.20713,
+    "ci95_station_season": [
+     1.15053,
+     5.97971
+    ],
+    "ci95_station": [
+     1.99379,
+     6.13927
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      2.77165,
+      3.51629
+     ],
+     "se": 0.58801,
+     "t_ci95": [
+      1.57455,
+      4.8397
+     ]
+    },
+    "slope_through_origin": 1.78781,
+    "slope_ci95_station_season": [
+     1.10127,
+     3.26136
+    ],
+    "p5_gate_met": true,
+    "kind": "main",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": false,
+     "jk_contains_1": false
+    }
+   }
+  }
+ },
+ "sensitivity": {
+  "RSS": {
+   "EL": {
+    "label": "RSS event-level u10 class L",
+    "n": 20,
+    "stations": 6,
+    "clusters_station_season": 13,
+    "clusters_station": 6,
+    "sum_num": -3.86519,
+    "sum_den": -12.27001,
+    "R": 0.31501,
+    "ci95_station_season": [
+     -0.46552,
+     0.88707
+    ],
+    "ci95_station": [
+     -0.03668,
+     0.87412
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.23429,
+      0.40064
+     ],
+     "se": 0.14227,
+     "t_ci95": [
+      -0.05071,
+      0.68073
+     ]
+    },
+    "slope_through_origin": 0.23881,
+    "slope_ci95_station_season": [
+     0.01352,
+     0.98301
+    ],
+    "p5_gate_met": false,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": false
+    }
+   },
+   "EM": {
+    "label": "RSS event-level u10 class M",
+    "n": 34,
+    "stations": 6,
+    "clusters_station_season": 17,
+    "clusters_station": 6,
+    "sum_num": -22.48013,
+    "sum_den": -13.06037,
+    "R": 1.72125,
+    "ci95_station_season": [
+     0.86976,
+     3.4096
+    ],
+    "ci95_station": [
+     0.87055,
+     3.8851
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      1.36379,
+      2.22386
+     ],
+     "se": 0.56597,
+     "t_ci95": [
+      0.26637,
+      3.17613
+     ]
+    },
+    "slope_through_origin": 1.01075,
+    "slope_ci95_station_season": [
+     0.72199,
+     2.13304
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": false,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "EH": {
+    "label": "RSS event-level u10 class H",
+    "n": 33,
+    "stations": 5,
+    "clusters_station_season": 13,
+    "clusters_station": 5,
+    "sum_num": -23.02976,
+    "sum_den": -4.54458,
+    "R": 5.06753,
+    "ci95_station_season": [
+     1.62766,
+     12.40533
+    ],
+    "ci95_station": [
+     0.96803,
+     6.6678
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      4.24312,
+      6.10379
+     ],
+     "se": 1.32502,
+     "t_ci95": [
+      1.38869,
+      8.74636
+     ]
+    },
+    "slope_through_origin": 2.3226,
+    "slope_ci95_station_season": [
+     0.37069,
+     4.90399
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": false,
+     "jk_contains_1": false
+    }
+   },
+   "B8L": {
+    "label": "RSS overpass wind <= 8 m/s",
+    "n": 43,
+    "stations": 7,
+    "clusters_station_season": 20,
+    "clusters_station": 7,
+    "sum_num": -19.79113,
+    "sum_den": -23.6247,
+    "R": 0.83773,
+    "ci95_station_season": [
+     0.28028,
+     1.61675
+    ],
+    "ci95_station": [
+     0.4376,
+     1.68726
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 7,
+     "evaluable": true,
+     "loo_range": [
+      0.73418,
+      1.12092
+     ],
+     "se": 0.28899,
+     "t_ci95": [
+      0.1306,
+      1.54486
+     ]
+    },
+    "slope_through_origin": 0.60554,
+    "slope_ci95_station_season": [
+     0.19763,
+     1.02279
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "B8H": {
+    "label": "RSS overpass wind > 8 m/s",
+    "n": 44,
+    "stations": 5,
+    "clusters_station_season": 14,
+    "clusters_station": 5,
+    "sum_num": -29.58395,
+    "sum_den": -6.25025,
+    "R": 4.73324,
+    "ci95_station_season": [
+     2.07391,
+     9.96845
+    ],
+    "ci95_station": [
+     1.37622,
+     6.04221
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      3.67922,
+      5.7414
+     ],
+     "se": 1.3428,
+     "t_ci95": [
+      1.00505,
+      8.46144
+     ]
+    },
+    "slope_through_origin": 2.67062,
+    "slope_ci95_station_season": [
+     1.0722,
+     4.76622
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": false,
+     "jk_contains_1": false
+    }
+   },
+   "same_side_as_TH": {
+    "B8H": true,
+    "EH": true
+   }
+  },
+  "JPL": {
+   "EL": {
+    "label": "JPL event-level u10 class L",
+    "n": 23,
+    "stations": 6,
+    "clusters_station_season": 13,
+    "clusters_station": 6,
+    "sum_num": -6.24935,
+    "sum_den": -15.02117,
+    "R": 0.41604,
+    "ci95_station_season": [
+     -0.12562,
+     1.10844
+    ],
+    "ci95_station": [
+     -0.27287,
+     1.04743
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.32658,
+      0.53301
+     ],
+     "se": 0.15628,
+     "t_ci95": [
+      0.0143,
+      0.81777
+     ]
+    },
+    "slope_through_origin": 0.23931,
+    "slope_ci95_station_season": [
+     0.14189,
+     0.62482
+    ],
+    "p5_gate_met": false,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": false
+    }
+   },
+   "EM": {
+    "label": "JPL event-level u10 class M",
+    "n": 39,
+    "stations": 6,
+    "clusters_station_season": 18,
+    "clusters_station": 6,
+    "sum_num": -20.16875,
+    "sum_den": -14.49952,
+    "R": 1.39099,
+    "ci95_station_season": [
+     0.62158,
+     3.00438
+    ],
+    "ci95_station": [
+     0.87669,
+     4.04146
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      1.08719,
+      1.99532
+     ],
+     "se": 0.6518,
+     "t_ci95": [
+      -0.28452,
+      3.06651
+     ]
+    },
+    "slope_through_origin": 0.81041,
+    "slope_ci95_station_season": [
+     0.39423,
+     1.90424
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": false,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "EH": {
+    "label": "JPL event-level u10 class H",
+    "n": 34,
+    "stations": 5,
+    "clusters_station_season": 13,
+    "clusters_station": 5,
+    "sum_num": -12.17268,
+    "sum_den": -4.91809,
+    "R": 2.47508,
+    "ci95_station_season": [
+     -0.64527,
+     8.30835
+    ],
+    "ci95_station": [
+     -0.40808,
+     4.81674
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      1.6427,
+      3.31464
+     ],
+     "se": 1.19686,
+     "t_ci95": [
+      -0.84794,
+      5.79811
+     ]
+    },
+    "slope_through_origin": 0.6666,
+    "slope_ci95_station_season": [
+     -1.03794,
+     2.95117
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "B8L": {
+    "label": "JPL overpass wind <= 8 m/s",
+    "n": 47,
+    "stations": 7,
+    "clusters_station_season": 20,
+    "clusters_station": 7,
+    "sum_num": -17.57402,
+    "sum_den": -25.90819,
+    "R": 0.67832,
+    "ci95_station_season": [
+     0.15926,
+     1.52165
+    ],
+    "ci95_station": [
+     0.3988,
+     1.51768
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 7,
+     "evaluable": true,
+     "loo_range": [
+      0.55574,
+      0.84691
+     ],
+     "se": 0.24884,
+     "t_ci95": [
+      0.06944,
+      1.2872
+     ]
+    },
+    "slope_through_origin": 0.428,
+    "slope_ci95_station_season": [
+     0.20034,
+     0.86831
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "B8H": {
+    "label": "JPL overpass wind > 8 m/s",
+    "n": 49,
+    "stations": 5,
+    "clusters_station_season": 15,
+    "clusters_station": 5,
+    "sum_num": -21.01676,
+    "sum_den": -8.53059,
+    "R": 2.46369,
+    "ci95_station_season": [
+     0.57692,
+     4.94949
+    ],
+    "ci95_station": [
+     1.21869,
+     4.24974
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      2.21217,
+      2.94902
+     ],
+     "se": 0.559,
+     "t_ci95": [
+      0.91166,
+      4.01573
+     ]
+    },
+    "slope_through_origin": 1.47526,
+    "slope_ci95_station_season": [
+     0.50553,
+     2.68388
+    ],
+    "p5_gate_met": true,
+    "kind": "sensitivity",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": false,
+     "jackknife_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "jackknife_same_side": false,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": false,
+     "jk_contains_1": true
+    }
+   },
+   "same_side_as_TH": {
+    "B8H": false,
+    "EH": false
+   }
+  }
+ },
+ "descriptive": {
+  "RSS": {
+   "TL": {
+    "n": 27,
+    "raining_at_transit_W1": 17,
+    "not_raining_W0": 9,
+    "imerg_missing": 1,
+    "frac_raining_of_nonmissing": 0.6538,
+    "median_u_tr": 3.966,
+    "median_dt_post_h": 6.664,
+    "mean_x": -0.8144,
+    "n_by_station": {
+     "KEO": 10,
+     "MOSEAN/WHOTS": 6,
+     "Papa": 4,
+     "TAO140W": 1,
+     "TAO165E": 5,
+     "TAO170W": 1
+    },
+    "frac_KEO_Papa": 0.5185
+   },
+   "TL_gauge_scaled": {
+    "c": 0.63493,
+    "R_scaled": 0.49361,
+    "ci95_station_season_scaled": [
+     0.21529,
+     0.82768
+    ],
+    "category_scaled": "cannot distinguish"
+   },
+   "EL": {
+    "n": 20,
+    "raining_at_transit_W1": 9,
+    "not_raining_W0": 11,
+    "imerg_missing": 0,
+    "frac_raining_of_nonmissing": 0.45,
+    "median_u_tr": 3.766,
+    "median_dt_post_h": 6.678,
+    "mean_x": -0.6135,
+    "n_by_station": {
+     "KEO": 5,
+     "MOSEAN/WHOTS": 5,
+     "Papa": 2,
+     "TAO140W": 1,
+     "TAO165E": 6,
+     "TAO170W": 1
+    },
+    "frac_KEO_Papa": 0.35
+   },
+   "TM": {
+    "n": 25,
+    "raining_at_transit_W1": 15,
+    "not_raining_W0": 9,
+    "imerg_missing": 1,
+    "frac_raining_of_nonmissing": 0.625,
+    "median_u_tr": 7.544,
+    "median_dt_post_h": 5.252,
+    "mean_x": -0.1295,
+    "n_by_station": {
+     "BOBOA": 5,
+     "KEO": 5,
+     "MOSEAN/WHOTS": 2,
+     "Papa": 8,
+     "TAO165E": 4,
+     "TAO170W": 1
+    },
+    "frac_KEO_Papa": 0.52
+   },
+   "TM_gauge_scaled": {
+    "c": 0.7919,
+    "R_scaled": 1.36421,
+    "ci95_station_season_scaled": [
+     -0.50994,
+     4.8891
+    ],
+    "category_scaled": "cannot distinguish"
+   },
+   "EM": {
+    "n": 34,
+    "raining_at_transit_W1": 24,
+    "not_raining_W0": 8,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.75,
+    "median_u_tr": 7.504,
+    "median_dt_post_h": 5.676,
+    "mean_x": -0.3841,
+    "n_by_station": {
+     "BOBOA": 7,
+     "KEO": 10,
+     "MOSEAN/WHOTS": 4,
+     "Papa": 9,
+     "TAO165E": 3,
+     "TAO170W": 1
+    },
+    "frac_KEO_Papa": 0.5588
+   },
+   "TH": {
+    "n": 35,
+    "raining_at_transit_W1": 26,
+    "not_raining_W0": 7,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.7879,
+    "median_u_tr": 11.21,
+    "median_dt_post_h": 4.84,
+    "mean_x": -0.1328,
+    "n_by_station": {
+     "BOBOA": 5,
+     "KEO": 15,
+     "MOSEAN/WHOTS": 6,
+     "Papa": 8,
+     "TAO165E": 1
+    },
+    "frac_KEO_Papa": 0.6571
+   },
+   "TH_gauge_scaled": {
+    "c": 1.14921,
+    "R_scaled": 6.60072,
+    "ci95_station_season_scaled": [
+     2.41727,
+     15.60569
+    ],
+    "category_scaled": "lower > 0.65: compatible with R2, incompatible with R1"
+   },
+   "EH": {
+    "n": 33,
+    "raining_at_transit_W1": 25,
+    "not_raining_W0": 6,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.8065,
+    "median_u_tr": 11.21,
+    "median_dt_post_h": 4.79,
+    "mean_x": -0.1377,
+    "n_by_station": {
+     "BOBOA": 3,
+     "KEO": 15,
+     "MOSEAN/WHOTS": 5,
+     "Papa": 9,
+     "TAO165E": 1
+    },
+    "frac_KEO_Papa": 0.7273
+   },
+   "B8L": {
+    "n": 43,
+    "raining_at_transit_W1": 28,
+    "not_raining_W0": 14,
+    "imerg_missing": 1,
+    "frac_raining_of_nonmissing": 0.6667,
+    "median_u_tr": 5.412,
+    "median_dt_post_h": 5.857,
+    "mean_x": -0.5494,
+    "n_by_station": {
+     "BOBOA": 4,
+     "KEO": 12,
+     "MOSEAN/WHOTS": 7,
+     "Papa": 10,
+     "TAO140W": 1,
+     "TAO165E": 7,
+     "TAO170W": 2
+    },
+    "frac_KEO_Papa": 0.5116
+   },
+   "B8H": {
+    "n": 44,
+    "raining_at_transit_W1": 30,
+    "not_raining_W0": 11,
+    "imerg_missing": 3,
+    "frac_raining_of_nonmissing": 0.7317,
+    "median_u_tr": 10.937,
+    "median_dt_post_h": 5.03,
+    "mean_x": -0.1421,
+    "n_by_station": {
+     "BOBOA": 6,
+     "KEO": 18,
+     "MOSEAN/WHOTS": 7,
+     "Papa": 10,
+     "TAO165E": 3
+    },
+    "frac_KEO_Papa": 0.6364
+   },
+   "TH_noKEOPapa": {
+    "label": "RSS TH excluding KEO/Papa",
+    "n": 12,
+    "stations": 3,
+    "clusters_station_season": 5,
+    "clusters_station": 3,
+    "sum_num": -2.85906,
+    "sum_den": -1.45084,
+    "R": 1.97062,
+    "ci95_station_season": [
+     -0.13971,
+     9.05314
+    ],
+    "ci95_station": [
+     -0.85429,
+     6.37871
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      0.58712,
+      5.85576
+     ],
+     "se": 3.31146,
+     "t_ci95": [
+      -12.27744,
+      16.21869
+     ]
+    },
+    "slope_through_origin": 1.80579,
+    "slope_ci95_station_season": [
+     0.4968,
+     9.5529
+    ],
+    "p5_gate_met": false,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "B8H_noKEOPapa": {
+    "label": "RSS > 8 m/s excluding KEO/Papa",
+    "n": 16,
+    "stations": 3,
+    "clusters_station_season": 6,
+    "clusters_station": 3,
+    "sum_num": -3.29723,
+    "sum_den": -1.88073,
+    "R": 1.75317,
+    "ci95_station_season": [
+     0.04068,
+     5.40169
+    ],
+    "ci95_station": [
+     -0.24418,
+     4.54207
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      0.88145,
+      4.29264
+     ],
+     "se": 2.1802,
+     "t_ci95": [
+      -7.62746,
+      11.1338
+     ]
+    },
+    "slope_through_origin": 1.83716,
+    "slope_ci95_station_season": [
+     0.64278,
+     6.90381
+    ],
+    "p5_gate_met": false,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 3,
+     "category": "cannot distinguish",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": true,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": true,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "TL_R1m_matched": {
+    "label": "RSS TL same-time mooring 1 m sum obs1 / sum rim1",
+    "n": 27,
+    "stations": 6,
+    "clusters_station_season": 15,
+    "clusters_station": 6,
+    "sum_num": -3.69497,
+    "sum_den": -10.64783,
+    "R": 0.34702,
+    "ci95_station_season": [
+     0.16916,
+     0.48658
+    ],
+    "ci95_station": [
+     0.19093,
+     0.51219
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.25649,
+      0.44646
+     ],
+     "se": 0.12542,
+     "t_ci95": [
+      0.02461,
+      0.66942
+     ]
+    },
+    "slope_through_origin": 0.26613,
+    "slope_ci95_station_season": [
+     0.10383,
+     0.32321
+    ],
+    "p5_gate_met": false,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 1,
+     "category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_cluster_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": false,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": false
+    }
+   },
+   "TM_R1m_matched": {
+    "label": "RSS TM same-time mooring 1 m sum obs1 / sum rim1",
+    "n": 25,
+    "stations": 6,
+    "clusters_station_season": 13,
+    "clusters_station": 6,
+    "sum_num": -0.84932,
+    "sum_den": -3.33531,
+    "R": 0.25465,
+    "ci95_station_season": [
+     0.10096,
+     0.63817
+    ],
+    "ci95_station": [
+     0.06652,
+     0.72615
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 6,
+     "evaluable": true,
+     "loo_range": [
+      0.13348,
+      0.33761
+     ],
+     "se": 0.15205,
+     "t_ci95": [
+      -0.1362,
+      0.64549
+     ]
+    },
+    "slope_through_origin": 0.14047,
+    "slope_ci95_station_season": [
+     0.04208,
+     0.33404
+    ],
+    "p5_gate_met": false,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 1,
+     "category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_cluster_category": "cannot distinguish",
+     "station_same_side": false,
+     "jackknife_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": false
+    }
+   },
+   "TH_R1m_matched": {
+    "label": "RSS TH same-time mooring 1 m sum obs1 / sum rim1",
+    "n": 35,
+    "stations": 5,
+    "clusters_station_season": 13,
+    "clusters_station": 5,
+    "sum_num": -0.47674,
+    "sum_den": -4.90317,
+    "R": 0.09723,
+    "ci95_station_season": [
+     -0.01314,
+     0.20639
+    ],
+    "ci95_station": [
+     -0.08622,
+     0.18336
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      0.0208,
+      0.15036
+     ],
+     "se": 0.08393,
+     "t_ci95": [
+      -0.13578,
+      0.33025
+     ]
+    },
+    "slope_through_origin": 0.03602,
+    "slope_ci95_station_season": [
+     -0.03019,
+     0.09895
+    ],
+    "p5_gate_met": true,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 1,
+     "category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_cluster_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_same_side": true,
+     "jackknife_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": false
+    }
+   },
+   "B8L_R1m_matched": {
+    "label": "RSS B8L same-time mooring 1 m sum obs1 / sum rim1",
+    "n": 43,
+    "stations": 7,
+    "clusters_station_season": 20,
+    "clusters_station": 7,
+    "sum_num": -4.25341,
+    "sum_den": -12.56264,
+    "R": 0.33858,
+    "ci95_station_season": [
+     0.18771,
+     0.4772
+    ],
+    "ci95_station": [
+     0.20777,
+     0.53842
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 7,
+     "evaluable": true,
+     "loo_range": [
+      0.25818,
+      0.42185
+     ],
+     "se": 0.11185,
+     "t_ci95": [
+      0.0649,
+      0.61225
+     ]
+    },
+    "slope_through_origin": 0.26155,
+    "slope_ci95_station_season": [
+     0.10338,
+     0.3117
+    ],
+    "p5_gate_met": true,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 1,
+     "category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_cluster_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_same_side": true,
+     "jackknife_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": true,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": true,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": false
+    }
+   },
+   "B8H_R1m_matched": {
+    "label": "RSS B8H same-time mooring 1 m sum obs1 / sum rim1",
+    "n": 44,
+    "stations": 5,
+    "clusters_station_season": 14,
+    "clusters_station": 5,
+    "sum_num": -0.76763,
+    "sum_den": -6.32367,
+    "R": 0.12139,
+    "ci95_station_season": [
+     0.04762,
+     0.19472
+    ],
+    "ci95_station": [
+     0.00167,
+     0.17786
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      0.06938,
+      0.14864
+     ],
+     "se": 0.05347,
+     "t_ci95": [
+      -0.02707,
+      0.26985
+     ]
+    },
+    "slope_through_origin": 0.07424,
+    "slope_ci95_station_season": [
+     0.00037,
+     0.12625
+    ],
+    "p5_gate_met": true,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 1,
+     "category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_cluster_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "station_same_side": true,
+     "jackknife_category": "upper < 0.65: compatible with R1, incompatible with R2",
+     "jackknife_same_side": true,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": false,
+     "jk_contains_1": false
+    }
+   }
+  },
+  "JPL": {
+   "TL": {
+    "n": 30,
+    "raining_at_transit_W1": 19,
+    "not_raining_W0": 9,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.6786,
+    "median_u_tr": 4.011,
+    "median_dt_post_h": 6.696,
+    "mean_x": -0.7937,
+    "n_by_station": {
+     "KEO": 11,
+     "MOSEAN/WHOTS": 7,
+     "Papa": 4,
+     "TAO140W": 1,
+     "TAO165E": 5,
+     "TAO170W": 2
+    },
+    "frac_KEO_Papa": 0.5
+   },
+   "TL_gauge_scaled": {
+    "c": 0.63493,
+    "R_scaled": 0.35536,
+    "ci95_station_season_scaled": [
+     0.07739,
+     0.78253
+    ],
+    "category_scaled": "cannot distinguish"
+   },
+   "EL": {
+    "n": 23,
+    "raining_at_transit_W1": 11,
+    "not_raining_W0": 11,
+    "imerg_missing": 1,
+    "frac_raining_of_nonmissing": 0.5,
+    "median_u_tr": 3.966,
+    "median_dt_post_h": 6.858,
+    "mean_x": -0.6531,
+    "n_by_station": {
+     "KEO": 7,
+     "MOSEAN/WHOTS": 5,
+     "Papa": 2,
+     "TAO140W": 1,
+     "TAO165E": 6,
+     "TAO170W": 2
+    },
+    "frac_KEO_Papa": 0.3913
+   },
+   "TM": {
+    "n": 27,
+    "raining_at_transit_W1": 17,
+    "not_raining_W0": 9,
+    "imerg_missing": 1,
+    "frac_raining_of_nonmissing": 0.6538,
+    "median_u_tr": 7.544,
+    "median_dt_post_h": 5.233,
+    "mean_x": -0.1397,
+    "n_by_station": {
+     "BOBOA": 5,
+     "KEO": 6,
+     "MOSEAN/WHOTS": 3,
+     "Papa": 8,
+     "TAO165E": 4,
+     "TAO170W": 1
+    },
+    "frac_KEO_Papa": 0.5185
+   },
+   "TM_gauge_scaled": {
+    "c": 0.7919,
+    "R_scaled": 0.6891,
+    "ci95_station_season_scaled": [
+     -0.99112,
+     4.31271
+    ],
+    "category_scaled": "cannot distinguish"
+   },
+   "EM": {
+    "n": 39,
+    "raining_at_transit_W1": 28,
+    "not_raining_W0": 9,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.7568,
+    "median_u_tr": 7.544,
+    "median_dt_post_h": 5.629,
+    "mean_x": -0.3718,
+    "n_by_station": {
+     "BOBOA": 8,
+     "KEO": 12,
+     "MOSEAN/WHOTS": 6,
+     "Papa": 9,
+     "TAO165E": 3,
+     "TAO170W": 1
+    },
+    "frac_KEO_Papa": 0.5385
+   },
+   "TH": {
+    "n": 39,
+    "raining_at_transit_W1": 29,
+    "not_raining_W0": 8,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.7838,
+    "median_u_tr": 11.358,
+    "median_dt_post_h": 4.951,
+    "mean_x": -0.1757,
+    "n_by_station": {
+     "BOBOA": 6,
+     "KEO": 18,
+     "MOSEAN/WHOTS": 6,
+     "Papa": 8,
+     "TAO165E": 1
+    },
+    "frac_KEO_Papa": 0.6667
+   },
+   "TH_gauge_scaled": {
+    "c": 1.14921,
+    "R_scaled": 3.68567,
+    "ci95_station_season_scaled": [
+     1.3222,
+     6.87194
+    ],
+    "category_scaled": "lower > 0.65: compatible with R2, incompatible with R1"
+   },
+   "EH": {
+    "n": 34,
+    "raining_at_transit_W1": 26,
+    "not_raining_W0": 6,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.8125,
+    "median_u_tr": 11.284,
+    "median_dt_post_h": 4.8,
+    "mean_x": -0.1446,
+    "n_by_station": {
+     "BOBOA": 3,
+     "KEO": 16,
+     "MOSEAN/WHOTS": 5,
+     "Papa": 9,
+     "TAO165E": 1
+    },
+    "frac_KEO_Papa": 0.7353
+   },
+   "B8L": {
+    "n": 47,
+    "raining_at_transit_W1": 31,
+    "not_raining_W0": 14,
+    "imerg_missing": 2,
+    "frac_raining_of_nonmissing": 0.6889,
+    "median_u_tr": 5.412,
+    "median_dt_post_h": 5.858,
+    "mean_x": -0.5512,
+    "n_by_station": {
+     "BOBOA": 4,
+     "KEO": 14,
+     "MOSEAN/WHOTS": 8,
+     "Papa": 10,
+     "TAO140W": 1,
+     "TAO165E": 7,
+     "TAO170W": 3
+    },
+    "frac_KEO_Papa": 0.5106
+   },
+   "B8H": {
+    "n": 49,
+    "raining_at_transit_W1": 34,
+    "not_raining_W0": 12,
+    "imerg_missing": 3,
+    "frac_raining_of_nonmissing": 0.7391,
+    "median_u_tr": 10.976,
+    "median_dt_post_h": 5.629,
+    "mean_x": -0.1741,
+    "n_by_station": {
+     "BOBOA": 7,
+     "KEO": 21,
+     "MOSEAN/WHOTS": 8,
+     "Papa": 10,
+     "TAO165E": 3
+    },
+    "frac_KEO_Papa": 0.6327
+   },
+   "TH_noKEOPapa": {
+    "label": "JPL TH excluding KEO/Papa",
+    "n": 13,
+    "stations": 3,
+    "clusters_station_season": 6,
+    "clusters_station": 3,
+    "sum_num": -7.56394,
+    "sum_den": -1.57183,
+    "R": 4.81218,
+    "ci95_station_season": [
+     1.84058,
+     11.17859
+    ],
+    "ci95_station": [
+     1.56523,
+     10.521
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      2.9594,
+      8.45192
+     ],
+     "se": 3.28805,
+     "t_ci95": [
+      -9.33514,
+      18.9595
+     ]
+    },
+    "slope_through_origin": 3.50472,
+    "slope_ci95_station_season": [
+     0.84459,
+     10.5706
+    ],
+    "p5_gate_met": false,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": false,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   },
+   "B8H_noKEOPapa": {
+    "label": "JPL > 8 m/s excluding KEO/Papa",
+    "n": 18,
+    "stations": 3,
+    "clusters_station_season": 7,
+    "clusters_station": 3,
+    "sum_num": -7.43015,
+    "sum_den": -2.04957,
+    "R": 3.62523,
+    "ci95_station_season": [
+     1.44299,
+     7.16559
+    ],
+    "ci95_station": [
+     1.69842,
+     6.37858
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "jackknife_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      2.70122,
+      5.47321
+     ],
+     "se": 1.68723,
+     "t_ci95": [
+      -3.63433,
+      10.8848
+     ]
+    },
+    "slope_through_origin": 3.19887,
+    "slope_ci95_station_season": [
+     0.93111,
+     7.58291
+    ],
+    "p5_gate_met": false,
+    "kind": "descriptive",
+    "judgement": {
+     "category_code": 2,
+     "category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_cluster_category": "lower > 0.65: compatible with R2, incompatible with R1",
+     "station_same_side": true,
+     "jackknife_category": "cannot distinguish",
+     "jackknife_same_side": false,
+     "ci_ss_contains_0.3": false,
+     "ci_ss_contains_1": false,
+     "ci_st_contains_0.3": false,
+     "ci_st_contains_1": false,
+     "jk_contains_0.3": true,
+     "jk_contains_1": true
+    }
+   }
+  }
+ },
+ "reading_TH": {
+  "RSS": "satellite ratios still exceed in strong wind; the satellite excess cannot be explained by a near-surface lens",
+  "JPL": "satellite ratios still exceed in strong wind; the satellite excess cannot be explained by a near-surface lens"
+ },
+ "overall": {
+  "code": "M-A",
+  "text": "both chains still exceed in the strong-wind class (lower bound > 0.65) -> the satellite excess cannot be explained by a near-surface freshwater lens",
+  "sensitivity_B8H": {
+   "RSS": "satellite ratios still exceed in strong wind; the satellite excess cannot be explained by a near-surface lens",
+   "JPL": "strong-wind class cannot distinguish"
+  },
+  "sensitivity_EH": {
+   "RSS": "satellite ratios still exceed in strong wind; the satellite excess cannot be explained by a near-surface lens",
+   "JPL": "strong-wind class cannot distinguish"
+  }
+ }
+}

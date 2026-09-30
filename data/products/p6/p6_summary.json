@@ -1,0 +1,622 @@
+{
+ "version": "p6-2026-09-27a",
+ "code_sha256": {
+  "p6_spurs2_profile.py": "407d2ae245124f779b487fa6ecc5d8b4c22f5a5039acb4293173b42a1311f683",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213"
+ },
+ "data_meta": {
+  "files": {
+   "RR1610": {
+    "met": "SPURS2_METEO/SPURS2_RR1610_WHOI_Met.nc",
+    "snake": "SPURS2_SALINITYSNAKE/SPURS2_RR1610_Salinity_Snake.nc",
+    "ssp": "SPURS2_SSP/SPURS2_RR1610_SSP.nc"
+   },
+   "RR1720": {
+    "met": "SPURS2_METEO/SPURS2_RR1720_WHOI_Met.nc",
+    "snake": "SPURS2_SALINITYSNAKE/SPURS2_RR1720_Salinity_Snake.nc",
+    "ssp": "SPURS2_SSP/SPURS2_RR1720_SSP.nc"
+   }
+  },
+  "moor_depth_index": 0
+ },
+ "primary": {
+  "cfg": {
+   "name": "primary",
+   "dry_h": 6,
+   "thr": 10.0,
+   "win": [
+    0,
+    6
+   ],
+   "sfc": "snake",
+   "z_sfc": 0.0,
+   "t_cur": 1.0,
+   "disp_max": null,
+   "min_hours": 1
+  },
+  "n_events_all": 29,
+  "dropped": {},
+  "R_sfc": {
+   "n": 29,
+   "sum_obs": -3.81898,
+   "sum_rim": -10.49584,
+   "point": 0.36386,
+   "clusters": 8,
+   "ci95_cluster": [
+    0.15031,
+    0.60703
+   ],
+   "ci95_event": [
+    0.07987,
+    0.67032
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "evaluable": true,
+   "evaluable_conditions": {
+    "n>=15": true,
+    "clusters>=4": true,
+    "each_cruise>=3": true,
+    "frac_den_nonneg<=0.01": true
+   },
+   "per_cruise": {
+    "RR1610": 15,
+    "RR1720": 14
+   },
+   "loo_cruise": {
+    "drop_RR1610": 0.55318,
+    "drop_RR1720": 0.20203
+   }
+  },
+  "R_rel5": {
+   "n": 29,
+   "sum_obs": -3.70213,
+   "sum_rim": -9.84714,
+   "point": 0.37596,
+   "clusters": 8,
+   "ci95_cluster": [
+    0.25721,
+    0.52762
+   ],
+   "ci95_event": [
+    0.20724,
+    0.64323
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)"
+  },
+  "judgement": {
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "rule": "section 6, rule 2",
+   "robust": "depends on cluster definition",
+   "advection": "same class after advection correction"
+  }
+ },
+ "verdict": {
+  "category": "supports R1 (surface also significantly smaller than RIM-3)",
+  "rule": "section 6, rule 2",
+  "robust": "depends on cluster definition",
+  "advection": "same class after advection correction"
+ },
+ "profile_R_by_layer": {
+  "snake": {
+   "n": 29,
+   "sum_obs": -3.81898,
+   "sum_rim": -10.49584,
+   "point": 0.36386,
+   "clusters": 8,
+   "ci95_cluster": [
+    0.15031,
+    0.60703
+   ],
+   "ci95_event": [
+    0.07987,
+    0.67032
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "z_model": 0.0
+  },
+  "ssp005": {
+   "n": 7,
+   "sum_obs": -1.76543,
+   "sum_rim": -2.92865,
+   "point": 0.60281,
+   "clusters": 7,
+   "ci95_cluster": [
+    -0.29178,
+    1.48148
+   ],
+   "ci95_event": [
+    -0.29178,
+    1.48148
+   ],
+   "frac_boot_den_nonneg": 0.0006,
+   "z_model": 0.05
+  },
+  "ssp012": {
+   "n": 9,
+   "sum_obs": -1.32582,
+   "sum_rim": -3.16353,
+   "point": 0.41909,
+   "clusters": 7,
+   "ci95_cluster": [
+    -0.36721,
+    1.15939
+   ],
+   "ci95_event": [
+    -0.49369,
+    1.01531
+   ],
+   "frac_boot_den_nonneg": 0.0012,
+   "z_model": 0.12
+  },
+  "ssp023": {
+   "n": 9,
+   "sum_obs": -0.76366,
+   "sum_rim": -3.09378,
+   "point": 0.24684,
+   "clusters": 7,
+   "ci95_cluster": [
+    -0.41566,
+    0.99224
+   ],
+   "ci95_event": [
+    -0.54651,
+    0.86331
+   ],
+   "frac_boot_den_nonneg": 0.0012,
+   "z_model": 0.23
+  },
+  "ssp054": {
+   "n": 9,
+   "sum_obs": -0.34347,
+   "sum_rim": -2.75213,
+   "point": 0.1248,
+   "clusters": 7,
+   "ci95_cluster": [
+    -0.54149,
+    0.99833
+   ],
+   "ci95_event": [
+    -0.68963,
+    0.84865
+   ],
+   "frac_boot_den_nonneg": 0.0012,
+   "z_model": 0.54
+  },
+  "ssp110": {
+   "n": 9,
+   "sum_obs": -0.16017,
+   "sum_rim": -1.8833,
+   "point": 0.08505,
+   "clusters": 7,
+   "ci95_cluster": [
+    -0.82241,
+    1.37203
+   ],
+   "ci95_event": [
+    -1.05007,
+    1.17674
+   ],
+   "frac_boot_den_nonneg": 0.0012,
+   "z_model": 1.1
+  },
+  "usps2": {
+   "n": 29,
+   "sum_obs": -2.45332,
+   "sum_rim": -4.30659,
+   "point": 0.56967,
+   "clusters": 8,
+   "ci95_cluster": [
+    0.16236,
+    1.16892
+   ],
+   "ci95_event": [
+    -0.06432,
+    1.21931
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "z_model": 2.0
+  },
+  "usps3": {
+   "n": 29,
+   "sum_obs": -1.86737,
+   "sum_rim": -2.41744,
+   "point": 0.77246,
+   "clusters": 8,
+   "ci95_cluster": [
+    0.11711,
+    1.97912
+   ],
+   "ci95_event": [
+    -0.37302,
+    1.94831
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "z_model": 3.0
+  },
+  "tsg5": {
+   "n": 29,
+   "sum_obs": -0.01335,
+   "sum_rim": -0.65775,
+   "point": 0.02029,
+   "clusters": 8,
+   "ci95_cluster": [
+    -1.68898,
+    4.76314
+   ],
+   "ci95_event": [
+    -6.94876,
+    5.32704
+   ],
+   "frac_boot_den_nonneg": 0.0055,
+   "z_model": 5.0
+  }
+ },
+ "rain_vs_dry": {
+  "rain": {
+   "n": 29,
+   "sum_obs": -4.24076,
+   "sum_rim": -11.99507,
+   "point": 0.35354,
+   "clusters": 8,
+   "ci95_cluster": [
+    0.09476,
+    0.60131
+   ],
+   "ci95_event": [
+    0.08141,
+    0.64588
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "hours": 123
+  },
+  "dry": {
+   "n": 29,
+   "sum_obs": -0.8715,
+   "sum_rim": -8.74343,
+   "point": 0.09967,
+   "clusters": 8,
+   "ci95_cluster": [
+    -0.15584,
+    0.30296
+   ],
+   "ci95_event": [
+    -0.27167,
+    0.45605
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "hours": 209
+  },
+  "paired": {
+   "n": 29,
+   "clusters": 8,
+   "R_rain": 0.35354,
+   "R_dry": 0.09967,
+   "ln_ratio": 1.26609,
+   "ln_ratio_ci95": [
+    0.14858,
+    3.4092
+   ]
+  },
+  "reading": "G1: in situ surface freshening during rain is smaller than RIM-3; the P5 in-rain overpass ratio 1.98 is not reproduced in situ"
+ },
+ "layer_ratio_and_Q_ssp_subset": {
+  "n": 9,
+  "clusters": 7,
+  "R_sfc": 0.32079,
+  "R_sfc_ci95": [
+   -0.33018,
+   1.18184
+  ],
+  "R_1m": 0.08505,
+  "R_1m_ci95": [
+   -0.82241,
+   1.37203
+  ],
+  "Q": 3.77183,
+  "Q_ci95": [
+   -8.11476,
+   10.59333
+  ],
+  "layer_ratio_obs": 7.53518,
+  "layer_ratio_obs_ci95": [
+   -14.46668,
+   20.78494
+  ],
+  "layer_ratio_rim": 1.99775,
+  "layer_ratio_rim_ci95": [
+   1.15361,
+   2.7446
+  ],
+  "ssp_internal_012_vs_110": {
+   "n": 9,
+   "clusters": 7,
+   "layer_ratio_obs": 8.27738,
+   "ci95": [
+    -16.51767,
+    23.87855
+   ],
+   "layer_ratio_rim": 1.67978,
+   "rim_ci95": [
+    1.12782,
+    2.25802
+   ],
+   "R_012": 0.41909,
+   "R_012_ci95": [
+    -0.36721,
+    1.15939
+   ]
+  }
+ },
+ "R_1m_ssp": {
+  "n": 9,
+  "sum_obs": -0.16017,
+  "sum_rim": -1.8833,
+  "point": 0.08505,
+  "clusters": 7,
+  "ci95_cluster": [
+   -0.82241,
+   1.37203
+  ],
+  "ci95_event": [
+   -1.05007,
+   1.17674
+  ],
+  "frac_boot_den_nonneg": 0.0012
+ },
+ "R_1m_mooring": {
+  "n": 54,
+  "sum_obs": -4.26655,
+  "sum_rim": -16.14372,
+  "point": 0.26429,
+  "clusters": 14,
+  "ci95_cluster": [
+   0.13097,
+   0.39717
+  ],
+  "ci95_event": [
+   0.15153,
+   0.36569
+  ],
+  "frac_boot_den_nonneg": 0.0,
+  "events_all": 54,
+  "dropped": {},
+  "def": "as P1: 10 mm, 24 h dry period, 0.4 mm/h; window [0,6) h; clusters = calendar months",
+  "reading": "same side as P2 (CI upper bound < 0.65)"
+ },
+ "R_1m_mooring_dry6_info": {
+  "n": 144,
+  "sum_obs": -12.84866,
+  "sum_rim": -41.52167,
+  "point": 0.30944,
+  "clusters": 15,
+  "ci95_cluster": [
+   0.23771,
+   0.39451
+  ],
+  "ci95_event": [
+   0.24519,
+   0.38175
+  ],
+  "frac_boot_den_nonneg": 0.0
+ },
+ "sensitivity": {
+  "S1_dry24": {
+   "n": 10,
+   "clusters": 7,
+   "point": 0.1838,
+   "ci95_cluster": [
+    -0.66471,
+    0.75286
+   ],
+   "evaluable": false,
+   "category": "not evaluable",
+   "same_as_primary": false,
+   "R_rel5": {
+    "n": 10,
+    "point": 0.24969,
+    "ci95_cluster": [
+     0.04941,
+     0.50644
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S2_dry12": {
+   "n": 19,
+   "clusters": 8,
+   "point": 0.25498,
+   "ci95_cluster": [
+    -0.035,
+    0.56912
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 19,
+    "point": 0.26771,
+    "ci95_cluster": [
+     0.12288,
+     0.43373
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S3_thr5": {
+   "n": 42,
+   "clusters": 9,
+   "point": 0.28697,
+   "ci95_cluster": [
+    0.12124,
+    0.49207
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 42,
+    "point": 0.31109,
+    "ci95_cluster": [
+     0.20946,
+     0.46148
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S4_win0_3": {
+   "n": 29,
+   "clusters": 8,
+   "point": 0.5151,
+   "ci95_cluster": [
+    0.2414,
+    0.81181
+   ],
+   "evaluable": true,
+   "category": "cannot distinguish",
+   "same_as_primary": false,
+   "R_rel5": {
+    "n": 29,
+    "point": 0.51084,
+    "ci95_cluster": [
+     0.30005,
+     0.6986
+    ],
+    "category": "cannot distinguish"
+   }
+  },
+  "S5_win0_12": {
+   "n": 29,
+   "clusters": 8,
+   "point": 0.25114,
+   "ci95_cluster": [
+    0.01239,
+    0.45061
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 29,
+    "point": 0.30076,
+    "ci95_cluster": [
+     0.21671,
+     0.39405
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S6_disp30": {
+   "n": 5,
+   "clusters": 3,
+   "point": 0.41438,
+   "ci95_cluster": [
+    -0.6891,
+    0.50765
+   ],
+   "evaluable": false,
+   "category": "not evaluable",
+   "same_as_primary": false,
+   "R_rel5": {
+    "n": 5,
+    "point": 0.42964,
+    "ci95_cluster": [
+     0.21173,
+     0.47235
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S7_snake_met": {
+   "n": 29,
+   "clusters": 8,
+   "point": 0.36354,
+   "ci95_cluster": [
+    0.15103,
+    0.60645
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 29,
+    "point": 0.37658,
+    "ci95_cluster": [
+     0.26007,
+     0.52547
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S8_z0015": {
+   "n": 29,
+   "clusters": 8,
+   "point": 0.37597,
+   "ci95_cluster": [
+    0.15392,
+    0.63015
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 29,
+    "point": 0.38934,
+    "ci95_cluster": [
+     0.26426,
+     0.545
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S9_tcur1800": {
+   "n": 29,
+   "clusters": 8,
+   "point": 0.36386,
+   "ci95_cluster": [
+    0.15031,
+    0.60703
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 29,
+    "point": 0.37699,
+    "ci95_cluster": [
+     0.25837,
+     0.52893
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  },
+  "S10_min4h": {
+   "n": 27,
+   "clusters": 8,
+   "point": 0.36984,
+   "ci95_cluster": [
+    0.14199,
+    0.60685
+   ],
+   "evaluable": true,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)",
+   "same_as_primary": true,
+   "R_rel5": {
+    "n": 27,
+    "point": 0.38112,
+    "ci95_cluster": [
+     0.26072,
+     0.53204
+    ],
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   }
+  }
+ },
+ "disp_km_primary": {
+  "median": 57.96384,
+  "max": 135.77685
+ },
+ "elapsed_s": 4.0
+}

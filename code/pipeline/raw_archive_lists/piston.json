@@ -1,0 +1,1739 @@
+{
+ "name": "piston",
+ "built": "2026-09-27T10:40:36+00:00",
+ "source": "CMR granules.umm_json（公开元数据，无 token）；ASDC Size×SizeUnit(2^n) 换算整数字节",
+ "rel_prefix": "piston",
+ "collections": {
+  "PISTON-ONR-NOAA_RVThompson_2018": {
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granules_in_collection": 1891,
+   "granules": 28,
+   "files": 28,
+   "bytes": 443374339
+  },
+  "PISTON-ONR-NOAA_RVSallyRide_2019": {
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granules_in_collection": 787,
+   "granules": 12,
+   "files": 12,
+   "bytes": 232151281
+  }
+ },
+ "n_files": 40,
+ "total_bytes": 675525620,
+ "files": [
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "PISTON-nav-met-sea-1min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/PISTON-nav-met-sea-1min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/PISTON-nav-met-sea-1min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "bytes": 15995276,
+   "md5": "fc30529299ed8a2f048cd489a6e59ac2",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-06T05:00:00+00:00",
+    "2019-09-25T11:59:00+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "PISTON-nav-met-sea-flux-10min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/PISTON-nav-met-sea-flux-10min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/PISTON-nav-met-sea-flux-10min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "bytes": 2579822,
+   "md5": "5522ec03d0f7b2d6179253848a87bc0e",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-06T05:00:00+00:00",
+    "2019-09-25T11:49:59+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "PISTON-nav-met-sea-flux-60min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/PISTON-nav-met-sea-flux-60min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/PISTON-nav-met-sea-flux-60min_RV-Sally-Ride_20190906_R1_thru_20190925.nc",
+   "bytes": 672262,
+   "md5": "7bdafa3d98bbe3cdfcd21d578298e4c9",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-06T05:00:00+00:00",
+    "2019-09-25T11:00:00+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "PISTON-rosr_RV-Sally-Ride_20190906_R0_thru_20190925.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/PISTON-rosr_RV-Sally-Ride_20190906_R0_thru_20190925.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/PISTON-rosr_RV-Sally-Ride_20190906_R0_thru_20190925.nc",
+   "bytes": 162176,
+   "md5": "6f3499fb43dfd3fe01801ae85711aa6e",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-06T05:02:43+00:00",
+    "2019-09-25T11:59:13+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Sally-Ride_20190905152420_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-CTD_RV-Sally-Ride_20190905152420_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-CTD_RV-Sally-Ride_20190905152420_R0.nc",
+   "bytes": 2272443,
+   "md5": "39d309442d16e2dd03ea7f9d4a803ea4",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-05T00:00:00+00:00",
+    "2019-09-05T23:23:59+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Sally-Ride_20190906151944_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-CTD_RV-Sally-Ride_20190906151944_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-CTD_RV-Sally-Ride_20190906151944_R0.nc",
+   "bytes": 2198715,
+   "md5": "24b7714da8ed004ceacdc17f69b4ce03",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-06T00:00:00+00:00",
+    "2019-09-06T23:23:59+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Sally-Ride_20190907040827_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-CTD_RV-Sally-Ride_20190907040827_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-CTD_RV-Sally-Ride_20190907040827_R0.nc",
+   "bytes": 2230251,
+   "md5": "704245248c5981b748ca68f00a176bd0",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-07T00:00:00+00:00",
+    "2019-09-07T23:23:59+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-Chameleon_RV-Sally-Ride_20190907_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-Chameleon_RV-Sally-Ride_20190907_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-Chameleon_RV-Sally-Ride_20190907_R0.nc",
+   "bytes": 96504247,
+   "md5": "e6e7381e773c5faa31f7e1dae7979f7d",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-07T06:16:01+00:00",
+    "2019-09-24T10:49:16+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-Chameleon_RV-Sally-Ride_20190907_R1.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-Chameleon_RV-Sally-Ride_20190907_R1.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-Chameleon_RV-Sally-Ride_20190907_R1.nc",
+   "bytes": 96509543,
+   "md5": "f1e8e4c0747800f98f5cdef0fdc90b42",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-07T06:16:01+00:00",
+    "2019-09-24T10:49:16+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-SurfOtter_RV-Sally-Ride_20190907_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SurfOtter_RV-Sally-Ride_20190907_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SurfOtter_RV-Sally-Ride_20190907_R0.nc",
+   "bytes": 5304582,
+   "md5": "e0f58fb7f6a1d68c54f98118961f1201",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-07T06:00:30+00:00",
+    "2019-09-12T07:59:30+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-SurfOtter_RV-Sally-Ride_20190913_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SurfOtter_RV-Sally-Ride_20190913_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SurfOtter_RV-Sally-Ride_20190913_R0.nc",
+   "bytes": 4231782,
+   "md5": "5a8da4c3d9a13a853c543eba93a5ff42",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-13T08:20:30+00:00",
+    "2019-09-17T09:29:30+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+   "concept_id": "C3880791409-LARC_CLOUD",
+   "granule": "piston-SurfOtter_RV-Sally-Ride_20190921_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SurfOtter_RV-Sally-Ride_20190921_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SurfOtter_RV-Sally-Ride_20190921_R0.nc",
+   "bytes": 3490182,
+   "md5": "274ddf7353b9b84fbd91ff446e7a77e3",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2019-09-21T03:10:30+00:00",
+    "2019-09-24T11:09:30+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "PISTON-disdrometer_RV-Thompson_20180910_R0_thru_20181012.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/PISTON-disdrometer_RV-Thompson_20180910_R0_thru_20181012.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/PISTON-disdrometer_RV-Thompson_20180910_R0_thru_20181012.nc",
+   "bytes": 122556004,
+   "md5": "8349b30c212e1863c141811c28ca3ae8",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-10T02:53:49+00:00",
+    "2018-10-13T23:13:53+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "PISTON-nav-met-sea-1min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/PISTON-nav-met-sea-1min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/PISTON-nav-met-sea-1min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "bytes": 41042640,
+   "md5": "6a0d26bb73cad0eba82ad05c46e3f932",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-19T09:00:00+00:00",
+    "2018-10-13T00:00:00+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "PISTON-nav-met-sea-flux-10min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/PISTON-nav-met-sea-flux-10min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/PISTON-nav-met-sea-flux-10min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "bytes": 6211674,
+   "md5": "ba6a0cf61421192b2ec62f5fa3726694",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-19T09:00:00+00:00",
+    "2018-10-13T23:50:00+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "PISTON-nav-met-sea-flux-60min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/PISTON-nav-met-sea-flux-60min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/PISTON-nav-met-sea-flux-60min_RV-Thompson_20180819_R1_thru_20181012.nc",
+   "bytes": 1283330,
+   "md5": "58ef807ce1e37e7bbb985550b35f8ee8",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-19T00:00:00+00:00",
+    "2018-10-12T23:00:00+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "PISTON-rosr_RV-Thompson_20180819_R0_thru_20181012.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/PISTON-rosr_RV-Thompson_20180819_R0_thru_20181012.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/PISTON-rosr_RV-Thompson_20180819_R0_thru_20181012.nc",
+   "bytes": 364952,
+   "md5": "6086f947a4520a1eada615ae6fd8f609",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-19T09:04:52+00:00",
+    "2018-10-13T23:57:44+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180823044301R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180823044301R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180823044301R0.nc",
+   "bytes": 6156265,
+   "md5": "69b5aee3cd42d043caed3bcbc8b2e521",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-23T04:43:01+00:00",
+    "2018-08-23T04:43:02+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180823174557R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180823174557R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180823174557R0.nc",
+   "bytes": 6119833,
+   "md5": "5a0e6666c4aa4a580838ef5756ecd72c",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-23T17:45:57+00:00",
+    "2018-08-23T17:45:58+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180824094623R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180824094623R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180824094623R0.nc",
+   "bytes": 3885961,
+   "md5": "fc73c44790b62f8b027e469089ccd424",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-24T09:46:23+00:00",
+    "2018-08-24T09:46:24+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180826063410R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180826063410R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180826063410R0.nc",
+   "bytes": 4690345,
+   "md5": "56cef5bc96ed28a377d8ff5be82ec249",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-26T06:34:10+00:00",
+    "2018-08-26T06:34:11+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180828044017R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180828044017R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180828044017R0.nc",
+   "bytes": 5365849,
+   "md5": "f79d919bc7e1ba1c191165a40c8be891",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-28T04:40:17+00:00",
+    "2018-08-28T04:40:18+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180828221744R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180828221744R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180828221744R0.nc",
+   "bytes": 5621737,
+   "md5": "b267477b378e540d87aa92886a3b98b5",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-28T22:17:44+00:00",
+    "2018-08-28T22:17:45+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180830015142R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180830015142R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180830015142R0.nc",
+   "bytes": 5722681,
+   "md5": "1ae29afc0914f31f8e1425a795bd9cde",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-30T01:51:42+00:00",
+    "2018-08-30T01:51:43+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180914181947R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180914181947R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180914181947R0.nc",
+   "bytes": 769945,
+   "md5": "913f27f81c7e96103dea897d9b2b8c9b",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-14T18:19:47+00:00",
+    "2018-09-14T18:19:48+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180916061302R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180916061302R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180916061302R0.nc",
+   "bytes": 779737,
+   "md5": "25452279952e7bc954797fadc0d86170",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-16T06:13:02+00:00",
+    "2018-09-16T06:13:03+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180916120318R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180916120318R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180916120318R0.nc",
+   "bytes": 4594441,
+   "md5": "921c4211a6505e107846a71678ecbd23",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-16T12:03:18+00:00",
+    "2018-09-16T12:03:19+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180916203314R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180916203314R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180916203314R0.nc",
+   "bytes": 4618057,
+   "md5": "d21ee9a08445d139175c14d1fbf21687",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-16T20:33:14+00:00",
+    "2018-09-16T20:33:15+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180916220222R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180916220222R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180916220222R0.nc",
+   "bytes": 76585,
+   "md5": "517fc0d31905db32d32be1be4059dfb7",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-16T22:02:22+00:00",
+    "2018-09-16T22:02:23+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180917230612R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180917230612R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180917230612R0.nc",
+   "bytes": 4563625,
+   "md5": "8d6f2f159ecb904af0689044e74126a2",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-17T23:06:12+00:00",
+    "2018-09-17T23:06:13+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180919050526R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180919050526R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180919050526R0.nc",
+   "bytes": 5001529,
+   "md5": "77aac246c67161733525420a529b460a",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-19T05:05:26+00:00",
+    "2018-09-19T05:05:27+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20180921072640R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20180921072640R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20180921072640R0.nc",
+   "bytes": 779161,
+   "md5": "4ad1eee57b04d3e6b44fab1b9b6835c1",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-21T07:26:40+00:00",
+    "2018-09-21T07:26:41+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20181008053854R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20181008053854R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20181008053854R0.nc",
+   "bytes": 781177,
+   "md5": "d60b1506d36987ed8b5a612887335c0f",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-10-08T05:38:54+00:00",
+    "2018-10-08T05:38:55+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-CTD_RV-Thompson_20181009094043R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-CTD_RV-Thompson_20181009094043R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-CTD_RV-Thompson_20181009094043R0.nc",
+   "bytes": 781609,
+   "md5": "d01270f52648031319202a301a8007cd",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-10-09T09:40:43+00:00",
+    "2018-10-09T09:40:44+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-Chameleon_RV-Thompson_20180824_R2.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-Chameleon_RV-Thompson_20180824_R2.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-Chameleon_RV-Thompson_20180824_R2.nc",
+   "bytes": 61740189,
+   "md5": "56d7e8a5cace3c4cf320819d29ef1b56",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-24T21:11:18+00:00",
+    "2018-09-07T21:39:31+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-Chameleon_RV-Thompson_20180921_R1.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-Chameleon_RV-Thompson_20180921_R1.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-Chameleon_RV-Thompson_20180921_R1.nc",
+   "bytes": 134640597,
+   "md5": "f059bd699cf68fe97a7649fb1dd8900d",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-21T10:04:35+00:00",
+    "2018-10-11T07:35:22+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-SurfOtter_RV-Thompson_20180830_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SurfOtter_RV-Thompson_20180830_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SurfOtter_RV-Thompson_20180830_R0.nc",
+   "bytes": 1121212,
+   "md5": "a74f0ee063aa416836a4fabbf8050ac2",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-30T13:50:30+00:00",
+    "2018-09-01T16:09:30+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-SurfOtter_RV-Thompson_20180922_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SurfOtter_RV-Thompson_20180922_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SurfOtter_RV-Thompson_20180922_R0.nc",
+   "bytes": 7302644,
+   "md5": "025c2250d2e56190297653bfbba71034",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-09-22T10:40:30+00:00",
+    "2018-09-30T03:19:30+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-SurfOtter_RV-Thompson_20181003_R0.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SurfOtter_RV-Thompson_20181003_R0.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SurfOtter_RV-Thompson_20181003_R0.nc",
+   "bytes": 2762412,
+   "md5": "7d17dc29aa5cf6c18b51dcc46d81522a",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-10-03T08:20:30+00:00",
+    "2018-10-08T04:19:30+00:00"
+   ]
+  },
+  {
+   "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+   "concept_id": "C3880791367-LARC_CLOUD",
+   "granule": "piston-uctd_RV-Thompson_20180823_R0_thru_20180916.nc",
+   "kind": "data",
+   "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-uctd_RV-Thompson_20180823_R0_thru_20180916.nc",
+   "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-uctd_RV-Thompson_20180823_R0_thru_20180916.nc",
+   "bytes": 4040148,
+   "md5": "44960eb46071f6dad5aee3e482dc95b0",
+   "production": "2023-01-09T16:01:42+00:00",
+   "time": [
+    "2018-08-23T05:41:08+00:00",
+    "2018-09-16T05:39:21+00:00"
+   ]
+  }
+ ],
+ "keep_regex": "(SurfOtter|nav-met-sea|disdrometer|rosr|uctd|piston-CTD|Chameleon)",
+ "listed_not_downloaded": {
+  "regex": "SEAPOL",
+  "reason": "SEA-POL C 波段雷达网格与快视图体量大（约 10 GB），先只列清单不下",
+  "n_files": 69,
+  "bytes_approx": 10063934713,
+  "files": [
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180820-20181009_quicklooks.tar.gz",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180820-20181009_quicklooks.tar.gz",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180820-20181009_quicklooks.tar.gz",
+    "bytes": 546385470,
+    "md5": "a035837e9348131275ae7761aaf41742",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-20T00:00:00+00:00",
+     "2018-10-09T23:59:59+00:00"
+    ],
+    "bytes_approx": 546385470
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180820003132_R2_grid_thru20180820234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180820003132_R2_grid_thru20180820234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180820003132_R2_grid_thru20180820234505.tar",
+    "bytes": 15820800,
+    "md5": "ea9384c24d7229e15435bc8b63c092db",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-20T00:00:00+00:00",
+     "2018-08-20T23:59:59+00:00"
+    ],
+    "bytes_approx": 15820800
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180821000006_R2_grid_thru20180821233002.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180821000006_R2_grid_thru20180821233002.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180821000006_R2_grid_thru20180821233002.tar",
+    "bytes": 28784640,
+    "md5": "d71529d8b9a2b2acf83d86c87d78b089",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-21T00:00:00+00:00",
+     "2018-08-21T23:59:59+00:00"
+    ],
+    "bytes_approx": 28784640
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180822003004_R2_grid_thru20180822234502.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180822003004_R2_grid_thru20180822234502.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180822003004_R2_grid_thru20180822234502.tar",
+    "bytes": 139274240,
+    "md5": "4a8910fdebb88916b989e820ba3f8d45",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-22T00:00:00+00:00",
+     "2018-08-22T23:59:59+00:00"
+    ],
+    "bytes_approx": 139274240
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180823000003_R2_grid_thru20180823234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180823000003_R2_grid_thru20180823234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180823000003_R2_grid_thru20180823234504.tar",
+    "bytes": 144445440,
+    "md5": "721c716bd0ccf16b1e8d75a8011c732b",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-23T00:00:00+00:00",
+     "2018-08-23T23:59:59+00:00"
+    ],
+    "bytes_approx": 144445440
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180824000002_R2_grid_thru20180824235233.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180824000002_R2_grid_thru20180824235233.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180824000002_R2_grid_thru20180824235233.tar",
+    "bytes": 353300480,
+    "md5": "85568ca8588ab20f549c1de61123e632",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-24T00:00:00+00:00",
+     "2018-08-24T23:59:59+00:00"
+    ],
+    "bytes_approx": 353300480
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180825000003_R2_grid_thru20180825235232.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180825000003_R2_grid_thru20180825235232.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180825000003_R2_grid_thru20180825235232.tar",
+    "bytes": 220815360,
+    "md5": "f2fa2aa8600dbac01f5ad74153d18d0a",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-25T00:00:00+00:00",
+     "2018-08-25T23:59:59+00:00"
+    ],
+    "bytes_approx": 220815360
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180826000003_R2_grid_thru20180826234506.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180826000003_R2_grid_thru20180826234506.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180826000003_R2_grid_thru20180826234506.tar",
+    "bytes": 99358720,
+    "md5": "adad7dc2f78624f78692c185eea15102",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-26T00:00:00+00:00",
+     "2018-08-26T23:59:59+00:00"
+    ],
+    "bytes_approx": 99358720
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180827000736_R2_grid_thru20180827235236.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180827000736_R2_grid_thru20180827235236.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180827000736_R2_grid_thru20180827235236.tar",
+    "bytes": 146145280,
+    "md5": "4a1c864d686fed9bc7a592df19bde1d1",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-27T00:00:00+00:00",
+     "2018-08-27T23:59:59+00:00"
+    ],
+    "bytes_approx": 146145280
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180828000006_R2_grid_thru20180828234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180828000006_R2_grid_thru20180828234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180828000006_R2_grid_thru20180828234505.tar",
+    "bytes": 220303360,
+    "md5": "ce775e36a9219d20db67e547e9b88a32",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-28T00:00:00+00:00",
+     "2018-08-28T23:59:59+00:00"
+    ],
+    "bytes_approx": 220303360
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180829000005_R2_grid_thru20180829234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180829000005_R2_grid_thru20180829234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180829000005_R2_grid_thru20180829234505.tar",
+    "bytes": 135505920,
+    "md5": "72396f55a1b7377b3d14fc678a0a4c6b",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-29T00:00:00+00:00",
+     "2018-08-29T23:59:59+00:00"
+    ],
+    "bytes_approx": 135505920
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180830000010_R2_grid_thru20180830234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180830000010_R2_grid_thru20180830234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180830000010_R2_grid_thru20180830234505.tar",
+    "bytes": 59627520,
+    "md5": "6977bc75b117bc312ad1e5f6ad189e6e",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-30T00:00:00+00:00",
+     "2018-08-30T23:59:59+00:00"
+    ],
+    "bytes_approx": 59627520
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180831000006_R2_grid_thru20180831234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180831000006_R2_grid_thru20180831234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180831000006_R2_grid_thru20180831234504.tar",
+    "bytes": 64378880,
+    "md5": "0eda27dd80fef972a4bca3d9ae929b40",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-08-31T00:00:00+00:00",
+     "2018-08-31T23:59:59+00:00"
+    ],
+    "bytes_approx": 64378880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180901000012_R2_grid_thru20180901234506.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180901000012_R2_grid_thru20180901234506.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180901000012_R2_grid_thru20180901234506.tar",
+    "bytes": 102737920,
+    "md5": "2e3afc335de637c6e99ef484edca53e2",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-01T00:00:00+00:00",
+     "2018-09-01T23:59:59+00:00"
+    ],
+    "bytes_approx": 102737920
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180902000006_R2_grid_thru20180902234506.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180902000006_R2_grid_thru20180902234506.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180902000006_R2_grid_thru20180902234506.tar",
+    "bytes": 281958400,
+    "md5": "ccabff510cdaa6c298a509adaa414d0a",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-02T00:00:00+00:00",
+     "2018-09-02T23:59:59+00:00"
+    ],
+    "bytes_approx": 281958400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180903000008_R2_grid_thru20180903234506.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180903000008_R2_grid_thru20180903234506.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180903000008_R2_grid_thru20180903234506.tar",
+    "bytes": 515706880,
+    "md5": "c088f1ec3343a8a98b422e07db075458",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-03T00:00:00+00:00",
+     "2018-09-03T23:59:59+00:00"
+    ],
+    "bytes_approx": 515706880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180904000007_R2_grid_thru20180904234510.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180904000007_R2_grid_thru20180904234510.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180904000007_R2_grid_thru20180904234510.tar",
+    "bytes": 329850880,
+    "md5": "6e791885a5ceeff62024a1e2e335affd",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-04T00:00:00+00:00",
+     "2018-09-04T23:59:59+00:00"
+    ],
+    "bytes_approx": 329850880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180905000006_R2_grid_thru20180905234503.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180905000006_R2_grid_thru20180905234503.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180905000006_R2_grid_thru20180905234503.tar",
+    "bytes": 121313280,
+    "md5": "03f7f1233c485e47d61051eead0bc064",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-05T00:00:00+00:00",
+     "2018-09-05T23:59:59+00:00"
+    ],
+    "bytes_approx": 121313280
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180906000003_R2_grid_thru20180906234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180906000003_R2_grid_thru20180906234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180906000003_R2_grid_thru20180906234505.tar",
+    "bytes": 40570880,
+    "md5": "13c895117cf9d3835df8bd9843f7dc7d",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-06T00:00:00+00:00",
+     "2018-09-06T23:59:59+00:00"
+    ],
+    "bytes_approx": 40570880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180907000004_R2_grid_thru20180907194505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180907000004_R2_grid_thru20180907194505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180907000004_R2_grid_thru20180907194505.tar",
+    "bytes": 195307520,
+    "md5": "194f940d032decc0ce7343594a47d9c0",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-07T00:00:00+00:00",
+     "2018-09-07T23:59:59+00:00"
+    ],
+    "bytes_approx": 195307520
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180908004842_R2_grid_thru20180908234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180908004842_R2_grid_thru20180908234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180908004842_R2_grid_thru20180908234505.tar",
+    "bytes": 181882880,
+    "md5": "f20a2b3cd687798a7b3d43021b53b1c5",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-08T00:00:00+00:00",
+     "2018-09-08T23:59:59+00:00"
+    ],
+    "bytes_approx": 181882880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180914033845_R2_grid_thru20180914230718.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180914033845_R2_grid_thru20180914230718.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180914033845_R2_grid_thru20180914230718.tar",
+    "bytes": 1699840,
+    "md5": "27e24651b43b7bc4e639685a306d126a",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-14T00:00:00+00:00",
+     "2018-09-14T23:59:59+00:00"
+    ],
+    "bytes_approx": 1699840
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180915000007_R2_grid_thru20180915234634.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180915000007_R2_grid_thru20180915234634.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180915000007_R2_grid_thru20180915234634.tar",
+    "bytes": 67440640,
+    "md5": "4f0a586003223da609839d30d03ce0db",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-15T00:00:00+00:00",
+     "2018-09-15T23:59:59+00:00"
+    ],
+    "bytes_approx": 67440640
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180916000005_R2_grid_thru20180916234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180916000005_R2_grid_thru20180916234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180916000005_R2_grid_thru20180916234504.tar",
+    "bytes": 68833280,
+    "md5": "245d33f61492322f0a72c87783cfd428",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-16T00:00:00+00:00",
+     "2018-09-16T23:59:59+00:00"
+    ],
+    "bytes_approx": 68833280
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180917000004_R2_grid_thru20180917234510.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180917000004_R2_grid_thru20180917234510.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180917000004_R2_grid_thru20180917234510.tar",
+    "bytes": 55613440,
+    "md5": "f86ec620175265236a28991f833fed0b",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-17T00:00:00+00:00",
+     "2018-09-17T23:59:59+00:00"
+    ],
+    "bytes_approx": 55613440
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180918000009_R2_grid_thru20180918235612.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180918000009_R2_grid_thru20180918235612.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180918000009_R2_grid_thru20180918235612.tar",
+    "bytes": 91770880,
+    "md5": "f1e900c10c985a32314cb98c3874ca4d",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-18T00:00:00+00:00",
+     "2018-09-18T23:59:59+00:00"
+    ],
+    "bytes_approx": 91770880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180919000916_R2_grid_thru20180919235715.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180919000916_R2_grid_thru20180919235715.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180919000916_R2_grid_thru20180919235715.tar",
+    "bytes": 100321280,
+    "md5": "f8e84038a921469877753d5357575a29",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-19T00:00:00+00:00",
+     "2018-09-19T23:59:59+00:00"
+    ],
+    "bytes_approx": 100321280
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180920001021_R2_grid_thru20180920234512.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180920001021_R2_grid_thru20180920234512.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180920001021_R2_grid_thru20180920234512.tar",
+    "bytes": 144250880,
+    "md5": "58fc8f1e28b6cc54ed0e08b3ca44a596",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-20T00:00:00+00:00",
+     "2018-09-20T23:59:59+00:00"
+    ],
+    "bytes_approx": 144250880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180921000005_R2_grid_thru20180921234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180921000005_R2_grid_thru20180921234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180921000005_R2_grid_thru20180921234504.tar",
+    "bytes": 90726400,
+    "md5": "8b3dd45abc88cd9d457c75ea239165a8",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-21T00:00:00+00:00",
+     "2018-09-21T23:59:59+00:00"
+    ],
+    "bytes_approx": 90726400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180922000004_R2_grid_thru20180922234508.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180922000004_R2_grid_thru20180922234508.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180922000004_R2_grid_thru20180922234508.tar",
+    "bytes": 76103680,
+    "md5": "c4871bee97c3de471c1daf9351f3413a",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-22T00:00:00+00:00",
+     "2018-09-22T23:59:59+00:00"
+    ],
+    "bytes_approx": 76103680
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180923000005_R2_grid_thru20180923235504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180923000005_R2_grid_thru20180923235504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180923000005_R2_grid_thru20180923235504.tar",
+    "bytes": 150630400,
+    "md5": "96d6d018078f081cb9323b9d656b4ba2",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-23T00:00:00+00:00",
+     "2018-09-23T23:59:59+00:00"
+    ],
+    "bytes_approx": 150630400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180924000005_R2_grid_thru20180924021504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180924000005_R2_grid_thru20180924021504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180924000005_R2_grid_thru20180924021504.tar",
+    "bytes": 7833600,
+    "md5": "1edb151b79f45f22367e72c3b8cb8715",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-24T00:00:00+00:00",
+     "2018-09-24T23:59:59+00:00"
+    ],
+    "bytes_approx": 7833600
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180925020508_R2_grid_thru20180925234510.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180925020508_R2_grid_thru20180925234510.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180925020508_R2_grid_thru20180925234510.tar",
+    "bytes": 53186560,
+    "md5": "e9005e5517c4911a34c12bd8431c7e00",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-25T00:00:00+00:00",
+     "2018-09-25T23:59:59+00:00"
+    ],
+    "bytes_approx": 53186560
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180926000005_R2_grid_thru20180926234509.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180926000005_R2_grid_thru20180926234509.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180926000005_R2_grid_thru20180926234509.tar",
+    "bytes": 48609280,
+    "md5": "8bced0b4be4b3c8af72148bc3c61e1d1",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-26T00:00:00+00:00",
+     "2018-09-26T23:59:59+00:00"
+    ],
+    "bytes_approx": 48609280
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180927000004_R2_grid_thru20180927234508.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180927000004_R2_grid_thru20180927234508.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180927000004_R2_grid_thru20180927234508.tar",
+    "bytes": 122951680,
+    "md5": "7cfeab653f599be6b135abacde385222",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-27T00:00:00+00:00",
+     "2018-09-27T23:59:59+00:00"
+    ],
+    "bytes_approx": 122951680
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180928000008_R2_grid_thru20180928235028.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180928000008_R2_grid_thru20180928235028.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180928000008_R2_grid_thru20180928235028.tar",
+    "bytes": 88862720,
+    "md5": "8145b3031406063aa9994f705ac36d9e",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-28T00:00:00+00:00",
+     "2018-09-28T23:59:59+00:00"
+    ],
+    "bytes_approx": 88862720
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180929000331_R2_grid_thru20180929234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180929000331_R2_grid_thru20180929234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180929000331_R2_grid_thru20180929234505.tar",
+    "bytes": 59402240,
+    "md5": "b14075c19c223e44744c7fc04dc29e0c",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-29T00:00:00+00:00",
+     "2018-09-29T23:59:59+00:00"
+    ],
+    "bytes_approx": 59402240
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20180930000111_R2_grid_thru20180930234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20180930000111_R2_grid_thru20180930234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20180930000111_R2_grid_thru20180930234504.tar",
+    "bytes": 419031040,
+    "md5": "a05f368e9ebda53c7191837ee1435f9e",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-09-30T00:00:00+00:00",
+     "2018-09-30T23:59:59+00:00"
+    ],
+    "bytes_approx": 419031040
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181001000115_R2_grid_thru20181001234614.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181001000115_R2_grid_thru20181001234614.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181001000115_R2_grid_thru20181001234614.tar",
+    "bytes": 171724800,
+    "md5": "e9915cb0afc1a36265da6af3de889569",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-01T00:00:00+00:00",
+     "2018-10-01T23:59:59+00:00"
+    ],
+    "bytes_approx": 171724800
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181002000116_R2_grid_thru20181002234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181002000116_R2_grid_thru20181002234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181002000116_R2_grid_thru20181002234504.tar",
+    "bytes": 227655680,
+    "md5": "a1a4af07147fc0152a3996792a7772fc",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-02T00:00:00+00:00",
+     "2018-10-02T23:59:59+00:00"
+    ],
+    "bytes_approx": 227655680
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181003000113_R2_grid_thru20181003234505.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181003000113_R2_grid_thru20181003234505.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181003000113_R2_grid_thru20181003234505.tar",
+    "bytes": 54784000,
+    "md5": "abd634c3a07d397162ddb11d9802ab13",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-03T00:00:00+00:00",
+     "2018-10-03T23:59:59+00:00"
+    ],
+    "bytes_approx": 54784000
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181004000116_R2_grid_thru20181004233003.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181004000116_R2_grid_thru20181004233003.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181004000116_R2_grid_thru20181004233003.tar",
+    "bytes": 60262400,
+    "md5": "0f4dbfe5b6c13cc3f1ab654c7e4da9da",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-04T00:00:00+00:00",
+     "2018-10-04T23:59:59+00:00"
+    ],
+    "bytes_approx": 60262400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181005001503_R2_grid_thru20181005234614.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181005001503_R2_grid_thru20181005234614.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181005001503_R2_grid_thru20181005234614.tar",
+    "bytes": 51107840,
+    "md5": "8705ee319eab812c13bd6154a5123f8e",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-05T00:00:00+00:00",
+     "2018-10-05T23:59:59+00:00"
+    ],
+    "bytes_approx": 51107840
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181006000113_R2_grid_thru20181006234503.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181006000113_R2_grid_thru20181006234503.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181006000113_R2_grid_thru20181006234503.tar",
+    "bytes": 47032320,
+    "md5": "c3b54cde6f1a4e9c99a6e64a234a7460",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-06T00:00:00+00:00",
+     "2018-10-06T23:59:59+00:00"
+    ],
+    "bytes_approx": 47032320
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181007000115_R2_grid_thru20181007234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181007000115_R2_grid_thru20181007234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181007000115_R2_grid_thru20181007234504.tar",
+    "bytes": 45148160,
+    "md5": "3b50c0257649a54a8ca604f9c63b225e",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-07T00:00:00+00:00",
+     "2018-10-07T23:59:59+00:00"
+    ],
+    "bytes_approx": 45148160
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181008000112_R2_grid_thru20181008234504.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181008000112_R2_grid_thru20181008234504.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181008000112_R2_grid_thru20181008234504.tar",
+    "bytes": 45271040,
+    "md5": "d2d0eef7d20a54af30ab9370a7287bca",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-08T00:00:00+00:00",
+     "2018-10-08T23:59:59+00:00"
+    ],
+    "bytes_approx": 45271040
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVThompson_2018",
+    "concept_id": "C3880791367-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Thompson_20181009000111_R2_grid_thru20181009123020.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVThompson_2018_1/piston-SEAPOL_RV-Thompson_20181009000111_R2_grid_thru20181009123020.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVThompson_2018/piston-SEAPOL_RV-Thompson_20181009000111_R2_grid_thru20181009123020.tar",
+    "bytes": 15083520,
+    "md5": "cf1e0addadaeb77e80a7aea6dc383d11",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2018-10-09T00:00:00+00:00",
+     "2018-10-09T23:59:59+00:00"
+    ],
+    "bytes_approx": 15083520
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190905000004_R2_grid_thru20190905235009.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190905000004_R2_grid_thru20190905235009.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190905000004_R2_grid_thru20190905235009.tar",
+    "bytes": 250972160,
+    "md5": "bc5d0ef60e2a173d5f9ea600d3bb2f41",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-05T00:00:00+00:00",
+     "2019-09-05T23:59:59+00:00"
+    ],
+    "bytes_approx": 250972160
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190905-20190925_quicklooks.tar.gz",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190905-20190925_quicklooks.tar.gz",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190905-20190925_quicklooks.tar.gz",
+    "bytes": 391558843,
+    "md5": "cd31b30c3a1e828b46aeb6d19f85dac8",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-05T00:00:00+00:00",
+     "2019-09-25T23:59:59+00:00"
+    ],
+    "bytes_approx": 391558843
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190906000012_R2_grid_thru20190906235009.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190906000012_R2_grid_thru20190906235009.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190906000012_R2_grid_thru20190906235009.tar",
+    "bytes": 63027200,
+    "md5": "f1765b0b78f791553814c3ead8ee6116",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-06T00:00:00+00:00",
+     "2019-09-06T23:59:59+00:00"
+    ],
+    "bytes_approx": 63027200
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190907000003_R2_grid_thru20190907235014.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190907000003_R2_grid_thru20190907235014.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190907000003_R2_grid_thru20190907235014.tar",
+    "bytes": 76093440,
+    "md5": "0981813d0152a11c5d96a68608c75103",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-07T00:00:00+00:00",
+     "2019-09-07T23:59:59+00:00"
+    ],
+    "bytes_approx": 76093440
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190908000008_R2_grid_thru20190908235008.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190908000008_R2_grid_thru20190908235008.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190908000008_R2_grid_thru20190908235008.tar",
+    "bytes": 287334400,
+    "md5": "a53eb38293301d44f12bddd250e077c8",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-08T00:00:00+00:00",
+     "2019-09-08T23:59:59+00:00"
+    ],
+    "bytes_approx": 287334400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190909000010_R2_grid_thru20190909235012.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190909000010_R2_grid_thru20190909235012.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190909000010_R2_grid_thru20190909235012.tar",
+    "bytes": 92487680,
+    "md5": "2ea913f25848c53214f07ff8fa305435",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-09T00:00:00+00:00",
+     "2019-09-09T23:59:59+00:00"
+    ],
+    "bytes_approx": 92487680
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190910000012_R2_grid_thru20190910235012.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190910000012_R2_grid_thru20190910235012.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190910000012_R2_grid_thru20190910235012.tar",
+    "bytes": 249743360,
+    "md5": "ebf04b10477b6aa98e0522f51db31d3a",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-10T00:00:00+00:00",
+     "2019-09-10T23:59:59+00:00"
+    ],
+    "bytes_approx": 249743360
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190911000003_R2_grid_thru20190911235002.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190911000003_R2_grid_thru20190911235002.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190911000003_R2_grid_thru20190911235002.tar",
+    "bytes": 164628480,
+    "md5": "a7d1d8ff29fe593e4474821ed7cf8246",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-11T00:00:00+00:00",
+     "2019-09-11T23:59:59+00:00"
+    ],
+    "bytes_approx": 164628480
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190912000003_R2_grid_thru20190912235003.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190912000003_R2_grid_thru20190912235003.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190912000003_R2_grid_thru20190912235003.tar",
+    "bytes": 78059520,
+    "md5": "609a25d93b90fa1d6f629ec50809924b",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-12T00:00:00+00:00",
+     "2019-09-12T23:59:59+00:00"
+    ],
+    "bytes_approx": 78059520
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190913000002_R2_grid_thru20190913235005.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190913000002_R2_grid_thru20190913235005.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190913000002_R2_grid_thru20190913235005.tar",
+    "bytes": 84940800,
+    "md5": "34f47065192f3639549625e4d860e623",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-13T00:00:00+00:00",
+     "2019-09-13T23:59:59+00:00"
+    ],
+    "bytes_approx": 84940800
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190914000005_R2_grid_thru20190914235002.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190914000005_R2_grid_thru20190914235002.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190914000005_R2_grid_thru20190914235002.tar",
+    "bytes": 74342400,
+    "md5": "04790398e3692c1bd70c29e37fccf1d4",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-14T00:00:00+00:00",
+     "2019-09-14T23:59:59+00:00"
+    ],
+    "bytes_approx": 74342400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190915000003_R2_grid_thru20190915235010.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190915000003_R2_grid_thru20190915235010.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190915000003_R2_grid_thru20190915235010.tar",
+    "bytes": 94576640,
+    "md5": "c09888494039119d260dad01f06db7d3",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-15T00:00:00+00:00",
+     "2019-09-15T23:59:59+00:00"
+    ],
+    "bytes_approx": 94576640
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190916000004_R2_grid_thru20190916235008.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190916000004_R2_grid_thru20190916235008.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190916000004_R2_grid_thru20190916235008.tar",
+    "bytes": 412200960,
+    "md5": "90d5c4734acca62ff13c0996b55d5bfd",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-16T00:00:00+00:00",
+     "2019-09-16T23:59:59+00:00"
+    ],
+    "bytes_approx": 412200960
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190917000009_R2_grid_thru20190917235013.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190917000009_R2_grid_thru20190917235013.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190917000009_R2_grid_thru20190917235013.tar",
+    "bytes": 394362880,
+    "md5": "1bd83680a7d252a862d34186d5658ec2",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-17T00:00:00+00:00",
+     "2019-09-17T23:59:59+00:00"
+    ],
+    "bytes_approx": 394362880
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190918001005_R2_grid_thru20190918235004.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190918001005_R2_grid_thru20190918235004.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190918001005_R2_grid_thru20190918235004.tar",
+    "bytes": 88903680,
+    "md5": "c31aceee4afe9334a8711107b92b8b17",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-18T00:00:00+00:00",
+     "2019-09-18T23:59:59+00:00"
+    ],
+    "bytes_approx": 88903680
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190919000007_R2_grid_thru20190919235007.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190919000007_R2_grid_thru20190919235007.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190919000007_R2_grid_thru20190919235007.tar",
+    "bytes": 150620160,
+    "md5": "2872b5dbb5afdec9653078c0b9aa4b00",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-19T00:00:00+00:00",
+     "2019-09-19T23:59:59+00:00"
+    ],
+    "bytes_approx": 150620160
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190920000012_R2_grid_thru20190920235007.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190920000012_R2_grid_thru20190920235007.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190920000012_R2_grid_thru20190920235007.tar",
+    "bytes": 304957440,
+    "md5": "eecaec15c296a0b58e015548e53c0597",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-20T00:00:00+00:00",
+     "2019-09-20T23:59:59+00:00"
+    ],
+    "bytes_approx": 304957440
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190921000002_R2_grid_thru20190921235009.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190921000002_R2_grid_thru20190921235009.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190921000002_R2_grid_thru20190921235009.tar",
+    "bytes": 215633920,
+    "md5": "29540364e3bd65d86c4b24646d6f9c50",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-21T00:00:00+00:00",
+     "2019-09-21T23:59:59+00:00"
+    ],
+    "bytes_approx": 215633920
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190922000004_R2_grid_thru20190922235015.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190922000004_R2_grid_thru20190922235015.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190922000004_R2_grid_thru20190922235015.tar",
+    "bytes": 79697920,
+    "md5": "563aa5126294143dd6199feef91bbb2a",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-22T00:00:00+00:00",
+     "2019-09-22T23:59:59+00:00"
+    ],
+    "bytes_approx": 79697920
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190923000009_R2_grid_thru20190923235002.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190923000009_R2_grid_thru20190923235002.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190923000009_R2_grid_thru20190923235002.tar",
+    "bytes": 68321280,
+    "md5": "664cbb037becf5712457d98e760782f5",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-23T00:00:00+00:00",
+     "2019-09-23T23:59:59+00:00"
+    ],
+    "bytes_approx": 68321280
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190924000018_R2_grid_thru20190924235009.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190924000018_R2_grid_thru20190924235009.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190924000018_R2_grid_thru20190924235009.tar",
+    "bytes": 93542400,
+    "md5": "4227b36cf81ac3e38815541ca00d2d30",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-24T00:00:00+00:00",
+     "2019-09-24T23:59:59+00:00"
+    ],
+    "bytes_approx": 93542400
+   },
+   {
+    "short_name": "PISTON-ONR-NOAA_RVSallyRide_2019",
+    "concept_id": "C3880791409-LARC_CLOUD",
+    "granule": "piston-SEAPOL_RV-Sally-Ride_20190925000012_R2_grid_thru20190925115004.tar",
+    "kind": "data",
+    "url": "https://data.asdc.earthdata.nasa.gov/asdc-prod-protected/CAMP2Ex/PISTON-ONR-NOAA_RVSallyRide_2019_1/piston-SEAPOL_RV-Sally-Ride_20190925000012_R2_grid_thru20190925115004.tar",
+    "rel": "piston/PISTON-ONR-NOAA_RVSallyRide_2019/piston-SEAPOL_RV-Sally-Ride_20190925000012_R2_grid_thru20190925115004.tar",
+    "bytes": 39116800,
+    "md5": "1e38e09280093e3cc1144f56fe8a4e72",
+    "production": "2023-01-09T16:01:42+00:00",
+    "time": [
+     "2019-09-25T00:00:00+00:00",
+     "2019-09-25T23:59:59+00:00"
+    ],
+    "bytes_approx": 39116800
+   }
+  ]
+ }
+}

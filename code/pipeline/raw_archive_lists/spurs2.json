@@ -1,0 +1,588 @@
+{
+ "name": "spurs2",
+ "built": "2026-09-27T07:04:40+00:00",
+ "source": "CMR granules.umm_json（公开元数据，无 token）",
+ "rel_prefix": "spurs2",
+ "collections": {
+  "SPURS2_SSP": {
+   "concept_id": "C2491772351-POCLOUD",
+   "granules": 2,
+   "files": 4,
+   "bytes": 147441322
+  },
+  "SPURS2_SALINITYSNAKE": {
+   "concept_id": "C2491772349-POCLOUD",
+   "granules": 2,
+   "files": 4,
+   "bytes": 545924144
+  },
+  "SPURS2_USPS": {
+   "concept_id": "C2491772360-POCLOUD",
+   "granules": 2,
+   "files": 4,
+   "bytes": 237396088
+  },
+  "SPURS2_LADYAMBER": {
+   "concept_id": "C2491772337-POCLOUD",
+   "granules": 6,
+   "files": 12,
+   "bytes": 1287798673
+  },
+  "SPURS2_MOORING_CENTRAL": {
+   "concept_id": "C2491772339-POCLOUD",
+   "granules": 5,
+   "files": 10,
+   "bytes": 209127659
+  },
+  "SPURS2_WAVEGLIDER": {
+   "concept_id": "C2491772363-POCLOUD",
+   "granules": 3,
+   "files": 6,
+   "bytes": 71809326
+  },
+  "SPURS2_SAILDRONE": {
+   "concept_id": "C2491772348-POCLOUD",
+   "granules": 2,
+   "files": 4,
+   "bytes": 1375852
+  },
+  "SPURS2_METEO": {
+   "concept_id": "C2491772338-POCLOUD",
+   "granules": 2,
+   "files": 4,
+   "bytes": 30946234
+  }
+ },
+ "n_files": 48,
+ "total_bytes": 2531819298,
+ "files": [
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber2",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_LADYAMBER/SPURS2_LadyAmber2.nc.md5",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber2.nc.md5",
+   "bytes": 54,
+   "md5": "7d24befaee1f5f693649a266f67b2717",
+   "production": "2019-11-13T11:55:40.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber2",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_LADYAMBER/SPURS2_LadyAmber2.nc",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber2.nc",
+   "bytes": 333093767,
+   "md5": "ebdd0714d699e23f0c4515e425190d93",
+   "production": "2019-11-13T11:55:40.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber3",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_LADYAMBER/SPURS2_LadyAmber3.nc.md5",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber3.nc.md5",
+   "bytes": 54,
+   "md5": "9b41c3dd74e6faa457671b32ca8d8701",
+   "production": "2019-11-13T11:57:24.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber3",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_LADYAMBER/SPURS2_LadyAmber3.nc",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber3.nc",
+   "bytes": 196127873,
+   "md5": "da05f82336f99ff3c70a0f77336941a2",
+   "production": "2019-11-13T11:57:24.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber4",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_LADYAMBER/SPURS2_LadyAmber4.nc.md5",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber4.nc.md5",
+   "bytes": 54,
+   "md5": "9be1641297f5423c4a7dec09a55eefd9",
+   "production": "2019-11-13T11:58:41.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber4",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_LADYAMBER/SPURS2_LadyAmber4.nc",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber4.nc",
+   "bytes": 131680427,
+   "md5": "343d805c16e4778ed25d410027ecc581",
+   "production": "2019-11-13T11:58:41.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber5",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_LADYAMBER/SPURS2_LadyAmber5.nc.md5",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber5.nc.md5",
+   "bytes": 54,
+   "md5": "c73f236f55606280e1cc7f4c33e99f66",
+   "production": "2019-11-13T11:59:52.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber5",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_LADYAMBER/SPURS2_LadyAmber5.nc",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber5.nc",
+   "bytes": 237897658,
+   "md5": "bc19969a99b995e9f1f291931dfc2494",
+   "production": "2019-11-13T11:59:52.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber6",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_LADYAMBER/SPURS2_LadyAmber6.nc.md5",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber6.nc.md5",
+   "bytes": 54,
+   "md5": "5af32e6dbb8dfe5ef28add929a753f82",
+   "production": "2019-11-13T12:01:09.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber6",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_LADYAMBER/SPURS2_LadyAmber6.nc",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber6.nc",
+   "bytes": 195767980,
+   "md5": "d1099fe9dbe12f7e0960e54fbf971eda",
+   "production": "2019-11-13T12:01:09.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber7",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_LADYAMBER/SPURS2_LadyAmber7.nc.md5",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber7.nc.md5",
+   "bytes": 54,
+   "md5": "e86f624c1533de5d8395ce5d25e59849",
+   "production": "2019-11-13T12:02:33.000Z"
+  },
+  {
+   "short_name": "SPURS2_LADYAMBER",
+   "concept_id": "C2491772337-POCLOUD",
+   "granule": "SPURS2_LadyAmber7",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_LADYAMBER/SPURS2_LadyAmber7.nc",
+   "rel": "spurs2/SPURS2_LADYAMBER/SPURS2_LadyAmber7.nc",
+   "bytes": 193230644,
+   "md5": "ae2d092113d1ef7160a631a622490ed6",
+   "production": "2019-11-13T12:02:33.000Z"
+  },
+  {
+   "short_name": "SPURS2_METEO",
+   "concept_id": "C2491772338-POCLOUD",
+   "granule": "SPURS2_RR1610_WHOI_Met",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_METEO/SPURS2_RR1610_WHOI_Met.nc.md5",
+   "rel": "spurs2/SPURS2_METEO/SPURS2_RR1610_WHOI_Met.nc.md5",
+   "bytes": 59,
+   "md5": "ac54e20807114cada1993c8a5fed3e26",
+   "production": "2019-10-16T12:04:23.000Z"
+  },
+  {
+   "short_name": "SPURS2_METEO",
+   "concept_id": "C2491772338-POCLOUD",
+   "granule": "SPURS2_RR1610_WHOI_Met",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_METEO/SPURS2_RR1610_WHOI_Met.nc",
+   "rel": "spurs2/SPURS2_METEO/SPURS2_RR1610_WHOI_Met.nc",
+   "bytes": 17435985,
+   "md5": "5f2426ff8352af7b339bf4aeaaaf19c8",
+   "production": "2019-10-16T12:04:23.000Z"
+  },
+  {
+   "short_name": "SPURS2_METEO",
+   "concept_id": "C2491772338-POCLOUD",
+   "granule": "SPURS2_RR1720_WHOI_Met",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_METEO/SPURS2_RR1720_WHOI_Met.nc.md5",
+   "rel": "spurs2/SPURS2_METEO/SPURS2_RR1720_WHOI_Met.nc.md5",
+   "bytes": 59,
+   "md5": "aac07b308ee480605959f93f2d6e77c3",
+   "production": "2019-10-16T12:04:07.000Z"
+  },
+  {
+   "short_name": "SPURS2_METEO",
+   "concept_id": "C2491772338-POCLOUD",
+   "granule": "SPURS2_RR1720_WHOI_Met",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_METEO/SPURS2_RR1720_WHOI_Met.nc",
+   "rel": "spurs2/SPURS2_METEO/SPURS2_RR1720_WHOI_Met.nc",
+   "bytes": 13510131,
+   "md5": "95fa6952a881e0d5aaf857fe78ed3dc9",
+   "production": "2019-10-16T12:04:07.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_CentralMooring_SubsurfaceTemperature",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperature.nc.md5",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperature.nc.md5",
+   "bytes": 80,
+   "md5": "6350d7912160133b94af32f9dadbd186",
+   "production": "2019-10-16T13:06:16.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_CentralMooring_SubsurfaceTemperature",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperature.nc",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperature.nc",
+   "bytes": 32445595,
+   "md5": "cf7213a83dce8012466b95434dcd53c7",
+   "production": "2019-10-16T13:06:16.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_CentralMooring_SubsurfaceTemperatureSalinity",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperatureSalinity.nc.md5",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperatureSalinity.nc.md5",
+   "bytes": 88,
+   "md5": "d7f4ea314d71093daf0bf150062ceecf",
+   "production": "2020-01-21T12:15:48.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_CentralMooring_SubsurfaceTemperatureSalinity",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperatureSalinity.nc",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SubsurfaceTemperatureSalinity.nc",
+   "bytes": 114483791,
+   "md5": "6e8b8391ec75273569083aa020b034a0",
+   "production": "2020-01-21T12:15:48.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_CentralMooring_SurfaceFlux",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SurfaceFlux.nc.md5",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SurfaceFlux.nc.md5",
+   "bytes": 70,
+   "md5": "fe0aaa7ada451fda2a9698e01e1d082b",
+   "production": "2020-01-21T12:38:12.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_CentralMooring_SurfaceFlux",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SurfaceFlux.nc",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_CentralMooring_SurfaceFlux.nc",
+   "bytes": 809913,
+   "md5": "57305bada73684bb42c7c1222a28c4ab",
+   "production": "2020-01-21T12:38:12.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_WHOI_Met",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_Met.nc.md5",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_Met.nc.md5",
+   "bytes": 52,
+   "md5": "ebcba361f6144282a63ec65afef7caa8",
+   "production": "2020-02-04T11:45:05.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_WHOI_Met",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_Met.nc",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_Met.nc",
+   "bytes": 60841755,
+   "md5": "fb4c96eb60afefc422de21a9752ebf86",
+   "production": "2020-02-04T11:45:05.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_WHOI_dissipation",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_dissipation.nc.md5",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_dissipation.nc.md5",
+   "bytes": 60,
+   "md5": "da5e94ca862989ad34a9bfd34e7ddb73",
+   "production": "2021-05-04T01:12:45.000Z"
+  },
+  {
+   "short_name": "SPURS2_MOORING_CENTRAL",
+   "concept_id": "C2491772339-POCLOUD",
+   "granule": "SPURS2_WHOI_dissipation",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_dissipation.nc",
+   "rel": "spurs2/SPURS2_MOORING_CENTRAL/SPURS2_WHOI_dissipation.nc",
+   "bytes": 546255,
+   "md5": "6bd48f0b7c943b91af1877e9fe8dea05",
+   "production": "2021-05-04T01:12:45.000Z"
+  },
+  {
+   "short_name": "SPURS2_SAILDRONE",
+   "concept_id": "C2491772348-POCLOUD",
+   "granule": "SPURS2_Saildrone1005",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_SAILDRONE/SPURS2_Saildrone1005.nc.md5",
+   "rel": "spurs2/SPURS2_SAILDRONE/SPURS2_Saildrone1005.nc.md5",
+   "bytes": 58,
+   "md5": "84008f0dcd20d238f07393620b8310af",
+   "production": "2019-03-28T14:50:51.000Z"
+  },
+  {
+   "short_name": "SPURS2_SAILDRONE",
+   "concept_id": "C2491772348-POCLOUD",
+   "granule": "SPURS2_Saildrone1005",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_SAILDRONE/SPURS2_Saildrone1005.nc",
+   "rel": "spurs2/SPURS2_SAILDRONE/SPURS2_Saildrone1005.nc",
+   "bytes": 687868,
+   "md5": "80db33df8e5af6d0b449fd2d8fa34499",
+   "production": "2019-03-28T14:50:51.000Z"
+  },
+  {
+   "short_name": "SPURS2_SAILDRONE",
+   "concept_id": "C2491772348-POCLOUD",
+   "granule": "SPURS2_Saildrone1006",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_SAILDRONE/SPURS2_Saildrone1006.nc.md5",
+   "rel": "spurs2/SPURS2_SAILDRONE/SPURS2_Saildrone1006.nc.md5",
+   "bytes": 58,
+   "md5": "a7cd2f92c2d0abc4b7e43afa0ddc6a6d",
+   "production": "2019-03-28T14:49:45.000Z"
+  },
+  {
+   "short_name": "SPURS2_SAILDRONE",
+   "concept_id": "C2491772348-POCLOUD",
+   "granule": "SPURS2_Saildrone1006",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_SAILDRONE/SPURS2_Saildrone1006.nc",
+   "rel": "spurs2/SPURS2_SAILDRONE/SPURS2_Saildrone1006.nc",
+   "bytes": 687868,
+   "md5": "3caf1fcab8c69ba21a65ea6b2bb02dd0",
+   "production": "2019-03-28T14:49:45.000Z"
+  },
+  {
+   "short_name": "SPURS2_SALINITYSNAKE",
+   "concept_id": "C2491772349-POCLOUD",
+   "granule": "SPURS2_RR1610_Salinity_Snake",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_SALINITYSNAKE/SPURS2_RR1610_Salinity_Snake.nc.md5",
+   "rel": "spurs2/SPURS2_SALINITYSNAKE/SPURS2_RR1610_Salinity_Snake.nc.md5",
+   "bytes": 65,
+   "md5": "9b99a27a81f9aa42a37ce671d09af6d2",
+   "production": "2019-11-11T11:55:39.000Z"
+  },
+  {
+   "short_name": "SPURS2_SALINITYSNAKE",
+   "concept_id": "C2491772349-POCLOUD",
+   "granule": "SPURS2_RR1610_Salinity_Snake",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_SALINITYSNAKE/SPURS2_RR1610_Salinity_Snake.nc",
+   "rel": "spurs2/SPURS2_SALINITYSNAKE/SPURS2_RR1610_Salinity_Snake.nc",
+   "bytes": 228397308,
+   "md5": "9b9e3235315f674513271595b1bc7140",
+   "production": "2019-11-11T11:55:39.000Z"
+  },
+  {
+   "short_name": "SPURS2_SALINITYSNAKE",
+   "concept_id": "C2491772349-POCLOUD",
+   "granule": "SPURS2_RR1720_Salinity_Snake",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_SALINITYSNAKE/SPURS2_RR1720_Salinity_Snake.nc.md5",
+   "rel": "spurs2/SPURS2_SALINITYSNAKE/SPURS2_RR1720_Salinity_Snake.nc.md5",
+   "bytes": 65,
+   "md5": "0e2784d4e788dd07e206d92f8b10211e",
+   "production": "2019-11-11T11:56:28.000Z"
+  },
+  {
+   "short_name": "SPURS2_SALINITYSNAKE",
+   "concept_id": "C2491772349-POCLOUD",
+   "granule": "SPURS2_RR1720_Salinity_Snake",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_SALINITYSNAKE/SPURS2_RR1720_Salinity_Snake.nc",
+   "rel": "spurs2/SPURS2_SALINITYSNAKE/SPURS2_RR1720_Salinity_Snake.nc",
+   "bytes": 317526706,
+   "md5": "1b1dbd55d456138347a6af7931024698",
+   "production": "2019-11-11T11:56:28.000Z"
+  },
+  {
+   "short_name": "SPURS2_SSP",
+   "concept_id": "C2491772351-POCLOUD",
+   "granule": "SPURS2_RR1610_SSP",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_SSP/SPURS2_RR1610_SSP.nc.md5",
+   "rel": "spurs2/SPURS2_SSP/SPURS2_RR1610_SSP.nc.md5",
+   "bytes": 54,
+   "md5": "04a2e3369f07c5fa4bf0f19423215d63",
+   "production": "2019-11-11T14:17:02.000Z"
+  },
+  {
+   "short_name": "SPURS2_SSP",
+   "concept_id": "C2491772351-POCLOUD",
+   "granule": "SPURS2_RR1610_SSP",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_SSP/SPURS2_RR1610_SSP.nc",
+   "rel": "spurs2/SPURS2_SSP/SPURS2_RR1610_SSP.nc",
+   "bytes": 78417593,
+   "md5": "976c339fd5eaafd1a2450776e3bcab9d",
+   "production": "2019-11-11T14:17:02.000Z"
+  },
+  {
+   "short_name": "SPURS2_SSP",
+   "concept_id": "C2491772351-POCLOUD",
+   "granule": "SPURS2_RR1720_SSP",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_SSP/SPURS2_RR1720_SSP.nc.md5",
+   "rel": "spurs2/SPURS2_SSP/SPURS2_RR1720_SSP.nc.md5",
+   "bytes": 54,
+   "md5": "6511194b61fd84ed1e96f8ae81d58950",
+   "production": "2019-11-11T14:17:02.000Z"
+  },
+  {
+   "short_name": "SPURS2_SSP",
+   "concept_id": "C2491772351-POCLOUD",
+   "granule": "SPURS2_RR1720_SSP",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_SSP/SPURS2_RR1720_SSP.nc",
+   "rel": "spurs2/SPURS2_SSP/SPURS2_RR1720_SSP.nc",
+   "bytes": 69023621,
+   "md5": "1b753337645fabde06f04bc93bf059e6",
+   "production": "2019-11-11T14:17:02.000Z"
+  },
+  {
+   "short_name": "SPURS2_USPS",
+   "concept_id": "C2491772360-POCLOUD",
+   "granule": "SPURS2_RR1610_USPS",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_USPS/SPURS2_RR1610_USPS.nc.md5",
+   "rel": "spurs2/SPURS2_USPS/SPURS2_RR1610_USPS.nc.md5",
+   "bytes": 55,
+   "md5": "006238cbb4a2f02d1bf0ce282291fca5",
+   "production": "2019-11-11T14:04:15.000Z"
+  },
+  {
+   "short_name": "SPURS2_USPS",
+   "concept_id": "C2491772360-POCLOUD",
+   "granule": "SPURS2_RR1610_USPS",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_USPS/SPURS2_RR1610_USPS.nc",
+   "rel": "spurs2/SPURS2_USPS/SPURS2_RR1610_USPS.nc",
+   "bytes": 140263429,
+   "md5": "7178411c03e7ad1123a6e4e87546e5fe",
+   "production": "2019-11-11T14:04:15.000Z"
+  },
+  {
+   "short_name": "SPURS2_USPS",
+   "concept_id": "C2491772360-POCLOUD",
+   "granule": "SPURS2_RR1720_USPS",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_USPS/SPURS2_RR1720_USPS.nc.md5",
+   "rel": "spurs2/SPURS2_USPS/SPURS2_RR1720_USPS.nc.md5",
+   "bytes": 55,
+   "md5": "3df1ce597f0a318a930e8bcd9f830b9d",
+   "production": "2019-11-11T14:04:24.000Z"
+  },
+  {
+   "short_name": "SPURS2_USPS",
+   "concept_id": "C2491772360-POCLOUD",
+   "granule": "SPURS2_RR1720_USPS",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_USPS/SPURS2_RR1720_USPS.nc",
+   "rel": "spurs2/SPURS2_USPS/SPURS2_RR1720_USPS.nc",
+   "bytes": 97132549,
+   "md5": "ddb9f0e6683782e702caebcd64b97fbc",
+   "production": "2019-11-11T14:04:24.000Z"
+  },
+  {
+   "short_name": "SPURS2_WAVEGLIDER",
+   "concept_id": "C2491772363-POCLOUD",
+   "granule": "SPURS2_Waveglider_ASL22",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL22.nc.md5",
+   "rel": "spurs2/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL22.nc.md5",
+   "bytes": 60,
+   "md5": "54db2ab834dfef5b3457da0e8141b528",
+   "production": "2019-07-17T15:05:19.000Z"
+  },
+  {
+   "short_name": "SPURS2_WAVEGLIDER",
+   "concept_id": "C2491772363-POCLOUD",
+   "granule": "SPURS2_Waveglider_ASL22",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL22.nc",
+   "rel": "spurs2/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL22.nc",
+   "bytes": 7797214,
+   "md5": "2950f6eae446662f50fdc2e953c5e052",
+   "production": "2019-07-17T15:05:19.000Z"
+  },
+  {
+   "short_name": "SPURS2_WAVEGLIDER",
+   "concept_id": "C2491772363-POCLOUD",
+   "granule": "SPURS2_Waveglider_ASL32",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL32.nc.md5",
+   "rel": "spurs2/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL32.nc.md5",
+   "bytes": 60,
+   "md5": "018f129befa979b4d151b46b3e1461a1",
+   "production": "2019-07-17T15:06:10.000Z"
+  },
+  {
+   "short_name": "SPURS2_WAVEGLIDER",
+   "concept_id": "C2491772363-POCLOUD",
+   "granule": "SPURS2_Waveglider_ASL32",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL32.nc",
+   "rel": "spurs2/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL32.nc",
+   "bytes": 32474790,
+   "md5": "3fc5f9beaff7f4a55b2ee1fd220db606",
+   "production": "2019-07-17T15:06:10.000Z"
+  },
+  {
+   "short_name": "SPURS2_WAVEGLIDER",
+   "concept_id": "C2491772363-POCLOUD",
+   "granule": "SPURS2_Waveglider_ASL42",
+   "kind": "md5_sidecar",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL42.nc.md5",
+   "rel": "spurs2/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL42.nc.md5",
+   "bytes": 60,
+   "md5": "4e44d646e95203a913493fbe9f694ff7",
+   "production": "2019-07-17T15:05:46.000Z"
+  },
+  {
+   "short_name": "SPURS2_WAVEGLIDER",
+   "concept_id": "C2491772363-POCLOUD",
+   "granule": "SPURS2_Waveglider_ASL42",
+   "kind": "data",
+   "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL42.nc",
+   "rel": "spurs2/SPURS2_WAVEGLIDER/SPURS2_Waveglider_ASL42.nc",
+   "bytes": 31537142,
+   "md5": "5fddcdfdaf2b1cb86c6eebfb54c30e66",
+   "production": "2019-07-17T15:05:46.000Z"
+  }
+ ]
+}

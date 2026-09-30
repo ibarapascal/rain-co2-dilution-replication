@@ -1,0 +1,439 @@
+{
+ "script": "p2_rim_test.py",
+ "version": "p2-2026-09-26c",
+ "part": "sensitivity",
+ "smoke": false,
+ "run_utc": "2026-09-26T12:35:05Z",
+ "runtime_s": 15082.8,
+ "status": "four sensitivity items (K21); no exit decision (K26); p2_summary.json not written",
+ "inputs": {
+  "p1_events_sha256": "6fae39d25e3461476721469c1b1c26b1dd6ab87580f5aff1d4ea279bddc0259e"
+ },
+ "primary_d3_reference": {
+  "sha256": "40d933570bdc88a2bb7bca8badac4c42bdd229c9cd374c2b190a02ca62f5fac2",
+  "pass": true,
+  "verdict": "pass (models can be discriminated)",
+  "written_utc": "2026-09-26T08:20:19Z"
+ },
+ "rebuild_validation": {
+  "n_ref": 646,
+  "n_rebuilt": 646,
+  "missing_in_rebuild": [],
+  "extra_in_rebuild": [],
+  "value_mismatch": [],
+  "n_missing": 0,
+  "n_extra": 0,
+  "n_value_mismatch": 0,
+  "d4_count": 34
+ },
+ "cmorph": {
+  "hours_needed": 45811,
+  "downloaded_this_run": 20411,
+  "bytes_this_run": 33209062135,
+  "http_requests": 20411,
+  "seconds": 14993.9,
+  "pixels": {
+   "TAO165E": {
+    "lat": -4.879999977447369e-07,
+    "lon": 164.97574695749998,
+    "dist_km": 2.7
+   },
+   "TAO8S165E": {
+    "lat": -8.004851848000001,
+    "lon": 164.97574695749998,
+    "dist_km": 2.72
+   },
+   "BOBOA": {
+    "lat": 14.990902968000007,
+    "lon": 90.0363778875,
+    "dist_km": 4.04
+   },
+   "TAO170W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 190.00404109349998,
+    "dist_km": 0.45
+   },
+   "TAO155W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 204.9919149075,
+    "dist_km": 0.9
+   },
+   "TAO140W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 219.9797887215,
+    "dist_km": 2.25
+   },
+   "TAO125W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 234.96766253549998,
+    "dist_km": 3.6
+   },
+   "TAO110W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 250.0282930185,
+    "dist_km": 3.15
+   },
+   "KEO": {
+    "lat": 32.310490456000004,
+    "lon": 144.6038796375,
+    "dist_km": 4.07
+   },
+   "MOSEAN/WHOTS": {
+    "lat": 22.704668824000002,
+    "lon": 202.00889147849998,
+    "dist_km": 4.02
+   },
+   "Papa": {
+    "lat": 50.139477576,
+    "lon": 215.17784856749998,
+    "dist_km": 1.65
+   },
+   "SOFS": {
+    "lat": -46.791995256,
+    "lon": 141.9846395535,
+    "dist_km": 1.47
+   },
+   "Stratus": {
+    "lat": -19.721043383999998,
+    "lon": 274.4017771335,
+    "dist_km": 2.35
+   }
+  },
+  "missing_hours": 0,
+  "missing_reasons": {},
+  "unique_hours_primary": 25400,
+  "unique_hours_extra": 20411
+ },
+ "model_availability_primary_info": {
+  "n_total": 646,
+  "n_available": 646,
+  "fraction": 1.0,
+  "threshold": 0.5,
+  "pass": true,
+  "missing_reason_counts": {},
+  "rule": "continue only if >= 50% of the main set (all 10 mm events, CMORPH, 0-6 h) has non-NaN dS_RIM(1 m level) and dS_S20 (K29)"
+ },
+ "forcing_availability_primary": {
+  "ok": 646
+ },
+ "wind": {
+  "factor_4m_to_10m": 1.0865,
+  "floor_mps": 0.1,
+  "hours_floored": 0
+ },
+ "sensitivity": {
+  "window_0-3h": {
+   "R_RIM_1m": {
+    "label": "window (0, 3)",
+    "n_events": 646,
+    "evaluable": true,
+    "n_clusters": 37,
+    "point": 0.31444,
+    "sum_num": -26.58417,
+    "sum_den": -84.54381,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.22615,
+     0.40987
+    ],
+    "ci90": [
+     0.24051,
+     0.39451
+    ],
+    "se_boot": 0.04676,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "window (0, 3)",
+    "n_events": 643,
+    "evaluable": true,
+    "n_clusters": 37,
+    "point": 0.24248,
+    "sum_num": -20.41542,
+    "sum_den": -84.19566,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.14634,
+     0.34398
+    ],
+    "ci90": [
+     0.16106,
+     0.3276
+    ],
+    "se_boot": 0.05077,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   }
+  },
+  "window_6-12h": {
+   "R_RIM_1m": {
+    "label": "window (6, 12)",
+    "n_events": 646,
+    "evaluable": true,
+    "n_clusters": 37,
+    "point": 0.22179,
+    "sum_num": -40.70778,
+    "sum_den": -183.53948,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.18553,
+     0.26707
+    ],
+    "ci90": [
+     0.19075,
+     0.25882
+    ],
+    "se_boot": 0.02077,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "window (6, 12)",
+    "n_events": 646,
+    "evaluable": true,
+    "n_clusters": 37,
+    "point": 0.74945,
+    "sum_num": -33.97268,
+    "sum_den": -45.33015,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.59543,
+     0.94185
+    ],
+    "ci90": [
+     0.61897,
+     0.91002
+    ],
+    "se_boot": 0.08865,
+    "ci95_outside_sesoi": false,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   }
+  },
+  "gauge_driven": {
+   "R_RIM_1m": {
+    "label": "gauge-driven",
+    "n_events": 646,
+    "evaluable": true,
+    "n_clusters": 37,
+    "point": 0.24858,
+    "sum_num": -35.86981,
+    "sum_den": -144.30116,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.20994,
+     0.28062
+    ],
+    "ci90": [
+     0.21644,
+     0.27578
+    ],
+    "se_boot": 0.01781,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "gauge-driven",
+    "n_events": 646,
+    "evaluable": true,
+    "n_clusters": 37,
+    "point": 0.22353,
+    "sum_num": -26.1535,
+    "sum_den": -116.99984,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.16708,
+     0.27617
+    ],
+    "ci90": [
+     0.177,
+     0.26745
+    ],
+    "se_boot": 0.02767,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "gauge_hours_filled_0": 0,
+   "gauge_hours_negative_set_0": 10631
+  },
+  "exclude_BOBOA": {
+   "R_RIM_1m": {
+    "label": "ΣΔS_obs(1 m)/ΣΔS_RIM3(1 m)",
+    "n_events": 592,
+    "evaluable": true,
+    "n_clusters": 33,
+    "point": 0.28841,
+    "sum_num": -32.57431,
+    "sum_den": -112.94453,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.21653,
+     0.36005
+    ],
+    "ci90": [
+     0.22786,
+     0.34993
+    ],
+    "se_boot": 0.03706,
+    "tost": {
+     "alpha": 0.05,
+     "bounds": [
+      0.65,
+      1.35
+     ],
+     "p_lower": 1.0,
+     "p_upper": 0.0,
+     "equivalent": false
+    },
+    "mde_ratio_units": 0.10383,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)",
+    "n_events": 592,
+    "evaluable": true,
+    "n_clusters": 33,
+    "point": 0.32849,
+    "sum_num": -23.079,
+    "sum_den": -70.25684,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.22338,
+     0.43298
+    ],
+    "ci90": [
+     0.24245,
+     0.41628
+    ],
+    "se_boot": 0.05328,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   }
+  },
+  "threshold_5mm": {
+   "R_RIM_1m": {
+    "label": "ΣΔS_obs(1 m)/ΣΔS_RIM3(1 m)",
+    "n_events": 1248,
+    "evaluable": true,
+    "n_clusters": 43,
+    "point": 0.25647,
+    "sum_num": -46.38982,
+    "sum_den": -180.88087,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.19237,
+     0.33076
+    ],
+    "ci90": [
+     0.20269,
+     0.31843
+    ],
+    "se_boot": 0.03523,
+    "tost": {
+     "alpha": 0.05,
+     "bounds": [
+      0.65,
+      1.35
+     ],
+     "p_lower": 1.0,
+     "p_upper": 0.0,
+     "equivalent": false
+    },
+    "mde_ratio_units": 0.0987,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)",
+    "n_events": 1248,
+    "evaluable": true,
+    "n_clusters": 43,
+    "point": 0.29805,
+    "sum_num": -34.86702,
+    "sum_den": -116.98539,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.20925,
+     0.40427
+    ],
+    "ci90": [
+     0.22188,
+     0.38579
+    ],
+    "se_boot": 0.05003,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "n_events": 1248
+  },
+  "threshold_20mm": {
+   "R_RIM_1m": {
+    "label": "ΣΔS_obs(1 m)/ΣΔS_RIM3(1 m)",
+    "n_events": 290,
+    "evaluable": true,
+    "n_clusters": 31,
+    "point": 0.35351,
+    "sum_num": -23.38028,
+    "sum_den": -66.13689,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.27674,
+     0.42526
+    ],
+    "ci90": [
+     0.28857,
+     0.41362
+    ],
+    "se_boot": 0.03826,
+    "tost": {
+     "alpha": 0.05,
+     "bounds": [
+      0.65,
+      1.35
+     ],
+     "p_lower": 1.0,
+     "p_upper": 0.0,
+     "equivalent": false
+    },
+    "mde_ratio_units": 0.10719,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)",
+    "n_events": 290,
+    "evaluable": true,
+    "n_clusters": 31,
+    "point": 0.37499,
+    "sum_num": -16.57,
+    "sum_den": -44.18731,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.2483,
+     0.50304
+    ],
+    "ci90": [
+     0.2673,
+     0.47961
+    ],
+    "se_boot": 0.06467,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "n_events": 290
+  }
+ }
+}

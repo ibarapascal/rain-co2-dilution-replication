@@ -1,0 +1,766 @@
+{
+ "mode": "measured",
+ "stations": {
+  "KEO": {
+   "sources": [
+    {
+     "file": "OS_KEO_200406_D_TVMBP_32N145E_10m.nc",
+     "var": "WSPD",
+     "coordinates": null,
+     "height_m": 4.0,
+     "rule": "b:HEIGHTWIND",
+     "hours": 54065
+    },
+    {
+     "file": "OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+     "var": "WSPD",
+     "coordinates": null,
+     "height_m": 4.0,
+     "rule": "b:HEIGHTWIND",
+     "hours": 16016
+    },
+    {
+     "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 3.84,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 7105
+    },
+    {
+     "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.2,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 10
+    },
+    {
+     "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 3.8,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 7892
+    },
+    {
+     "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 2045
+    },
+    {
+     "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 4
+    },
+    {
+     "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 2282
+    },
+    {
+     "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 1518
+    },
+    {
+     "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 4619
+    },
+    {
+     "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 2
+    },
+    {
+     "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 10760
+    },
+    {
+     "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 15
+    },
+    {
+     "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 5658
+    },
+    {
+     "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 1504
+    }
+   ],
+   "hours_by_height_applied": {
+    "3.000": 2,
+    "3.800": 7892,
+    "3.840": 7105,
+    "4.000": 98486,
+    "4.200": 10
+   },
+   "fallback_c": []
+  },
+  "MOSEAN/WHOTS": {
+   "sources": [
+    {
+     "file": "OS_WHOTS_200408-201809_D_FLTS-1H.nc",
+     "var": "WS_H",
+     "coordinates": null,
+     "height_m": 3.47,
+     "rule": "b:WND_measurementHeight",
+     "hours": 114
+    },
+    {
+     "file": "OS_WHOTS_2004_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.47,
+     "rule": "a:HEIGHT_WND",
+     "hours": 5298
+    },
+    {
+     "file": "OS_WHOTS_2005_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.425,
+     "rule": "a:HEIGHT_WND",
+     "hours": 7960
+    },
+    {
+     "file": "OS_WHOTS_2006_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.35,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8736
+    },
+    {
+     "file": "OS_WHOTS_2007_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.84,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8320
+    },
+    {
+     "file": "OS_WHOTS_2008_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.26,
+     "rule": "a:HEIGHT_WND",
+     "hours": 9585
+    },
+    {
+     "file": "OS_WHOTS_2009_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.42,
+     "rule": "a:HEIGHT_WND",
+     "hours": 9194
+    },
+    {
+     "file": "OS_WHOTS_2010_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.4,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8231
+    },
+    {
+     "file": "OS_WHOTS_2011_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.45,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8295
+    },
+    {
+     "file": "OS_WHOTS_2012_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.28,
+     "rule": "a:HEIGHT_WND",
+     "hours": 9348
+    },
+    {
+     "file": "OS_WHOTS_2013_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.31,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8902
+    },
+    {
+     "file": "OS_WHOTS_2014_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.4,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8640
+    },
+    {
+     "file": "OS_WHOTS_2015_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.31,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8486
+    },
+    {
+     "file": "OS_WHOTS_2016_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.35,
+     "rule": "a:HEIGHT_WND",
+     "hours": 2866
+    },
+    {
+     "file": "OS_WHOTS_2017_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.3,
+     "rule": "a:HEIGHT_WND",
+     "hours": 10042
+    },
+    {
+     "file": "OS_WHOTS_2018_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.5,
+     "rule": "a:HEIGHT_WND",
+     "hours": 9134
+    },
+    {
+     "file": "OS_WHOTS_2019_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.36,
+     "rule": "a:HEIGHT_WND",
+     "hours": 16500
+    },
+    {
+     "file": "OS_WHOTS_2021_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.28,
+     "rule": "a:HEIGHT_WND",
+     "hours": 7966
+    },
+    {
+     "file": "OS_WHOTS_2022_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.3,
+     "rule": "a:HEIGHT_WND",
+     "hours": 7935
+    }
+   ],
+   "hours_by_height_applied": {
+    "3.260": 9585,
+    "3.280": 17314,
+    "3.300": 17977,
+    "3.310": 17388,
+    "3.350": 11602,
+    "3.360": 16500,
+    "3.400": 16871,
+    "3.420": 9194,
+    "3.425": 7960,
+    "3.450": 8295,
+    "3.470": 5412,
+    "3.500": 9134,
+    "3.840": 8320
+   },
+   "fallback_c": []
+  },
+  "Papa": {
+   "sources": [
+    {
+     "file": "OS_PAPA_200706_D_TVMBP_50N145W_10m.nc",
+     "var": "WSPD",
+     "coordinates": null,
+     "height_m": 4.0,
+     "rule": "b:HEIGHTWIND",
+     "hours": 35000
+    },
+    {
+     "file": "OS_PAPA_200706_M_TSVMBP_50N145W_hr.nc",
+     "var": "WSPD",
+     "coordinates": null,
+     "height_m": 4.0,
+     "rule": "b:HEIGHTWIND",
+     "hours": 7468
+    },
+    {
+     "file": "OS_PAPA_2007PA001_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 8541
+    },
+    {
+     "file": "OS_PAPA_2008PA002A_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 338
+    },
+    {
+     "file": "OS_PAPA_2008PA002A_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.5,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 7
+    },
+    {
+     "file": "OS_PAPA_2008PA002B_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 3324
+    },
+    {
+     "file": "OS_PAPA_2008PA002B_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.5,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 7
+    },
+    {
+     "file": "OS_PAPA_2008PA002C_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 1467
+    },
+    {
+     "file": "OS_PAPA_2009PA003_D_MET_10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 8614
+    },
+    {
+     "file": "OS_PAPA_2009PA003_D_MET_10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.5,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 5
+    },
+    {
+     "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.2,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 8699
+    },
+    {
+     "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.84,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 6
+    },
+    {
+     "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.2,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 8749
+    },
+    {
+     "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.84,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 20
+    },
+    {
+     "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.2,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 8693
+    },
+    {
+     "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 3.8,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 53
+    },
+    {
+     "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 3.8,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 9606
+    },
+    {
+     "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.2,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 27
+    },
+    {
+     "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 7791
+    },
+    {
+     "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 44
+    },
+    {
+     "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 10251
+    },
+    {
+     "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 56
+    },
+    {
+     "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 3158
+    },
+    {
+     "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 87
+    },
+    {
+     "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 5282
+    },
+    {
+     "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 11412
+    },
+    {
+     "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 9
+    },
+    {
+     "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+     "var": "WSPD",
+     "coordinates": "TIME HEIGHT_WIND LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND",
+     "hours": 7263
+    },
+    {
+     "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+     "var": "WSPD2",
+     "coordinates": "TIME HEIGHT_WIND2 LATITUDE LONGITUDE",
+     "height_m": 4.0,
+     "rule": "a:HEIGHT_WIND2",
+     "hours": 4
+    }
+   ],
+   "hours_by_height_applied": {
+    "3.500": 19,
+    "3.800": 9659,
+    "3.840": 26,
+    "4.000": 110109,
+    "4.200": 26168
+   },
+   "fallback_c": []
+  },
+  "SOFS": {
+   "sources": [
+    {
+     "file": "OS_SOTS_SOFS02_D_ASIMET.nc",
+     "var": "WSPD",
+     "coordinates": "TIME NOMINAL_DEPTH LATITUDE LONGITUDE",
+     "height_m": 3.32,
+     "rule": "b:WSPD_H",
+     "hours": 5781
+    },
+    {
+     "file": "OS_SOTS_SOFS04_D_ASIMET.nc",
+     "var": "WSPD",
+     "coordinates": "TIME NOMINAL_DEPTH LATITUDE LONGITUDE",
+     "height_m": 3.55,
+     "rule": "b:WSPD_H",
+     "hours": 3995
+    },
+    {
+     "file": "OS_SOTS_SOFS05_D_ASIMET.nc",
+     "var": "WSPD",
+     "coordinates": "TIME NOMINAL_DEPTH LATITUDE LONGITUDE",
+     "height_m": 3.305,
+     "rule": "b:WSPD_H",
+     "hours": 9281
+    },
+    {
+     "file": "OS_SOTS_SOFS09_D_ASIMET.nc",
+     "var": "WSPD",
+     "coordinates": "TIME NOMINAL_DEPTH LATITUDE LONGITUDE",
+     "height_m": 3.29,
+     "rule": "b:WSPD_H",
+     "hours": 5636
+    }
+   ],
+   "hours_by_height_applied": {
+    "3.290": 5636,
+    "3.305": 9281,
+    "3.320": 5781,
+    "3.550": 3995
+   },
+   "fallback_c": []
+  },
+  "Stratus": {
+   "sources": [
+    {
+     "file": "OS_Stratus_2006_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.31,
+     "rule": "a:HEIGHT_WND",
+     "hours": 9025
+    },
+    {
+     "file": "OS_Stratus_2007_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.32,
+     "rule": "a:HEIGHT_WND",
+     "hours": 8775
+    },
+    {
+     "file": "OS_Stratus_2008_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.29,
+     "rule": "a:HEIGHT_WND",
+     "hours": 10726
+    },
+    {
+     "file": "OS_Stratus_2010_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.35,
+     "rule": "a:HEIGHT_WND",
+     "hours": 4106
+    },
+    {
+     "file": "OS_Stratus_2011_D_M.nc",
+     "var": "UWND",
+     "coordinates": "TIME HEIGHT_WND LATITUDE LONGITUDE",
+     "height_m": 3.32,
+     "rule": "a:HEIGHT_WND",
+     "hours": 10048
+    }
+   ],
+   "hours_by_height_applied": {
+    "3.290": 10726,
+    "3.310": 9025,
+    "3.320": 18823,
+    "3.350": 4106
+   },
+   "fallback_c": []
+  }
+ },
+ "version": "dw13a-2026-09-29a",
+ "events_by_station": {
+  "TAO165E": {
+   "n": 67,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 67
+   }
+  },
+  "TAO8S165E": {
+   "n": 33,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 33
+   }
+  },
+  "BOBOA": {
+   "n": 54,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 54
+   }
+  },
+  "TAO170W": {
+   "n": 26,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 26
+   }
+  },
+  "TAO155W": {
+   "n": 10,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 10
+   }
+  },
+  "TAO140W": {
+   "n": 10,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 10
+   }
+  },
+  "TAO125W": {
+   "n": 1,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 1
+   }
+  },
+  "TAO110W": {
+   "n": 3,
+   "any_z_ne_4": 0,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 3
+   }
+  },
+  "KEO": {
+   "n": 209,
+   "any_z_ne_4": 42,
+   "straddle": 0,
+   "z_onset": {
+    "4.000": 167,
+    "3.840": 12,
+    "3.800": 30
+   }
+  },
+  "MOSEAN/WHOTS": {
+   "n": 117,
+   "any_z_ne_4": 117,
+   "straddle": 0,
+   "z_onset": {
+    "3.470": 8,
+    "3.425": 7,
+    "3.350": 9,
+    "3.840": 8,
+    "3.260": 4,
+    "3.420": 8,
+    "3.400": 15,
+    "3.310": 17,
+    "3.300": 21,
+    "3.500": 7,
+    "3.360": 8,
+    "3.280": 5
+   }
+  },
+  "Papa": {
+   "n": 106,
+   "any_z_ne_4": 29,
+   "straddle": 2,
+   "z_onset": {
+    "4.000": 77,
+    "4.200": 24,
+    "3.800": 5
+   }
+  },
+  "SOFS": {
+   "n": 10,
+   "any_z_ne_4": 10,
+   "straddle": 0,
+   "z_onset": {
+    "3.320": 7,
+    "3.550": 2,
+    "3.290": 1
+   }
+  }
+ },
+ "n_events": 646,
+ "n_events_any_z_ne_4": 198,
+ "n_events_straddle": 2
+}

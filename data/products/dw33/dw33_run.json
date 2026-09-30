@@ -1,0 +1,323 @@
+{
+ "version": "dw33-2026-09-29a",
+ "code_sha256": "5808f7a75f55dc30f990f51dfed88b1889d800bcf1f969476015eba4c988cd8e",
+ "p3_code_sha256": "dfc246541424a47bfe3882f67e9f194cc8947f719b7f65ea33463ccbaddaa422",
+ "config_hash": "526b84b5f5620429",
+ "results": [
+  {
+   "ym": 200001,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200002,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200003,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200004,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200005,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200006,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200007,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200008,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200009,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200010,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200011,
+   "ok": true,
+   "resumed": false
+  },
+  {
+   "ym": 200012,
+   "ok": true,
+   "resumed": false
+  }
+ ],
+ "wall_seconds": 14574.2,
+ "month_info": {
+  "200001": {
+   "ym": 200001,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2487.1,
+   "step_seconds": 2216.8,
+   "peak_rss_bytes": 4840144896,
+   "timing_s": {
+    "bins": 164.82,
+    "history": 850.09,
+    "dense": 341.94,
+    "d_base": 232.08,
+    "d_exact": 266.08,
+    "d_cases": 326.52
+   },
+   "D_frac_mean": 0.3433842647042445,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200002": {
+   "ym": 200002,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 29,
+   "steps": 1392,
+   "seconds": 2358.8,
+   "step_seconds": 2105.2,
+   "peak_rss_bytes": 4536991744,
+   "timing_s": {
+    "bins": 153.39,
+    "history": 788.24,
+    "dense": 319.13,
+    "d_base": 226.31,
+    "d_exact": 262.57,
+    "d_cases": 321.82
+   },
+   "D_frac_mean": 0.36244600472624555,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200003": {
+   "ym": 200003,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2454.1,
+   "step_seconds": 2186.0,
+   "peak_rss_bytes": 4623400960,
+   "timing_s": {
+    "bins": 163.62,
+    "history": 796.78,
+    "dense": 339.62,
+    "d_base": 236.6,
+    "d_exact": 276.4,
+    "d_cases": 338.49
+   },
+   "D_frac_mean": 0.35757206626593707,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200004": {
+   "ym": 200004,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 30,
+   "steps": 1440,
+   "seconds": 2387.6,
+   "step_seconds": 2126.6,
+   "peak_rss_bytes": 4650090496,
+   "timing_s": {
+    "bins": 158.33,
+    "history": 785.52,
+    "dense": 328.52,
+    "d_base": 228.38,
+    "d_exact": 265.86,
+    "d_cases": 325.98
+   },
+   "D_frac_mean": 0.35520506276943054,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200005": {
+   "ym": 200005,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2445.5,
+   "step_seconds": 2174.3,
+   "peak_rss_bytes": 4639981568,
+   "timing_s": {
+    "bins": 164.04,
+    "history": 817.77,
+    "dense": 338.27,
+    "d_base": 229.81,
+    "d_exact": 265.83,
+    "d_cases": 324.08
+   },
+   "D_frac_mean": 0.33986622985786785,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200006": {
+   "ym": 200006,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 30,
+   "steps": 1440,
+   "seconds": 2344.9,
+   "step_seconds": 2083.4,
+   "peak_rss_bytes": 4562059264,
+   "timing_s": {
+    "bins": 159.44,
+    "history": 767.17,
+    "dense": 327.39,
+    "d_base": 222.64,
+    "d_exact": 258.66,
+    "d_cases": 315.4
+   },
+   "D_frac_mean": 0.34154023621464424,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200007": {
+   "ym": 200007,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2465.5,
+   "step_seconds": 2190.4,
+   "peak_rss_bytes": 4859478016,
+   "timing_s": {
+    "bins": 167.75,
+    "history": 812.56,
+    "dense": 350.42,
+    "d_base": 232.71,
+    "d_exact": 266.56,
+    "d_cases": 325.29
+   },
+   "D_frac_mean": 0.3362825223908924,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200008": {
+   "ym": 200008,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2405.6,
+   "step_seconds": 2131.4,
+   "peak_rss_bytes": 4442783744,
+   "timing_s": {
+    "bins": 167.76,
+    "history": 774.37,
+    "dense": 346.67,
+    "d_base": 228.18,
+    "d_exact": 261.09,
+    "d_cases": 319.21
+   },
+   "D_frac_mean": 0.3293373948773707,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200009": {
+   "ym": 200009,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 30,
+   "steps": 1440,
+   "seconds": 2365.1,
+   "step_seconds": 2100.7,
+   "peak_rss_bytes": 4529192960,
+   "timing_s": {
+    "bins": 161.66,
+    "history": 778.61,
+    "dense": 333.44,
+    "d_base": 223.36,
+    "d_exact": 256.63,
+    "d_cases": 313.51
+   },
+   "D_frac_mean": 0.33463336652341724,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200010": {
+   "ym": 200010,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2430.1,
+   "step_seconds": 2157.1,
+   "peak_rss_bytes": 4629331968,
+   "timing_s": {
+    "bins": 166.74,
+    "history": 808.57,
+    "dense": 344.18,
+    "d_base": 226.57,
+    "d_exact": 259.15,
+    "d_cases": 317.34
+   },
+   "D_frac_mean": 0.3274681719503664,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200011": {
+   "ym": 200011,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 30,
+   "steps": 1440,
+   "seconds": 2355.5,
+   "step_seconds": 2088.3,
+   "peak_rss_bytes": 4453744640,
+   "timing_s": {
+    "bins": 162.03,
+    "history": 776.59,
+    "dense": 334.64,
+    "d_base": 219.8,
+    "d_exact": 252.2,
+    "d_cases": 309.79
+   },
+   "D_frac_mean": 0.328215795307769,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  },
+  "200012": {
+   "ym": 200012,
+   "version": "dw33-2026-09-29a",
+   "config_hash": "526b84b5f5620429",
+   "days": 31,
+   "steps": 1488,
+   "seconds": 2456.1,
+   "step_seconds": 2181.5,
+   "peak_rss_bytes": 4499357696,
+   "timing_s": {
+    "bins": 167.52,
+    "history": 832.97,
+    "dense": 343.18,
+    "d_base": 226.5,
+    "d_exact": 258.81,
+    "d_cases": 317.56
+   },
+   "D_frac_mean": 0.3266297003752268,
+   "cmorph_missing": {},
+   "wind_persist_last": 0
+  }
+ }
+}

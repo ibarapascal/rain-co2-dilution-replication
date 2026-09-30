@@ -1,0 +1,352 @@
+original_zh	released_en	used_in
+总数 ≥60 且 ≥10 事件的站 ≥3	total >= 60 and >= 3 stations with >= 10 events	p1/p1_summary.json, p1b/p1b_summary.json
+西太暖池	western Pacific warm pool	p1/p1_summary.json, p1/p1_summary.json#key
+孟加拉湾季风	Bay of Bengal monsoon	p1/p1_summary.json, p1/p1_summary.json#key
+中东太平洋	central-eastern Pacific	p1/p1_summary.json, p1/p1_summary.json#key, p3c/p3c_decision.json#key
+主判：配满 5 个对照的事件	main decision: events with all 5 control windows	p1/p1_summary.json, p1b/p1b_summary.json
+|事件均值−对照均值| ≥0.03 psu 且 95% CI 不含 0	|event mean - control mean| >= 0.03 psu and 95% CI excludes 0	p1/p1_summary.json, p1b/p1b_summary.json
+敏感性：≥1 个对照（不参与判定）	sensitivity: >= 1 control window (not used for the decision)	p1/p1_summary.json, p1b/p1b_summary.json
+|雨前中位差| ≤0.05 psu 且 事件异常相关 ≥0.6	|pre-rain median difference| <= 0.05 psu and event anomaly correlation >= 0.6	p1/p1_summary.json, p1b/p1b_summary.json
+P2（需 CMORPH＋RIM-3/S20），P1 不判	P2 (needs CMORPH + RIM-3/S20); not decided in P1	p1/p1_summary.json
+无 0.5 m 分支：配满 5 个对照	branch without 0.5 m: all 5 control windows	p1/p1_summary.json
+仅信息量，不参与判定	information only, not used for the decision	p1b/p1b_summary.json
+无 R 值的合并事件应与 P1 事件集一致；差异来自 R 雨改变对照/前 24 h 干燥判定或重建偏差，只作诊断	combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only	p1b/p1b_stations.json, p1b/p1b_summary.json
+PMEL pmel_co2_moorings_* 去 P1 8 站与 Chuuk；同址 ≤25 km 有 ≤1 h 雨量与 ≤1.5 m 盐度（OceanSITES GDAC，D/M 模式）	PMEL pmel_co2_moorings_* minus the 8 P1 stations and Chuuk; co-located (<= 25 km) rainfall at <= 1 h and salinity at <= 1.5 m (OceanSITES GDAC, D/M mode)	p1b/p1b_stations.json
+P1 已用 8 站之一	one of the 8 P1 stations	p1b/p1b_stations.json
+排除	excluded	p1b/p1b_stations.json
+同址 ≤25 km 无 OceanSITES D/M 文件	no OceanSITES D/M file within 25 km	p1b/p1b_stations.json
+PSAL: 无 ≤1.5 m 层（层深 [10.0, 21.0, 31.0, 41.0, 61.0, 76.0]…）	PSAL: no level <= 1.5 m (levels [10.0, 21.0, 31.0, 41.0, 61.0, 76.0]...)	p1b/p1b_stations.json
+PSAL: 无 ≤1.5 m 层（层深 [9.0, 19.0, 29.0, 39.0, 60.0, 75.0]…）	PSAL: no level <= 1.5 m (levels [9.0, 19.0, 29.0, 39.0, 60.0, 75.0]...)	p1b/p1b_stations.json
+缺 ≤1.5 m 盐度	no salinity <= 1.5 m	p1b/p1b_stations.json
+PSAL: 无 ≤1.5 m 层（层深 [6.1, 14.1, 25.3, 44.5, 74.6]…）	PSAL: no level <= 1.5 m (levels [6.1, 14.1, 25.3, 44.5, 74.6]...)	p1b/p1b_stations.json
+PSAL: 无 ≤1.5 m 层（层深 [6.1, 14.1, 25.3, 44.5, 74.6, 705.0]…）	PSAL: no level <= 1.5 m (levels [6.1, 14.1, 25.3, 44.5, 74.6, 705.0]...)	p1b/p1b_stations.json
+时间分辨率约 86400 s > 1 h	time resolution about 86400 s > 1 h	p1b/p1b_stations.json
+纳入	included	p1b/p1b_stations.json
+同址 ≤25 km 有 ≤1 h 雨量与 ≤1.5 m 盐度（OceanSITES，D/M）；缺 1 m，以最浅 ≤1.5 m 层代「1 m」	co-located (<= 25 km) rainfall at <= 1 h and salinity at <= 1.5 m (OceanSITES, D/M); no 1 m level, the shallowest level <= 1.5 m substitutes for '1 m'	p1b/p1b_stations.json
+时间分辨率约 2629694 s > 1 h	time resolution about 2629694 s > 1 h	p1b/p1b_stations.json
+时间分辨率约 2629465 s > 1 h	time resolution about 2629465 s > 1 h	p1b/p1b_stations.json
+PSAL: 无 ≤1.5 m 层（层深 [-10.0]…）	PSAL: no level <= 1.5 m (levels [-10.0]...)	p1b/p1b_stations.json
+PSAL 深度取 PSAL_H 抽样中位数 0.930 m（n=51）	PSAL depth = median of sampled PSAL_H, 0.930 m (n=51)	p1b/p1b_stations.json
+PSAL 深度取 PSAL_H 抽样中位数 0.550 m（n=51）	PSAL depth = median of sampled PSAL_H, 0.550 m (n=51)	p1b/p1b_stations.json
+PSAL: 深度不明	PSAL: depth unknown	p1b/p1b_stations.json
+PSAL 深度取 PSAL_H 抽样中位数 0.880 m（n=51）	PSAL depth = median of sampled PSAL_H, 0.880 m (n=51)	p1b/p1b_stations.json
+K16：不重判	K16: not re-decided	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+主集（10 mm 全部事件，CMORPH、0–6 h）中 ΔS_RIM(1 m 层) 与 ΔS_S20 均非 NaN 的比例 ≥50% 才继续（K29）	continue only if >= 50% of the main set (all 10 mm events, CMORPH, 0-6 h) has non-NaN dS_RIM(1 m level) and dS_S20 (K29)	dw13a/dw13a_compare.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2-sens/p2_sensitivity.json, p2/p2_summary.json
+强迫齐全但模型 NaN：CMORPH 半步 >200 mm/h 落在 d0 表外（K2，照 Witte 不外推）或该深度雨前观测缺	forcing complete but model NaN: a CMORPH half-hour > 200 mm/h falls outside the d0 table (K2; no extrapolation, as in Witte) or the pre-rain observation at that depth is missing	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+depth_surface 第 0 层、最近 1° 格点（经度按 mod 360 环绕），NaN 不回填（K19）	depth_surface level 0, nearest 1-degree cell (longitude wrapped mod 360), NaN not filled (K19)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_glodap.json, p2/p2_summary.json
+|mean ΔS_RIM(z) − mean ΔS_S20| ≥ 2.0·SE_obs(z)，z=0.5 与 1 m 都满足才过（K11）	|mean dS_RIM(z) - mean dS_S20| >= 2.0*SE_obs(z); passes only if satisfied at both z = 0.5 and 1 m (K11)	dw13a/measured/p2_d3.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_d3.json, p2/p2_summary.json
+过（可做模型裁决）	pass (models can be discriminated)	dw13a/dw13a_compare.json, dw13a/measured/p2_d3.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2-sens/p2_sensitivity.json, p2/p2_d3.json, p2/p2_summary.json
+D3 只用模型预测与对照窗观测；本文件写盘先于 P5/β/任何比值计算（K11）	D3 uses only model predictions and control-window observations; this file is written before P5/beta/any ratio (K11)	dw13a/measured/p2_d3.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_d3.json, p2/p2_summary.json
+ΣΔS_obs(0.5 m)/ΣΔS_S20（深度不对等，上界对照）	sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2-sens/p2_sensitivity.json, p2/p2_summary.json
+P5_obs＝ΣΔS_obs(5 m)/ΣΔS_obs(1 m)	P5_obs = sum dS_obs(5 m) / sum dS_obs(1 m)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+β_obs＝ΣΔpCO₂(T 归一)/ΣΔS(0.5 m) [µatm/psu]	beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+出口 1：信号显著 → P3 全球重算	exit 1: signal significant -> P3 global recalculation	dw13a/dw13a_compare.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+A_P1热带8站	A_tropical_8	dw13a/dw13a_compare.json#key, dw13a/measured/p2_summary.json, dw13a/measured/p2_summary.json#key, dw13a/nominal/p2_summary.json, dw13a/nominal/p2_summary.json#key, p2/p2_summary.json, p2/p2_summary.json#key, p4-mech/p4_mech_summary.json, p5-beta/p5_beta_summary.json#key
+B_O组5站	B_subtropical_midlatitude_5	dw13a/dw13a_compare.json#key, dw13a/measured/p2_summary.json, dw13a/measured/p2_summary.json#key, dw13a/nominal/p2_summary.json, dw13a/nominal/p2_summary.json#key, p2/p2_summary.json, p2/p2_summary.json#key, p4-mech/p4_mech_summary.json, p5-beta/p5_beta_summary.json#key
+仅信息，不进出口（K28）	information only, not used for the exit decision (K28)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+替代层＝|s1_depth_m − 1.0| > 0.05 m（p1b_extend 同一判据）；模型「1 m」层深度＝s1_depth_m	substitute level = |s1_depth_m - 1.0| > 0.05 m (same criterion as p1b_extend); model '1 m' depth = s1_depth_m	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+当前项深度衰减因子 exp(−z²/(4·Kz·t)) 取 t=1800 s（主结果 t=1 s）；量级项 c2·IRR·1800/√Kz、历史项、d0、风、窗口、事件集、bootstrap（B、种子、站×季簇）都与主结果相同	current-term depth factor exp(-z^2/(4*Kz*t)) with t = 1800 s (main result t = 1 s); magnitude term c2*IRR*1800/sqrt(Kz), history terms, d0, wind, windows, event set and bootstrap (B, seed, station x season clusters) as in the main result	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+探索性 K27：ΣΔS_obs(0.5 m)/ΣΔS_RIM3,K27(0.5 m)	exploratory K27: sum dS_obs(0.5 m) / sum dS_RIM3,K27(0.5 m)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+探索性 K27：ΣΔS_obs(1.0 m)/ΣΔS_RIM3,K27(1.0 m)	exploratory K27: sum dS_obs(1.0 m) / sum dS_RIM3,K27(1.0 m)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+扩样在 P1 D4 不过之后决定（P1 原始 D4=14）	sample expansion decided after P1 D4 failed (original P1 D4 = 14)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+D4=34 只比阈值多 4，新增强淡化事件全在 O 组（1 m 为替代层）	D4 = 34 exceeds the threshold by only 4; all new strong-freshening events are in group O (1 m is a substitute level)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+O 组为中纬度/副热带站，与 P1 暖池站气候背景不同 → 见 strata_by_group	group O are midlatitude/subtropical stations with a climate different from the P1 warm-pool stations -> see strata_by_group	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+S20 是海面式，在 0.5 m 只是上界对照（深度不对等）	S20 is a surface relation; at 0.5 m it is only an upper-bound comparison (depths not matched)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+0.5 m SSS 在部分站可能即 1 m 传感器（P1 I17）	the 0.5 m SSS may be the 1 m sensor itself at some stations (P1 I17)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+β_obs 主集按 ΔS0.5≤−0.2 筛选（分母筛选）会使 β_obs 偏向 0（K18）	selecting the beta_obs main set by dS0.5 <= -0.2 (denominator selection) biases beta_obs toward 0 (K18)	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+K28：O 组「1 m」为 ≤1.5 m 最浅替代层，模型按实际深度算 → 见 k28_R_RIM_1m_by_layer	K28: group O '1 m' is the shallowest substitute level <= 1.5 m; the model is evaluated at the actual depth -> see k28_R_RIM_1m_by_layer	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+K30：观测 0.5 m 约 3 小时一次而模型用满 6 小时（增噪）；模型小时相对观测超前约 15–45 分钟	K30: observed 0.5 m is about 3-hourly while the model uses all 6 hours (more noise); model hours lead observations by about 15-45 min	dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json, p2/p2_summary.json
+窗口 (0, 3)	window (0, 3)	p2-sens/p2_sensitivity.json
+窗口 (6, 12)	window (6, 12)	p2-sens/p2_sensitivity.json
+雨量计驱动	gauge-driven	p2-sens/p2_sensitivity.json
+np.isnan(logH)，logH＝RimRing.history()[0]（Engine.step 同一调用）	np.isnan(logH), logH = RimRing.history()[0] (same call as Engine.step)	p3-global/selftest.json
+本文件写盘前、写盘时均未读取任何 P2 产物；P3c 须在本文件存在后才运行。	no P2 product was read before or while writing this file; P3c may run only after this file exists.	p3-global/p3a_repro.json
+胶囊稀释情形大气侧不加 0.1 psu 皮层盐度（TB L498 vs L501/L504），无雨像元也产生与 s 无关的界面项；dilution_at_s0_whole_pct 即该项全局量。	in the capsule dilution case the atmospheric side does not add the 0.1 psu skin salinity (TB L498 vs L501/L504), so rain-free pixels also produce an s-independent interfacial term; dilution_at_s0_whole_pct is its global amount.	p3-global/p3a_repro.json
+海侧溶解度所用 SST（CMORPH 像元、逐日）	SST used for sea-side solubility (CMORPH pixels, daily)	p3-global/p3a_repro.json
+SST−0.17 K（SKIN_DT，TB L498）	SST - 0.17 K (SKIN_DT, TB L498)	p3-global/p3a_repro.json
+1985-01 起逐月（units 无法解码）	monthly from 1985-01 (units not decodable)	p3-global/p3a_repro.json
+界面项（稀释＋湍流＋交互＋L30 常数项）占 |风驱| 百分比	interfacial term (dilution + turbulence + interaction + L30 constant term) as % of |wind-driven flux|	p3-global/p3b_curves.json
+I_int 对 β 线性的分量；S6：I(s; r_β)＝I(s)＋(r_β−1)·G(s)（L39，精确）	component of I_int linear in beta; S6: I(s; r_beta) = I(s) + (r_beta-1)*G(s) (L39, exact)	p3-global/p3b_curves.json
+5° 纬带 PgC（Fwind、turb、skin、I、G 正＝出海；dep_PgC 为 ΣFdep，正＝入海；I、G 为配对和，含该带 L30 常数项）；P3c 自行按全局风驱换算百分比	5-degree latitude bands, PgC (Fwind, turb, skin, I, G positive = outgassing; dep_PgC = sum Fdep, positive = uptake; I, G are paired sums incl. the band's L30 constant term); P3c converts to % of the global wind-driven flux	p3-global/p3b_curves.json
+P2 ci95（L16：以 P2 为准）	P2 ci95 (L16: P2 is authoritative)	p3c/p3c_decision.json
+未作判门依据（P3a 过）	not used for the gate (P3a passed)	p3c/p3c_decision.json
+暖池	warm_pool	p3c/p3c_decision.json#key
+孟加拉湾	bay_of_bengal	p3c/p3c_decision.json#key
+中纬／副热带	subtropics_midlatitudes	p3c/p3c_decision.json#key
+U(s) 在 [0,1] 上近似线性；随 s 变化的分量＝U(s)−U(0)；常数项＝U(0)−Dep（湍流＋皮层常数项，均乘 1−c）	U(s) approximately linear on [0,1]; s-dependent component = U(s)-U(0); constant = U(0)-Dep (turbulence + skin constant, both times 1-c)	p4-explore/p4_explore.json
+K27 变体 by U10 tercile	K27 variant by U10 tercile	p4-mech/p4_mech_summary.json
+R_RIM(1 m) by zeta=z1/L tercile (k=0 最不稳定)	R_RIM(1 m) by zeta=z1/L tercile (k=0 most unstable)	p4-mech/p4_mech_summary.json
+R_RIM(1 m) by LoW 预测比 rho tercile	R_RIM(1 m) by tercile of the law-of-the-wall predicted ratio rho	p4-mech/p4_mech_summary.json
+R_obs/R_th＝Σobs1/ΣLoW1	R_obs/R_th = sum obs1 / sum LoW1	p4-mech/p4_mech_summary.json
+壁层解隐含的海面比／1 m 比；≈1 表示在该理论下 1 m 比值可外推到海面（描述）	surface ratio / 1 m ratio implied by the wall-layer solution; ~1 means the 1 m ratio extrapolates to the surface under this theory (descriptive)	p4-mech/p4_mech_summary.json
+R_RIM(1 m) by λ=ln(G6/C6) tercile（k=2 雨量计相对最多）	R_RIM(1 m) by tercile of lambda = ln(G6/C6) (k=2: gauge relatively largest)	p4-mech/p4_mech_summary.json
+3×3 均值驱动 R_RIM(1 m)	R_RIM(1 m) driven by the 3x3 mean	p4-mech/p4_mech_summary.json
+Σ0.5/Σ1 同小时	sum 0.5 / sum 1, same hours	p4-mech/p4_mech_summary.json
+E1(ii) 雨量计驱动 R_RIM(1 m)	E1(ii) gauge-driven R_RIM(1 m)	p4b/p4b_summary.json
+未化解	not resolved	p4b/p4b_summary.json
+λ 分档形状超出纯选择伪影（各量：{'n0': '低于包络', 'n1': '在内', 'n2': '在内', 'D': '高于包络'}）	shape by lambda class exceeds a pure selection artifact (per quantity: {'n0': 'below envelope', 'n1': 'inside', 'n2': 'inside', 'D': 'above envelope'})	p4b/p4b_summary.json
+Λ_s＝Σobs1/Σstab1（β_h=5）	Lambda_s = sum obs1 / sum stab1 (beta_h=5)	p4b/p4b_summary.json
+β_h=7.8 排序	ordering with beta_h=7.8	p4b/p4b_summary.json
+雨量计驱动 Λ_s	gauge-driven Lambda_s	p4b/p4b_summary.json
+雨量计驱动排序（R_G by ρ_G）	gauge-driven ordering (R_G by rho_G)	p4b/p4b_summary.json
+不可排序	cannot be ordered	p4b/p4b_summary.json
+理论仍混合过强（观测淡化多于理论）	theory still mixes too strongly (observed freshening exceeds theory)	p4b/p4b_summary.json
+闭合（CI 含 1）	closed (CI includes 1)	p4b/p4b_summary.json
+多出（下端>1）	excess (lower bound > 1)	p4b/p4b_summary.json
+缺失（上端<1）	deficit (upper bound < 1)	p4b/p4b_summary.json
+φ_25 可评（n≥40 且 ≥8 簇）则为主量，否则 φ_20	phi_25 is the main quantity if evaluable (n >= 40 and >= 8 clusters), otherwise phi_20	p4b/p4b_summary.json
+RIM-3 多造淡水	RIM-3 creates excess freshwater	p4b/p4b_summary.json
+不可评（E1=未化解，E3=not_evaluable）；只报可评项	not evaluable (E1 = not resolved, E3 = not_evaluable); only evaluable items reported	p4b/p4b_summary.json
+稳定修正也不能解释逐事件差异	stability correction also cannot explain the per-event differences	p4b/p4b_summary.json
+闭合	closed	p4e/p4e_summary.json
+稳健	robust	p4e/p4e_summary.json, p5-sss/p5_summary.json
+多出	excess	p4e/p4e_summary.json
+依赖簇定义	depends on cluster definition	p4e/p4e_summary.json, p6/p6_summary.json
+缺失	deficit	p4e/p4e_summary.json
+不能区分	cannot distinguish	p4e/p4e_summary.json, p5-sss/p5_summary.json, p6/p6_summary.json, p7a/p7a_summary.json, p8a/p8a_summary.json
+倾向 R1（不显著）	leans to R1 (not significant)	p4e/p4e_summary.json
+淡水收支不能区分 R1 与 R2	the freshwater budget cannot distinguish R1 from R2	p4e/p4e_summary.json
+R2 与淡水守恒不相容，支持 R1	R2 incompatible with freshwater conservation; supports R1	p4e/p4e_summary.json
+不可区分（观测自身超出）	not distinguishable (observations themselves exceed)	p4e/p4e_summary.json
+不能区分（观测略多，在漏接内）	cannot distinguish (observations slightly larger, within gauge undercatch)	p4e/p4e_summary.json
+方向冲突	direction conflict	p4f/p4f.json
+守恒解释不能解释风速趋势	the conservation explanation cannot explain the wind trend	p4f/p4f.json
+ρ 的区间不含 1 的档：[0, 2]	classes whose rho interval excludes 1: [0, 2]	p4f/p4f.json
+r_β＝ΣΔpCO₂/Σβ_st·ΔS(0.5 m)，D4	r_beta = sum dpCO2 / sum beta_st*dS(0.5 m), D4	p5-beta/p5_beta_summary.json
+站簇 bootstrap	station-cluster bootstrap	p5-beta/p5_beta_summary.json
+过饱和	supersaturated	p5-beta/p5_beta_summary.json
+欠饱和	undersaturated	p5-beta/p5_beta_summary.json
+订正后 r′（central）	corrected r' (central)	p5-beta/p5_beta_summary.json
+不支持	not supported	p5-beta/p5_beta_summary.json, p7c/p7c_summary.json
+订正后 r′（upper）	corrected r' (upper)	p5-beta/p5_beta_summary.json
+窗 0-3	window 0-3	p5-beta/p5_beta_summary.json
+窗 0-3 过饱和	window 0-3 supersaturated	p5-beta/p5_beta_summary.json
+窗 3-6	window 3-6	p5-beta/p5_beta_summary.json
+窗 3-6 过饱和	window 3-6 supersaturated	p5-beta/p5_beta_summary.json
+窗 6-12	window 6-12	p5-beta/p5_beta_summary.json
+窗 6-12 过饱和	window 6-12 supersaturated	p5-beta/p5_beta_summary.json
+U10>中位数	U10 > median	p5-beta/p5_beta_summary.json
+U10≤中位数	U10 <= median	p5-beta/p5_beta_summary.json
+剔除后	after exclusion	p5-beta/p5_beta_summary.json
+可疑	suspect	p5-beta/p5_beta_summary.json
+不归一（信息）	not normalized (information)	p5-beta/p5_beta_summary.json
+A 群	group A	p5-beta/p5_beta_summary.json
+B 群	group B	p5-beta/p5_beta_summary.json
+剔除 BOBOA	excluding BOBOA	p5-beta/p5_beta_summary.json
+全事件	all events	p5-beta/p5_beta_summary.json
+按 ΔS(1 m)≤−0.2 选样、分母仍为 0.5 m	selected by dS(1 m) <= -0.2, denominator still 0.5 m	p5-beta/p5_beta_summary.json
+部分	partial	p5-beta/p5_beta_summary.json
+分母 ΔS(1 m)	denominator dS(1 m)	p5-beta/p5_beta_summary.json
+A 群真 1 m	group A true 1 m	p5-beta/p5_beta_summary.json
+对照扣除后 r′	r' after control subtraction	p5-beta/p5_beta_summary.json
+对照窗 ΔpCO₂ 均值（µatm）	mean dpCO2 of control windows (uatm)	p5-beta/p5_beta_summary.json
+对照窗 ΔS(0.5 m) 均值（psu）	mean dS(0.5 m) of control windows (psu)	p5-beta/p5_beta_summary.json
+G1＋B3＋E4（描述）	G1 + B3 + E4 (descriptive)	p5-beta/p5_beta_summary.json
+不支持（特征不符）	not supported (signature does not match)	p5-beta/p5_beta_summary.json
+D4_H0_coupled（期望 r̂）	D4_H0_coupled (expected r-hat)	p5-beta/p5_beta_summary.json
+p5_power.json（先于本文件写盘）	p5_power.json (written before this file)	p5-sss/p5_summary.json
+R_sfc 主（A70、[0,12) h、参照 [−72,0) h）	R_sfc main (A70, [0,12) h, reference [-72,0) h)	p5-sss/p5_summary.json
+支持 R2（海面与 RIM-3 相符或更大）	supports R2 (surface consistent with or larger than RIM-3)	p5-sss/p5_summary.json, p7a/p7a_summary.json
+第六节第 3 条	section 6, rule 3	p5-sss/p5_summary.json
+R1 下 Q≈1；R2 下 Q≈1/R_1m（描述，不进判读）	Q ~ 1 under R1; Q ~ 1/R_1m under R2 (descriptive, not used for interpretation)	p5-sss/p5_summary.json
+A40（只中心格）	A40 (central cell only)	p5-sss/p5_summary.json
+雨后窗 [0,6) h	post-rain window [0,6) h	p5-sss/p5_summary.json, p7a/p7a_summary.json
+雨后窗 [0,24) h	post-rain window [0,24) h	p5-sss/p5_summary.json, p7a/p7a_summary.json
+QC 保留位 10	QC keep bit 10	p5-sss/p5_summary.json
+另剔除位 12（风>15）	additionally exclude bit 12 (wind > 15)	p5-sss/p5_summary.json
+参照只用同交点	reference uses the same node only	p5-sss/p5_summary.json, p7a/p7a_summary.json
+足印平均雨量驱动 RIM	RIM driven by footprint-mean rainfall	p5-sss/p5_summary.json
+剔除 KEO、Papa	excluding KEO, Papa	p5-sss/p5_summary.json, p7a/p7a_summary.json
+参照窗 [-48,0) h	reference window [-48,0) h	p5-sss/p5_summary.json
+支持 R1（海面也显著小于 RIM-3）	supports R1 (surface also significantly smaller than RIM-3)	p6/p6_summary.json, p7e/p7e_summary.json
+第六节第 2 条	section 6, rule 2	p6/p6_summary.json
+平流订正同类	same class after advection correction	p6/p6_summary.json
+G1：现场雨中海面淡化小于 RIM-3，P5 雨中过境比值 1.98 不被现场复现	G1: in situ surface freshening during rain is smaller than RIM-3; the P5 in-rain overpass ratio 1.98 is not reproduced in situ	p6/p6_summary.json, p8b/p8b_summary.json
+P1 原样：10 mm、干期 24 h、0.4 mm/h；窗 [0,6) h；簇＝日历月	as P1: 10 mm, 24 h dry period, 0.4 mm/h; window [0,6) h; clusters = calendar months	p6/p6_summary.json
+与 P2 同侧（CI 上端 <0.65）	same side as P2 (CI upper bound < 0.65)	p6/p6_summary.json
+不可评	not evaluable	p6/p6_summary.json, p7a/p7a_summary.json, p7e/p7e_summary.json, p8b/p8b_summary.json
+p7a_power.json（先于本文件写盘）	p7a_power.json (written before this file)	p7a/p7a_summary.json
+R_sfc,JPL 主（A70 类比、[0,12) h、参照 [−72,0) h、QC 位 0/5/7/8）	R_sfc,JPL main (A70 analogue, [0,12) h, reference [-72,0) h, QC bits 0/5/7/8)	p7a/p7a_summary.json
+第六节第 4 条	section 6, rule 4	p7a/p7a_summary.json
+不可执行：JPL L2B V5 无降雨标志位（手册 §6.2.24）	not executable: JPL L2B V5 has no rain flag bit (user guide §6.2.24)	p7a/p7a_summary.json
+超出 1（CI 下端 >1）	exceeds 1 (CI lower bound > 1)	p7a/p7a_summary.json
+不能区分：JPL 不再支持 R2，但与 RSS 的逐对差异不显著或不集中在雨中	cannot distinguish: JPL no longer supports R2, but the pairwise difference from RSS is not significant or not concentrated during rain	p7a/p7a_summary.json
+A40 类比（只中心 SWC）	A40 analogue (central SWC only)	p7a/p7a_summary.json
+核 FWHM 60 km、截断 90 km（JPL 标称分辨率）	kernel FWHM 60 km, truncated at 90 km (JPL nominal resolution)	p7a/p7a_summary.json
+QC 不用位 0（只剔位 5、7、8）	QC without bit 0 (exclude bits 5, 7, 8 only)	p7a/p7a_summary.json
+JPL smap_sss_uncertainty＝似然 FWHM 估计（手册 §3.4.1），定义与 RSS 形式不确定度不同；只作信息	JPL smap_sss_uncertainty = likelihood FWHM estimate (user guide §3.4.1), defined differently from the RSS formal uncertainty; information only	p7a/p7a_power.json
+未检出	not detected	p7c/p7c_summary.json
+不支持（未检出）	not supported (not detected)	p7c/p7c_summary.json
+形状拟合的守恒模型不能定量解释冲突	the shape-fitted conservation model cannot quantitatively explain the conflict	p7c/p7c_summary.json
+H2 雨量计驱动	H2 gauge-driven	p7c/p7c_summary.json
+部分缓解冲突	partly reduces the conflict	p7c/p7c_summary.json
+支持（解释原始趋势大部分）	supported (explains most of the original trend)	p7c/p7c_summary.json
+H3 站层 MH	H3 station-stratified MH	p7c/p7c_summary.json
+未缓解冲突	does not reduce the conflict	p7c/p7c_summary.json
+H4 构成层 MH	H4 composition-stratified MH	p7c/p7c_summary.json
+H5 对照窗订正	H5 control-window correction	p7c/p7c_summary.json
+H6a 分母＝海面 RIM	H6a denominator = surface RIM	p7c/p7c_summary.json
+支持（解释原始趋势一部分）	supported (explains part of the original trend)	p7c/p7c_summary.json
+H6b 分母＝线性化 RIM	H6b denominator = linearized RIM	p7c/p7c_summary.json
+H6c 守恒 Gaussian vs 1/M	H6c conservative Gaussian vs 1/M	p7c/p7c_summary.json
+部分解释：缓解冲突的候选 ['H2', 'H6a', 'H6b']；H1＝不支持（未检出），H1c＝形状拟合的守恒模型不能定量解释冲突	partial explanation: candidates reducing the conflict ['H2', 'H6a', 'H6b']; H1 = not supported (not detected), H1c = the shape-fitted conservation model cannot quantitatively explain the conflict	p7c/p7c_summary.json
+合成事件：84 个半步，t0＝第 60 个半步，常风 U10；给出 0–6 h 窗 ΔF（雨前 6 h 中位为基线）每 mm 雨的量，RIM＝p2 同式、RIM_lin＝去饱和、G＝守恒 Gaussian（κ=1）；ratio_G_over_RIM≈1/M。	synthetic event: 84 half-hours, t0 = half-hour 60, constant U10; gives the 0-6 h window dF (baseline = pre-rain 6 h median) per mm of rain; RIM = same formula as p2, RIM_lin = without saturation, G = conservative Gaussian (kappa=1); ratio_G_over_RIM ~ 1/M.	p7c/p7c_formula.json, p7c/p7c_summary.json
+合成比值 0.3 点估计	synthetic ratio 0.3 point estimate	p7d/p7d_summary.json
+合成比值 0.3 类别	synthetic ratio 0.3 class	p7d/p7d_summary.json
+与 R1 相容而与 R2 不容	compatible with R1, incompatible with R2	p7d/p7d_summary.json
+合成比值 1.0 点估计	synthetic ratio 1.0 point estimate	p7d/p7d_summary.json
+合成比值 1.0 类别	synthetic ratio 1.0 class	p7d/p7d_summary.json
+与 R2 相容而与 R1 不容	compatible with R2, incompatible with R1	p7d/p7d_summary.json
+判读 上端<0.65→1	rule: upper < 0.65 -> 1	p7d/p7d_summary.json, p8a/p8a_summary.json
+判读 下端>0.65→2	rule: lower > 0.65 -> 2	p7d/p7d_summary.json, p8a/p8a_summary.json
+判读 跨→3	rule: straddles -> 3	p7d/p7d_summary.json, p8a/p8a_summary.json
+判读 分母不稳→0	rule: unstable denominator -> 0	p7d/p7d_summary.json, p8a/p8a_summary.json
+判读 恰 0.65 上端→3	rule: upper exactly 0.65 -> 3	p7d/p7d_summary.json, p8a/p8a_summary.json
+CSV 行数 87	CSV rows 87	p7d/p7d_summary.json
+R 对 p5_summary	R versus p5_summary	p7d/p7d_summary.json
+ci95_station_season 对 p5_summary	ci95_station_season versus p5_summary	p7d/p7d_summary.json
+ci95_station 对 p5_summary	ci95_station versus p5_summary	p7d/p7d_summary.json
+jackknife-t 对 p5_summary	jackknife-t versus p5_summary	p7d/p7d_summary.json
+簇数／站数	clusters / stations	p7d/p7d_summary.json
+T1 n 与点估计复现	T1 n and point estimate reproduced	p7d/p7d_summary.json
+T2 n 与点估计复现	T2 n and point estimate reproduced	p7d/p7d_summary.json
+T3 n 与点估计复现	T3 n and point estimate reproduced	p7d/p7d_summary.json
+T4 n 与点估计复现	T4 n and point estimate reproduced	p7d/p7d_summary.json
+W1 n 与点估计复现	W1 n and point estimate reproduced	p7d/p7d_summary.json
+W0 n、Σx、Σy 复现	W0 n, sum x, sum y reproduced	p7d/p7d_summary.json
+全 87（复现 P5 主结果）	all 87 (reproduces the P5 main result)	p7d/p7d_summary.json
+该档不能区分	cannot distinguish in this class	p7d/p7d_summary.json
+T1 雨后过境 [0,3) h	T1 overpass [0,3) h after rain	p7d/p7d_summary.json
+T2 雨后过境 [3,6) h	T2 overpass [3,6) h after rain	p7d/p7d_summary.json
+T3 雨后过境 [6,9) h	T3 overpass [6,9) h after rain	p7d/p7d_summary.json
+不可评（分母不稳或区间不可算）	not evaluable (unstable denominator or interval not computable)	p7d/p7d_summary.json
+T4 雨后过境 [9,12) h	T4 overpass [9,12) h after rain	p7d/p7d_summary.json
+W1 过境中心格 IMERG>0.1 mm/h	W1 overpass central cell IMERG > 0.1 mm/h	p7d/p7d_summary.json
+W0 过境中心格 IMERG≤0.1 mm/h	W0 overpass central cell IMERG <= 0.1 mm/h	p7d/p7d_summary.json
+D1 [6,12) h 合并	D1 [6,12) h combined	p7d/p7d_summary.json
+D2 T1 [0,3) h 剔 KEO/Papa	D2 T1 [0,3) h excluding KEO/Papa	p7d/p7d_summary.json
+D2 T2 [3,6) h 剔 KEO/Papa	D2 T2 [3,6) h excluding KEO/Papa	p7d/p7d_summary.json
+D2 T3 [6,9) h 剔 KEO/Papa	D2 T3 [6,9) h excluding KEO/Papa	p7d/p7d_summary.json
+jackknife 不可算	jackknife not computable	p7d/p7d_summary.json
+D2 T4 [9,12) h 剔 KEO/Papa	D2 T4 [9,12) h excluding KEO/Papa	p7d/p7d_summary.json
+D2 D1 [6,12) h 剔 KEO/Papa	D2 D1 [6,12) h excluding KEO/Papa	p7d/p7d_summary.json
+D3 [6,12) h 且 IMERG≤0.1	D3 [6,12) h and IMERG <= 0.1	p7d/p7d_summary.json
+D3 [6,12) h 且 IMERG>0.1（对照）	D3 [6,12) h and IMERG > 0.1 (comparison)	p7d/p7d_summary.json
+至少一档不可评（按实际写）	at least one class not evaluable (written as observed)	p7d/p7d_summary.json
+第六节第 1 条	section 6, rule 1	p7e/p7e_summary.json
+不可评（雨中组 n<8 或 CI 不可算）	not evaluable (in-rain group n < 8 or CI not computable)	p7e/p7e_summary.json, p8b/p8b_summary.json
+小于 0.30（CI 上端 <0.30）	smaller than 0.30 (CI upper bound < 0.30)	p7e/p7e_summary.json
+与 0.30 相容（95% 簇 CI 含 0.30）	compatible with 0.30 (95% cluster CI includes 0.30)	p7e/p7e_summary.json
+合成比值 0.2 点估计	synthetic ratio 0.2 point estimate	p8a/p8a_summary.json
+合成比值 0.2 类别	synthetic ratio 0.2 class	p8a/p8a_summary.json
+上端 <0.65：与 R1 相容而与 R2 不容	upper < 0.65: compatible with R1, incompatible with R2	p8a/p8a_summary.json
+合成比值 1.3 点估计	synthetic ratio 1.3 point estimate	p8a/p8a_summary.json
+合成比值 1.3 类别	synthetic ratio 1.3 class	p8a/p8a_summary.json
+下端 >0.65：与 R2 相容而与 R1 不容	lower > 0.65: compatible with R2, incompatible with R1	p8a/p8a_summary.json
+判读 上端<0→4	rule: upper < 0 -> 4	p8a/p8a_summary.json
+判读 n<3→0	rule: n < 3 -> 0	p8a/p8a_summary.json
+分档 切点归下档	binning: cut point goes to the lower class	p8a/p8a_summary.json
+分档 8 m/s 归下档	binning: 8 m/s goes to the lower class	p8a/p8a_summary.json
+分档 事件 u10 6 位小数	binning: event u10 at 6 decimals	p8a/p8a_summary.json
+总映射	overall mapping	p8a/p8a_summary.json
+RSS CSV 行数 87	RSS CSV rows 87	p8a/p8a_summary.json
+RSS 复现 R	RSS reproduces R	p8a/p8a_summary.json
+RSS 复现 站×季 CI	RSS reproduces station x season CI	p8a/p8a_summary.json
+RSS 复现 站簇 CI	RSS reproduces station-cluster CI	p8a/p8a_summary.json
+RSS 复现 jackknife-t	RSS reproduces jackknife-t	p8a/p8a_summary.json
+RSS 复现 簇／站	RSS reproduces clusters / stations	p8a/p8a_summary.json
+JPL CSV 行数 96	JPL CSV rows 96	p8a/p8a_summary.json
+JPL 复现 R	JPL reproduces R	p8a/p8a_summary.json
+JPL 复现 站×季 CI	JPL reproduces station x season CI	p8a/p8a_summary.json
+JPL 复现 站簇 CI	JPL reproduces station-cluster CI	p8a/p8a_summary.json
+JPL 复现 jackknife-t	JPL reproduces jackknife-t	p8a/p8a_summary.json
+JPL 复现 簇／站	JPL reproduces clusters / stations	p8a/p8a_summary.json
+RSS 全体（复现主结果）	RSS all (reproduces the main result)	p8a/p8a_summary.json
+JPL 全体（复现主结果）	JPL all (reproduces the main result)	p8a/p8a_summary.json
+RSS 过境风速 L 档	RSS overpass wind class L	p8a/p8a_summary.json
+RSS 过境风速 M 档	RSS overpass wind class M	p8a/p8a_summary.json
+RSS 过境风速 H 档	RSS overpass wind class H	p8a/p8a_summary.json
+JPL 过境风速 L 档	JPL overpass wind class L	p8a/p8a_summary.json
+JPL 过境风速 M 档	JPL overpass wind class M	p8a/p8a_summary.json
+JPL 过境风速 H 档	JPL overpass wind class H	p8a/p8a_summary.json
+RSS 事件级 u10 L 档	RSS event-level u10 class L	p8a/p8a_summary.json
+RSS 事件级 u10 M 档	RSS event-level u10 class M	p8a/p8a_summary.json
+RSS 事件级 u10 H 档	RSS event-level u10 class H	p8a/p8a_summary.json
+RSS 过境风速 ≤8 m/s	RSS overpass wind <= 8 m/s	p8a/p8a_summary.json
+RSS 过境风速 >8 m/s	RSS overpass wind > 8 m/s	p8a/p8a_summary.json
+JPL 事件级 u10 L 档	JPL event-level u10 class L	p8a/p8a_summary.json
+JPL 事件级 u10 M 档	JPL event-level u10 class M	p8a/p8a_summary.json
+JPL 事件级 u10 H 档	JPL event-level u10 class H	p8a/p8a_summary.json
+JPL 过境风速 ≤8 m/s	JPL overpass wind <= 8 m/s	p8a/p8a_summary.json
+JPL 过境风速 >8 m/s	JPL overpass wind > 8 m/s	p8a/p8a_summary.json
+RSS TH 剔 KEO/Papa	RSS TH excluding KEO/Papa	p8a/p8a_summary.json
+RSS >8 m/s 剔 KEO/Papa	RSS > 8 m/s excluding KEO/Papa	p8a/p8a_summary.json
+RSS TL 同刻系泊 1 m Σobs1/Σrim1	RSS TL same-time mooring 1 m sum obs1 / sum rim1	p8a/p8a_summary.json
+RSS TM 同刻系泊 1 m Σobs1/Σrim1	RSS TM same-time mooring 1 m sum obs1 / sum rim1	p8a/p8a_summary.json
+RSS TH 同刻系泊 1 m Σobs1/Σrim1	RSS TH same-time mooring 1 m sum obs1 / sum rim1	p8a/p8a_summary.json
+RSS B8L 同刻系泊 1 m Σobs1/Σrim1	RSS B8L same-time mooring 1 m sum obs1 / sum rim1	p8a/p8a_summary.json
+RSS B8H 同刻系泊 1 m Σobs1/Σrim1	RSS B8H same-time mooring 1 m sum obs1 / sum rim1	p8a/p8a_summary.json
+JPL TH 剔 KEO/Papa	JPL TH excluding KEO/Papa	p8a/p8a_summary.json
+JPL >8 m/s 剔 KEO/Papa	JPL > 8 m/s excluding KEO/Papa	p8a/p8a_summary.json
+强风下卫星仍超出，卫星超出不能用近表透镜解释	satellite ratios still exceed in strong wind; the satellite excess cannot be explained by a near-surface lens	p8a/p8a_summary.json
+两条链强风档都仍超出（下端 >0.65）→ 卫星超出不能用近表淡水透镜解释	both chains still exceed in the strong-wind class (lower bound > 0.65) -> the satellite excess cannot be explained by a near-surface freshwater lens	p8a/p8a_summary.json
+强风档不能区分	strong-wind class cannot distinguish	p8a/p8a_summary.json
+事件 <3，不算	fewer than 3 events, not computed	p8b/p8b_summary.json
+6.1 第 1 条	6.1 rule 1	p8b/p8b_summary.json
+与 P2 同侧（CI 上端 <0.65）；CI 含 0.30	same side as P2 (CI upper bound < 0.65); CI includes 0.30	p8b/p8b_summary.json
+观测淡化比 RIM-3 更深	observed freshening deeper than RIM-3	p8b/p8b_summary.json
+不可评（n<8）	not evaluable (n < 8)	p8b/p8b_summary.json
+未落在 P2 同侧（CI 上端 ≥0.65）；CI 含 0.30	not on the same side as P2 (CI upper bound >= 0.65); CI includes 0.30	p8b/p8b_summary.json
+MAPCO2 自带 SBE（Location 记 1 m）	MAPCO2 own SBE (Location recorded as 1 m)	cal-dw13-meta/dw13_meta.json, cal-dw13-meta/dw13_meta.json#key
+TAO 1 m 传感器（ATLAS 或注明 NDBC/TAO 提供）	TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)	cal-dw13-meta/dw13_meta.json, cal-dw13-meta/dw13_meta.json#key
+元数据未解析	metadata not parsed	cal-dw13-meta/dw13_meta.json
+外方提供（CSIRO／IMOS／另一组）	supplied by another party (CSIRO / IMOS / other group)	cal-dw13-meta/dw13_meta.json, cal-dw13-meta/dw13_meta.json#key
+无对应部署元数据（NCEI 未列该期 XML）	no matching deployment metadata (no NCEI XML for that period)	cal-dw13-meta/dw13_meta.json#key
+热带子集内两者之差不超出两样本簇抽样不确定度	within the tropical subset the difference does not exceed two-sample cluster sampling uncertainty	cal-surface-diag/cal_c1_c2.json
+热带子集内卫星比值显著大于现场海面比值	within the tropical subset the satellite ratio is significantly larger than the in situ surface ratio	cal-surface-diag/cal_c1_c2.json
+下端 ≤0，ln 不定义	lower bound <= 0, ln undefined	cal-surface-diag/cal_c1_c2.json
+RSS 主结果	RSS main result	cal-surface-diag/cal_c1_c2.json
+JPL 主结果	JPL main result	cal-surface-diag/cal_c1_c2.json
+SPURS-2 海面	SPURS-2 surface	cal-surface-diag/cal_c1_c2.json
+RSS 强风档（P8a TH）	RSS strong-wind class (P8a TH)	cal-surface-diag/cal_c1_c2.json
+JPL 强风档（P8a TH）	JPL strong-wind class (P8a TH)	cal-surface-diag/cal_c1_c2.json
+RSS 剔 KEO、Papa	RSS excluding KEO, Papa	cal-surface-diag/cal_c1_c2.json
+JPL 剔 KEO、Papa	JPL excluding KEO, Papa	cal-surface-diag/cal_c1_c2.json
+无逐事件表（p6_events.csv 只有船载层），未算	no per-event table (p6_events.csv holds only the shipboard levels), not computed	cal-surface-diag/cal_c1_c2.json
+gC（面积×通量逐半步求和；n_* 为像元×半步计数）；百分比口径由后处理按 P3 定义换算	gC (area x flux summed over half-hours; n_* are pixel x half-hour counts); percentages are converted by post-processing with the P3 definitions	dw33/dw33_bins.json
+Δ 区间整体低于 −2.5 pp（在『改写』判据带之外）	the whole interval of Delta lies below -2.5 pp (outside the 'revision' criterion band)	dw33-post/dw33_post.json
+中东太平洋	central_east_pacific	JSON keys (p3c regimes)
+params_preregistered	params_fixed	p1/p1_summary.json#key (key of the reference-run output only; the current scripts write the English key)
+prereg_verdict_unchanged	first_round_verdict_unchanged	p4b/p4b_summary.json#key (key of the reference-run output only; the current scripts write the English key)
+GR_band_abs_s_minus_1_prereg_P30	GR_band_abs_s_minus_1_P30	p4-explore/p4_explore.json#key (key of the reference-run output only; the current scripts write the English key)
+abstract_8p2	s6_8p2	p5-beta/p5_beta_summary.json#key (key of the reference-run output only; the current scripts write the English key)
+smooth_tier	smooth_judgment	p4e/p4e_summary.json#key (key of the reference-run output only; the current scripts write the English key)
+设计冲突：一条规则弃用 0.5 m 只用 1/5 m，另一条（出口 3）停止；脚本不作裁定（I11）	conflict in the design: one rule drops 0.5 m and uses only 1/5 m, another (exit 3) stops; not decided in the script (I11)	p1/p1_summary.json
+信息量；未列入 P1 判定（I15）	information only; not part of the P1 decision (I15)	p1/p1_summary.json
+D5 不过分支：事件只要求 1 m S＋风；仅信息量（I11）	branch if D5 fails: events require only 1 m S + wind; information only (I11)	p1/p1_summary.json
+门同 P1；实现 I1–I17（p1_events.py）＋J1–J13（本脚本）	gates as in P1; implementation choices I1-I17 (p1_events.py) + J1-J13 (this script)	p1b/p1b_summary.json
+P1b 过：D1/D2/D4/D5 在合并集全过；进入 P2	P1b passed: D1/D2/D4/D5 all pass on the combined set; proceed to P2	p1b/p1b_summary.json
+Chuuk（礁湖，按设计排除）	Chuuk (lagoon; excluded by design)	p1b/p1b_stations.json
+K1–K30（脚本头）	K1-K30 (script header)	p2/p2_summary.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json
+未跑（--part primary）；四项敏感性见 --part sensitivity 的 p2_sensitivity.json（不进出口，K26）	not run (--part primary); the four sensitivity items are in p2_sensitivity.json from --part sensitivity (not used for the exit, K26)	p2/p2_summary.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json
+探索性，不参与出口，不进 D3（K27）	exploratory, not used for the exit or D3 (K27)	p2/p2_summary.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json
+主路径（t=1 s）在 0.5 m 的比值点估计，只作 K27 对照	point estimate of the main path (t = 1 s) at 0.5 m, only as a K27 reference	p2/p2_summary.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json
+K25：比值不减对照；此处只描述	K25: ratios do not subtract controls; descriptive only	p2/p2_summary.json, dw13a/measured/p2_summary.json, dw13a/nominal/p2_summary.json
+四项敏感性（K21）；不做出口判定（K26），不写 p2_summary.json	four sensitivity items (K21); no exit decision (K26); p2_summary.json not written	p2-sens/p2_sensitivity.json
+Dep＋I_int·(1−c)	Dep + I_int*(1-c)	p3-global/p3b_curves.json
+非门检查：P3b 与 P3-0 直线最大偏差（>0.5 pp 表示非线性）、U(s) 单调性；own_endpoints 只取 s≤1 段，扣除 L30 常数项与复现偏差后看非线性	non-gate checks: maximum deviation of P3b from the P3-0 straight line (> 0.5 pp indicates non-linearity), monotonicity of U(s); own_endpoints uses only s <= 1, after removing the L30 constant and the reproduction offset	p3-global/p3b_curves.json
+探索性（不进判门）	exploratory (not used for any gate)	p4-explore/p4_explore.json
+positive＝P1a、P1b、P2a、P2b、P3、P4 全部 pass（weak 或 not_evaluable 均不算）；否则按否定信号分出口，无否定信号即 mixed。	positive = P1a, P1b, P2a, P2b, P3, P4 all pass (weak or not_evaluable do not count); otherwise exit by negative signal, mixed if there is none.	p4-mech/p4_mech_summary.json
+探索性诊断	exploratory diagnostics	p4b/p4b_summary.json
+p2-sens 阶段（p2_sensitivity.json）	p2-sens stage (p2_sensitivity.json)	p4b/p4b_summary.json
+形式不确定度按独立近似，未含地球物理代表性误差与参照期真实变化，所以偏乐观；只作信息，不改判读	formal uncertainties assume independence and omit geophysical representativeness error and real changes in the reference period, hence optimistic; information only, does not change the interpretation	p5-sss/p5_power.json, p7a/p7a_power.json
+探索性；对卫星 SSS 盲	exploratory; blind to satellite SSS	p5-sss/p5_summary.json
+只含模型侧 x 与无雨对照窗 ΔS 的离散度（观测噪声代理，含船动带来的水平梯度）；只作信息，不改判读	includes only the spread of model-side x and of dS in rain-free control windows (proxy for observation noise, including horizontal gradients from ship motion); information only, does not change the interpretation	p6/p6_power.json
+探索性；P5 RSS 结果已看过；对 JPL 盐度盲	exploratory; P5 RSS result already seen; blind to JPL salinity	p7a/p7a_summary.json
+R 对参照值 1.65273	R versus the reference value 1.65273	p7d/p7d_summary.json
+ci95_station_season 对参照值	ci95_station_season versus reference value	p7d/p7d_summary.json
+ci95_station 对参照值	ci95_station versus reference value	p7d/p7d_summary.json
+只含模型侧 x 与无雨对照窗 ΔS 的离散度；只作信息，不改判读	includes only the spread of model-side x and of dS in rain-free control windows; information only, does not change the interpretation	p7e/p7e_power.json
+只含事件数、模型侧 Σx 与无雨对照窗观测 ΔS 的离散度；只作信息，不改判读	includes only the number of events, model-side sum x and the spread of observed dS in rain-free control windows; information only, does not change the interpretation	p8b/p8b_power.json
+敏感性：只改 B 群风速计高度；不改变任何既有判定	sensitivity: only group B anemometer heights changed; no existing decision changes	dw13a/dw13a_compare.json
+运行记录类字段除外逐值比对；数值容差≤原值末位 1 单位（≥3 位小数时）；STRICT 列表须完全相等	value-by-value comparison excluding run-record fields; numeric tolerance <= 1 unit in the last digit (for >= 3 decimals); STRICT lists must be identical	dw13a/dw13a_gate.json

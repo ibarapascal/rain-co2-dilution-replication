@@ -1,0 +1,1151 @@
+{
+ "script": "p2_rim_test.py",
+ "version": "p2-2026-09-26c",
+ "part": "primary",
+ "smoke": false,
+ "run_utc": "2026-09-26T08:20:19Z",
+ "runtime_s": 20868.0,
+ "implementation_choices": "K1-K30 (script header)",
+ "inputs": {
+  "p1_events_sha256": "6fae39d25e3461476721469c1b1c26b1dd6ab87580f5aff1d4ea279bddc0259e",
+  "p1b_summary_sha256": "f3499247c12b762f90d2b3c06dd911e698d12612d2d6556a817fb66a4a5d53d2",
+  "resume_from": null
+ },
+ "gates_carried_from_p1b": {
+  "verdict": {
+   "D1": true,
+   "D2": true,
+   "D4": true,
+   "D5": true
+  },
+  "detail": {
+   "D1": {
+    "n_events_total": 646,
+    "n_stations_ge10": 10,
+    "pass": true
+   },
+   "D2": {
+    "diff_psu": -0.05446,
+    "ci95_cluster_bootstrap": [
+     -0.07088,
+     -0.03935
+    ],
+    "pass": true
+   },
+   "D4": {
+    "n_events_dS05_le_-0.2": 34,
+    "pass": true
+   },
+   "D5": {
+    "median_pre_diff_psu": 0.0005,
+    "corr_event_anom": 0.70379,
+    "pass": true
+   }
+  },
+  "rule": "K16: not re-decided"
+ },
+ "rebuild_validation": {
+  "n_ref": 646,
+  "n_rebuilt": 646,
+  "missing_in_rebuild": [],
+  "extra_in_rebuild": [],
+  "value_mismatch": [],
+  "n_missing": 0,
+  "n_extra": 0,
+  "n_value_mismatch": 0,
+  "d4_count": 34
+ },
+ "cmorph": {
+  "hours_needed": 25400,
+  "downloaded_this_run": 25400,
+  "bytes_this_run": 41115902638,
+  "http_requests": 25400,
+  "seconds": 20698.6,
+  "pixels": {
+   "TAO165E": {
+    "lat": -4.879999977447369e-07,
+    "lon": 164.97574695749998,
+    "dist_km": 2.7
+   },
+   "TAO8S165E": {
+    "lat": -8.004851848000001,
+    "lon": 164.97574695749998,
+    "dist_km": 2.72
+   },
+   "BOBOA": {
+    "lat": 14.990902968000007,
+    "lon": 90.0363778875,
+    "dist_km": 4.04
+   },
+   "TAO170W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 190.00404109349998,
+    "dist_km": 0.45
+   },
+   "TAO155W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 204.9919149075,
+    "dist_km": 0.9
+   },
+   "TAO140W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 219.9797887215,
+    "dist_km": 2.25
+   },
+   "TAO125W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 234.96766253549998,
+    "dist_km": 3.6
+   },
+   "TAO110W": {
+    "lat": -4.879999977447369e-07,
+    "lon": 250.0282930185,
+    "dist_km": 3.15
+   },
+   "KEO": {
+    "lat": 32.310490456000004,
+    "lon": 144.6038796375,
+    "dist_km": 4.07
+   },
+   "MOSEAN/WHOTS": {
+    "lat": 22.704668824000002,
+    "lon": 202.00889147849998,
+    "dist_km": 4.02
+   },
+   "Papa": {
+    "lat": 50.139477576,
+    "lon": 215.17784856749998,
+    "dist_km": 1.65
+   },
+   "SOFS": {
+    "lat": -46.791995256,
+    "lon": 141.9846395535,
+    "dist_km": 1.47
+   },
+   "Stratus": {
+    "lat": -19.721043383999998,
+    "lon": 274.4017771335,
+    "dist_km": 2.35
+   }
+  },
+  "missing_hours": 0,
+  "missing_reasons": {},
+  "unique_hours_primary": 25400,
+  "unique_hours_extra": 0
+ },
+ "model_availability_primary": {
+  "ok": 646
+ },
+ "model_availability_k29": {
+  "n_total": 646,
+  "n_available": 646,
+  "fraction": 1.0,
+  "threshold": 0.5,
+  "pass": true,
+  "missing_reason_counts": {},
+  "rule": "continue only if >= 50% of the main set (all 10 mm events, CMORPH, 0-6 h) has non-NaN dS_RIM(1 m level) and dS_S20 (K29)"
+ },
+ "model_nan_with_valid_forcing_primary": {
+  "events_cmorph_halfstep_gt_200mmh": 0,
+  "rim_1m_nan_events": 0,
+  "note": "forcing complete but model NaN: a CMORPH half-hour > 200 mm/h falls outside the d0 table (K2; no extrapolation, as in Witte) or the pre-rain observation at that depth is missing"
+ },
+ "wind": {
+  "factor_4m_to_10m": 1.0865,
+  "floor_mps": 0.1,
+  "hours_floored": 0
+ },
+ "glodap": {
+  "source": "https://glodap.info/glodap_files/v2.2023/GLODAPv2.2016b.MappedProduct.tar.gz",
+  "rule": "depth_surface level 0, nearest 1-degree cell (longitude wrapped mod 360), NaN not filled (K19)",
+  "stations": {
+   "TAO165E": {
+    "salinity": 34.6913,
+    "cell": [
+     -0.5,
+     164.5
+    ],
+    "TAlk": 2262.5576,
+    "TCO2": 1918.0734,
+    "temperature": 29.3058
+   },
+   "TAO8S165E": {
+    "salinity": 34.5691,
+    "cell": [
+     -8.5,
+     164.5
+    ],
+    "TAlk": 2271.4333,
+    "TCO2": 1924.7987,
+    "temperature": 28.4862
+   },
+   "BOBOA": {
+    "salinity": 32.7893,
+    "cell": [
+     14.5,
+     89.5
+    ],
+    "TAlk": 2196.3042,
+    "TCO2": 1877.8591,
+    "temperature": 28.463
+   },
+   "TAO170W": {
+    "salinity": 35.0282,
+    "cell": [
+     -0.5,
+     189.5
+    ],
+    "TAlk": 2284.6816,
+    "TCO2": 1974.4576,
+    "temperature": 28.3163
+   },
+   "TAO155W": {
+    "salinity": 35.1679,
+    "cell": [
+     -0.5,
+     204.5
+    ],
+    "TAlk": 2313.5315,
+    "TCO2": 2005.1852,
+    "temperature": 27.7528
+   },
+   "TAO140W": {
+    "salinity": 35.0232,
+    "cell": [
+     -0.5,
+     219.5
+    ],
+    "TAlk": 2303.1003,
+    "TCO2": 2000.1519,
+    "temperature": 27.4702
+   },
+   "TAO125W": {
+    "salinity": 34.906,
+    "cell": [
+     -0.5,
+     234.5
+    ],
+    "TAlk": 2294.679,
+    "TCO2": 2002.8138,
+    "temperature": 26.3165
+   },
+   "TAO110W": {
+    "salinity": 34.9647,
+    "cell": [
+     -0.5,
+     249.5
+    ],
+    "TAlk": 2294.2332,
+    "TCO2": 2042.6534,
+    "temperature": 24.2313
+   },
+   "KEO": {
+    "salinity": 34.6035,
+    "cell": [
+     32.5,
+     144.5
+    ],
+    "TAlk": 2270.2856,
+    "TCO2": 1965.0085,
+    "temperature": 22.0931
+   },
+   "MOSEAN/WHOTS": {
+    "salinity": 34.8006,
+    "cell": [
+     22.5,
+     202.5
+    ],
+    "TAlk": 2312.2131,
+    "TCO2": 1970.7858,
+    "temperature": 26.0658
+   },
+   "Papa": {
+    "salinity": 32.5456,
+    "cell": [
+     50.5,
+     215.5
+    ],
+    "TAlk": 2195.3701,
+    "TCO2": 1992.926,
+    "temperature": 11.341
+   },
+   "SOFS": {
+    "salinity": 34.7426,
+    "cell": [
+     -46.5,
+     141.5
+    ],
+    "TAlk": 2307.106,
+    "TCO2": 2078.8777,
+    "temperature": 11.7504
+   },
+   "Stratus": {
+    "salinity": 35.6835,
+    "cell": [
+     -19.5,
+     274.5
+    ],
+    "TAlk": 2358.6609,
+    "TCO2": 2063.498,
+    "temperature": 23.5276
+   }
+  }
+ },
+ "beta_model_by_station": {
+  "TAO165E": {
+   "fCO2_slope": 13.7566,
+   "pCO2_slope": 13.7984
+  },
+  "TAO8S165E": {
+   "fCO2_slope": 13.3142,
+   "pCO2_slope": 13.3551
+  },
+  "BOBOA": {
+   "fCO2_slope": 14.0007,
+   "pCO2_slope": 14.0436
+  },
+  "TAO170W": {
+   "fCO2_slope": 15.8198,
+   "pCO2_slope": 15.8684
+  },
+  "TAO155W": {
+   "fCO2_slope": 16.0473,
+   "pCO2_slope": 16.097
+  },
+  "TAO140W": {
+   "fCO2_slope": 16.1105,
+   "pCO2_slope": 16.1605
+  },
+  "TAO125W": {
+   "fCO2_slope": 16.0927,
+   "pCO2_slope": 16.1433
+  },
+  "TAO110W": {
+   "fCO2_slope": 18.0,
+   "pCO2_slope": 18.0582
+  },
+  "KEO": {
+   "fCO2_slope": 12.5183,
+   "pCO2_slope": 12.5598
+  },
+  "MOSEAN/WHOTS": {
+   "fCO2_slope": 12.9193,
+   "pCO2_slope": 12.9602
+  },
+  "Papa": {
+   "fCO2_slope": 12.8221,
+   "pCO2_slope": 12.8708
+  },
+  "SOFS": {
+   "fCO2_slope": 12.4586,
+   "pCO2_slope": 12.5057
+  },
+  "Stratus": {
+   "fCO2_slope": 15.0836,
+   "pCO2_slope": 15.1328
+  }
+ },
+ "D3": {
+  "rule": "|mean dS_RIM(z) - mean dS_S20| >= 2.0*SE_obs(z); passes only if satisfied at both z = 0.5 and 1 m (K11)",
+  "z=0.5m": {
+   "n_events": 646,
+   "n_control_windows": 3223,
+   "evaluable": true,
+   "mean_dS_rim": -0.21422,
+   "mean_dS_s20": -0.12039,
+   "diff": -0.09383,
+   "sd_control": 0.05851,
+   "se_obs": 0.0023,
+   "threshold_2se": 0.0046,
+   "pass": true
+  },
+  "z=1.0m": {
+   "n_events": 646,
+   "n_control_windows": 3223,
+   "evaluable": true,
+   "mean_dS_rim": -0.18749,
+   "mean_dS_s20": -0.12039,
+   "diff": -0.0671,
+   "sd_control": 0.03606,
+   "se_obs": 0.00142,
+   "threshold_2se": 0.00284,
+   "pass": true
+  },
+  "pass": true,
+  "verdict": "pass (models can be discriminated)",
+  "written_utc": "2026-09-26T08:20:19Z",
+  "note": "D3 uses only model predictions and control-window observations; this file is written before P5/beta/any ratio (K11)"
+ },
+ "primary": {
+  "R_RIM_1m": {
+   "label": "ΣΔS_obs(1 m)/ΣΔS_RIM3(1 m)",
+   "n_events": 646,
+   "evaluable": true,
+   "n_clusters": 37,
+   "point": 0.29616,
+   "sum_num": -35.86981,
+   "sum_den": -121.11806,
+   "n_boot_finite": 10000,
+   "ci95": [
+    0.22631,
+    0.36672
+   ],
+   "ci90": [
+    0.23755,
+    0.35495
+   ],
+   "se_boot": 0.0358,
+   "tost": {
+    "alpha": 0.05,
+    "bounds": [
+     0.65,
+     1.35
+    ],
+    "p_lower": 1.0,
+    "p_upper": 0.0,
+    "equivalent": false
+   },
+   "mde_ratio_units": 0.10029,
+   "ci95_outside_sesoi": true,
+   "ci95_inside_sesoi": false,
+   "ci95_excludes_1_info": true
+  },
+  "R_S20_05m": {
+   "label": "sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)",
+   "n_events": 646,
+   "evaluable": true,
+   "n_clusters": 37,
+   "point": 0.33629,
+   "sum_num": -26.1535,
+   "sum_den": -77.77045,
+   "n_boot_finite": 10000,
+   "ci95": [
+    0.2391,
+    0.43311
+   ],
+   "ci90": [
+    0.25481,
+    0.41831
+   ],
+   "se_boot": 0.04952,
+   "ci95_outside_sesoi": true,
+   "ci95_inside_sesoi": false,
+   "ci95_excludes_1_info": true
+  },
+  "P5": {
+   "label": "P5_obs = sum dS_obs(5 m) / sum dS_obs(1 m)",
+   "n_events": 166,
+   "evaluable": true,
+   "n_clusters": 21,
+   "point": 0.36257,
+   "sum_num": -3.45678,
+   "sum_den": -9.53402,
+   "n_boot_finite": 10000,
+   "ci95": [
+    0.18013,
+    0.52963
+   ],
+   "ci90": [
+    0.21149,
+    0.50284
+   ],
+   "se_boot": 0.08915,
+   "ci95_outside_sesoi": true,
+   "ci95_inside_sesoi": false,
+   "ci95_excludes_1_info": true,
+   "P5_RIM3": {
+    "point": 0.30054,
+    "ci95": [
+     0.24418,
+     0.38169
+    ],
+    "diff_main_minus_this_ci95": [
+     -0.11979,
+     0.18772
+    ],
+    "n_boot_paired": 10000
+   }
+  },
+  "beta_D4subset": {
+   "label": "beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]",
+   "n_events": 34,
+   "evaluable": true,
+   "n_clusters": 14,
+   "point": 23.33897,
+   "sum_num": -318.70526,
+   "sum_den": -13.6555,
+   "n_boot_finite": 10000,
+   "ci95": [
+    16.85003,
+    29.85017
+   ],
+   "ci90": [
+    17.83894,
+    28.89304
+   ],
+   "se_boot": 3.37021,
+   "ci95_outside_sesoi": true,
+   "ci95_inside_sesoi": false,
+   "ci95_excludes_1_info": true,
+   "beta_model_pCO2_pooled": 13.48605,
+   "beta_model_fCO2_pooled": 13.44369,
+   "n_events_with_beta_model": 34
+  },
+  "beta_all_info": {
+   "label": "beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]",
+   "n_events": 646,
+   "evaluable": true,
+   "n_clusters": 37,
+   "point": 33.666,
+   "sum_num": -880.48361,
+   "sum_den": -26.1535,
+   "n_boot_finite": 10000,
+   "ci95": [
+    20.79342,
+    55.08836
+   ],
+   "ci90": [
+    22.66562,
+    50.08971
+   ],
+   "se_boot": 8.7257,
+   "ci95_outside_sesoi": true,
+   "ci95_inside_sesoi": false,
+   "ci95_excludes_1_info": true,
+   "beta_model_pCO2_pooled": 13.25746,
+   "beta_model_fCO2_pooled": 13.21498,
+   "n_events_with_beta_model": 646
+  }
+ },
+ "exit": {
+  "gates": {
+   "D1": true,
+   "D2": true,
+   "D4": true,
+   "D5": true,
+   "D3": true
+  },
+  "exit3_triggers": [],
+  "conditions": {
+   "exit1_R_RIM_ci_outside_sesoi": true,
+   "exit1_R_S20_excluded": true,
+   "exit2_R_RIM_ci_inside_and_tost": false
+  },
+  "also_satisfied": [
+   1
+  ],
+  "exit": 1,
+  "label": "exit 1: signal significant -> P3 global recalculation"
+ },
+ "strata_by_group": {
+  "A_tropical_8": {
+   "R_RIM_1m": {
+    "label": "ΣΔS_obs(1 m)/ΣΔS_RIM3(1 m)",
+    "n_events": 204,
+    "evaluable": true,
+    "n_clusters": 22,
+    "point": 0.33275,
+    "sum_num": -14.31861,
+    "sum_den": -43.0314,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.26231,
+     0.42268
+    ],
+    "ci90": [
+     0.27508,
+     0.40456
+    ],
+    "se_boot": 0.04028,
+    "tost": {
+     "alpha": 0.05,
+     "bounds": [
+      0.65,
+      1.35
+     ],
+     "p_lower": 1.0,
+     "p_upper": 0.0,
+     "equivalent": false
+    },
+    "mde_ratio_units": 0.11285,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)",
+    "n_events": 204,
+    "evaluable": true,
+    "n_clusters": 22,
+    "point": 0.35231,
+    "sum_num": -9.6065,
+    "sum_den": -27.26752,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.17369,
+     0.54575
+    ],
+    "ci90": [
+     0.20455,
+     0.5096
+    ],
+    "se_boot": 0.09346,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "P5": {
+    "label": "P5_obs = sum dS_obs(5 m) / sum dS_obs(1 m)",
+    "n_events": 121,
+    "evaluable": true,
+    "n_clusters": 14,
+    "point": 0.34053,
+    "sum_num": -2.86917,
+    "sum_den": -8.4255,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.1247,
+     0.52327
+    ],
+    "ci90": [
+     0.16544,
+     0.49369
+    ],
+    "se_boot": 0.10266,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true,
+    "P5_RIM3": {
+     "point": 0.26668,
+     "ci95": [
+      0.20762,
+      0.34674
+     ],
+     "diff_main_minus_this_ci95": [
+      -0.12777,
+      0.21827
+     ],
+     "n_boot_paired": 10000
+    }
+   },
+   "beta_D4subset": {
+    "label": "beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]",
+    "n_events": 14,
+    "evaluable": true,
+    "n_clusters": 8,
+    "point": 28.57357,
+    "sum_num": -177.48474,
+    "sum_den": -6.2115,
+    "n_boot_finite": 10000,
+    "ci95": [
+     19.39979,
+     36.78114
+    ],
+    "ci90": [
+     21.26759,
+     35.2173
+    ],
+    "se_boot": 4.30886,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true,
+    "beta_model_pCO2_pooled": 14.36186,
+    "beta_model_fCO2_pooled": 14.31808,
+    "n_events_with_beta_model": 14
+   },
+   "beta_all_info": {
+    "label": "beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]",
+    "n_events": 204,
+    "evaluable": true,
+    "n_clusters": 22,
+    "point": 60.98231,
+    "sum_num": -585.82656,
+    "sum_den": -9.6065,
+    "n_boot_finite": 10000,
+    "ci95": [
+     32.00714,
+     143.29624
+    ],
+    "ci90": [
+     35.7896,
+     119.65308
+    ],
+    "se_boot": 38.73256,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true,
+    "beta_model_pCO2_pooled": 14.17186,
+    "beta_model_fCO2_pooled": 14.12863,
+    "n_events_with_beta_model": 204
+   },
+   "n_events": 204,
+   "n_s1_substitute": 0
+  },
+  "B_subtropical_midlatitude_5": {
+   "R_RIM_1m": {
+    "label": "ΣΔS_obs(1 m)/ΣΔS_RIM3(1 m)",
+    "n_events": 442,
+    "evaluable": true,
+    "n_clusters": 15,
+    "point": 0.27599,
+    "sum_num": -21.5512,
+    "sum_den": -78.08666,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.17267,
+     0.37474
+    ],
+    "ci90": [
+     0.18801,
+     0.35861
+    ],
+    "se_boot": 0.05198,
+    "tost": {
+     "alpha": 0.05,
+     "bounds": [
+      0.65,
+      1.35
+     ],
+     "p_lower": 1.0,
+     "p_upper": 0.0,
+     "equivalent": false
+    },
+    "mde_ratio_units": 0.14562,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "R_S20_05m": {
+    "label": "sum dS_obs(0.5 m) / sum dS_S20 (depths not matched; upper-bound comparison)",
+    "n_events": 442,
+    "evaluable": true,
+    "n_clusters": 15,
+    "point": 0.32764,
+    "sum_num": -16.547,
+    "sum_den": -50.50293,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.21146,
+     0.43779
+    ],
+    "ci90": [
+     0.22946,
+     0.42118
+    ],
+    "se_boot": 0.05838,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true
+   },
+   "P5": {
+    "label": "P5_obs = sum dS_obs(5 m) / sum dS_obs(1 m)",
+    "n_events": 45,
+    "evaluable": true,
+    "n_clusters": 7,
+    "point": 0.53009,
+    "sum_num": -0.58762,
+    "sum_den": -1.10852,
+    "n_boot_finite": 10000,
+    "ci95": [
+     0.30794,
+     0.70589
+    ],
+    "ci90": [
+     0.34148,
+     0.69112
+    ],
+    "se_boot": 0.10399,
+    "ci95_outside_sesoi": false,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true,
+    "P5_RIM3": {
+     "point": 0.4415,
+     "ci95": [
+      0.38373,
+      0.57644
+     ],
+     "diff_main_minus_this_ci95": [
+      -0.25161,
+      0.28974
+     ],
+     "n_boot_paired": 10000
+    }
+   },
+   "beta_D4subset": {
+    "label": "beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]",
+    "n_events": 20,
+    "evaluable": true,
+    "n_clusters": 6,
+    "point": 18.97105,
+    "sum_num": -141.22053,
+    "sum_den": -7.444,
+    "n_boot_finite": 10000,
+    "ci95": [
+     11.15923,
+     27.88111
+    ],
+    "ci90": [
+     11.90034,
+     26.67072
+    ],
+    "se_boot": 4.56184,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true,
+    "beta_model_pCO2_pooled": 12.75524,
+    "beta_model_fCO2_pooled": 12.71408,
+    "n_events_with_beta_model": 20
+   },
+   "beta_all_info": {
+    "label": "beta_obs = sum dpCO2(T-normalized) / sum dS(0.5 m) [uatm/psu]",
+    "n_events": 442,
+    "evaluable": true,
+    "n_clusters": 15,
+    "point": 17.80728,
+    "sum_num": -294.65705,
+    "sum_den": -16.547,
+    "n_boot_finite": 10000,
+    "ci95": [
+     6.42769,
+     24.64462
+    ],
+    "ci90": [
+     8.72325,
+     23.6851
+    ],
+    "se_boot": 4.62895,
+    "ci95_outside_sesoi": true,
+    "ci95_inside_sesoi": false,
+    "ci95_excludes_1_info": true,
+    "beta_model_pCO2_pooled": 12.7266,
+    "beta_model_fCO2_pooled": 12.68456,
+    "n_events_with_beta_model": 442
+   },
+   "n_events": 442,
+   "n_s1_substitute": 299
+  }
+ },
+ "per_station_points": {
+  "BOBOA": {
+   "n_events": 54,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 54,
+    "point": 0.40319
+   },
+   "R_S20_05m": {
+    "n": 54,
+    "point": 0.40919
+   },
+   "P5_obs": {
+    "n": 54,
+    "point": 0.61119
+   }
+  },
+  "KEO": {
+   "n_events": 209,
+   "group": "B_subtropical_midlatitude_5",
+   "R_RIM_1m": {
+    "n": 209,
+    "point": 0.23413
+   },
+   "R_S20_05m": {
+    "n": 209,
+    "point": 0.36845
+   },
+   "P5_obs": {
+    "n": 18,
+    "point": 0.55
+   }
+  },
+  "MOSEAN/WHOTS": {
+   "n_events": 117,
+   "group": "B_subtropical_midlatitude_5",
+   "R_RIM_1m": {
+    "n": 117,
+    "point": 0.45329
+   },
+   "R_S20_05m": {
+    "n": 117,
+    "point": 0.44498
+   },
+   "P5_obs": {
+    "n": 0,
+    "point": null
+   }
+  },
+  "Papa": {
+   "n_events": 106,
+   "group": "B_subtropical_midlatitude_5",
+   "R_RIM_1m": {
+    "n": 106,
+    "point": 0.12526
+   },
+   "R_S20_05m": {
+    "n": 106,
+    "point": 0.14814
+   },
+   "P5_obs": {
+    "n": 27,
+    "point": 0.50212
+   }
+  },
+  "SOFS": {
+   "n_events": 10,
+   "group": "B_subtropical_midlatitude_5",
+   "R_RIM_1m": {
+    "n": 10,
+    "point": 0.14206
+   },
+   "R_S20_05m": {
+    "n": 10,
+    "point": 0.06403
+   },
+   "P5_obs": {
+    "n": 0,
+    "point": null
+   }
+  },
+  "TAO110W": {
+   "n_events": 3,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 3,
+    "point": 0.66387
+   },
+   "R_S20_05m": {
+    "n": 3,
+    "point": 0.59076
+   },
+   "P5_obs": {
+    "n": 1,
+    "point": 0.9404
+   }
+  },
+  "TAO125W": {
+   "n_events": 1,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 1,
+    "point": 0.36531
+   },
+   "R_S20_05m": {
+    "n": 1,
+    "point": -0.0
+   },
+   "P5_obs": {
+    "n": 0,
+    "point": null
+   }
+  },
+  "TAO140W": {
+   "n_events": 10,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 10,
+    "point": 0.46138
+   },
+   "R_S20_05m": {
+    "n": 10,
+    "point": 0.90905
+   },
+   "P5_obs": {
+    "n": 6,
+    "point": 0.0555
+   }
+  },
+  "TAO155W": {
+   "n_events": 10,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 10,
+    "point": 0.32291
+   },
+   "R_S20_05m": {
+    "n": 10,
+    "point": 0.30412
+   },
+   "P5_obs": {
+    "n": 0,
+    "point": null
+   }
+  },
+  "TAO165E": {
+   "n_events": 67,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 67,
+    "point": 0.29165
+   },
+   "R_S20_05m": {
+    "n": 67,
+    "point": 0.43105
+   },
+   "P5_obs": {
+    "n": 37,
+    "point": 0.09003
+   }
+  },
+  "TAO170W": {
+   "n_events": 26,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 26,
+    "point": 0.30884
+   },
+   "R_S20_05m": {
+    "n": 26,
+    "point": 0.01971
+   },
+   "P5_obs": {
+    "n": 23,
+    "point": 0.24004
+   }
+  },
+  "TAO8S165E": {
+   "n_events": 33,
+   "group": "A_tropical_8",
+   "R_RIM_1m": {
+    "n": 33,
+    "point": 0.33203
+   },
+   "R_S20_05m": {
+    "n": 33,
+    "point": 0.23838
+   },
+   "P5_obs": {
+    "n": 0,
+    "point": null
+   }
+  }
+ },
+ "k28_R_RIM_1m_by_layer": {
+  "status": "information only, not used for the exit decision (K28)",
+  "rule": "substitute level = |s1_depth_m - 1.0| > 0.05 m (same criterion as p1b_extend); model '1 m' depth = s1_depth_m",
+  "true_1m": {
+   "n_events": 347,
+   "n_ratio": 347,
+   "point": 0.27451,
+   "model_depth_m_counts": {
+    "0.970": 10,
+    "1.000": 337
+   }
+  },
+  "substitute_layer": {
+   "n_events": 299,
+   "n_ratio": 299,
+   "point": 0.32394,
+   "model_depth_m_counts": {
+    "0.550": 2,
+    "0.720": 7,
+    "0.750": 19,
+    "0.760": 10,
+    "0.765": 7,
+    "0.780": 8,
+    "0.800": 17,
+    "0.810": 5,
+    "0.850": 11,
+    "0.860": 14,
+    "0.880": 1,
+    "0.900": 5,
+    "0.910": 4,
+    "0.930": 7,
+    "1.200": 5,
+    "1.300": 177
+   }
+  }
+ },
+ "sensitivity": {
+  "status": "not run (--part primary); the four sensitivity items are in p2_sensitivity.json from --part sensitivity (not used for the exit, K26)"
+ },
+ "exploratory_k27": {
+  "status": "exploratory, not used for the exit or D3 (K27)",
+  "rule": "current-term depth factor exp(-z^2/(4*Kz*t)) with t = 1800 s (main result t = 1 s); magnitude term c2*IRR*1800/sqrt(Kz), history terms, d0, wind, windows, event set and bootstrap (B, seed, station x season clusters) as in the main result",
+  "n_events_model_valid": {
+   "0.5m": 646,
+   "1.0m": 646
+  },
+  "R_RIM_0.5m": {
+   "label": "exploratory K27: sum dS_obs(0.5 m) / sum dS_RIM3,K27(0.5 m)",
+   "n_events": 646,
+   "evaluable": true,
+   "n_clusters": 37,
+   "point": 0.16639,
+   "sum_num": -26.1535,
+   "sum_den": -157.18557,
+   "n_boot_finite": 10000,
+   "ci95": [
+    0.1171,
+    0.21428
+   ],
+   "ci90": [
+    0.12564,
+    0.20735
+   ],
+   "se_boot": 0.025
+  },
+  "R_RIM_1.0m": {
+   "label": "exploratory K27: sum dS_obs(1.0 m) / sum dS_RIM3,K27(1.0 m)",
+   "n_events": 646,
+   "evaluable": true,
+   "n_clusters": 37,
+   "point": 0.26428,
+   "sum_num": -35.86981,
+   "sum_den": -135.72794,
+   "n_boot_finite": 10000,
+   "ci95": [
+    0.20184,
+    0.32705
+   ],
+   "ci90": [
+    0.21191,
+    0.31694
+   ],
+   "se_boot": 0.03196
+  },
+  "reference_main_path_R_RIM_0.5m_point": {
+   "n": 646,
+   "point": 0.18899,
+   "note": "point estimate of the main path (t = 1 s) at 0.5 m, only as a K27 reference"
+  },
+  "strata_by_group_points": {
+   "A_tropical_8": {
+    "n_events": 204,
+    "R_RIM_0.5m": {
+     "n": 204,
+     "point": 0.16609
+    },
+    "R_RIM_1.0m": {
+     "n": 204,
+     "point": 0.29619
+    }
+   },
+   "B_subtropical_midlatitude_5": {
+    "n_events": 442,
+    "R_RIM_0.5m": {
+     "n": 442,
+     "point": 0.16656
+    },
+    "R_RIM_1.0m": {
+     "n": 442,
+     "point": 0.24662
+    }
+   }
+  }
+ },
+ "descriptive_info": {
+  "control_dS1_0_6h_mean": 0.00019,
+  "n_control_windows": 3223,
+  "note": "K25: ratios do not subtract controls; descriptive only"
+ },
+ "disclosure": [
+  "sample expansion decided after P1 D4 failed (original P1 D4 = 14)",
+  "D4 = 34 exceeds the threshold by only 4; all new strong-freshening events are in group O (1 m is a substitute level)",
+  "group O are midlatitude/subtropical stations with a climate different from the P1 warm-pool stations -> see strata_by_group",
+  "S20 is a surface relation; at 0.5 m it is only an upper-bound comparison (depths not matched)",
+  "the 0.5 m SSS may be the 1 m sensor itself at some stations (P1 I17)",
+  "selecting the beta_obs main set by dS0.5 <= -0.2 (denominator selection) biases beta_obs toward 0 (K18)",
+  "K28: group O '1 m' is the shallowest substitute level <= 1.5 m; the model is evaluated at the actual depth -> see k28_R_RIM_1m_by_layer",
+  "K30: observed 0.5 m is about 3-hourly while the model uses all 6 hours (more noise); model hours lead observations by about 15-45 min"
+ ]
+}

@@ -1,0 +1,1166 @@
+{
+ "script": "p4_mech.py",
+ "version": "p4mech-2026-09-27a",
+ "run_utc": "2026-09-27T02:21:40Z",
+ "n_events": 646,
+ "rebuild_validation": {
+  "n_ref": 646,
+  "n_rebuilt": 646,
+  "d4_count": 34
+ },
+ "cmorph_pixel_cache": {
+  "hours_needed": 25400,
+  "hours_present": 25400,
+  "hours_missing_marked": 0
+ },
+ "deep_salinity_stations": [
+  "BOBOA",
+  "TAO110W",
+  "TAO140W",
+  "TAO165E",
+  "TAO170W"
+ ],
+ "downloads": {
+  "cache_http_requests": 0,
+  "cache_links": 1573,
+  "new_data_bytes_expected": 0
+ },
+ "V0": {
+  "this": {
+   "n": 646,
+   "point": 0.29616,
+   "ci95": [
+    0.22631,
+    0.36672
+   ],
+   "G_station_season": 37
+  },
+  "p2": {
+   "n_events": 646,
+   "point": 0.29616,
+   "ci95": [
+    0.22631,
+    0.36672
+   ]
+  },
+  "pass": true
+ },
+ "D_U": {
+  "label": "R_RIM(1 m) by U10 tercile",
+  "n": 646,
+  "cuts": [
+   6.031179,
+   9.325534
+  ],
+  "cells": [
+   {
+    "k": 0,
+    "n": 216,
+    "G_station_season": 32,
+    "G_station": 11,
+    "key_median": 4.396582,
+    "point": 0.37105,
+    "ci95": [
+     0.29473,
+     0.44574
+    ],
+    "ci95_station": [
+     0.29579,
+     0.45344
+    ],
+    "evaluable": true,
+    "theory_point": 0.06474
+   },
+   {
+    "k": 1,
+    "n": 215,
+    "G_station_season": 33,
+    "G_station": 12,
+    "key_median": 7.805841,
+    "point": 0.26521,
+    "ci95": [
+     0.16822,
+     0.37458
+    ],
+    "ci95_station": [
+     0.16185,
+     0.39062
+    ],
+    "evaluable": true,
+    "theory_point": 0.08398
+   },
+   {
+    "k": 2,
+    "n": 215,
+    "G_station_season": 20,
+    "G_station": 7,
+    "key_median": 11.556261,
+    "point": 0.15673,
+    "ci95": [
+     0.11217,
+     0.21725
+    ],
+    "ci95_station": [
+     0.10028,
+     0.21506
+    ],
+    "evaluable": true,
+    "theory_point": 0.10101
+   }
+  ],
+  "contrast_top_minus_bottom_ci95_ss": [
+   -0.26187,
+   -0.16462
+  ],
+  "contrast_top_minus_bottom_ci95_st": [
+   -0.27015,
+   -0.1606
+  ],
+  "contrast_top_minus_bottom_point": -0.21432,
+  "loglog_slope": {
+   "point": -0.8692,
+   "ci95": [
+    -1.08069,
+    -0.66211
+   ]
+  },
+  "loglog_slope_theory": 0.45979,
+  "evaluable": true
+ },
+ "D_U_k27": {
+  "label": "K27 variant by U10 tercile",
+  "n": 646,
+  "cuts": [
+   6.031179,
+   9.325534
+  ],
+  "cells": [
+   {
+    "k": 0,
+    "n": 216,
+    "G_station_season": 32,
+    "G_station": 11,
+    "key_median": 4.396582,
+    "point": 0.3352,
+    "ci95": [
+     0.26705,
+     0.40207
+    ],
+    "ci95_station": [
+     0.26834,
+     0.40905
+    ],
+    "evaluable": true
+   },
+   {
+    "k": 1,
+    "n": 215,
+    "G_station_season": 33,
+    "G_station": 12,
+    "key_median": 7.805841,
+    "point": 0.23455,
+    "ci95": [
+     0.14895,
+     0.33101
+    ],
+    "ci95_station": [
+     0.14229,
+     0.34437
+    ],
+    "evaluable": true
+   },
+   {
+    "k": 2,
+    "n": 215,
+    "G_station_season": 20,
+    "G_station": 7,
+    "key_median": 11.556261,
+    "point": 0.13762,
+    "ci95": [
+     0.09849,
+     0.19067
+    ],
+    "ci95_station": [
+     0.08682,
+     0.18804
+    ],
+    "evaluable": true
+   }
+  ],
+  "contrast_top_minus_bottom_ci95_ss": [
+   -0.24174,
+   -0.15141
+  ],
+  "contrast_top_minus_bottom_ci95_st": [
+   -0.24911,
+   -0.15107
+  ],
+  "contrast_top_minus_bottom_point": -0.19758,
+  "evaluable": true
+ },
+ "D_U_cross_rain": {
+  "U0_rain0": {
+   "label": "",
+   "n": 59,
+   "point": 0.35088,
+   "G_station_season": 23,
+   "G_station": 10,
+   "ci95": [
+    0.18493,
+    0.64833
+   ],
+   "ci95_station": [
+    0.1833,
+    0.67447
+   ],
+   "jackknife_station": {
+    "G": 10,
+    "evaluable": true,
+    "loo_range": [
+     0.20783,
+     0.40925
+    ],
+    "se": 0.15541,
+    "t_ci95": [
+     -0.00067,
+     0.70244
+    ]
+   },
+   "evaluable": true
+  },
+  "U0_rain1": {
+   "label": "",
+   "n": 78,
+   "point": 0.29172,
+   "G_station_season": 29,
+   "G_station": 11,
+   "ci95": [
+    0.20358,
+    0.42449
+   ],
+   "ci95_station": [
+    0.20716,
+    0.39735
+   ],
+   "jackknife_station": {
+    "G": 11,
+    "evaluable": true,
+    "loo_range": [
+     0.24699,
+     0.32835
+    ],
+    "se": 0.05912,
+    "t_ci95": [
+     0.15999,
+     0.42345
+    ]
+   },
+   "evaluable": true
+  },
+  "U0_rain2": {
+   "label": "",
+   "n": 79,
+   "point": 0.43854,
+   "G_station_season": 21,
+   "G_station": 9,
+   "ci95": [
+    0.36083,
+    0.53678
+   ],
+   "ci95_station": [
+    0.37392,
+    0.4923
+   ],
+   "jackknife_station": {
+    "G": 9,
+    "evaluable": true,
+    "loo_range": [
+     0.41539,
+     0.45594
+    ],
+    "se": 0.03124,
+    "t_ci95": [
+     0.36651,
+     0.51058
+    ]
+   },
+   "evaluable": true
+  },
+  "U1_rain0": {
+   "label": "",
+   "n": 67,
+   "point": 0.13396,
+   "G_station_season": 26,
+   "G_station": 10,
+   "ci95": [
+    0.1027,
+    0.18714
+   ],
+   "ci95_station": [
+    0.10465,
+    0.19714
+   ],
+   "jackknife_station": {
+    "G": 10,
+    "evaluable": true,
+    "loo_range": [
+     0.12293,
+     0.1617
+    ],
+    "se": 0.0294,
+    "t_ci95": [
+     0.06746,
+     0.20046
+    ]
+   },
+   "evaluable": true
+  },
+  "U1_rain1": {
+   "label": "",
+   "n": 68,
+   "point": 0.17856,
+   "G_station_season": 23,
+   "G_station": 10,
+   "ci95": [
+    0.12014,
+    0.23031
+   ],
+   "ci95_station": [
+    0.14515,
+    0.25096
+   ],
+   "jackknife_station": {
+    "G": 10,
+    "evaluable": true,
+    "loo_range": [
+     0.16625,
+     0.19444
+    ],
+    "se": 0.02414,
+    "t_ci95": [
+     0.12396,
+     0.23316
+    ]
+   },
+   "evaluable": true
+  },
+  "U1_rain2": {
+   "label": "",
+   "n": 80,
+   "point": 0.39303,
+   "G_station_season": 22,
+   "G_station": 8,
+   "ci95": [
+    0.19189,
+    0.61582
+   ],
+   "ci95_station": [
+    0.19012,
+    0.5718
+   ],
+   "jackknife_station": {
+    "G": 8,
+    "evaluable": true,
+    "loo_range": [
+     0.3251,
+     0.44843
+    ],
+    "se": 0.10652,
+    "t_ci95": [
+     0.14115,
+     0.64492
+    ]
+   },
+   "evaluable": true
+  },
+  "U2_rain0": {
+   "label": "",
+   "n": 90,
+   "point": 0.10076,
+   "G_station_season": 15,
+   "G_station": 6,
+   "ci95": [
+    0.07298,
+    0.14902
+   ],
+   "ci95_station": [
+    0.08013,
+    0.18618
+   ],
+   "jackknife_station": {
+    "G": 6,
+    "evaluable": true,
+    "loo_range": [
+     0.09123,
+     0.11148
+    ],
+    "se": 0.01506,
+    "t_ci95": [
+     0.06206,
+     0.13946
+    ]
+   },
+   "evaluable": true
+  },
+  "U2_rain1": {
+   "label": "",
+   "n": 69,
+   "point": 0.15979,
+   "G_station_season": 16,
+   "G_station": 7,
+   "ci95": [
+    0.09143,
+    0.26165
+   ],
+   "ci95_station": [
+    0.03284,
+    0.22217
+   ],
+   "jackknife_station": {
+    "G": 7,
+    "evaluable": true,
+    "loo_range": [
+     0.13477,
+     0.18389
+    ],
+    "se": 0.04148,
+    "t_ci95": [
+     0.05828,
+     0.2613
+    ]
+   },
+   "evaluable": true
+  },
+  "U2_rain2": {
+   "label": "",
+   "n": 56,
+   "point": 0.22143,
+   "G_station_season": 13,
+   "G_station": 5,
+   "ci95": [
+    0.14898,
+    0.3146
+   ],
+   "ci95_station": [
+    0.16122,
+    0.30944
+   ],
+   "jackknife_station": {
+    "G": 5,
+    "evaluable": true,
+    "loo_range": [
+     0.20562,
+     0.23864
+    ],
+    "se": 0.02157,
+    "t_ci95": [
+     0.16154,
+     0.28133
+    ]
+   },
+   "evaluable": true
+  }
+ },
+ "D_Z": {
+  "label": "R_RIM(1 m) by zeta=z1/L tercile (k=0 most unstable)",
+  "n": 646,
+  "cuts": [
+   0.025707,
+   0.140848
+  ],
+  "cells": [
+   {
+    "k": 0,
+    "n": 216,
+    "G_station_season": 26,
+    "G_station": 10,
+    "key_median": 0.010739,
+    "point": 0.08234,
+    "ci95": [
+     0.04788,
+     0.11659
+    ],
+    "ci95_station": [
+     0.02506,
+     0.10114
+    ],
+    "evaluable": true
+   },
+   {
+    "k": 1,
+    "n": 215,
+    "G_station_season": 35,
+    "G_station": 11,
+    "key_median": 0.062246,
+    "point": 0.15946,
+    "ci95": [
+     0.11496,
+     0.21464
+    ],
+    "ci95_station": [
+     0.12352,
+     0.18991
+    ],
+    "evaluable": true
+   },
+   {
+    "k": 2,
+    "n": 215,
+    "G_station_season": 31,
+    "G_station": 11,
+    "key_median": 0.426545,
+    "point": 0.43408,
+    "ci95": [
+     0.33564,
+     0.54968
+    ],
+    "ci95_station": [
+     0.33041,
+     0.57785
+    ],
+    "evaluable": true
+   }
+  ],
+  "contrast_top_minus_bottom_ci95_ss": [
+   0.25843,
+   0.46871
+  ],
+  "contrast_top_minus_bottom_ci95_st": [
+   0.24545,
+   0.49404
+  ],
+  "contrast_top_minus_bottom_point": 0.35174,
+  "evaluable": true
+ },
+ "D_T_order": {
+  "label": "R_RIM(1 m) by tercile of the law-of-the-wall predicted ratio rho",
+  "n": 556,
+  "cuts": [
+   0.070147,
+   0.096162
+  ],
+  "cells": [
+   {
+    "k": 0,
+    "n": 186,
+    "G_station_season": 32,
+    "G_station": 11,
+    "key_median": 0.054825,
+    "point": 0.25778,
+    "ci95": [
+     0.18545,
+     0.33259
+    ],
+    "ci95_station": [
+     0.19792,
+     0.33024
+    ],
+    "evaluable": true,
+    "theory_point": 0.04792
+   },
+   {
+    "k": 1,
+    "n": 185,
+    "G_station_season": 33,
+    "G_station": 12,
+    "key_median": 0.083769,
+    "point": 0.22938,
+    "ci95": [
+     0.16151,
+     0.31027
+    ],
+    "ci95_station": [
+     0.17233,
+     0.2878
+    ],
+    "evaluable": true,
+    "theory_point": 0.08364
+   },
+   {
+    "k": 2,
+    "n": 185,
+    "G_station_season": 30,
+    "G_station": 10,
+    "key_median": 0.120745,
+    "point": 0.31079,
+    "ci95": [
+     0.20075,
+     0.44714
+    ],
+    "ci95_station": [
+     0.21443,
+     0.45562
+    ],
+    "evaluable": true,
+    "theory_point": 0.12289
+   }
+  ],
+  "contrast_top_minus_bottom_ci95_ss": [
+   -0.05017,
+   0.18062
+  ],
+  "contrast_top_minus_bottom_ci95_st": [
+   -0.00296,
+   0.14077
+  ],
+  "contrast_top_minus_bottom_point": 0.05301,
+  "evaluable": true
+ },
+ "D_T_level": {
+  "label": "R_obs/R_th = sum obs1 / sum LoW1",
+  "n": 646,
+  "point": 3.80503,
+  "G_station_season": 37,
+  "G_station": 12,
+  "ci95": [
+   2.9005,
+   4.73926
+  ],
+  "ci95_station": [
+   2.85323,
+   5.19983
+  ],
+  "jackknife_station": {
+   "G": 12,
+   "evaluable": true,
+   "loo_range": [
+    3.3094,
+    4.21163
+   ],
+   "se": 0.69787,
+   "t_ci95": [
+    2.26903,
+    5.34103
+   ]
+  },
+  "evaluable": true,
+  "R_th_pooled": 0.07783
+ },
+ "D_T_surface": {
+  "n": 646,
+  "s_th_surface": 0.07163,
+  "s_th_1m": 0.07783,
+  "note": "surface ratio / 1 m ratio implied by the wall-layer solution; ~1 means the 1 m ratio extrapolates to the surface under this theory (descriptive)"
+ },
+ "D_B": {
+  "n": 98,
+  "G_station_season": 14,
+  "G_station": 5,
+  "stations": [
+   "BOBOA",
+   "TAO110W",
+   "TAO140W",
+   "TAO165E",
+   "TAO170W"
+  ],
+  "evaluable": true,
+  "Q10_ci95_ss": [
+   0.23294,
+   0.7561
+  ],
+  "R1_ci95_ss": [
+   0.25022,
+   0.57141
+  ],
+  "phi_ci95_ss": [
+   -0.07135,
+   0.44562
+  ],
+  "phi_nboot_ss": 10000,
+  "Q10_ci95_st": [
+   0.30113,
+   0.55151
+  ],
+  "R1_ci95_st": [
+   0.30666,
+   0.47102
+  ],
+  "phi_ci95_st": [
+   -0.11693,
+   0.21759
+  ],
+  "phi_nboot_st": 10000,
+  "Q10": 0.42921,
+  "R1": 0.36274,
+  "phi": 0.1043,
+  "jackknife_phi_station": {
+   "G": 5,
+   "evaluable": true,
+   "loo_range": [
+    -0.00348,
+    0.13752
+   ],
+   "se": 0.1042,
+   "t_ci95": [
+    -0.18499,
+    0.39359
+   ]
+  },
+  "shape_obs_Q_over_R1": 1.18324,
+  "shape_low_Q_over_R1": 1.41905,
+  "phi_if_obs_had_low_shape": 0.23853,
+  "closure_obs_over_gauge": 1.17951,
+  "closure_low_gauge": 0.4741,
+  "closure_rim_cmorph": 4.15907,
+  "closure_obs_over_gauge_ci95": [
+   0.72968,
+   1.69836
+  ],
+  "ratio_5_10m_segment": 0.62834,
+  "deep_extension": {
+   "n": 98,
+   "Q_deep": 0.43971,
+   "R1_same_events": 0.36274
+  }
+ },
+ "D_B_05m_all": {
+  "n": 166,
+  "Q5": 0.3174,
+  "R1_same_events": 0.30746
+ },
+ "D_P": {
+  "label": "R_RIM(1 m) by tercile of lambda = ln(G6/C6) (k=2: gauge relatively largest)",
+  "n": 646,
+  "cuts": [
+   -0.300296,
+   0.805334
+  ],
+  "cells": [
+   {
+    "k": 0,
+    "n": 216,
+    "G_station_season": 31,
+    "G_station": 10,
+    "key_median": -0.780309,
+    "point": 0.0773,
+    "ci95": [
+     0.05372,
+     0.1043
+    ],
+    "ci95_station": [
+     0.05757,
+     0.10417
+    ],
+    "evaluable": true
+   },
+   {
+    "k": 1,
+    "n": 215,
+    "G_station_season": 33,
+    "G_station": 12,
+    "key_median": 0.18348,
+    "point": 0.26914,
+    "ci95": [
+     0.21901,
+     0.33792
+    ],
+    "ci95_station": [
+     0.21904,
+     0.3664
+    ],
+    "evaluable": true
+   },
+   {
+    "k": 2,
+    "n": 215,
+    "G_station_season": 31,
+    "G_station": 10,
+    "key_median": 2.083655,
+    "point": 1.32641,
+    "ci95": [
+     0.92744,
+     1.74934
+    ],
+    "ci95_station": [
+     0.75737,
+     1.96312
+    ],
+    "evaluable": true
+   }
+  ],
+  "contrast_top_minus_bottom_ci95_ss": [
+   0.85096,
+   1.67223
+  ],
+  "contrast_top_minus_bottom_ci95_st": [
+   0.66832,
+   1.87683
+  ],
+  "contrast_top_minus_bottom_point": 1.24911,
+  "evaluable": true
+ },
+ "D_P_3x3": {
+  "label": "R_RIM(1 m) driven by the 3x3 mean",
+  "n": 646,
+  "point": 0.29345,
+  "G_station_season": 37,
+  "G_station": 12,
+  "ci95": [
+   0.2248,
+   0.36284
+  ],
+  "ci95_station": [
+   0.2222,
+   0.38894
+  ],
+  "jackknife_station": {
+   "G": 12,
+   "evaluable": true,
+   "loo_range": [
+    0.25696,
+    0.32206
+   ],
+   "se": 0.05054,
+   "t_ci95": [
+    0.18221,
+    0.40469
+   ]
+  },
+  "evaluable": true
+ },
+ "D_S": {
+  "inversion_matched_all": {
+   "label": "sum 0.5 / sum 1, same hours",
+   "n": 645,
+   "point": 0.71617,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    0.52238,
+    0.90136
+   ],
+   "ci95_station": [
+    0.45983,
+    0.92504
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     0.63644,
+     0.77825
+    ],
+    "se": 0.12575,
+    "t_ci95": [
+     0.43939,
+     0.99295
+    ]
+   },
+   "evaluable": true
+  },
+  "inversion_unmatched_all": 0.72912,
+  "inversion_matched_A": {
+   "label": "sum 0.5 / sum 1, same hours",
+   "n": 204,
+   "point": 0.64169,
+   "G_station_season": 22,
+   "G_station": 8,
+   "ci95": [
+    0.28642,
+    1.00783
+   ],
+   "ci95_station": [
+    0.18227,
+    0.98352
+   ],
+   "jackknife_station": {
+    "G": 8,
+    "evaluable": true,
+    "loo_range": [
+     0.47189,
+     0.79504
+    ],
+    "se": 0.24568,
+    "t_ci95": [
+     0.06074,
+     1.22263
+    ]
+   },
+   "evaluable": true
+  },
+  "inversion_unmatched_A": 0.67091,
+  "inversion_matched_B": {
+   "label": "sum 0.5 / sum 1, same hours",
+   "n": 441,
+   "point": 0.76876,
+   "G_station_season": 15,
+   "G_station": 4,
+   "ci95": [
+    0.60162,
+    0.9322
+   ],
+   "ci95_station": [
+    0.57484,
+    0.93919
+   ],
+   "jackknife_station": {
+    "G": 4,
+    "evaluable": true,
+    "loo_range": [
+     0.62975,
+     0.93328
+    ],
+    "se": 0.18691,
+    "t_ci95": [
+     0.17394,
+     1.36359
+    ]
+   },
+   "evaluable": true
+  },
+  "inversion_unmatched_B": 0.7678,
+  "R1_obs_matched_model_full": {
+   "label": "",
+   "n": 645,
+   "point": 0.29903,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    0.23345,
+    0.36147
+   ],
+   "ci95_station": [
+    0.23143,
+    0.38288
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     0.26999,
+     0.32376
+    ],
+    "se": 0.04403,
+    "t_ci95": [
+     0.20213,
+     0.39593
+    ]
+   },
+   "evaluable": true
+  },
+  "R1_obs_matched_model_matched": {
+   "label": "",
+   "n": 645,
+   "point": 0.30557,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    0.23818,
+    0.3711
+   ],
+   "ci95_station": [
+    0.23608,
+    0.39468
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     0.2739,
+     0.33085
+    ],
+    "se": 0.04627,
+    "t_ci95": [
+     0.20373,
+     0.40741
+    ]
+   },
+   "evaluable": true
+  },
+  "R1_model_shift_30min": {
+   "label": "",
+   "n": 646,
+   "point": 0.32258,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    0.24648,
+    0.39964
+   ],
+   "ci95_station": [
+    0.24471,
+    0.42683
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     0.2834,
+     0.35626
+    ],
+    "se": 0.05596,
+    "t_ci95": [
+     0.19941,
+     0.44575
+    ]
+   },
+   "evaluable": true
+  },
+  "shift1_pad_zero_events": 547,
+  "R1_model_shift_60min": {
+   "label": "",
+   "n": 646,
+   "point": 0.35771,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    0.27277,
+    0.44499
+   ],
+   "ci95_station": [
+    0.27194,
+    0.47468
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     0.31523,
+     0.39831
+    ],
+    "se": 0.06314,
+    "t_ci95": [
+     0.21875,
+     0.49667
+    ]
+   },
+   "evaluable": true
+  },
+  "shift2_pad_zero_events": 547,
+  "same_sensor_hourly": {
+   "TAO165E": {
+    "group": "A_tropical_8",
+    "n_hours": 13345,
+    "frac_le_0.003_all": 0.4641,
+    "n_hours_event_windows": 266,
+    "frac_le_0.003_event_windows": 0.4286
+   },
+   "TAO8S165E": {
+    "group": "A_tropical_8",
+    "n_hours": 8628,
+    "frac_le_0.003_all": 0.3544,
+    "n_hours_event_windows": 132,
+    "frac_le_0.003_event_windows": 0.0606
+   },
+   "BOBOA": {
+    "group": "A_tropical_8",
+    "n_hours": 9259,
+    "frac_le_0.003_all": 0.1013,
+    "n_hours_event_windows": 216,
+    "frac_le_0.003_event_windows": 0.0509
+   },
+   "TAO170W": {
+    "group": "A_tropical_8",
+    "n_hours": 13032,
+    "frac_le_0.003_all": 0.0845,
+    "n_hours_event_windows": 104,
+    "frac_le_0.003_event_windows": 0.0096
+   },
+   "TAO155W": {
+    "group": "A_tropical_8",
+    "n_hours": 8994,
+    "frac_le_0.003_all": 0.7711,
+    "n_hours_event_windows": 40,
+    "frac_le_0.003_event_windows": 0.025
+   },
+   "TAO140W": {
+    "group": "A_tropical_8",
+    "n_hours": 20681,
+    "frac_le_0.003_all": 0.4485,
+    "n_hours_event_windows": 40,
+    "frac_le_0.003_event_windows": 0.25
+   },
+   "TAO125W": {
+    "group": "A_tropical_8",
+    "n_hours": 19530,
+    "frac_le_0.003_all": 0.4474,
+    "n_hours_event_windows": 4,
+    "frac_le_0.003_event_windows": 0.25
+   },
+   "TAO110W": {
+    "group": "A_tropical_8",
+    "n_hours": 13785,
+    "frac_le_0.003_all": 0.5811,
+    "n_hours_event_windows": 12,
+    "frac_le_0.003_event_windows": 0.8333
+   },
+   "KEO": {
+    "group": "B_subtropical_midlatitude_5",
+    "n_hours": 31996,
+    "frac_le_0.003_all": 0.1738,
+    "n_hours_event_windows": 845,
+    "frac_le_0.003_event_windows": 0.1515
+   },
+   "MOSEAN/WHOTS": {
+    "group": "B_subtropical_midlatitude_5",
+    "n_hours": 44098,
+    "frac_le_0.003_all": 0.19,
+    "n_hours_event_windows": 466,
+    "frac_le_0.003_event_windows": 0.1352
+   },
+   "Papa": {
+    "group": "B_subtropical_midlatitude_5",
+    "n_hours": 44274,
+    "frac_le_0.003_all": 0.4271,
+    "n_hours_event_windows": 424,
+    "frac_le_0.003_event_windows": 0.4198
+   },
+   "SOFS": {
+    "group": "B_subtropical_midlatitude_5",
+    "n_hours": 5134,
+    "frac_le_0.003_all": 0.5037,
+    "n_hours_event_windows": 40,
+    "frac_le_0.003_event_windows": 0.35
+   },
+   "Stratus": {
+    "group": "B_subtropical_midlatitude_5",
+    "n_hours": 14153,
+    "frac_le_0.003_all": 0.5831,
+    "n_hours_event_windows": 0,
+    "frac_le_0.003_event_windows": null
+   }
+  }
+ },
+ "nonblind_quantification": {
+  "spearman_u10_vs_E5proxy": {
+   "n": 280,
+   "rho": 0.8274
+  },
+  "spearman_rho_vs_rain24": {
+   "n": 556,
+   "rho": 0.0966
+  },
+  "spearman_rho_vs_E5proxy": {
+   "n": 279,
+   "rho": 0.1742
+  },
+  "spearman_zeta_vs_rain24": {
+   "n": 646,
+   "rho": 0.2404
+  },
+  "spearman_lam_vs_rain24": {
+   "n": 646,
+   "rho": 0.0625
+  }
+ },
+ "verdict": {
+  "pillars": {
+   "P1a": "pass",
+   "P1b": "pass",
+   "P4": "fail",
+   "P2a": "fail",
+   "P2b": "pass",
+   "P3": "fail"
+  },
+  "negative_signals": {
+   "trap_S": false,
+   "trap_S_wind": false,
+   "lateral_L": false,
+   "shallow_S_budget": false,
+   "mismatch_M": true
+  },
+  "verdict": "negative_L",
+  "rule": "positive = P1a, P1b, P2a, P2b, P3, P4 all pass (weak or not_evaluable do not count); otherwise exit by negative signal, mixed if there is none."
+ },
+ "runtime_s": 87.9
+}

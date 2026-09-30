@@ -1,0 +1,382 @@
+{
+ "inputs": {
+  "p5": {
+   "path": "p5sss-out/p5_events.csv",
+   "sha256": "7a6d70758d575d180d9f0100579a9b7f6bc014350c9080ca9b5ab84ffd6985fa"
+  },
+  "p7a": {
+   "path": "p7a-out/p7a_events_jpl.csv",
+   "sha256": "1b529937eb13dbd02e79d7b66e22ed08810471a6f2087e30c3c559903c05f6a8"
+  },
+  "p6": {
+   "path": "p6-out/p6_events.csv",
+   "sha256": "2de4313df8a450dba57df476f3db6565a85b6fd44fc189d97c5a6492fe3e0646"
+  },
+  "p8a": {
+   "path": "p8a-out/p8a_events_wind.csv",
+   "sha256": "b8952fc6cb26be4724163049e5ee89a45b188a67a84ed62d083d53b0c3a8ccc2"
+  },
+  "p7e": {
+   "path": "p7e-out/p7e_spurs1_events.csv",
+   "sha256": "7c2e0a5605ddd79b9eee5b6cf7d50f7b1ee5695feeee694eeb130cf957a016d3"
+  },
+  "p8b": {
+   "path": "p8b-out/p8b_events.csv",
+   "sha256": "ddba60b752b2f74cbd048a2869fa5f19fb773e138e7099b8002b8799d7597417"
+  }
+ },
+ "seed": 20260926,
+ "B": 10000,
+ "pair_seed": 20260929,
+ "c1": {
+  "inputs_blocks": {
+   "RSS_TROP": {
+    "n": 37,
+    "clusters": 13,
+    "R": 0.7998638264242278,
+    "ci95": [
+     0.14644891312170738,
+     1.2922300554964514
+    ]
+   },
+   "JPL_TROP": {
+    "n": 41,
+    "clusters": 14,
+    "R": 1.075120058064334,
+    "ci95": [
+     0.5390517111615387,
+     2.025305808548442
+    ]
+   },
+   "P6": {
+    "n": 29,
+    "clusters": 8,
+    "R": 0.36385463193036477,
+    "ci95": [
+     0.15031159190461083,
+     0.6070363999628227
+    ]
+   }
+  },
+  "primary": {
+   "RSS": {
+    "Q": 2.198306016280995,
+    "Q_ci95": [
+     0.3546895393083545,
+     5.917692926648552
+    ],
+    "lnQ": 0.7876870711681595,
+    "lnQ_ci95": [
+     -1.0365124092970073,
+     1.777946664603493
+    ],
+    "lnQ_note": "",
+    "P_Q_le_1": 0.096,
+    "frac_q_nonpos": 0.0128,
+    "reading": "within the tropical subset the difference does not exceed two-sample cluster sampling uncertainty"
+   },
+   "JPL": {
+    "Q": 2.9548065730549578,
+    "Q_ci95": [
+     1.220663722356813,
+     8.271530577934092
+    ],
+    "lnQ": 1.0834331912046125,
+    "lnQ_ci95": [
+     0.1993947455306283,
+     2.1128195678403157
+    ],
+    "lnQ_note": "",
+    "P_Q_le_1": 0.01,
+    "frac_q_nonpos": 0.0014,
+    "reading": "within the tropical subset the satellite ratio is significantly larger than the in situ surface ratio"
+   }
+  },
+  "conservative": {
+   "blocks": {
+    "RSS_TROP_st": {
+     "n": 37,
+     "clusters": 5,
+     "R": 0.7998638264242278,
+     "ci95": [
+      0.43154669093767994,
+      1.325125592602602
+     ]
+    },
+    "JPL_TROP_st": {
+     "n": 41,
+     "clusters": 5,
+     "R": 1.075120058064334,
+     "ci95": [
+      0.5215808031829091,
+      2.2889224308325757
+     ]
+    },
+    "P6_event": {
+     "n": 29,
+     "clusters": 29,
+     "R": 0.36385463193036477,
+     "ci95": [
+      0.07987559479615527,
+      0.6703213971614738
+     ]
+    }
+   },
+   "RSS": {
+    "Q": 2.198306016280995,
+    "Q_ci95": [
+     0.7863887694002047,
+     8.672944866024807
+    ],
+    "lnQ": 0.7876870711681595,
+    "lnQ_ci95": [
+     -0.24030399127836166,
+     2.1602083947150668
+    ],
+    "lnQ_note": "",
+    "P_Q_le_1": 0.0524,
+    "frac_q_nonpos": 0.0112,
+    "reading": "within the tropical subset the difference does not exceed two-sample cluster sampling uncertainty"
+   },
+   "JPL": {
+    "Q": 2.9548065730549578,
+    "Q_ci95": [
+     0.9255101340858168,
+     13.024892715039888
+    ],
+    "lnQ": 1.0834331912046125,
+    "lnQ_ci95": [
+     -0.07741019717892102,
+     2.5668623507563626
+    ],
+    "lnQ_note": "",
+    "P_Q_le_1": 0.0294,
+    "frac_q_nonpos": 0.0141,
+    "reading": "within the tropical subset the difference does not exceed two-sample cluster sampling uncertainty"
+   }
+  },
+  "strict_tropics": {
+   "blocks": {
+    "RSS": {
+     "n": 23,
+     "clusters": 9,
+     "R": 0.5692223058989955,
+     "ci95": [
+      -0.13254299825349403,
+      1.2572474086413779
+     ]
+    },
+    "JPL": {
+     "n": 25,
+     "clusters": 10,
+     "R": 0.7576791736899373,
+     "ci95": [
+      0.200776161414238,
+      2.0654298826730817
+     ]
+    }
+   },
+   "RSS": {
+    "Q": 1.5644223157998285,
+    "Q_ci95": [
+     -0.3627931302344173,
+     4.764707881213251
+    ],
+    "lnQ": 0.44751662856341606,
+    "lnQ_ci95": [
+     null,
+     1.5612362301300269
+    ],
+    "lnQ_note": "lower bound <= 0, ln undefined",
+    "P_Q_le_1": 0.2564,
+    "frac_q_nonpos": 0.0421,
+    "reading": "within the tropical subset the difference does not exceed two-sample cluster sampling uncertainty"
+   },
+   "JPL": {
+    "Q": 2.082367811755502,
+    "Q_ci95": [
+     0.5177632531621906,
+     7.122720438483217
+    ],
+    "lnQ": 0.7335056172965321,
+    "lnQ_ci95": [
+     -0.6582371814248039,
+     1.9632897365049908
+    ],
+    "lnQ_note": "",
+    "P_Q_le_1": 0.0837,
+    "frac_q_nonpos": 0.0103,
+    "reading": "within the tropical subset the difference does not exceed two-sample cluster sampling uncertainty"
+   }
+  }
+ },
+ "c2": {
+  "RSS": {
+   "label": "RSS main result",
+   "n": 87,
+   "R": 1.6527250989390707,
+   "share_max": 0.13917742863653804,
+   "share_top2": 0.26695761720387023,
+   "n_opposite": 8,
+   "R_drop_max": 1.7463052989044263,
+   "n_eff": 15.31239611078447,
+   "max_event_index": 63
+  },
+  "JPL": {
+   "label": "JPL main result",
+   "n": 96,
+   "R": 1.1205618526719545,
+   "share_max": 0.15969366974363405,
+   "share_top2": 0.28154804791424226,
+   "n_opposite": 9,
+   "R_drop_max": 1.3005557804721388,
+   "n_eff": 15.423982723620366,
+   "max_event_index": 5
+  },
+  "P6": {
+   "label": "SPURS-2 surface",
+   "n": 29,
+   "R": 0.36385463193036477,
+   "share_max": 0.21381328221466786,
+   "share_top2": 0.3794922559795118,
+   "n_opposite": 6,
+   "R_drop_max": 0.41311052644973334,
+   "n_eff": 9.474290239047654,
+   "max_event_index": 10
+  },
+  "RSSTH": {
+   "label": "RSS strong-wind class (P8a TH)",
+   "n": 35,
+   "R": 5.743703948115594,
+   "share_max": 0.10539342634623791,
+   "share_top2": 0.2098541998630274,
+   "n_opposite": 3,
+   "R_drop_max": 6.04737349424241,
+   "n_eff": 12.753757116558583,
+   "max_event_index": 17
+  },
+  "JPLTH": {
+   "label": "JPL strong-wind class (P8a TH)",
+   "n": 39,
+   "R": 3.2071250792646584,
+   "share_max": 0.14494656985751475,
+   "share_top2": 0.2296610463781049,
+   "n_opposite": 3,
+   "R_drop_max": 3.546300108886828,
+   "n_eff": 16.554457269710355,
+   "max_event_index": 7
+  },
+  "RSSTROP": {
+   "label": "RSS excluding KEO, Papa",
+   "n": 37,
+   "R": 0.7998638264242278,
+   "share_max": 0.2838657866246226,
+   "share_top2": 0.5444858030888858,
+   "n_opposite": 4,
+   "R_drop_max": 0.6912298443700657,
+   "n_eff": 5.289478888166201,
+   "max_event_index": 33
+  },
+  "JPLTROP": {
+   "label": "JPL excluding KEO, Papa",
+   "n": 41,
+   "R": 1.0751200580643339,
+   "share_max": 0.3371345079427742,
+   "share_top2": 0.5943852548958066,
+   "n_opposite": 4,
+   "R_drop_max": 1.5337181994185853,
+   "n_eff": 4.794422097769949,
+   "max_event_index": 5
+  },
+  "S1": {
+   "label": "SPURS-1 0.865 m",
+   "n": 13,
+   "R": 0.2537041318742963,
+   "share_max": 0.35142347068344026,
+   "share_top2": 0.6309854563786117,
+   "n_opposite": 0,
+   "R_drop_max": 0.2859004628547383,
+   "n_eff": 4.501687770492747,
+   "max_event_index": 11
+  },
+  "LA1M": {
+   "label": "Lady Amber 1 m",
+   "n": 27,
+   "R": 0.426495589847981,
+   "share_max": 0.18309055166869706,
+   "share_top2": 0.31718867164014425,
+   "n_opposite": 4,
+   "R_drop_max": 0.43561464852713977,
+   "n_eff": 9.798638320928475,
+   "max_event_index": 15
+  },
+  "_not_computed": {
+   "SPURS2_buoy_1m": "no per-event table (p6_events.csv holds only the shipboard levels), not computed"
+  }
+ },
+ "selftest": {
+  "RSS_TROP": {
+   "ok": true,
+   "this": {
+    "n": 37,
+    "clusters": 13,
+    "R": 0.7998638264242278,
+    "ci95": [
+     0.14644891312170738,
+     1.2922300554964514
+    ]
+   },
+   "registered": {
+    "n": 37,
+    "clusters": 13,
+    "R": 0.79986,
+    "ci95": [
+     0.14645,
+     1.29223
+    ]
+   }
+  },
+  "JPL_TROP": {
+   "ok": true,
+   "this": {
+    "n": 41,
+    "clusters": 14,
+    "R": 1.075120058064334,
+    "ci95": [
+     0.5390517111615387,
+     2.025305808548442
+    ]
+   },
+   "registered": {
+    "n": 41,
+    "clusters": 14,
+    "R": 1.075,
+    "ci95": [
+     0.539,
+     2.025
+    ]
+   }
+  },
+  "P6": {
+   "ok": true,
+   "this": {
+    "n": 29,
+    "clusters": 8,
+    "R": 0.36385463193036477,
+    "ci95": [
+     0.15031159190461083,
+     0.6070363999628227
+    ]
+   },
+   "registered": {
+    "n": 29,
+    "clusters": 8,
+    "R": 0.364,
+    "ci95": [
+     0.15,
+     0.607
+    ]
+   }
+  }
+ }
+}

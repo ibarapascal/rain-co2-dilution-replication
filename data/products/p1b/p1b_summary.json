@@ -1,0 +1,4897 @@
+{
+ "script": "p1b_extend.py",
+ "version": "p1b-2026-09-26a",
+ "run_utc": "2026-09-26T01:13:08Z",
+ "runtime_s": 1919.3,
+ "design_ref": "gates as in P1; implementation choices I1-I17 (p1_events.py) + J1-J13 (this script)",
+ "p1_validation": {
+  "n_rows": 204,
+  "expected": 204,
+  "recomputed": {
+   "D1_n": 204,
+   "D1_st10": 6,
+   "D2_diff": -0.06584,
+   "D2_ci": [
+    -0.08656,
+    -0.04777
+   ],
+   "D4_n": 14,
+   "D5_median": 0.001,
+   "D5_corr": 0.64624
+  },
+  "p1_summary": {
+   "D1_n": 204,
+   "D1_st10": 6,
+   "D2_diff": -0.06584,
+   "D2_ci": [
+    -0.08656,
+    -0.04777
+   ],
+   "D4_n": 14,
+   "D5_median": 0.001,
+   "D5_corr": 0.64625
+  },
+  "mismatch": []
+ },
+ "r_rule": "per-var",
+ "n_events": {
+  "p1": 204,
+  "new_R": 0,
+  "new_O": 442,
+  "merged": 646
+ },
+ "gates_merged": {
+  "D1": {
+   "n_events_total": 646,
+   "n_stations_ge10": 10,
+   "events_by_station": {
+    "TAO165E": 67,
+    "TAO8S165E": 33,
+    "BOBOA": 54,
+    "TAO170W": 26,
+    "TAO155W": 10,
+    "TAO140W": 10,
+    "TAO125W": 1,
+    "TAO110W": 3,
+    "KEO": 209,
+    "MOSEAN/WHOTS": 117,
+    "Papa": 106,
+    "SOFS": 10
+   },
+   "threshold": "total >= 60 and >= 3 stations with >= 10 events",
+   "pass": true
+  },
+  "D2": {
+   "label": "main decision: events with all 5 control windows",
+   "n_events": 641,
+   "n_controls": 3205,
+   "n_clusters": 37,
+   "welch_ci95_info": [
+    -0.06365,
+    -0.04527
+   ],
+   "diff_psu": -0.05446,
+   "evaluable": true,
+   "ci95_cluster_bootstrap": [
+    -0.07088,
+    -0.03935
+   ],
+   "bootstrap_B": 10000,
+   "bootstrap_seed": 20260926,
+   "abs_diff_below_0.03": false,
+   "ci_contains_0": false,
+   "pass": true,
+   "threshold": "|event mean - control mean| >= 0.03 psu and 95% CI excludes 0",
+   "sensitivity_ge1ctrl_info": {
+    "label": "sensitivity: >= 1 control window (not used for the decision)",
+    "n_events": 646,
+    "n_controls": 3223,
+    "n_clusters": 37,
+    "welch_ci95_info": [
+     -0.06513,
+     -0.04631
+    ],
+    "diff_psu": -0.05572,
+    "evaluable": true,
+    "ci95_cluster_bootstrap": [
+     -0.07275,
+     -0.04022
+    ],
+    "bootstrap_B": 10000,
+    "bootstrap_seed": 20260926,
+    "abs_diff_below_0.03": false,
+    "ci_contains_0": false,
+    "pass": true
+   }
+  },
+  "D4": {
+   "n_events_dS05_le_-0.2": 34,
+   "threshold": "≥30",
+   "pass": true
+  },
+  "D5": {
+   "n_pre_pairs": 646,
+   "median_pre_diff_psu": 0.0005,
+   "corr_event_anom": 0.70379,
+   "n_corr": 646,
+   "evaluable": true,
+   "pass": true,
+   "threshold": "|pre-rain median difference| <= 0.05 psu and event anomaly correlation >= 0.6"
+  }
+ },
+ "gates_verdict": {
+  "D1": true,
+  "D2": true,
+  "D4": true,
+  "D5": true
+ },
+ "p1b_pass_all": true,
+ "verdict_note": "P1b passed: D1/D2/D4/D5 all pass on the combined set; proceed to P2",
+ "new_only_info": {
+  "note": "information only, not used for the decision",
+  "gates": {
+   "D1": {
+    "n_events_total": 442,
+    "n_stations_ge10": 4,
+    "events_by_station": {
+     "KEO": 209,
+     "MOSEAN/WHOTS": 117,
+     "Papa": 106,
+     "SOFS": 10
+    },
+    "threshold": "total >= 60 and >= 3 stations with >= 10 events",
+    "pass": true
+   },
+   "D2": {
+    "label": "main decision: events with all 5 control windows",
+    "n_events": 442,
+    "n_controls": 2210,
+    "n_clusters": 15,
+    "welch_ci95_info": [
+     -0.06008,
+     -0.03859
+    ],
+    "diff_psu": -0.04934,
+    "evaluable": true,
+    "ci95_cluster_bootstrap": [
+     -0.07033,
+     -0.02929
+    ],
+    "bootstrap_B": 10000,
+    "bootstrap_seed": 20260926,
+    "abs_diff_below_0.03": false,
+    "ci_contains_0": false,
+    "pass": true,
+    "threshold": "|event mean - control mean| >= 0.03 psu and 95% CI excludes 0",
+    "sensitivity_ge1ctrl_info": {
+     "label": "sensitivity: >= 1 control window (not used for the decision)",
+     "n_events": 442,
+     "n_controls": 2210,
+     "n_clusters": 15,
+     "welch_ci95_info": [
+      -0.06008,
+      -0.03859
+     ],
+     "diff_psu": -0.04934,
+     "evaluable": true,
+     "ci95_cluster_bootstrap": [
+      -0.07033,
+      -0.02929
+     ],
+     "bootstrap_B": 10000,
+     "bootstrap_seed": 20260926,
+     "abs_diff_below_0.03": false,
+     "ci_contains_0": false,
+     "pass": true
+    }
+   },
+   "D4": {
+    "n_events_dS05_le_-0.2": 20,
+    "threshold": "≥30",
+    "pass": false
+   },
+   "D5": {
+    "n_pre_pairs": 442,
+    "median_pre_diff_psu": 0.00013,
+    "corr_event_anom": 0.74947,
+    "n_corr": 442,
+    "evaluable": true,
+    "pass": true,
+    "threshold": "|pre-rain median difference| <= 0.05 psu and event anomaly correlation >= 0.6"
+   }
+  }
+ },
+ "new_by_station": {
+  "R:TAO165E": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 471,
+    "rain24_incomplete": 24,
+    "below_10mm": 272
+   },
+   "n_rain_events_10mm": 175,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 108,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 67,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 118317,
+    "mapco2_start": "2010-02-23T07:00Z",
+    "mapco2_end": "2023-08-18T03:00Z",
+    "p1_dm_files": 27,
+    "p1_hours_in_axis_union": 79127,
+    "p1_hours_in_axis_by_var": {
+     "rain": 51278,
+     "wind": 70163,
+     "s1": 60165,
+     "s5": 60165
+    },
+    "r_files": [
+     "OS_T0N165E_DM393A-20200903_R_RAIN_10min.nc",
+     "OS_T0N165E_DM393A-20200903_R_SALT_hourly.nc",
+     "OS_T0N165E_DM448A-20220823_R_RAIN_10min.nc",
+     "OS_T0N165E_DM448A-20220823_R_SALT_hourly.nc",
+     "OS_T0N165E_DM448B-20220828_R_RAIN_10min.nc",
+     "OS_T0N165E_DM448B-20220828_R_SALT_hourly.nc",
+     "OS_T0N165E_DM484A-20230818_R_RAIN_10min.nc",
+     "OS_T0N165E_DM484A-20230818_R_SALT_hourly.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "rain": 11714,
+     "s1": 4332,
+     "s5": 8377
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {
+     "rain": {},
+     "s1": {
+      "9": 86675,
+      "4": 1
+     },
+     "s5": {
+      "9": 62995,
+      "4": 1
+     }
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T0N165E_PM769A-20080910_D_RAIN_10min.nc",
+      "2008-09-10T09:00Z",
+      "2009-06-18T23:00Z"
+     ],
+     [
+      "OS_T0N165E_PM769A-20080910_D_SALT_hourly.nc",
+      "2008-09-10T04:00Z",
+      "2009-06-18T23:00Z"
+     ],
+     [
+      "OS_T0N165E_PM769A-20080910_D_WIND_10min.nc",
+      "2008-09-10T09:00Z",
+      "2009-06-18T23:00Z"
+     ],
+     [
+      "OS_T0N165E_PM769B-20090619_D_RAIN_10min.nc",
+      "2009-06-19T02:00Z",
+      "2010-02-22T20:00Z"
+     ],
+     [
+      "OS_T0N165E_PM769B-20090619_D_SALT_hourly.nc",
+      "2009-06-19T03:00Z",
+      "2010-02-22T20:00Z"
+     ],
+     [
+      "OS_T0N165E_PM769B-20090619_D_WIND_10min.nc",
+      "2009-06-19T02:00Z",
+      "2010-02-22T20:00Z"
+     ],
+     [
+      "OS_T0N165E_PM875A-20100223_D_SALT_hourly.nc",
+      "2010-02-23T08:00Z",
+      "2010-10-10T23:00Z"
+     ],
+     [
+      "OS_T0N165E_PM875B-20101010_D_SALT_hourly.nc",
+      "2010-10-11T02:00Z",
+      "2011-02-28T20:00Z"
+     ],
+     [
+      "OS_T0N165E_DM103A-20141027_D_RAIN_10min.nc",
+      "2014-10-28T01:00Z",
+      "2016-07-10T19:00Z"
+     ],
+     [
+      "OS_T0N165E_DM103A-20141027_D_SALT_hourly.nc",
+      "2014-10-28T02:00Z",
+      "2016-07-10T19:00Z"
+     ],
+     [
+      "OS_T0N165E_DM103A-20141027_D_WIND_10min.nc",
+      "2014-10-28T01:00Z",
+      "2016-07-10T19:00Z"
+     ],
+     [
+      "OS_T0N165E_DM193A-20160711_D_RAIN_10min.nc",
+      "2016-07-11T07:00Z",
+      "2017-08-10T07:00Z"
+     ],
+     [
+      "OS_T0N165E_DM193A-20160711_D_SALT_hourly.nc",
+      "2016-07-11T08:00Z",
+      "2017-08-10T07:00Z"
+     ],
+     [
+      "OS_T0N165E_DM193A-20160711_D_WIND_10min.nc",
+      "2016-07-11T07:00Z",
+      "2017-08-10T07:00Z"
+     ],
+     [
+      "OS_T0N165E_DM247A-20170811_D_RAIN_10min.nc",
+      "2017-08-11T03:00Z",
+      "2017-08-15T21:00Z"
+     ],
+     [
+      "OS_T0N165E_DM247A-20170811_D_SALT_hourly.nc",
+      "2017-08-11T04:00Z",
+      "2017-08-15T22:00Z"
+     ],
+     [
+      "OS_T0N165E_DM247A-20170811_D_WIND_10min.nc",
+      "2017-08-11T03:00Z",
+      "2017-08-12T21:00Z"
+     ],
+     [
+      "OS_T0N165E_DM247B-20170816_D_RAIN_10min.nc",
+      "2017-08-16T10:00Z",
+      "2019-10-04T23:00Z"
+     ],
+     [
+      "OS_T0N165E_DM247B-20170816_D_SALT_hourly.nc",
+      "2017-08-16T11:00Z",
+      "2019-10-04T23:00Z"
+     ],
+     [
+      "OS_T0N165E_DM247B-20170816_D_WIND_10min.nc",
+      "2017-08-16T10:00Z",
+      "2019-10-04T23:00Z"
+     ],
+     [
+      "OS_T0N165E_DM356A-20191005_D_RAIN_10min.nc",
+      "2019-10-05T08:00Z",
+      "2020-09-02T02:00Z"
+     ],
+     [
+      "OS_T0N165E_DM356A-20191005_D_SALT_hourly.nc",
+      "2019-10-05T09:00Z",
+      "2020-09-02T02:00Z"
+     ],
+     [
+      "OS_T0N165E_DM356A-20191005_D_WIND_10min.nc",
+      "2019-10-05T08:00Z",
+      "2020-09-02T02:00Z"
+     ],
+     [
+      "OS_T0N165E_DM393A-20200903_D_WIND_10min.nc",
+      "2020-09-03T02:00Z",
+      "2021-11-04T22:00Z"
+     ],
+     [
+      "OS_T0N165E_DM448A-20220823_D_WIND_10min.nc",
+      "2022-08-23T14:00Z",
+      "2022-08-28T11:00Z"
+     ],
+     [
+      "OS_T0N165E_DM448B-20220828_D_WIND_10min.nc",
+      "2022-08-28T18:00Z",
+      "2023-08-18T03:00Z"
+     ],
+     [
+      "OS_T0N165E_DM484A-20230818_D_WIND_10min.nc",
+      "2023-08-18T12:00Z",
+      "2024-08-01T20:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 67,
+     "p1_events_this_station": 67,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:TAO8S165E": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 238,
+    "rain24_incomplete": 20,
+    "below_10mm": 124
+   },
+   "n_rain_events_10mm": 94,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 61,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 33,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 113869,
+    "mapco2_start": "2009-06-22T06:00Z",
+    "mapco2_end": "2022-06-12T18:00Z",
+    "p1_dm_files": 19,
+    "p1_hours_in_axis_union": 54496,
+    "p1_hours_in_axis_by_var": {
+     "rain": 21098,
+     "wind": 54496,
+     "s1": 54492,
+     "s5": 0
+    },
+    "r_files": [
+     "OS_T8S165E_DM396A-20200906_R_SALT_hourly.nc",
+     "OS_T8S165E_DM396A-20200906_R_WIND_10min.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "s1": 171
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {
+     "s1": {},
+     "wind": {
+      "3": 139325
+     }
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T8S165E_PM731A-20080319_D_RAIN_10min.nc",
+      "2008-03-19T16:00Z",
+      "2008-09-13T00:00Z"
+     ],
+     [
+      "OS_T8S165E_PM731A-20080319_D_SALT_hourly.nc",
+      "2008-03-19T11:00Z",
+      "2008-09-13T00:00Z"
+     ],
+     [
+      "OS_T8S165E_PM731A-20080319_D_WIND_10min.nc",
+      "2008-03-19T16:00Z",
+      "2008-09-13T00:00Z"
+     ],
+     [
+      "OS_T8S165E_PM731B-20080913_D_RAIN_10min.nc",
+      "2008-09-13T04:00Z",
+      "2009-06-21T23:00Z"
+     ],
+     [
+      "OS_T8S165E_PM731B-20080913_D_SALT_hourly.nc",
+      "2008-09-13T04:00Z",
+      "2009-06-21T23:00Z"
+     ],
+     [
+      "OS_T8S165E_PM731B-20080913_D_WIND_10min.nc",
+      "2008-09-13T04:00Z",
+      "2009-06-21T23:00Z"
+     ],
+     [
+      "OS_T8S165E_PM824A-20090622_D_RAIN_10min.nc",
+      "2009-06-22T06:00Z",
+      "2010-10-18T23:00Z"
+     ],
+     [
+      "OS_T8S165E_PM824A-20090622_D_SALT_hourly.nc",
+      "2009-06-22T07:00Z",
+      "2010-10-18T23:00Z"
+     ],
+     [
+      "OS_T8S165E_PM824A-20090622_D_WIND_10min.nc",
+      "2009-06-22T06:00Z",
+      "2010-10-18T23:00Z"
+     ],
+     [
+      "OS_T8S165E_PM938A-20101019_D_RAIN_10min.nc",
+      "2010-10-19T09:00Z",
+      "2011-03-04T03:00Z"
+     ],
+     [
+      "OS_T8S165E_PM938A-20101019_D_SALT_hourly.nc",
+      "2010-10-19T10:00Z",
+      "2011-03-04T03:00Z"
+     ],
+     [
+      "OS_T8S165E_PM938A-20101019_D_WIND_10min.nc",
+      "2010-10-19T09:00Z",
+      "2011-03-04T03:00Z"
+     ],
+     [
+      "OS_T8S165E_PM938B-20110304_D_RAIN_10min.nc",
+      "2011-03-04T06:00Z",
+      "2011-11-16T00:00Z"
+     ],
+     [
+      "OS_T8S165E_PM938B-20110304_D_SALT_hourly.nc",
+      "2011-03-04T07:00Z",
+      "2011-11-16T00:00Z"
+     ],
+     [
+      "OS_T8S165E_PM938B-20110304_D_WIND_10min.nc",
+      "2011-03-04T06:00Z",
+      "2011-11-16T00:00Z"
+     ],
+     [
+      "OS_T8S165E_DM029A-20111116_D_WIND_10min.nc",
+      "2011-11-17T01:00Z",
+      "2013-08-19T01:00Z"
+     ],
+     [
+      "OS_T8S165E_DM029A-20111116_M_SALT_hourly.nc",
+      "2011-11-17T02:00Z",
+      "2013-08-19T01:00Z"
+     ],
+     [
+      "OS_T8S165E_DM196A-20160716_D_SALT_hourly.nc",
+      "2016-07-16T08:00Z",
+      "2018-08-05T20:00Z"
+     ],
+     [
+      "OS_T8S165E_DM196A-20160716_D_WIND_10min.nc",
+      "2016-07-16T08:00Z",
+      "2018-08-05T20:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 33,
+     "p1_events_this_station": 33,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:BOBOA": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 191,
+    "rain24_incomplete": 12,
+    "below_10mm": 93
+   },
+   "n_rain_events_10mm": 86,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 32,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 54,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 64667,
+    "mapco2_start": "2013-11-24T08:00Z",
+    "mapco2_end": "2021-04-04T18:00Z",
+    "p1_dm_files": 3,
+    "p1_hours_in_axis_union": 49846,
+    "p1_hours_in_axis_by_var": {
+     "rain": 49846,
+     "wind": 49846,
+     "s1": 49846,
+     "s5": 49846
+    },
+    "r_files": [],
+    "r_hour_values_added_by_var": {},
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {},
+    "p1_dm_file_spans": [
+     [
+      "OS_15n90e_200711_D_SBP_hr.nc",
+      "2007-11-17T09:00Z",
+      "2019-07-30T05:00Z"
+     ],
+     [
+      "OS_15n90e_200810_D_SBP_hr.nc",
+      "2008-10-19T15:00Z",
+      "2014-12-06T03:00Z"
+     ],
+     [
+      "OS_15n90e_200810_D_TM_10m.nc",
+      "2008-10-19T15:00Z",
+      "2019-07-30T05:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 54,
+     "p1_events_this_station": 54,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:TAO170W": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 402,
+    "rain24_incomplete": 24,
+    "below_10mm": 295
+   },
+   "n_rain_events_10mm": 83,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 57,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 26,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 170809,
+    "mapco2_start": "2005-07-04T00:00Z",
+    "mapco2_end": "2024-12-22T00:00Z",
+    "p1_dm_files": 47,
+    "p1_hours_in_axis_union": 149442,
+    "p1_hours_in_axis_by_var": {
+     "rain": 83875,
+     "wind": 120900,
+     "s1": 97869,
+     "s5": 89361
+    },
+    "r_files": [
+     "OS_T0N170W_DM039A-20120515_R_SALT_10min.nc",
+     "OS_T0N170W_DM039A-20120515_R_WIND_10min.nc",
+     "OS_T0N170W_DM407A-20201002_R_RAIN_10min.nc",
+     "OS_T0N170W_DM407A-20201002_R_SALT_hourly.nc",
+     "OS_T0N170W_DM465A-20221012_R_RAIN_10min.nc",
+     "OS_T0N170W_DM465A-20221012_R_SALT_hourly.nc",
+     "OS_T0N170W_DM495A-20230923_R_RAIN_10min.nc",
+     "OS_T0N170W_DM495A-20230923_R_SALT_hourly.nc",
+     "OS_T0N170W_DM509A-20240829_R_RAIN_10min.nc",
+     "OS_T0N170W_DM509A-20240829_R_SALT_hourly.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "s1": 31267,
+     "wind": 20779,
+     "rain": 14263,
+     "s5": 36752
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {
+     "s1": {
+      "9": 131078,
+      "4": 1
+     },
+     "s5": {
+      "9": 97298,
+      "4": 9
+     },
+     "wind": {
+      "9": 5
+     },
+     "rain": {
+      "0": 24903
+     }
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T0N170W_PM449A-20040709_D_RAIN_10min.nc",
+      "2004-07-09T13:00Z",
+      "2004-11-11T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM449A-20040709_D_WIND_10min.nc",
+      "2004-07-09T13:00Z",
+      "2004-11-11T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM449B-20041111_D_RAIN_10min.nc",
+      "2004-11-11T21:00Z",
+      "2005-07-03T18:00Z"
+     ],
+     [
+      "OS_T0N170W_PM449B-20041111_D_WIND_10min.nc",
+      "2004-11-11T21:00Z",
+      "2005-07-03T18:00Z"
+     ],
+     [
+      "OS_T0N170W_PM525A-20050704_D_RAIN_10min.nc",
+      "2005-07-04T10:00Z",
+      "2006-06-24T02:00Z"
+     ],
+     [
+      "OS_T0N170W_PM525A-20050704_D_SALT_hourly.nc",
+      "2005-07-04T06:00Z",
+      "2006-06-23T17:00Z"
+     ],
+     [
+      "OS_T0N170W_PM525A-20050704_D_WIND_10min.nc",
+      "2005-07-04T10:00Z",
+      "2006-06-23T17:00Z"
+     ],
+     [
+      "OS_T0N170W_PM602A-20060624_D_RAIN_10min.nc",
+      "2006-06-24T16:00Z",
+      "2006-10-23T21:00Z"
+     ],
+     [
+      "OS_T0N170W_PM602A-20060624_D_SALT_hourly.nc",
+      "2006-06-24T11:00Z",
+      "2006-10-23T21:00Z"
+     ],
+     [
+      "OS_T0N170W_PM602A-20060624_D_WIND_10min.nc",
+      "2006-06-24T16:00Z",
+      "2006-10-23T21:00Z"
+     ],
+     [
+      "OS_T0N170W_PM602B-20061023_D_RAIN_10min.nc",
+      "2006-10-24T00:00Z",
+      "2007-07-30T17:00Z"
+     ],
+     [
+      "OS_T0N170W_PM602B-20061023_D_SALT_hourly.nc",
+      "2006-10-24T01:00Z",
+      "2007-07-30T17:00Z"
+     ],
+     [
+      "OS_T0N170W_PM602B-20061023_D_WIND_10min.nc",
+      "2006-10-24T00:00Z",
+      "2007-07-30T17:00Z"
+     ],
+     [
+      "OS_T0N170W_PM691A-20070731_D_RAIN_10min.nc",
+      "2007-07-31T10:00Z",
+      "2008-02-26T00:00Z"
+     ],
+     [
+      "OS_T0N170W_PM691A-20070731_D_SALT_hourly.nc",
+      "2007-07-31T08:00Z",
+      "2008-02-26T00:00Z"
+     ],
+     [
+      "OS_T0N170W_PM691A-20070731_D_WIND_10min.nc",
+      "2007-07-31T10:00Z",
+      "2008-02-26T00:00Z"
+     ],
+     [
+      "OS_T0N170W_PM691B-20080226_D_RAIN_10min.nc",
+      "2008-02-26T03:00Z",
+      "2008-08-22T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM691B-20080226_D_SALT_hourly.nc",
+      "2008-02-26T04:00Z",
+      "2008-08-22T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM691B-20080226_D_WIND_10min.nc",
+      "2008-02-26T03:00Z",
+      "2008-08-22T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM764A-20080823_D_SALT_hourly.nc",
+      "2008-08-23T08:00Z",
+      "2009-06-01T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM764B-20090601_D_SALT_hourly.nc",
+      "2009-06-01T23:00Z",
+      "2010-02-02T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM871A-20100203_D_RAIN_10min.nc",
+      "2010-02-03T09:00Z",
+      "2010-09-20T22:00Z"
+     ],
+     [
+      "OS_T0N170W_PM871A-20100203_D_SALT_hourly.nc",
+      "2010-02-03T10:00Z",
+      "2010-09-20T22:00Z"
+     ],
+     [
+      "OS_T0N170W_PM871A-20100203_D_WIND_10min.nc",
+      "2010-02-03T09:00Z",
+      "2010-09-20T22:00Z"
+     ],
+     [
+      "OS_T0N170W_PM871B-20100920_D_RAIN_10min.nc",
+      "2010-09-21T01:00Z",
+      "2011-02-04T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM871B-20100920_D_WIND_10min.nc",
+      "2010-09-21T01:00Z",
+      "2011-02-04T19:00Z"
+     ],
+     [
+      "OS_T0N170W_PM954A-20110205_D_RAIN_10min.nc",
+      "2011-02-05T11:00Z",
+      "2012-05-15T22:00Z"
+     ],
+     [
+      "OS_T0N170W_PM954A-20110205_D_WIND_10min.nc",
+      "2011-02-05T11:00Z",
+      "2012-05-15T22:00Z"
+     ],
+     [
+      "OS_T0N170W_DM098A-20141015_D_RAIN_10min.nc",
+      "2014-10-15T05:00Z",
+      "2015-11-29T17:00Z"
+     ],
+     [
+      "OS_T0N170W_DM098A-20141015_D_SALT_hourly.nc",
+      "2014-10-15T06:00Z",
+      "2015-11-29T17:00Z"
+     ],
+     [
+      "OS_T0N170W_DM098A-20141015_D_WIND_10min.nc",
+      "2014-10-15T05:00Z",
+      "2015-11-29T17:00Z"
+     ],
+     [
+      "OS_T0N170W_DM152A-20151130_D_RAIN_10min.nc",
+      "2015-11-30T03:00Z",
+      "2016-08-29T03:00Z"
+     ],
+     [
+      "OS_T0N170W_DM152A-20151130_D_SALT_hourly.nc",
+      "2015-11-30T04:00Z",
+      "2016-08-29T03:00Z"
+     ],
+     [
+      "OS_T0N170W_DM152A-20151130_D_WIND_10min.nc",
+      "2015-11-30T03:00Z",
+      "2016-08-29T03:00Z"
+     ],
+     [
+      "OS_T0N170W_DM207A-20160829_D_RAIN_10min.nc",
+      "2016-08-29T16:00Z",
+      "2017-09-10T04:00Z"
+     ],
+     [
+      "OS_T0N170W_DM207A-20160829_D_SALT_hourly.nc",
+      "2016-08-29T17:00Z",
+      "2017-09-10T04:00Z"
+     ],
+     [
+      "OS_T0N170W_DM207A-20160829_D_WIND_10min.nc",
+      "2016-08-29T16:00Z",
+      "2017-09-10T04:00Z"
+     ],
+     [
+      "OS_T0N170W_DM260A-20170910_D_RAIN_10min.nc",
+      "2017-09-10T14:00Z",
+      "2018-08-16T00:00Z"
+     ],
+     [
+      "OS_T0N170W_DM260A-20170910_D_SALT_hourly.nc",
+      "2017-09-10T15:00Z",
+      "2018-08-16T00:00Z"
+     ],
+     [
+      "OS_T0N170W_DM260A-20170910_D_WIND_10min.nc",
+      "2017-09-10T14:00Z",
+      "2018-08-16T00:00Z"
+     ],
+     [
+      "OS_T0N170W_DM302A-20180817_D_RAIN_10min.nc",
+      "2018-08-17T07:00Z",
+      "2018-12-11T18:00Z"
+     ],
+     [
+      "OS_T0N170W_DM302A-20180817_D_SALT_hourly.nc",
+      "2018-08-17T08:00Z",
+      "2020-10-01T19:00Z"
+     ],
+     [
+      "OS_T0N170W_DM302A-20180817_D_WIND_10min.nc",
+      "2018-08-17T07:00Z",
+      "2018-12-11T18:00Z"
+     ],
+     [
+      "OS_T0N170W_DM407A-20201002_D_WIND_10min.nc",
+      "2020-10-02T15:00Z",
+      "2022-10-12T04:00Z"
+     ],
+     [
+      "OS_T0N170W_DM465A-20221012_D_WIND_10min.nc",
+      "2022-10-12T14:00Z",
+      "2023-09-22T20:00Z"
+     ],
+     [
+      "OS_T0N170W_DM495A-20230923_D_WIND_10min.nc",
+      "2023-09-23T05:00Z",
+      "2024-08-28T19:00Z"
+     ],
+     [
+      "OS_T0N170W_DM509A-20240829_D_WIND_10min.nc",
+      "2024-08-29T11:00Z",
+      "2025-09-19T12:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 26,
+     "p1_events_this_station": 26,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:TAO155W": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 89,
+    "rain24_incomplete": 4,
+    "below_10mm": 73
+   },
+   "n_rain_events_10mm": 12,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 2,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 10,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 134901,
+    "mapco2_start": "2010-01-13T22:00Z",
+    "mapco2_end": "2025-05-29T18:00Z",
+    "p1_dm_files": 32,
+    "p1_hours_in_axis_union": 111929,
+    "p1_hours_in_axis_by_var": {
+     "rain": 20336,
+     "wind": 108446,
+     "s1": 67604,
+     "s5": 0
+    },
+    "r_files": [
+     "OS_T0N155W_DM267A-20170924_R_SALT_10min.nc",
+     "OS_T0N155W_DM267A-20170924_R_WIND_10min.nc",
+     "OS_T0N155W_DM421A-20210925_R_SALT_hourly.nc",
+     "OS_T0N155W_DM461A-20220930_R_SALT_hourly.nc",
+     "OS_T0N155W_DM500A-20231005_R_SALT_hourly.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "s5": 8145,
+     "wind": 2577,
+     "s1": 28583
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {
+     "s1": {
+      "9": 48864
+     },
+     "s5": {
+      "9": 588
+     },
+     "wind": {
+      "9": 26506
+     }
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T0N155W_PM758A-20080815_D_RAIN_10min.nc",
+      "2008-08-06T12:00Z",
+      "2010-01-13T04:00Z"
+     ],
+     [
+      "OS_T0N155W_PM758A-20080815_D_SALT_hourly.nc",
+      "2008-08-15T07:00Z",
+      "2010-01-12T23:00Z"
+     ],
+     [
+      "OS_T0N155W_PM758A-20080815_D_WIND_10min.nc",
+      "2008-08-15T06:00Z",
+      "2010-01-12T23:00Z"
+     ],
+     [
+      "OS_T0N155W_PM867A-20100113_D_RAIN_10min.nc",
+      "2010-01-14T05:00Z",
+      "2010-08-07T00:00Z"
+     ],
+     [
+      "OS_T0N155W_PM867A-20100113_D_SALT_hourly.nc",
+      "2010-01-14T00:00Z",
+      "2010-09-09T18:00Z"
+     ],
+     [
+      "OS_T0N155W_PM867A-20100113_D_WIND_10min.nc",
+      "2010-01-14T05:00Z",
+      "2010-08-07T00:00Z"
+     ],
+     [
+      "OS_T0N155W_PM867B-20100909_D_RAIN_10min.nc",
+      "2010-09-09T20:00Z",
+      "2011-01-25T17:00Z"
+     ],
+     [
+      "OS_T0N155W_PM867B-20100909_D_SALT_hourly.nc",
+      "2010-09-09T21:00Z",
+      "2011-01-25T17:00Z"
+     ],
+     [
+      "OS_T0N155W_PM867B-20100909_D_WIND_10min.nc",
+      "2010-09-09T20:00Z",
+      "2011-01-25T17:00Z"
+     ],
+     [
+      "OS_T0N155W_PM951A-20110126_D_RAIN_10min.nc",
+      "2011-01-26T11:00Z",
+      "2011-10-09T19:00Z"
+     ],
+     [
+      "OS_T0N155W_PM951A-20110126_D_WIND_10min.nc",
+      "2011-01-26T11:00Z",
+      "2011-10-09T19:00Z"
+     ],
+     [
+      "OS_T0N155W_PM951B-20111009_D_RAIN_10min.nc",
+      "2011-10-09T22:00Z",
+      "2012-06-11T19:00Z"
+     ],
+     [
+      "OS_T0N155W_PM951B-20111009_D_WIND_10min.nc",
+      "2011-10-09T22:00Z",
+      "2012-06-11T20:00Z"
+     ],
+     [
+      "OS_T0N155W_DM045A-20120612_D_SALT_hourly.nc",
+      "2012-06-12T08:00Z",
+      "2012-06-17T01:00Z"
+     ],
+     [
+      "OS_T0N155W_DM045A-20120612_D_WIND_10min.nc",
+      "2012-06-12T07:00Z",
+      "2012-06-17T01:00Z"
+     ],
+     [
+      "OS_T0N155W_DM061A-20131005_D_SALT_hourly.nc",
+      "2013-10-06T01:00Z",
+      "2014-11-17T17:00Z"
+     ],
+     [
+      "OS_T0N155W_DM061A-20131005_D_WIND_10min.nc",
+      "2013-10-06T00:00Z",
+      "2014-11-17T17:00Z"
+     ],
+     [
+      "OS_T0N155W_DM110A-20141118_D_SALT_hourly.nc",
+      "2014-11-18T04:00Z",
+      "2015-12-12T17:00Z"
+     ],
+     [
+      "OS_T0N155W_DM110A-20141118_D_WIND_10min.nc",
+      "2014-11-18T03:00Z",
+      "2015-11-13T00:00Z"
+     ],
+     [
+      "OS_T0N155W_DM159A-20151213_D_SALT_hourly.nc",
+      "2015-12-13T04:00Z",
+      "2016-10-04T16:00Z"
+     ],
+     [
+      "OS_T0N155W_DM159A-20151213_D_WIND_10min.nc",
+      "2015-12-13T03:00Z",
+      "2016-10-04T16:00Z"
+     ],
+     [
+      "OS_T0N155W_DM214A-20161004_D_SALT_hourly.nc",
+      "2016-10-05T01:00Z",
+      "2017-05-13T13:00Z"
+     ],
+     [
+      "OS_T0N155W_DM214A-20161004_D_WIND_10min.nc",
+      "2016-10-05T00:00Z",
+      "2017-05-13T16:00Z"
+     ],
+     [
+      "OS_T0N155W_DM309A-20180902_D_SALT_hourly.nc",
+      "2018-09-02T03:00Z",
+      "2020-03-31T06:00Z"
+     ],
+     [
+      "OS_T0N155W_DM309A-20180902_D_WIND_10min.nc",
+      "2018-09-02T02:00Z",
+      "2020-03-31T06:00Z"
+     ],
+     [
+      "OS_T0N155W_DM373A-20200330_D_SALT_hourly.nc",
+      "2020-03-31T01:00Z",
+      "2020-04-02T17:00Z"
+     ],
+     [
+      "OS_T0N155W_DM373A-20200330_D_WIND_10min.nc",
+      "2020-03-31T00:00Z",
+      "2020-04-02T16:00Z"
+     ],
+     [
+      "OS_T0N155W_DM373B-20200402_D_SALT_hourly.nc",
+      "2020-04-03T01:00Z",
+      "2021-09-25T08:00Z"
+     ],
+     [
+      "OS_T0N155W_DM373B-20200402_D_WIND_10min.nc",
+      "2020-04-03T00:00Z",
+      "2021-07-06T03:00Z"
+     ],
+     [
+      "OS_T0N155W_DM421A-20210925_D_WIND_10min.nc",
+      "2021-09-25T20:00Z",
+      "2022-09-29T23:00Z"
+     ],
+     [
+      "OS_T0N155W_DM461A-20220930_D_WIND_10min.nc",
+      "2022-09-30T08:00Z",
+      "2023-10-04T18:00Z"
+     ],
+     [
+      "OS_T0N155W_DM500A-20231005_D_WIND_10min.nc",
+      "2023-10-05T13:00Z",
+      "2025-10-05T05:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 10,
+     "p1_events_this_station": 10,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:TAO140W": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 251,
+    "rain24_incomplete": 11,
+    "below_10mm": 225
+   },
+   "n_rain_events_10mm": 15,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 5,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 10,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 171172,
+    "mapco2_start": "2004-05-23T06:00Z",
+    "mapco2_end": "2023-11-26T09:00Z",
+    "p1_dm_files": 63,
+    "p1_hours_in_axis_union": 129909,
+    "p1_hours_in_axis_by_var": {
+     "rain": 102258,
+     "wind": 126917,
+     "s1": 115093,
+     "s5": 107413
+    },
+    "r_files": [
+     "OS_T0N140W_DM343A-20191010_R_RAIN_10min.nc",
+     "OS_T0N140W_DM370A-20200321_R_RAIN_10min.nc",
+     "OS_T0N140W_DM441A-20220324_R_RAIN_10min.nc",
+     "OS_T0N140W_DM441A-20220324_R_SALT_hourly.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "rain": 21276,
+     "s1": 1792,
+     "s5": 14737
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 1203,
+    "qc_dropped_by_code": {
+     "rain": {
+      "4": 55
+     },
+     "s1": {
+      "9": 97452
+     },
+     "s5": {
+      "9": 8498,
+      "4": 1
+     }
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T0N140W_PM352A-20030118_D_RAIN_10min.nc",
+      "2003-01-18T09:00Z",
+      "2003-09-19T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM352A-20030118_D_WIND_10min.nc",
+      "2003-01-18T09:00Z",
+      "2003-09-19T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM395A-20030920_D_RAIN_10min.nc",
+      "2003-09-21T03:00Z",
+      "2004-05-22T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM395A-20030920_D_WIND_10min.nc",
+      "2003-09-21T03:00Z",
+      "2004-05-22T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM438A-20040523_D_RAIN_10min.nc",
+      "2004-05-23T09:00Z",
+      "2004-09-12T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM438A-20040523_D_SALT_10min.nc",
+      "2004-05-23T05:00Z",
+      "2004-09-12T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM438A-20040523_D_WIND_10min.nc",
+      "2004-05-23T09:00Z",
+      "2004-09-12T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM466A-20040913_D_RAIN_10min.nc",
+      "2004-09-13T08:00Z",
+      "2005-03-01T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM466A-20040913_D_SALT_hourly.nc",
+      "2004-09-13T06:00Z",
+      "2005-03-01T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM466A-20040913_D_WIND_10min.nc",
+      "2004-09-13T08:00Z",
+      "2005-03-01T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM499A-20050302_D_RAIN_10min.nc",
+      "2005-03-02T09:00Z",
+      "2005-09-22T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM499A-20050302_D_SALT_10min.nc",
+      "2005-03-02T04:00Z",
+      "2005-09-22T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM499A-20050302_D_WIND_10min.nc",
+      "2005-03-02T09:00Z",
+      "2005-09-22T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM549A-20050923_D_RAIN_10min.nc",
+      "2005-09-23T08:00Z",
+      "2006-01-16T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM549A-20050923_D_SALT_hourly.nc",
+      "2005-09-23T04:00Z",
+      "2006-01-16T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM549A-20050923_D_WIND_10min.nc",
+      "2005-09-23T08:00Z",
+      "2006-01-16T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM625A-20060914_D_RAIN_10min.nc",
+      "2006-09-15T03:00Z",
+      "2007-05-30T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM625A-20060914_D_SALT_hourly.nc",
+      "2006-09-14T23:00Z",
+      "2007-05-30T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM625A-20060914_D_WIND_10min.nc",
+      "2006-09-15T03:00Z",
+      "2007-05-30T16:00Z"
+     ],
+     [
+      "OS_T0N140W_PM683A-20070531_D_RAIN_10min.nc",
+      "2007-05-31T09:00Z",
+      "2007-09-30T18:00Z"
+     ],
+     [
+      "OS_T0N140W_PM683A-20070531_D_SALT_hourly.nc",
+      "2007-05-31T07:00Z",
+      "2007-09-30T18:00Z"
+     ],
+     [
+      "OS_T0N140W_PM683A-20070531_D_WIND_10min.nc",
+      "2007-05-31T09:00Z",
+      "2007-09-30T18:00Z"
+     ],
+     [
+      "OS_T0N140W_PM683B-20070930_D_RAIN_10min.nc",
+      "2007-09-30T22:00Z",
+      "2008-05-10T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM683B-20070930_D_SALT_hourly.nc",
+      "2007-09-30T22:00Z",
+      "2008-05-10T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM683B-20070930_D_WIND_10min.nc",
+      "2007-09-30T22:00Z",
+      "2008-05-10T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM743A-20080510_D_RAIN_10min.nc",
+      "2008-05-09T14:00Z",
+      "2008-10-26T00:00Z"
+     ],
+     [
+      "OS_T0N140W_PM743A-20080510_D_SALT_hourly.nc",
+      "2008-05-10T10:00Z",
+      "2008-10-26T00:00Z"
+     ],
+     [
+      "OS_T0N140W_PM743A-20080510_D_WIND_10min.nc",
+      "2008-05-10T10:00Z",
+      "2008-10-26T00:00Z"
+     ],
+     [
+      "OS_T0N140W_PM743B-20081026_D_RAIN_10min.nc",
+      "2008-10-26T04:00Z",
+      "2009-09-03T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM743B-20081026_D_SALT_hourly.nc",
+      "2008-10-26T05:00Z",
+      "2009-09-03T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM743B-20081026_D_WIND_10min.nc",
+      "2008-10-26T04:00Z",
+      "2009-09-03T15:00Z"
+     ],
+     [
+      "OS_T0N140W_PM843A-20090904_D_RAIN_10min.nc",
+      "2009-09-04T08:00Z",
+      "2010-04-10T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM843A-20090904_D_SALT_hourly.nc",
+      "2009-09-04T06:00Z",
+      "2010-04-10T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM843A-20090904_D_WIND_10min.nc",
+      "2009-09-04T05:00Z",
+      "2010-04-10T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM843B-20100410_D_RAIN_10min.nc",
+      "2010-04-10T20:00Z",
+      "2010-11-25T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM843B-20100410_D_SALT_hourly.nc",
+      "2010-04-10T21:00Z",
+      "2010-11-25T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM843B-20100410_D_WIND_10min.nc",
+      "2010-04-10T20:00Z",
+      "2010-11-25T17:00Z"
+     ],
+     [
+      "OS_T0N140W_PM943A-20101126_D_RAIN_10min.nc",
+      "2010-11-26T09:00Z",
+      "2011-04-21T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM943A-20101126_D_SALT_hourly.nc",
+      "2010-11-26T08:00Z",
+      "2011-04-21T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM943A-20101126_D_WIND_10min.nc",
+      "2010-11-26T09:00Z",
+      "2011-04-21T23:00Z"
+     ],
+     [
+      "OS_T0N140W_PM943B-20110422_D_RAIN_10min.nc",
+      "2011-04-22T02:00Z",
+      "2011-09-01T02:00Z"
+     ],
+     [
+      "OS_T0N140W_PM943B-20110422_D_SALT_hourly.nc",
+      "2011-04-22T03:00Z",
+      "2011-09-01T02:00Z"
+     ],
+     [
+      "OS_T0N140W_PM943B-20110422_D_WIND_10min.nc",
+      "2011-04-22T02:00Z",
+      "2011-09-01T02:00Z"
+     ],
+     [
+      "OS_T0N140W_DM092A-20140916_D_RAIN_10min.nc",
+      "2014-09-16T05:00Z",
+      "2015-03-22T16:00Z"
+     ],
+     [
+      "OS_T0N140W_DM092A-20140916_D_SALT_hourly.nc",
+      "2014-09-16T04:00Z",
+      "2015-03-22T16:00Z"
+     ],
+     [
+      "OS_T0N140W_DM092A-20140916_D_WIND_10min.nc",
+      "2014-09-16T03:00Z",
+      "2014-11-18T23:00Z"
+     ],
+     [
+      "OS_T0N140W_DM124A-20150323_D_RAIN_10min.nc",
+      "2015-03-23T03:00Z",
+      "2016-02-26T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM124A-20150323_D_SALT_hourly.nc",
+      "2015-03-23T03:00Z",
+      "2016-02-26T16:00Z"
+     ],
+     [
+      "OS_T0N140W_DM124A-20150323_D_WIND_10min.nc",
+      "2015-03-23T03:00Z",
+      "2016-02-26T16:00Z"
+     ],
+     [
+      "OS_T0N140W_DM166B-20160227_D_RAIN_10min.nc",
+      "2016-02-27T20:00Z",
+      "2017-01-26T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM166B-20160227_D_SALT_hourly.nc",
+      "2016-02-27T21:00Z",
+      "2017-01-26T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM166B-20160227_D_WIND_10min.nc",
+      "2016-02-27T20:00Z",
+      "2017-01-26T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM221A-20170127_D_RAIN_10min.nc",
+      "2017-01-27T04:00Z",
+      "2018-09-19T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM221A-20170127_D_SALT_hourly.nc",
+      "2017-01-27T05:00Z",
+      "2018-09-19T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM221A-20170127_D_WIND_10min.nc",
+      "2017-01-27T04:00Z",
+      "2018-09-19T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM316A-20180920_D_RAIN_10min.nc",
+      "2018-09-20T04:00Z",
+      "2019-10-09T20:00Z"
+     ],
+     [
+      "OS_T0N140W_DM316A-20180920_D_SALT_hourly.nc",
+      "2018-09-20T04:00Z",
+      "2019-10-09T20:00Z"
+     ],
+     [
+      "OS_T0N140W_DM316A-20180920_D_WIND_10min.nc",
+      "2018-09-20T04:00Z",
+      "2019-10-09T20:00Z"
+     ],
+     [
+      "OS_T0N140W_DM343A-20191010_D_SALT_hourly.nc",
+      "2019-10-10T14:00Z",
+      "2020-03-20T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM343A-20191010_D_WIND_10min.nc",
+      "2019-10-10T13:00Z",
+      "2020-03-20T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM370A-20200321_D_SALT_hourly.nc",
+      "2020-03-21T11:00Z",
+      "2021-03-30T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM370A-20200321_D_WIND_10min.nc",
+      "2020-03-21T10:00Z",
+      "2021-03-30T17:00Z"
+     ],
+     [
+      "OS_T0N140W_DM441A-20220324_D_WIND_10min.nc",
+      "2022-03-25T00:00Z",
+      "2024-10-06T22:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 10,
+     "p1_events_this_station": 10,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:TAO125W": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 117,
+    "rain24_incomplete": 2,
+    "below_10mm": 105
+   },
+   "n_rain_events_10mm": 10,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 9,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 1,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 172912,
+    "mapco2_start": "2004-05-08T00:00Z",
+    "mapco2_end": "2024-01-22T15:00Z",
+    "p1_dm_files": 49,
+    "p1_hours_in_axis_union": 138426,
+    "p1_hours_in_axis_by_var": {
+     "rain": 59559,
+     "wind": 137235,
+     "s1": 103352,
+     "s5": 12329
+    },
+    "r_files": [
+     "OS_T0N125W_DM435A-20220315_R_SALT_hourly.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "s1": 2350
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {
+     "s1": {}
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T0N125W_PM286B-20030201_D_RAIN_10min.nc",
+      "2003-02-02T06:00Z",
+      "2003-09-06T15:00Z"
+     ],
+     [
+      "OS_T0N125W_PM286B-20030201_D_WIND_10min.nc",
+      "2003-02-02T05:00Z",
+      "2003-09-06T15:00Z"
+     ],
+     [
+      "OS_T0N125W_PM392A-20030907_D_RAIN_10min.nc",
+      "2003-09-07T08:00Z",
+      "2004-05-06T20:00Z"
+     ],
+     [
+      "OS_T0N125W_PM392A-20030907_D_WIND_10min.nc",
+      "2003-09-07T08:00Z",
+      "2004-05-06T20:00Z"
+     ],
+     [
+      "OS_T0N125W_PM434A-20040507_D_RAIN_10min.nc",
+      "2004-05-08T03:00Z",
+      "2004-09-22T22:00Z"
+     ],
+     [
+      "OS_T0N125W_PM434A-20040507_D_WIND_10min.nc",
+      "2004-05-08T03:00Z",
+      "2004-09-22T22:00Z"
+     ],
+     [
+      "OS_T0N125W_PM504A-20050316_D_RAIN_10min.nc",
+      "2005-03-16T03:00Z",
+      "2006-01-30T15:00Z"
+     ],
+     [
+      "OS_T0N125W_PM504A-20050316_D_SALT_hourly.nc",
+      "2005-03-16T04:00Z",
+      "2006-01-30T16:00Z"
+     ],
+     [
+      "OS_T0N125W_PM504A-20050316_D_WIND_10min.nc",
+      "2005-03-16T03:00Z",
+      "2006-01-30T16:00Z"
+     ],
+     [
+      "OS_T0N125W_PM580A-20060131_D_RAIN_10min.nc",
+      "2006-01-31T08:00Z",
+      "2006-08-25T05:00Z"
+     ],
+     [
+      "OS_T0N125W_PM580A-20060131_D_SALT_hourly.nc",
+      "2006-01-31T06:00Z",
+      "2006-08-25T05:00Z"
+     ],
+     [
+      "OS_T0N125W_PM580A-20060131_D_WIND_10min.nc",
+      "2006-01-31T08:00Z",
+      "2006-08-25T05:00Z"
+     ],
+     [
+      "OS_T0N125W_PM619A-20060831_D_RAIN_10min.nc",
+      "2006-08-31T06:00Z",
+      "2007-05-15T00:00Z"
+     ],
+     [
+      "OS_T0N125W_PM619A-20060831_D_SALT_hourly.nc",
+      "2006-08-31T03:00Z",
+      "2007-05-15T00:00Z"
+     ],
+     [
+      "OS_T0N125W_PM619A-20060831_D_WIND_10min.nc",
+      "2006-08-31T06:00Z",
+      "2007-05-15T00:00Z"
+     ],
+     [
+      "OS_T0N125W_PM619B-20070515_D_RAIN_10min.nc",
+      "2007-05-15T06:00Z",
+      "2007-10-15T16:00Z"
+     ],
+     [
+      "OS_T0N125W_PM619B-20070515_D_SALT_hourly.nc",
+      "2007-05-15T06:00Z",
+      "2007-10-15T16:00Z"
+     ],
+     [
+      "OS_T0N125W_PM619B-20070515_D_WIND_10min.nc",
+      "2007-05-15T06:00Z",
+      "2007-10-15T16:00Z"
+     ],
+     [
+      "OS_T0N125W_PM709A-20071016_D_RAIN_10min.nc",
+      "2007-10-16T22:00Z",
+      "2008-05-22T18:00Z"
+     ],
+     [
+      "OS_T0N125W_PM709A-20071016_D_SALT_hourly.nc",
+      "2007-10-16T22:00Z",
+      "2008-05-22T18:00Z"
+     ],
+     [
+      "OS_T0N125W_PM709A-20071016_D_WIND_10min.nc",
+      "2007-10-16T22:00Z",
+      "2008-05-22T18:00Z"
+     ],
+     [
+      "OS_T0N125W_PM709B-20080522_D_RAIN_10min.nc",
+      "2008-05-22T21:00Z",
+      "2008-11-10T14:00Z"
+     ],
+     [
+      "OS_T0N125W_PM709B-20080522_D_SALT_hourly.nc",
+      "2008-05-22T22:00Z",
+      "2008-11-10T14:00Z"
+     ],
+     [
+      "OS_T0N125W_PM709B-20080522_D_WIND_10min.nc",
+      "2008-05-22T21:00Z",
+      "2008-11-10T14:00Z"
+     ],
+     [
+      "OS_T0N125W_PM790A-20081112_D_RAIN_10min.nc",
+      "2008-11-13T02:00Z",
+      "2009-09-13T17:00Z"
+     ],
+     [
+      "OS_T0N125W_PM790A-20081112_D_WIND_10min.nc",
+      "2008-11-13T02:00Z",
+      "2009-09-13T17:00Z"
+     ],
+     [
+      "OS_T0N125W_PM895A-20100421_D_RAIN_10min.nc",
+      "2010-04-22T04:00Z",
+      "2010-12-07T19:00Z"
+     ],
+     [
+      "OS_T0N125W_PM895A-20100421_D_SALT_hourly.nc",
+      "2010-04-22T00:00Z",
+      "2010-12-07T16:00Z"
+     ],
+     [
+      "OS_T0N125W_PM895A-20100421_D_WIND_10min.nc",
+      "2010-04-22T04:00Z",
+      "2010-12-07T19:00Z"
+     ],
+     [
+      "OS_T0N125W_PM947A-20101207_D_RAIN_10min.nc",
+      "2010-12-07T06:00Z",
+      "2011-05-01T14:00Z"
+     ],
+     [
+      "OS_T0N125W_PM947A-20101207_D_SALT_hourly.nc",
+      "2010-12-07T03:00Z",
+      "2011-05-01T14:00Z"
+     ],
+     [
+      "OS_T0N125W_PM947A-20101207_D_WIND_10min.nc",
+      "2010-12-07T06:00Z",
+      "2011-05-01T14:00Z"
+     ],
+     [
+      "OS_T0N125W_PM969A-20110502_D_RAIN_10min.nc",
+      "2011-05-02T05:00Z",
+      "2012-04-01T15:00Z"
+     ],
+     [
+      "OS_T0N125W_PM969A-20110502_D_WIND_10min.nc",
+      "2011-05-02T05:00Z",
+      "2012-04-01T16:00Z"
+     ],
+     [
+      "OS_T0N125W_DM086A-20140906_D_SALT_hourly.nc",
+      "2014-09-06T21:00Z",
+      "2015-03-08T19:00Z"
+     ],
+     [
+      "OS_T0N125W_DM086A-20140906_D_WIND_10min.nc",
+      "2014-09-06T20:00Z",
+      "2015-03-08T19:00Z"
+     ],
+     [
+      "OS_T0N125W_DM117A-20150309_D_SALT_hourly.nc",
+      "2015-03-09T05:00Z",
+      "2016-03-07T15:00Z"
+     ],
+     [
+      "OS_T0N125W_DM117A-20150309_D_WIND_10min.nc",
+      "2015-03-09T04:00Z",
+      "2016-03-07T15:00Z"
+     ],
+     [
+      "OS_T0N125W_DM172A-20160307_D_SALT_hourly.nc",
+      "2016-03-08T01:00Z",
+      "2017-02-06T20:00Z"
+     ],
+     [
+      "OS_T0N125W_DM172A-20160307_D_WIND_10min.nc",
+      "2016-03-08T00:00Z",
+      "2017-02-06T22:00Z"
+     ],
+     [
+      "OS_T0N125W_DM227A-20170207_D_SALT_hourly.nc",
+      "2017-02-07T08:00Z",
+      "2018-05-13T23:00Z"
+     ],
+     [
+      "OS_T0N125W_DM227A-20170207_D_WIND_10min.nc",
+      "2017-02-07T07:00Z",
+      "2018-05-13T23:00Z"
+     ],
+     [
+      "OS_T0N125W_DM322A-20180930_D_SALT_hourly.nc",
+      "2018-09-30T23:00Z",
+      "2019-10-24T17:00Z"
+     ],
+     [
+      "OS_T0N125W_DM322A-20180930_D_WIND_10min.nc",
+      "2018-09-30T22:00Z",
+      "2019-10-24T17:00Z"
+     ],
+     [
+      "OS_T0N125W_DM348A-20191025_D_SALT_hourly.nc",
+      "2019-10-25T08:00Z",
+      "2021-03-22T00:00Z"
+     ],
+     [
+      "OS_T0N125W_DM348A-20191025_D_WIND_10min.nc",
+      "2019-10-25T07:00Z",
+      "2021-01-31T18:00Z"
+     ],
+     [
+      "OS_T0N125W_DM414A-20210322_D_SALT_hourly.nc",
+      "2021-03-22T12:00Z",
+      "2022-03-15T06:00Z"
+     ],
+     [
+      "OS_T0N125W_DM414A-20210322_D_WIND_10min.nc",
+      "2021-03-22T11:00Z",
+      "2022-03-15T06:00Z"
+     ],
+     [
+      "OS_T0N125W_DM435A-20220315_D_WIND_10min.nc",
+      "2022-03-15T14:00Z",
+      "2024-09-29T00:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 1,
+     "p1_events_this_station": 1,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "R:TAO110W": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 96,
+    "rain24_incomplete": 4,
+    "below_10mm": 81
+   },
+   "n_rain_events_10mm": 11,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 8,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "n_combined_qualified_all": 3,
+   "coverage": {
+    "rule": "per-var",
+    "axis_hours": 124050,
+    "mapco2_start": "2009-09-19T04:00Z",
+    "mapco2_end": "2023-11-07T21:00Z",
+    "p1_dm_files": 25,
+    "p1_hours_in_axis_union": 77362,
+    "p1_hours_in_axis_by_var": {
+     "rain": 63407,
+     "wind": 67024,
+     "s1": 67749,
+     "s5": 67749
+    },
+    "r_files": [
+     "OS_T0N110W_DM428B-20211115_R_RAIN_10min.nc",
+     "OS_T0N110W_DM428B-20211115_R_SALT_hourly.nc",
+     "OS_T0N110W_DM477A-20230407_R_RAIN_10min.nc",
+     "OS_T0N110W_DM477A-20230407_R_SALT_hourly.nc"
+    ],
+    "r_hour_values_added_by_var": {
+     "rain": 2314,
+     "s1": 2563,
+     "s5": 6592
+    },
+    "r_hour_values_dropped_overlap_p1": {},
+    "new_hours_all5_valid": 0,
+    "qc_dropped_by_code": {
+     "rain": {},
+     "s1": {
+      "9": 25352
+     },
+     "s5": {
+      "9": 383
+     }
+    },
+    "p1_dm_file_spans": [
+     [
+      "OS_T0N110W_PM855A-20090919_D_SALT_hourly.nc",
+      "2009-09-19T06:00Z",
+      "2010-03-15T05:00Z"
+     ],
+     [
+      "OS_T0N110W_PM885A-20100315_D_SALT_hourly.nc",
+      "2010-03-15T07:00Z",
+      "2010-07-21T14:00Z"
+     ],
+     [
+      "OS_T0N110W_DM072A-20140621_D_RAIN_10min.nc",
+      "2014-06-21T20:00Z",
+      "2015-04-27T23:00Z"
+     ],
+     [
+      "OS_T0N110W_DM072A-20140621_D_SALT_hourly.nc",
+      "2014-06-21T21:00Z",
+      "2015-04-28T14:00Z"
+     ],
+     [
+      "OS_T0N110W_DM072A-20140621_D_WIND_10min.nc",
+      "2014-06-21T20:00Z",
+      "2015-04-27T23:00Z"
+     ],
+     [
+      "OS_T0N110W_DM137A-20150428_D_RAIN_10min.nc",
+      "2015-04-29T00:00Z",
+      "2016-04-13T01:00Z"
+     ],
+     [
+      "OS_T0N110W_DM137A-20150428_D_SALT_hourly.nc",
+      "2015-04-29T01:00Z",
+      "2016-04-13T01:00Z"
+     ],
+     [
+      "OS_T0N110W_DM137A-20150428_D_WIND_10min.nc",
+      "2015-04-29T00:00Z",
+      "2016-04-13T01:00Z"
+     ],
+     [
+      "OS_T0N110W_DM186A-20160413_D_RAIN_10min.nc",
+      "2016-04-13T12:00Z",
+      "2017-06-05T00:00Z"
+     ],
+     [
+      "OS_T0N110W_DM186A-20160413_D_SALT_hourly.nc",
+      "2016-04-13T13:00Z",
+      "2017-06-05T00:00Z"
+     ],
+     [
+      "OS_T0N110W_DM186A-20160413_D_WIND_10min.nc",
+      "2016-04-13T12:00Z",
+      "2017-06-05T00:00Z"
+     ],
+     [
+      "OS_T0N110W_DM234A-20170610_D_RAIN_10min.nc",
+      "2017-06-10T03:00Z",
+      "2018-05-01T19:00Z"
+     ],
+     [
+      "OS_T0N110W_DM234A-20170610_D_SALT_hourly.nc",
+      "2017-06-10T04:00Z",
+      "2018-05-01T19:00Z"
+     ],
+     [
+      "OS_T0N110W_DM234A-20170610_D_WIND_10min.nc",
+      "2017-06-10T03:00Z",
+      "2018-05-01T19:00Z"
+     ],
+     [
+      "OS_T0N110W_DM281A-20180502_D_RAIN_10min.nc",
+      "2018-05-02T21:00Z",
+      "2019-07-02T14:00Z"
+     ],
+     [
+      "OS_T0N110W_DM281A-20180502_D_SALT_hourly.nc",
+      "2018-05-02T22:00Z",
+      "2019-07-02T14:00Z"
+     ],
+     [
+      "OS_T0N110W_DM281A-20180502_D_WIND_10min.nc",
+      "2018-05-02T21:00Z",
+      "2019-07-02T14:00Z"
+     ],
+     [
+      "OS_T0N110W_DM336A-20190703_D_RAIN_10min.nc",
+      "2019-07-03T08:00Z",
+      "2020-07-15T11:00Z"
+     ],
+     [
+      "OS_T0N110W_DM336A-20190703_D_SALT_hourly.nc",
+      "2019-07-03T09:00Z",
+      "2020-07-15T11:00Z"
+     ],
+     [
+      "OS_T0N110W_DM336A-20190703_D_WIND_10min.nc",
+      "2019-07-03T08:00Z",
+      "2020-07-15T11:00Z"
+     ],
+     [
+      "OS_T0N110W_DM386A-20200716_D_RAIN_10min.nc",
+      "2020-07-17T01:00Z",
+      "2021-09-24T13:00Z"
+     ],
+     [
+      "OS_T0N110W_DM386A-20200716_D_SALT_hourly.nc",
+      "2020-07-17T01:00Z",
+      "2021-05-22T18:00Z"
+     ],
+     [
+      "OS_T0N110W_DM386A-20200716_D_WIND_10min.nc",
+      "2020-07-17T01:00Z",
+      "2021-05-22T18:00Z"
+     ],
+     [
+      "OS_T0N110W_DM428B-20211115_D_WIND_10min.nc",
+      "2021-11-15T04:00Z",
+      "2022-01-12T00:00Z"
+     ],
+     [
+      "OS_T0N110W_DM477A-20230407_D_WIND_10min.nc",
+      "2023-04-07T07:00Z",
+      "2024-09-24T15:00Z"
+     ]
+    ],
+    "p1_reconstruction_check": {
+     "combined_events_matching_p1": 3,
+     "p1_events_this_station": 3,
+     "combined_events_without_R_not_in_p1": [],
+     "n_combined_events_without_R_not_in_p1": 0,
+     "note": "combined events without R values should equal the P1 event set; differences come from R rain changing the control/24 h dry-period test or from reconstruction; diagnostic only"
+    }
+   }
+  },
+  "O:KEO": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 1034,
+    "rain24_incomplete": 19,
+    "below_10mm": 704
+   },
+   "n_rain_events_10mm": 311,
+   "n_events": 209,
+   "n_dropped_insufficient_data": 102,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 209,
+   "coverage": {
+    "axis_hours": 153924,
+    "mapco2_start": "2007-09-26T10:00Z",
+    "mapco2_end": "2025-04-11T21:00Z",
+    "valid_hours": {
+     "sss05": 36763,
+     "pco2": 34433,
+     "rain": 98761,
+     "wind": 113495,
+     "s1": 105576,
+     "s5": 19397
+    },
+    "hours_all5_valid": 22456,
+    "s1_depth_hours": {
+     "1.0": 52410,
+     "1.3": 53166
+    },
+    "sources_used": [
+     {
+      "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1508,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1468,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 50,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 2282,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 4571,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 50,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5662,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7891,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8275,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 23,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 10469,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 32,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 10782,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_200406_D_TVMBP_32N145E_10m.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 45651,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 47,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1504,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1518,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 2282,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 4619,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 2,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5658,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7892,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 2045,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 4,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7105,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 10,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 10760,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 15,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_KEO_200406_D_TVMBP_32N145E_10m.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 54065,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 16016,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_SALT-1hr-adrift.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 1508,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_SALT-1hr-adrift.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 1519,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015B_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 2283,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015A_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 4622,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2017KE015C_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 5660,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 7892,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2015KE013_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 8366,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2016KE014_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 10534,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2014KE012_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 10782,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2018KE016_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 52410,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2020KE017B_D_SALT-1hr-adrift.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 1508,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_2019KE017A_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 5662,
+      "no_qc": false
+     },
+     {
+      "file": "OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 12227,
+      "no_qc": false
+     }
+    ],
+    "sources_skipped": [],
+    "qc_dropped_by_code": {
+     "rain": {
+      "4": 109511,
+      "9": 39161,
+      "128": 137095
+     },
+     "wind": {
+      "9": 209025,
+      "4": 23627,
+      "128": 152494
+     },
+     "s1": {
+      "4": 18762,
+      "9": 9498,
+      "128": 29991
+     },
+     "s5": {
+      "128": 132929,
+      "9": 1256,
+      "4": 1439
+     }
+    }
+   }
+  },
+  "O:MOSEAN/WHOTS": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 1289,
+    "rain24_incomplete": 0,
+    "below_10mm": 1147
+   },
+   "n_rain_events_10mm": 142,
+   "n_events": 117,
+   "n_dropped_insufficient_data": 25,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 117,
+   "coverage": {
+    "axis_hours": 181340,
+    "mapco2_start": "2004-12-19T23:00Z",
+    "mapco2_end": "2025-08-21T18:00Z",
+    "valid_hours": {
+     "sss05": 50274,
+     "pco2": 48300,
+     "rain": 162211,
+     "wind": 155552,
+     "s1": 162210,
+     "s5": 0
+    },
+    "hours_all5_valid": 39966,
+    "s1_depth_hours": {
+     "0.75": 13297,
+     "1.0": 8201,
+     "0.765": 7960,
+     "0.8": 26583,
+     "0.91": 9585,
+     "0.78": 9194,
+     "0.76": 8333,
+     "0.85": 34334,
+     "0.86": 8902,
+     "0.81": 8640,
+     "0.97": 10042,
+     "0.72": 9134,
+     "0.9": 8005
+    },
+    "sources_used": [
+     {
+      "file": "OS_WHOTS_2022_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7935,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2005_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7960,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2021_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7966,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2011_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8295,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2004_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5298,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2007_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8320,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2010_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8231,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2015_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8486,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2014_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8640,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2006_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8736,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2013_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8902,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2018_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9134,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2009_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9194,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2012_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9348,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2016_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9527,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2008_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9585,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2017_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10042,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2019_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 16500,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_200408-202308_D_MLTS-1H.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 112,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2022_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7935,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2005_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7960,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2021_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7966,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2011_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8295,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2004_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5298,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2007_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8320,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2010_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8231,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2015_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8486,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2014_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8640,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2006_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8736,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2013_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8902,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2018_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9134,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2009_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9194,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2012_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9348,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2016_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 2866,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2008_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9585,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2017_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10042,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2019_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 16500,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_200408-201809_D_FLTS-1H.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 114,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_200408-202108_D_FLTS-1H.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_200408-202308_D_MLTS-1H.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2005_D_M.nc",
+      "kind": "s1",
+      "depth": 0.765,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 7960,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_200507_D_MICROCAT-002m.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 1,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_2021_D_M.nc",
+      "kind": "s1",
+      "depth": 0.9,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8005,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_201107_D_MICROCAT-001m.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8193,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_2011_D_M.nc",
+      "kind": "s1",
+      "depth": 0.76,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 102,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2004_D_M.nc",
+      "kind": "s1",
+      "depth": 0.75,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5298,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2007_D_M.nc",
+      "kind": "s1",
+      "depth": 0.8,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8320,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2010_D_M.nc",
+      "kind": "s1",
+      "depth": 0.76,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8231,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2015_D_M.nc",
+      "kind": "s1",
+      "depth": 0.85,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8486,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2014_D_M.nc",
+      "kind": "s1",
+      "depth": 0.81,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8640,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2006_D_M.nc",
+      "kind": "s1",
+      "depth": 0.8,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8736,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2013_D_M.nc",
+      "kind": "s1",
+      "depth": 0.86,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8902,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2018_D_M.nc",
+      "kind": "s1",
+      "depth": 0.72,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9134,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2009_D_M.nc",
+      "kind": "s1",
+      "depth": 0.78,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9194,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2012_D_M.nc",
+      "kind": "s1",
+      "depth": 0.85,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9348,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2016_D_M.nc",
+      "kind": "s1",
+      "depth": 0.8,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9527,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2008_D_M.nc",
+      "kind": "s1",
+      "depth": 0.91,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9585,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2017_D_M.nc",
+      "kind": "s1",
+      "depth": 0.97,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10042,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_2019_D_M.nc",
+      "kind": "s1",
+      "depth": 0.85,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 16500,
+      "no_qc": true
+     },
+     {
+      "file": "OS_WHOTS_200706_D_MICROCAT-001m.nc",
+      "kind": "s1",
+      "depth": 0.795,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_200706_D_MICROCAT-002m.nc",
+      "kind": "s1",
+      "depth": 0.795,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_200408_D_MICROCAT-001m.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 7,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_201007_D_MICROCAT-001m.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_200606_D_MICROCAT-001m.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_200606_D_SBE-39-000m.nc",
+      "kind": "s1",
+      "depth": 0.0,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_200907_D_MICROCAT-001m.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 300.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_WHOTS_200408-202308_D_MLTS-1H.nc",
+      "kind": "s1",
+      "depth": 0.75,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 7999,
+      "no_qc": true
+     }
+    ],
+    "sources_skipped": [],
+    "qc_dropped_by_code": {
+     "rain": {},
+     "wind": {},
+     "s1": {
+      "4": 1498
+     }
+    }
+   }
+  },
+  "O:Papa": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 1305,
+    "rain24_incomplete": 7,
+    "below_10mm": 1181
+   },
+   "n_rain_events_10mm": 117,
+   "n_events": 106,
+   "n_dropped_insufficient_data": 11,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 106,
+   "coverage": {
+    "axis_hours": 157750,
+    "mapco2_start": "2007-06-08T00:00Z",
+    "mapco2_end": "2025-05-30T21:00Z",
+    "valid_hours": {
+     "sss05": 44902,
+     "pco2": 44585,
+     "rain": 134449,
+     "wind": 145981,
+     "s1": 144676,
+     "s5": 35230
+    },
+    "hours_all5_valid": 39078,
+    "s1_depth_hours": {
+     "1.0": 44141,
+     "1.25": 158,
+     "1.2": 8778,
+     "1.3": 91599
+    },
+    "sources_used": [
+     {
+      "file": "OS_PAPA_2008PA002A_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 338,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002C_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1036,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002B_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 3324,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5287,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7076,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7834,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5317,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2009PA003_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8585,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2009PA003_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 6,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8674,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 31,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8747,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8539,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8765,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 9638,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 10308,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 11422,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200706_D_TVMBP_50N145W_10m.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 29428,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200706_M_TSVMBP_50N145W_hr.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 88,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 338,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002A_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 1467,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002C_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 3324,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002B_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 3158,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 87,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7263,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 4,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 7791,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 44,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5282,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2009PA003_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8614,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2009PA003_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 5,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8699,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 6,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8693,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 53,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8541,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 8749,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 20,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_MET_10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 9606,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 27,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 10251,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 56,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 11412,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 9,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_MET-10min.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 0,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_200706_D_TVMBP_50N145W_10m.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 600.0,
+      "hours_added": 35000,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200706_M_TSVMBP_50N145W_hr.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 7468,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002A_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 343,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2008PA002B_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 141,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200806_D_TSBP_50N145W_FLEX_hr.nc",
+      "kind": "s1",
+      "depth": 1.25,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 158,
+      "no_qc": true
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 5733,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 7076,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 7722,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 7835,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2018PA012_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200706_D_TS_50N145W_spot_hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 6550,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 8705,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2014PA008_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 8494,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2016PA010_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2009PA003_D_PSAL_1hr.nc",
+      "kind": "s1",
+      "depth": 1.2,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 8778,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 2300,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 8771,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2015PA009_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2021PA015_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 9452,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2021PA015_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 9600,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2017PA011_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 48,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 7817,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2019PA013_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 2,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 10192,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_SALT-1hr.nc",
+      "kind": "s1",
+      "depth": 1.3,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 152,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200706_M_TSVMBP_50N145W_hr.nc",
+      "kind": "s1",
+      "depth": 1.0,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 34807,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2020PA014_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 6066,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2024PA018_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 0,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2022PA016_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 2976,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2007PA001_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 4100,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2021PA015_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 9460,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_2023PA017_D_SALT-1hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "D",
+      "native_dt_s": 3600.0,
+      "hours_added": 11435,
+      "no_qc": false
+     },
+     {
+      "file": "OS_PAPA_200706_M_TSVMBP_50N145W_hr.nc",
+      "kind": "s5",
+      "depth": 5.0,
+      "mode": "M",
+      "native_dt_s": 3600.0,
+      "hours_added": 1193,
+      "no_qc": false
+     }
+    ],
+    "sources_skipped": [],
+    "qc_dropped_by_code": {
+     "rain": {
+      "4": 178680,
+      "9": 23895,
+      "128": 157502
+     },
+     "wind": {
+      "4": 153559,
+      "9": 79253,
+      "128": 125738,
+      "129": 2566
+     },
+     "s1": {
+      "4": 23732,
+      "9": 18913,
+      "128": 5186
+     },
+     "s5": {
+      "9": 22852,
+      "4": 9550,
+      "128": 106815
+     }
+    }
+   }
+  },
+  "O:SOFS": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 153,
+    "rain24_incomplete": 1,
+    "below_10mm": 140
+   },
+   "n_rain_events_10mm": 12,
+   "n_events": 10,
+   "n_dropped_insufficient_data": 2,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 10,
+   "coverage": {
+    "axis_hours": 117205,
+    "mapco2_start": "2011-11-24T09:00Z",
+    "mapco2_end": "2025-04-01T21:00Z",
+    "valid_hours": {
+     "sss05": 22313,
+     "pco2": 22028,
+     "rain": 24693,
+     "wind": 24693,
+     "s1": 15412,
+     "s5": 0
+    },
+    "hours_all5_valid": 5054,
+    "s1_depth_hours": {
+     "0.93": 5781,
+     "0.55": 3995,
+     "0.88": 5636
+    },
+    "sources_used": [
+     {
+      "file": "OS_SOTS_SOFS04_D_ASIMET.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 3995,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS09_D_ASIMET.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5636,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS02_D_ASIMET.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5781,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS05_D_ASIMET.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9281,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS04_D_ASIMET.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 3995,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS09_D_ASIMET.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5636,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS02_D_ASIMET.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5781,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS05_D_ASIMET.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9281,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS04_D_ASIMET.nc",
+      "kind": "s1",
+      "depth": 0.55,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 3995,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS09_D_ASIMET.nc",
+      "kind": "s1",
+      "depth": 0.88,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5636,
+      "no_qc": true
+     },
+     {
+      "file": "OS_SOTS_SOFS02_D_ASIMET.nc",
+      "kind": "s1",
+      "depth": 0.93,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 5781,
+      "no_qc": true
+     }
+    ],
+    "sources_skipped": [],
+    "qc_dropped_by_code": {
+     "rain": {},
+     "wind": {},
+     "s1": {}
+    }
+   }
+  },
+  "O:Stratus": {
+   "rain_onset_stats": {
+    "onset_after_24h_dry": 70,
+    "rain24_incomplete": 0,
+    "below_10mm": 69
+   },
+   "n_rain_events_10mm": 1,
+   "n_events": 0,
+   "n_dropped_insufficient_data": 1,
+   "n_dropped_touch_p1_hours": 0,
+   "n_events_5ctrl": 0,
+   "coverage": {
+    "axis_hours": 160336,
+    "mapco2_start": "2006-10-16T21:00Z",
+    "mapco2_end": "2025-01-24T12:00Z",
+    "valid_hours": {
+     "sss05": 39285,
+     "pco2": 37462,
+     "rain": 42680,
+     "wind": 42680,
+     "s1": 42680,
+     "s5": 0
+    },
+    "hours_all5_valid": 12476,
+    "s1_depth_hours": {
+     "0.91": 9025,
+     "0.5": 8775,
+     "0.85": 10726,
+     "0.83": 14154
+    },
+    "sources_used": [
+     {
+      "file": "OS_Stratus_2010_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 4106,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2007_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8775,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2006_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9025,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2011_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10048,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2008_D_M.nc",
+      "kind": "rain",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10726,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2010_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 4106,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2007_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8775,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2006_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9025,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2011_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10048,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2008_D_M.nc",
+      "kind": "wind",
+      "depth": null,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10726,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2010_D_M.nc",
+      "kind": "s1",
+      "depth": 0.83,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 4106,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2007_D_M.nc",
+      "kind": "s1",
+      "depth": 0.5,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 8775,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2006_D_M.nc",
+      "kind": "s1",
+      "depth": 0.91,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 9025,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2011_D_M.nc",
+      "kind": "s1",
+      "depth": 0.83,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10048,
+      "no_qc": true
+     },
+     {
+      "file": "OS_Stratus_2008_D_M.nc",
+      "kind": "s1",
+      "depth": 0.85,
+      "mode": "D",
+      "native_dt_s": 60.0,
+      "hours_added": 10726,
+      "no_qc": true
+     }
+    ],
+    "sources_skipped": [],
+    "qc_dropped_by_code": {
+     "rain": {},
+     "wind": {},
+     "s1": {}
+    }
+   }
+  }
+ },
+ "o_group_stations": [
+  "KEO",
+  "MOSEAN/WHOTS",
+  "Papa",
+  "SOFS",
+  "Stratus"
+ ],
+ "downloads": {
+  "http_requests": 966,
+  "cache_hits": 890,
+  "seeded_from_p1_cache": 675,
+  "bytes_downloaded_gz": 455944121
+ }
+}

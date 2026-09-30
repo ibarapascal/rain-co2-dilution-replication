@@ -1,0 +1,319 @@
+{
+ "script": "p4f_wind_trend.py",
+ "version": "p4f-2026-09-27a",
+ "seed": 20260926,
+ "B": 10000,
+ "cuts_u10": [
+  6.031179,
+  9.325534
+ ],
+ "inputs": {
+  "p4_mech_events.csv": "c5feedaa508f490f70ef9ec11999966084c20f14efc9a049a09991238fce6dd7",
+  "p4b_events.csv": "b02aa1e6fa3e24aa20583c778fd4547822a5bd6e9951e34756c3d33b1c662f92",
+  "p4c_rim_conservation.py": "0f084d02f67113aff1f7e9c4aabfaec5342779303a187c558c1a327ff483511b",
+  "self": "2a2bc70de26510920473fa21b14e96befdcf9d0b450c7f973e6d7f3d1565916c"
+ },
+ "n_all": 646,
+ "V0_full646": [
+  {
+   "k": 0,
+   "n": 216,
+   "point": 0.37105,
+   "ci95": [
+    0.29473,
+    0.44574
+   ]
+  },
+  {
+   "k": 1,
+   "n": 215,
+   "point": 0.26521,
+   "ci95": [
+    0.16822,
+    0.37458
+   ]
+  },
+  {
+   "k": 2,
+   "n": 215,
+   "point": 0.15673,
+   "ci95": [
+    0.11217,
+    0.21725
+   ]
+  }
+ ],
+ "V0_max_abs_diff_vs_p4": 0.0,
+ "V0_pass": true,
+ "n_M": 580,
+ "M_pooled_all": 4.45749,
+ "M_event_quantiles": {
+  "0.05": 1.4448,
+  "0.25": 3.4485,
+  "0.5": 4.5182,
+  "0.75": 5.9232,
+  "0.95": 10.0143
+ },
+ "spearman_u10_M": -0.3384,
+ "pooled_580": {
+  "R_obs": 0.26603,
+  "R_obs_ci95": [
+   0.20951,
+   0.32327
+  ],
+  "R_pred": 0.21262,
+  "R_pred_ci95": [
+   0.19834,
+   0.23003
+  ],
+  "rho": 1.25119,
+  "rho_ci95": [
+   0.97824,
+   1.54122
+  ],
+  "clusters": 36
+ },
+ "station_season": {
+  "clusters": 36,
+  "cells": [
+   {
+    "k": 0,
+    "n": 178,
+    "G_station_season": 30,
+    "G_station": 11,
+    "u10_median": 4.545,
+    "R_obs": 0.316,
+    "R_obs_ci95": [
+     0.25302,
+     0.3758
+    ],
+    "R_pred": 0.17103,
+    "R_pred_ci95": [
+     0.15606,
+     0.18367
+    ],
+    "rho": 1.84766,
+    "rho_ci95": [
+     1.50463,
+     2.21941
+    ],
+    "M_pooled": 5.7306,
+    "M_pooled_ci95": [
+     5.30605,
+     6.25069
+    ],
+    "M_median": 5.5562
+   },
+   {
+    "k": 1,
+    "n": 195,
+    "G_station_season": 33,
+    "G_station": 12,
+    "u10_median": 7.778,
+    "R_obs": 0.26005,
+    "R_obs_ci95": [
+     0.16212,
+     0.37091
+    ],
+    "R_pred": 0.24391,
+    "R_pred_ci95": [
+     0.21129,
+     0.29539
+    ],
+    "rho": 1.06616,
+    "rho_ci95": [
+     0.66831,
+     1.53525
+    ],
+    "M_pooled": 4.2878,
+    "M_pooled_ci95": [
+     3.95307,
+     4.6242
+    ],
+    "M_median": 4.4679
+   },
+   {
+    "k": 2,
+    "n": 207,
+    "G_station_season": 19,
+    "G_station": 7,
+    "u10_median": 11.618,
+    "R_obs": 0.14868,
+    "R_obs_ci95": [
+     0.10928,
+     0.20254
+    ],
+    "R_pred": 0.26702,
+    "R_pred_ci95": [
+     0.25026,
+     0.29157
+    ],
+    "rho": 0.55683,
+    "rho_ci95": [
+     0.4058,
+     0.76512
+    ],
+    "M_pooled": 3.7572,
+    "M_pooled_ci95": [
+     3.48446,
+     3.99977
+    ],
+    "M_median": 3.8855
+   }
+  ],
+  "contrast": {
+   "R_obs_top_minus_bottom": -0.16732,
+   "R_obs_diff_ci95": [
+    -0.21015,
+    -0.12141
+   ],
+   "R_pred_top_minus_bottom": 0.09599,
+   "R_pred_diff_ci95": [
+    0.07744,
+    0.12333
+   ],
+   "ln_rho2_over_rho0": -1.19942,
+   "ln_rho2_over_rho0_ci95": [
+    -1.48381,
+    -0.93113
+   ],
+   "rho2_over_rho0": 0.30137,
+   "frac_draws_dobs_lt0": 1.0,
+   "frac_draws_dpred_gt0": 1.0
+  }
+ },
+ "station": {
+  "clusters": 12,
+  "cells": [
+   {
+    "k": 0,
+    "n": 178,
+    "G_station_season": 30,
+    "G_station": 11,
+    "u10_median": 4.545,
+    "R_obs": 0.316,
+    "R_obs_ci95": [
+     0.25815,
+     0.36791
+    ],
+    "R_pred": 0.17103,
+    "R_pred_ci95": [
+     0.15082,
+     0.1847
+    ],
+    "rho": 1.84766,
+    "rho_ci95": [
+     1.55867,
+     2.16555
+    ],
+    "M_pooled": 5.7306,
+    "M_pooled_ci95": [
+     5.21924,
+     6.35084
+    ],
+    "M_median": 5.5562
+   },
+   {
+    "k": 1,
+    "n": 195,
+    "G_station_season": 33,
+    "G_station": 12,
+    "u10_median": 7.778,
+    "R_obs": 0.26005,
+    "R_obs_ci95": [
+     0.16069,
+     0.37905
+    ],
+    "R_pred": 0.24391,
+    "R_pred_ci95": [
+     0.20779,
+     0.30966
+    ],
+    "rho": 1.06616,
+    "rho_ci95": [
+     0.73428,
+     1.46362
+    ],
+    "M_pooled": 4.2878,
+    "M_pooled_ci95": [
+     3.84536,
+     4.55541
+    ],
+    "M_median": 4.4679
+   },
+   {
+    "k": 2,
+    "n": 207,
+    "G_station_season": 19,
+    "G_station": 7,
+    "u10_median": 11.618,
+    "R_obs": 0.14868,
+    "R_obs_ci95": [
+     0.09891,
+     0.21245
+    ],
+    "R_pred": 0.26702,
+    "R_pred_ci95": [
+     0.25268,
+     0.33281
+    ],
+    "rho": 0.55683,
+    "rho_ci95": [
+     0.33553,
+     0.7643
+    ],
+    "M_pooled": 3.7572,
+    "M_pooled_ci95": [
+     3.07395,
+     3.94
+    ],
+    "M_median": 3.8855
+   }
+  ],
+  "contrast": {
+   "R_obs_top_minus_bottom": -0.16732,
+   "R_obs_diff_ci95": [
+    -0.20014,
+    -0.12854
+   ],
+   "R_pred_top_minus_bottom": 0.09599,
+   "R_pred_diff_ci95": [
+    0.08097,
+    0.16061
+   ],
+   "ln_rho2_over_rho0": -1.19942,
+   "ln_rho2_over_rho0_ci95": [
+    -1.64594,
+    -0.99477
+   ],
+   "rho2_over_rho0": 0.30137,
+   "frac_draws_dobs_lt0": 0.9996,
+   "frac_draws_dpred_gt0": 0.9998
+  }
+ },
+ "judgment": {
+  "direction": "direction conflict",
+  "magnitude": "the conservation explanation cannot explain the wind trend",
+  "level": "classes whose rho interval excludes 1: [0, 2]"
+ },
+ "analytic_crosscheck": [
+  {
+   "k": 0,
+   "M_analytic_median": 6.168,
+   "R_pred_analytic": 0.1839,
+   "d0_median": 1.556
+  },
+  {
+   "k": 1,
+   "M_analytic_median": 4.844,
+   "R_pred_analytic": 0.23,
+   "d0_median": 1.982
+  },
+  {
+   "k": 2,
+   "M_analytic_median": 3.999,
+   "R_pred_analytic": 0.2813,
+   "d0_median": 2.4
+  }
+ ]
+}

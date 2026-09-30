@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use these data or this code, please cite them as below."
+title: "Rain freshening at ocean moorings and the RIM-3 rain dilution scheme: derived data and code"
+type: dataset
+version: "0.9.0"
+authors:
+  - family-names: "Jing"
+    given-names: "Jiawei"
+    orcid: "https://orcid.org/0009-0000-8365-367X"
+    affiliation: "Makuhari Development Corporation"
+repository-code: "https://github.com/ibarapascal/rain-co2-dilution-replication"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - ocean carbon sink
+  - rain
+  - sea surface salinity
+  - air-sea CO2 flux
+  - moorings
+  - MAPCO2
+  - reproducibility
+abstract: >-
+  Derived data and the scripts that compute them from public raw data: 646 rain events at 13 moorings of the NOAA PMEL carbon
+  mooring network (MAPCO2), 2004-2025, with observed near-surface freshening and pCO2 changes; predictions of the RIM-3 rain
+  dilution scheme and the S20 surface relation of Witte et al. (2026) at the observed depths and their ratios to the
+  observations; mechanism diagnostics; satellite (SMAP) and field-campaign (SPURS-1/2, PISTON) surface tests; and a
+  reimplementation of the global calculation of the rain effect on the air-sea CO2 flux for the year 2000 with band, basin,
+  month and wind-speed tables. The pipeline runs all stages from the raw downloads with one entry point and compares a re-run
+  with the released data.

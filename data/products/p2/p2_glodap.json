@@ -1,0 +1,136 @@
+{
+ "source": "https://glodap.info/glodap_files/v2.2023/GLODAPv2.2016b.MappedProduct.tar.gz",
+ "rule": "depth_surface level 0, nearest 1-degree cell (longitude wrapped mod 360), NaN not filled (K19)",
+ "stations": {
+  "TAO165E": {
+   "salinity": 34.6913,
+   "cell": [
+    -0.5,
+    164.5
+   ],
+   "TAlk": 2262.5576,
+   "TCO2": 1918.0734,
+   "temperature": 29.3058
+  },
+  "TAO8S165E": {
+   "salinity": 34.5691,
+   "cell": [
+    -8.5,
+    164.5
+   ],
+   "TAlk": 2271.4333,
+   "TCO2": 1924.7987,
+   "temperature": 28.4862
+  },
+  "BOBOA": {
+   "salinity": 32.7893,
+   "cell": [
+    14.5,
+    89.5
+   ],
+   "TAlk": 2196.3042,
+   "TCO2": 1877.8591,
+   "temperature": 28.463
+  },
+  "TAO170W": {
+   "salinity": 35.0282,
+   "cell": [
+    -0.5,
+    189.5
+   ],
+   "TAlk": 2284.6816,
+   "TCO2": 1974.4576,
+   "temperature": 28.3163
+  },
+  "TAO155W": {
+   "salinity": 35.1679,
+   "cell": [
+    -0.5,
+    204.5
+   ],
+   "TAlk": 2313.5315,
+   "TCO2": 2005.1852,
+   "temperature": 27.7528
+  },
+  "TAO140W": {
+   "salinity": 35.0232,
+   "cell": [
+    -0.5,
+    219.5
+   ],
+   "TAlk": 2303.1003,
+   "TCO2": 2000.1519,
+   "temperature": 27.4702
+  },
+  "TAO125W": {
+   "salinity": 34.906,
+   "cell": [
+    -0.5,
+    234.5
+   ],
+   "TAlk": 2294.679,
+   "TCO2": 2002.8138,
+   "temperature": 26.3165
+  },
+  "TAO110W": {
+   "salinity": 34.9647,
+   "cell": [
+    -0.5,
+    249.5
+   ],
+   "TAlk": 2294.2332,
+   "TCO2": 2042.6534,
+   "temperature": 24.2313
+  },
+  "KEO": {
+   "salinity": 34.6035,
+   "cell": [
+    32.5,
+    144.5
+   ],
+   "TAlk": 2270.2856,
+   "TCO2": 1965.0085,
+   "temperature": 22.0931
+  },
+  "MOSEAN/WHOTS": {
+   "salinity": 34.8006,
+   "cell": [
+    22.5,
+    202.5
+   ],
+   "TAlk": 2312.2131,
+   "TCO2": 1970.7858,
+   "temperature": 26.0658
+  },
+  "Papa": {
+   "salinity": 32.5456,
+   "cell": [
+    50.5,
+    215.5
+   ],
+   "TAlk": 2195.3701,
+   "TCO2": 1992.926,
+   "temperature": 11.341
+  },
+  "SOFS": {
+   "salinity": 34.7426,
+   "cell": [
+    -46.5,
+    141.5
+   ],
+   "TAlk": 2307.106,
+   "TCO2": 2078.8777,
+   "temperature": 11.7504
+  },
+  "Stratus": {
+   "salinity": 35.6835,
+   "cell": [
+    -19.5,
+    274.5
+   ],
+   "TAlk": 2358.6609,
+   "TCO2": 2063.498,
+   "temperature": 23.5276
+  }
+ }
+}

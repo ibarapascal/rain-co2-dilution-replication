@@ -1,0 +1,65 @@
+# config.example.toml — central configuration of the pipeline (copy to config.local.toml, edit the paths, pass with
+# `run.py --config config.local.toml`). All paths used by pipeline/ come from here (via pipeline/repro_paths.py).
+# Values may use ~, $VAR and {other keys of the same table or of [paths]}. Never put credential contents in this file.
+# config.local.toml and config.*.local.toml are git-ignored.
+
+[paths]
+# Archive of raw downloads (one file per original; per-file index <raw_root>/manifest.jsonl). Needs ~160 GB for a full
+# reproduction including all satellite and CMORPH originals (see docs/reproduction.md).
+raw_root = "/path/to/archive/raw"
+# Fast working disk: P3 global input cache, P3 monthly intermediates, P5/P6/P7a derived caches (~100 GB for P3).
+fast_root = "/path/to/work"
+# Output root of this run: each stage writes <out_root>/<stage id>/. Use a new directory per run (run.py never overwrites).
+out_root = "{fast_root}/runs/RUN_TAG"
+# NASA Earthdata token file (only the path is configured here; scripts put its content only into request headers sent to
+# Earthdata hosts). Needed by p5-sss, p7a, raw-spurs2, raw-p7e.
+token_file = "/path/to/earthdata/token"
+# Derived caches
+p3_cache = "{fast_root}/cache/p3-cache"
+p3_work = "{fast_root}/cache/p3-work"
+p5_cache = "{fast_root}/cache/p5-cache"
+p6_cache = "{fast_root}/cache/p6-cache"
+p7a_cache = "{fast_root}/cache/p7a-cache"
+raw_selftest_root = "/path/to/archive/raw-selftest"
+# dw33 monthly intermediates (resumable)
+dw33_work = "{fast_root}/cache/dw33-work"
+
+[options]
+# Download rate limit per stage, MB/s (1 MB = 10^6 B). The reference runs used 2, with <= 4 in total.
+raw_rate_mbps = 2
+# Interpreter for the stage scripts; default = the interpreter running run.py.
+# python = "/path/to/venv/bin/python"
+# Anemometer-height switch for group B moorings (docs/reproduction.md, "Anemometer height"):
+#   "uniform_4m"  default (all moorings converted to 10 m assuming 4 m); reproduces the released data
+#   "per_station" per-station median measured height (WHOTS 3.355 m, SOFS 3.3125 m, Stratus 3.32 m; KEO, Papa, group A 4 m)
+#   "per_source"  height of the file/variable that supplied each hourly value; implemented only by stage dw13a
+wind_height = "uniform_4m"
+# Input-SHA gates (docs/reproduction.md, "Input-SHA gates"): false (default) = stages record the SHA-256 of their upstream inputs
+# and continue; true = they stop (exit 3) when an input differs from the reference run or from [upstream_sha].
+check_upstream_sha = false
+
+[wind_height_m]
+# Per-station overrides for per_station mode (m); keys must not contain "/" (WHOTS = MOSEAN/WHOTS).
+# WHOTS = 3.355
+# SOFS = 3.3125
+
+[upstream]
+# Default upstream locations are derived as <out_root>/<stage>/... (repro_paths.UPSTREAM_DEFAULTS). Set a key only to run a
+# downstream stage against products produced elsewhere (for example the released copies in data/products/), e.g.
+# p2_dir = "/path/to/products/p2"
+# p1_events = "/path/to/products/p1/p1_events.csv"
+# p1b_dir = "/path/to/products/p1b"
+# p5_dir = "/path/to/products/p5-sss"
+
+[upstream_sha]
+# Expected SHA-256 of upstream inputs, used only with [options] check_upstream_sha = true (default = SHA-256 of the upstream
+# product of the reference run). In that mode a re-run of the upstream stage stops these stages (exit 3): inspect the new upstream
+# product, then paste its SHA-256 here; tools/fill_upstream_sha.py <out_root> prints all keys and values
+# (docs/reproduction.md, "Input-SHA gates").
+# Keys:
+#   p7d.{p5_events_csv,p5_summary_json}
+#   p8a.{p5_events_csv,p5_summary_json,p7a_events_jpl_csv,p7a_summary_json,p7c_events_csv}
+#   cal12.{p5_events_csv,p6_events_csv,p8a_events_wind_csv,p7e_spurs1_events_csv,p8b_events_csv}
+#   dw33post.{p4e,p4s,p3b,p3c}
+#   dw13a.dw13_meta
+# "p7d.p5_events_csv" = "<sha256 of the new p5_events.csv>"

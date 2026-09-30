@@ -1,0 +1,648 @@
+{
+ "version": "p7e-2026-09-27a",
+ "code_sha256": {
+  "p7e_piston_spurs1.py": "85335330da85bc53f32c6f9f0ae0f6d2a6ce9494cc7bd328725b8460e4170746",
+  "p6_spurs2_profile.py": "407d2ae245124f779b487fa6ecc5d8b4c22f5a5039acb4293173b42a1311f683",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213"
+ },
+ "data_info": {
+  "TN2018": {
+   "wind_hours_filled_from_sensor_height": 21,
+   "surfotter_files": [
+    {
+     "file": "piston-SurfOtter_RV-Thompson_20180830_R0.nc",
+     "depth_CTD": [
+      1.02,
+      2.45,
+      3.8800000000000003,
+      5.6000000000000005,
+      6.9
+     ],
+     "top_col": null,
+     "one_col": 0
+    },
+    {
+     "file": "piston-SurfOtter_RV-Thompson_20180922_R0.nc",
+     "depth_CTD": [
+      0.36,
+      1.8699999999999999,
+      2.83,
+      4.5,
+      6.5
+     ],
+     "top_col": 0,
+     "one_col": null
+    },
+    {
+     "file": "piston-SurfOtter_RV-Thompson_20181003_R0.nc",
+     "depth_CTD": [
+      0.36,
+      0.81,
+      1.16,
+      1.8699999999999999
+     ],
+     "top_col": 0,
+     "one_col": 2
+    }
+   ],
+   "wind_sensor_z": 18.0,
+   "tsg_z": 5.0
+  },
+  "SR2019": {
+   "wind_hours_filled_from_sensor_height": 25,
+   "surfotter_files": [
+    {
+     "file": "piston-SurfOtter_RV-Sally-Ride_20190907_R0.nc",
+     "depth_CTD": [
+      0.35,
+      1.16,
+      2.6300000000000003,
+      3.79,
+      5.3
+     ],
+     "top_col": 0,
+     "one_col": 1
+    },
+    {
+     "file": "piston-SurfOtter_RV-Sally-Ride_20190913_R0.nc",
+     "depth_CTD": [
+      0.35,
+      1.16,
+      2.6300000000000003,
+      3.79,
+      5.3
+     ],
+     "top_col": 0,
+     "one_col": 1
+    },
+    {
+     "file": "piston-SurfOtter_RV-Sally-Ride_20190921_R0.nc",
+     "depth_CTD": [
+      0.35,
+      1.16,
+      2.6,
+      3.6700000000000004,
+      5.24
+     ],
+     "top_col": 0,
+     "one_col": 1
+    }
+   ],
+   "wind_sensor_z": 14.75,
+   "tsg_z": 3.0
+  },
+  "S1M": {
+   "wind_sensor_z": 3.295,
+   "s086_depth": 0.865,
+   "ts_depth_index": {
+    "s21": 1,
+    "tsg5": 4
+   }
+  }
+ },
+ "piston": {
+  "primary": {
+   "cfg": {
+    "name": "primary",
+    "dry_h": 6,
+    "thr": 10.0,
+    "win": [
+     0,
+     6
+    ],
+    "sfc": "so_top",
+    "z_sfc": 0.0,
+    "t_cur": 1.0,
+    "disp_max": null,
+    "min_hours": 1
+   },
+   "n_events_all": 22,
+   "dropped": {},
+   "R_top": {
+    "n": 7,
+    "sum_obs": -0.14425,
+    "sum_rim": -3.53765,
+    "point": 0.04078,
+    "clusters": 4,
+    "ci95_cluster": [
+     -0.00874,
+     0.1763
+    ],
+    "ci95_event": [
+     -0.02087,
+     0.1609
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "evaluable": false,
+    "evaluable_conditions": {
+     "n>=15": false,
+     "clusters>=4": true,
+     "each_cruise>=3": false,
+     "frac_den_nonneg<=0.01": true
+    },
+    "per_cruise": {
+     "TN2018": 2,
+     "SR2019": 5
+    },
+    "loo_cruise": {
+     "drop_SR2019": 0.02738,
+     "drop_TN2018": 0.04809
+    }
+   },
+   "R_rel_tsg": {
+    "n": 7,
+    "sum_obs": -0.08806,
+    "sum_rim": -2.59518,
+    "point": 0.03393,
+    "clusters": 4,
+    "ci95_cluster": [
+     0.02141,
+     0.07163
+    ],
+    "ci95_event": [
+     0.0217,
+     0.06933
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "category": "supports R1 (surface also significantly smaller than RIM-3)"
+   },
+   "judgement": {
+    "category": "not evaluable",
+    "rule": "section 6, rule 1",
+    "robust": null,
+    "advection": null
+   }
+  },
+  "verdict": {
+   "category": "not evaluable",
+   "rule": "section 6, rule 1",
+   "robust": null,
+   "advection": null
+  },
+  "profile_R_by_layer": {
+   "so_top": {
+    "n": 7,
+    "sum_obs": -0.14425,
+    "sum_rim": -3.53765,
+    "point": 0.04078,
+    "clusters": 4,
+    "ci95_cluster": [
+     -0.00874,
+     0.1763
+    ],
+    "ci95_event": [
+     -0.02087,
+     0.1609
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "z_model_median": 0.35
+   },
+   "so_1m": {
+    "n": 3,
+    "sum_obs": 0.03132,
+    "sum_rim": -1.48444,
+    "point": -0.0211,
+    "clusters": 2,
+    "ci95_cluster": [
+     -0.14316,
+     -0.01036
+    ],
+    "ci95_event": [
+     -0.1695,
+     0.02349
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "z_model_median": 1.16
+   },
+   "tsg5": {
+    "n": 22,
+    "sum_obs": -0.12339,
+    "sum_rim": -1.62082,
+    "point": 0.07613,
+    "clusters": 9,
+    "ci95_cluster": [
+     -0.29169,
+     0.60961
+    ],
+    "ci95_event": [
+     -0.3493,
+     0.47855
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "z_model_median": 5.0
+   }
+  },
+  "Q_top_vs_1m": {
+   "n": 3,
+   "clusters": 2,
+   "R_so_top": 0.00217,
+   "R_so_top_ci95": [
+    -0.12235,
+    0.01144
+   ],
+   "R_so_1m": -0.0211,
+   "R_so_1m_ci95": [
+    -0.14316,
+    -0.01036
+   ],
+   "Q": -0.10301,
+   "Q_ci95": [
+    -1.10469,
+    0.85461
+   ],
+   "layer_ratio_obs": -0.13267,
+   "layer_ratio_obs_ci95": [
+    -1.44086,
+    0.94225
+   ],
+   "layer_ratio_rim": 1.28798,
+   "layer_ratio_rim_ci95": [
+    1.10255,
+    1.30431
+   ]
+  },
+  "rain_vs_dry": {
+   "rain": {
+    "n": 7,
+    "sum_obs": -0.27653,
+    "sum_rim": -4.15138,
+    "point": 0.06661,
+    "clusters": 4,
+    "ci95_cluster": [
+     0.01171,
+     0.15246
+    ],
+    "ci95_event": [
+     0.02008,
+     0.12658
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "hours": 28
+   },
+   "dry": {
+    "n": 7,
+    "sum_obs": 0.11625,
+    "sum_rim": -2.96077,
+    "point": -0.03926,
+    "clusters": 4,
+    "ci95_cluster": [
+     -0.06801,
+     0.04086
+    ],
+    "ci95_event": [
+     -0.30206,
+     0.06511
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "hours": 56
+   },
+   "paired": {
+    "n": 7,
+    "clusters": 4,
+    "R_rain": 0.06661,
+    "R_dry": -0.03926,
+    "ln_ratio": null,
+    "ln_ratio_ci95": [
+     -2.81471,
+     2.67629
+    ]
+   },
+   "reading": "not evaluable (in-rain group n < 8 or CI not computable)"
+  },
+  "sensitivity": {
+   "S1_dry24": {
+    "n": 3,
+    "clusters": 3,
+    "point": -0.01115,
+    "ci95_cluster": [
+     -0.15433,
+     0.12379
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 3,
+     "point": 0.05755,
+     "ci95_cluster": [
+      0.00999,
+      0.08645
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S2_dry12": {
+    "n": 5,
+    "clusters": 4,
+    "point": 0.02287,
+    "ci95_cluster": [
+     -0.09916,
+     0.12382
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 5,
+     "point": 0.04242,
+     "ci95_cluster": [
+      0.01496,
+      0.08149
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S3_thr5": {
+    "n": 9,
+    "clusters": 5,
+    "point": 0.05009,
+    "ci95_cluster": [
+     0.009,
+     0.23065
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 9,
+     "point": 0.0337,
+     "ci95_cluster": [
+      0.0205,
+      0.0644
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S4_win0_3": {
+    "n": 7,
+    "clusters": 4,
+    "point": 0.10019,
+    "ci95_cluster": [
+     0.00469,
+     0.48112
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 7,
+     "point": 0.06952,
+     "ci95_cluster": [
+      0.04403,
+      0.11824
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S5_win0_12": {
+    "n": 7,
+    "clusters": 4,
+    "point": -0.01093,
+    "ci95_cluster": [
+     -0.05506,
+     0.08541
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 7,
+     "point": 0.02896,
+     "ci95_cluster": [
+      0.02334,
+      0.05077
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S6_disp30": {
+    "n": 7,
+    "clusters": 4,
+    "point": 0.04078,
+    "ci95_cluster": [
+     -0.00874,
+     0.1763
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 7,
+     "point": 0.03393,
+     "ci95_cluster": [
+      0.02141,
+      0.07163
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S9_tcur1800": {
+    "n": 7,
+    "clusters": 4,
+    "point": 0.03485,
+    "ci95_cluster": [
+     -0.00735,
+     0.13924
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 7,
+     "point": 0.0282,
+     "ci95_cluster": [
+      0.01824,
+      0.05255
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   },
+   "S10_min4h": {
+    "n": 7,
+    "clusters": 4,
+    "point": 0.04078,
+    "ci95_cluster": [
+     -0.00874,
+     0.1763
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true,
+    "R_rel_tsg": {
+     "n": 7,
+     "point": 0.03393,
+     "ci95_cluster": [
+      0.02141,
+      0.07163
+     ],
+     "category": "supports R1 (surface also significantly smaller than RIM-3)"
+    }
+   }
+  },
+  "disp_km_primary": {
+   "median": 20.41579,
+   "max": 135.81808
+  }
+ },
+ "spurs1": {
+  "R_1m_obs_s086": {
+   "n": 13,
+   "sum_obs": -0.66934,
+   "sum_rim": -2.63825,
+   "point": 0.2537,
+   "clusters": 9,
+   "ci95_cluster": [
+    0.17799,
+    0.27853
+   ],
+   "ci95_event": [
+    0.18907,
+    0.34263
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "reading": "smaller than 0.30 (CI upper bound < 0.30)",
+   "ci_upper_lt_0p65": true,
+   "ci_contains_1": false,
+   "events_all": 13,
+   "dropped": {}
+  },
+  "info_variants": {
+   "s1_dry6": {
+    "n": 24,
+    "sum_obs": -2.22329,
+    "sum_rim": -5.28082,
+    "point": 0.42101,
+    "clusters": 9,
+    "ci95_cluster": [
+     0.26457,
+     0.62678
+    ],
+    "ci95_event": [
+     0.25588,
+     0.68849
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "reading": "compatible with 0.30 (95% cluster CI includes 0.30)",
+    "ci_upper_lt_0p65": true,
+    "ci_contains_1": false,
+    "events_all": 24,
+    "dropped": {}
+   },
+   "s1_win0_12": {
+    "n": 13,
+    "sum_obs": -0.95476,
+    "sum_rim": -2.98907,
+    "point": 0.31942,
+    "clusters": 9,
+    "ci95_cluster": [
+     0.2229,
+     0.37708
+    ],
+    "ci95_event": [
+     0.22306,
+     0.44777
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "reading": "compatible with 0.30 (95% cluster CI includes 0.30)",
+    "ci_upper_lt_0p65": true,
+    "ci_contains_1": false,
+    "events_all": 13,
+    "dropped": {}
+   },
+   "s1_thr5": {
+    "n": 18,
+    "sum_obs": -0.80278,
+    "sum_rim": -3.40089,
+    "point": 0.23605,
+    "clusters": 10,
+    "ci95_cluster": [
+     0.15898,
+     0.27146
+    ],
+    "ci95_event": [
+     0.17667,
+     0.30846
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "reading": "smaller than 0.30 (CI upper bound < 0.30)",
+    "ci_upper_lt_0p65": true,
+    "ci_contains_1": false,
+    "events_all": 18,
+    "dropped": {}
+   }
+  },
+  "layers_P1def": {
+   "s086": {
+    "n": 13,
+    "sum_obs": -0.66934,
+    "sum_rim": -2.63825,
+    "point": 0.2537,
+    "clusters": 9,
+    "ci95_cluster": [
+     0.17799,
+     0.27853
+    ],
+    "ci95_event": [
+     0.18907,
+     0.34263
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "z_model_median": 0.865
+   },
+   "s21": {
+    "n": 13,
+    "sum_obs": -0.45471,
+    "sum_rim": -1.49525,
+    "point": 0.30411,
+    "clusters": 9,
+    "ci95_cluster": [
+     0.17921,
+     0.51087
+    ],
+    "ci95_event": [
+     0.19789,
+     0.48397
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "z_model_median": 2.1
+   },
+   "tsg5": {
+    "n": 13,
+    "sum_obs": -0.31236,
+    "sum_rim": -0.49248,
+    "point": 0.63426,
+    "clusters": 9,
+    "ci95_cluster": [
+     0.28396,
+     1.4873
+    ],
+    "ci95_event": [
+     0.30554,
+     1.36822
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "z_model_median": 5.2
+   }
+  },
+  "R_rel_s086_minus_5p2m": {
+   "n": 13,
+   "sum_obs": -0.35716,
+   "sum_rim": -2.1472,
+   "point": 0.16634,
+   "clusters": 9,
+   "ci95_cluster": [
+    0.06498,
+    0.20668
+   ],
+   "ci95_event": [
+    0.0903,
+    0.30951
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "category": "supports R1 (surface also significantly smaller than RIM-3)"
+  }
+ },
+ "elapsed_s": 4.8
+}

@@ -1,0 +1,42 @@
+{
+ "version": "p7e-2026-09-27a",
+ "code_sha256": {
+  "p7e_piston_spurs1.py": "85335330da85bc53f32c6f9f0ae0f6d2a6ce9494cc7bd328725b8460e4170746",
+  "p6_spurs2_profile.py": "407d2ae245124f779b487fa6ecc5d8b4c22f5a5039acb4293173b42a1311f683",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213"
+ },
+ "written": "2026-09-27T12:02:00.120995+00:00",
+ "piston_so_top": {
+  "layer": "so_top",
+  "n": 7,
+  "clusters": 4,
+  "sum_x": -3.53765,
+  "mean_x": -0.50538,
+  "rms_x": 0.76347,
+  "n_ctrl_windows": 51,
+  "sd_ctrl_dS": 0.05519,
+  "se_R_if_sigma_0.1": 0.07479,
+  "se_R_if_sigma_0.2": 0.14958,
+  "se_R_if_sigma_0.4": 0.29915,
+  "se_R_ctrl": 0.04128,
+  "ci_halfwidth_ctrl": 0.0809
+ },
+ "spurs1_s086": {
+  "layer": "s086",
+  "n": 13,
+  "clusters": 9,
+  "sum_x": -2.63825,
+  "mean_x": -0.20294,
+  "rms_x": 0.34487,
+  "n_ctrl_windows": 1240,
+  "sd_ctrl_dS": 0.01805,
+  "se_R_if_sigma_0.1": 0.13666,
+  "se_R_if_sigma_0.2": 0.27333,
+  "se_R_if_sigma_0.4": 0.54666,
+  "se_R_ctrl": 0.02467,
+  "ci_halfwidth_ctrl": 0.04835
+ },
+ "note": "includes only the spread of model-side x and of dS in rain-free control windows; information only, does not change the interpretation"
+}

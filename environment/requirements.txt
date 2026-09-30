@@ -1,0 +1,34 @@
+# requirements.txt — Python packages of the pipeline (exact versions of the environment used for the reference runs).
+#
+# Source: `pip freeze` of the environment on the main workstation (macOS), cross-checked against the environment built on a
+#   Windows machine from the same list (that environment passed the p6 self-test). The full re-run of 2026-09-30 used
+#   NumPy 2.5.3. This file has not been installed into a fresh environment from scratch.
+# Interpreter: CPython 3.12 (3.12.13 recorded on Windows; minor version on the main workstation not recorded).
+# Native libraries: the netCDF4 1.7.4 wheel bundles netCDF-C 4.9.3 and HDF5 1.14.6 (recorded on Windows).
+# Install: python3.12 -m venv .venv && .venv/bin/python -m pip install --only-binary=:all: -r environment/requirements.txt
+# Stages P1, P1b and the download/archive stages use only the standard library; everything from P2 on needs these packages.
+# Small stages of the reference run (p3c, p4-explore, p4d, p4f, cal-*, dw33-post) used NumPy 2.4.2 on a laptop; p4c used a
+#   temporary environment with xarray and pandas (versions not recorded). Last-digit floating-point differences are therefore
+#   possible.
+autograd==1.9.1
+certifi==2026.7.22
+cftime==1.6.5
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.66.0
+gsw==3.6.23
+h5py==3.16.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+netCDF4==1.7.4
+numpy==2.5.3
+packaging==26.3
+pandas==3.0.6
+pillow==12.3.0
+PyCO2SYS==1.8.3.4
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+scipy==1.18.1
+six==1.17.0
+xarray==2026.7.0
+tzdata==2026.4 ; sys_platform == "win32"

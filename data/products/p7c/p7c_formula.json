@@ -1,0 +1,1040 @@
+{
+ "note": "synthetic event: 84 half-hours, t0 = half-hour 60, constant U10; gives the 0-6 h window dF (baseline = pre-rain 6 h median) per mm of rain; RIM = same formula as p2, RIM_lin = without saturation, G = conservative Gaussian (kappa=1); ratio_G_over_RIM ~ 1/M.",
+ "cases": {
+  "10mm_h_x1h": {
+   "rain_mm": 10.0,
+   "rows": [
+    {
+     "U10": 2.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0058483,
+      "RIMlin_per_mm": 0.0061726,
+      "G_per_mm": 0.0007298,
+      "ratio_G_over_RIM": 0.1248
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.004545,
+      "RIMlin_per_mm": 0.0047414,
+      "G_per_mm": 0.0005821,
+      "ratio_G_over_RIM": 0.1281
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0032922,
+      "RIMlin_per_mm": 0.0033887,
+      "G_per_mm": 0.0003735,
+      "ratio_G_over_RIM": 0.1135
+     },
+     "z5.0": {
+      "RIM_per_mm": 3.15e-05,
+      "RIMlin_per_mm": 3.15e-05,
+      "G_per_mm": 3.6e-06,
+      "ratio_G_over_RIM": 0.1136
+     },
+     "RIM_1m_over_0m": 0.5629,
+     "RIM_5m_over_1m": 0.0096,
+     "G_5m_over_1m": 0.0096,
+     "RIM_1m_decay_612_over_03": 0.7389,
+     "G_1m_decay_612_over_03": 0.8601,
+     "d0": 1.0
+    },
+    {
+     "U10": 3.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0026773,
+      "RIMlin_per_mm": 0.0027434,
+      "G_per_mm": 0.0004866,
+      "ratio_G_over_RIM": 0.1817
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0022182,
+      "RIMlin_per_mm": 0.0022653,
+      "G_per_mm": 0.000437,
+      "ratio_G_over_RIM": 0.197
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0018837,
+      "RIMlin_per_mm": 0.0019156,
+      "G_per_mm": 0.0003366,
+      "ratio_G_over_RIM": 0.1787
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001423,
+      "RIMlin_per_mm": 0.0001426,
+      "G_per_mm": 2.39e-05,
+      "ratio_G_over_RIM": 0.168
+     },
+     "RIM_1m_over_0m": 0.7036,
+     "RIM_5m_over_1m": 0.0755,
+     "G_5m_over_1m": 0.071,
+     "RIM_1m_decay_612_over_03": 0.5331,
+     "G_1m_decay_612_over_03": 0.5546,
+     "d0": 1.5
+    },
+    {
+     "U10": 4.0,
+     "z0.0": {
+      "RIM_per_mm": 0.001522,
+      "RIMlin_per_mm": 0.0015432,
+      "G_per_mm": 0.0003649,
+      "ratio_G_over_RIM": 0.2398
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.001292,
+      "RIMlin_per_mm": 0.001308,
+      "G_per_mm": 0.000343,
+      "ratio_G_over_RIM": 0.2655
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0011727,
+      "RIMlin_per_mm": 0.0011854,
+      "G_per_mm": 0.0002911,
+      "ratio_G_over_RIM": 0.2482
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002076,
+      "RIMlin_per_mm": 0.0002081,
+      "G_per_mm": 4.6e-05,
+      "ratio_G_over_RIM": 0.2216
+     },
+     "RIM_1m_over_0m": 0.7705,
+     "RIM_5m_over_1m": 0.177,
+     "G_5m_over_1m": 0.158,
+     "RIM_1m_decay_612_over_03": 0.4686,
+     "G_1m_decay_612_over_03": 0.454,
+     "d0": 2.0
+    },
+    {
+     "U10": 4.5,
+     "z0.0": {
+      "RIM_per_mm": 0.0012195,
+      "RIMlin_per_mm": 0.001233,
+      "G_per_mm": 0.0003244,
+      "ratio_G_over_RIM": 0.266
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0010422,
+      "RIMlin_per_mm": 0.0010526,
+      "G_per_mm": 0.0003088,
+      "ratio_G_over_RIM": 0.2963
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0009643,
+      "RIMlin_per_mm": 0.0009729,
+      "G_per_mm": 0.0002701,
+      "ratio_G_over_RIM": 0.2801
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002215,
+      "RIMlin_per_mm": 0.000222,
+      "G_per_mm": 5.44e-05,
+      "ratio_G_over_RIM": 0.2455
+     },
+     "RIM_1m_over_0m": 0.7907,
+     "RIM_5m_over_1m": 0.2297,
+     "G_5m_over_1m": 0.2014,
+     "RIM_1m_decay_612_over_03": 0.4519,
+     "G_1m_decay_612_over_03": 0.4279,
+     "d0": 2.225
+    },
+    {
+     "U10": 6.0,
+     "z0.0": {
+      "RIM_per_mm": 0.000705,
+      "RIMlin_per_mm": 0.0007095,
+      "G_per_mm": 0.0002433,
+      "ratio_G_over_RIM": 0.3451
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0006093,
+      "RIMlin_per_mm": 0.0006129,
+      "G_per_mm": 0.0002366,
+      "ratio_G_over_RIM": 0.3882
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0005826,
+      "RIMlin_per_mm": 0.0005858,
+      "G_per_mm": 0.0002185,
+      "ratio_G_over_RIM": 0.375
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002181,
+      "RIMlin_per_mm": 0.0002186,
+      "G_per_mm": 6.91e-05,
+      "ratio_G_over_RIM": 0.3167
+     },
+     "RIM_1m_over_0m": 0.8264,
+     "RIM_5m_over_1m": 0.3744,
+     "G_5m_over_1m": 0.3162,
+     "RIM_1m_decay_612_over_03": 0.425,
+     "G_1m_decay_612_over_03": 0.386,
+     "d0": 2.9
+    },
+    {
+     "U10": 7.8,
+     "z0.0": {
+      "RIM_per_mm": 0.0004466,
+      "RIMlin_per_mm": 0.0004484,
+      "G_per_mm": 0.0001871,
+      "ratio_G_over_RIM": 0.4191
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0003883,
+      "RIMlin_per_mm": 0.0003898,
+      "G_per_mm": 0.0001841,
+      "ratio_G_over_RIM": 0.474
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.000378,
+      "RIMlin_per_mm": 0.0003794,
+      "G_per_mm": 0.0001754,
+      "ratio_G_over_RIM": 0.4639
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001944,
+      "RIMlin_per_mm": 0.0001947,
+      "G_per_mm": 7.47e-05,
+      "ratio_G_over_RIM": 0.3843
+     },
+     "RIM_1m_over_0m": 0.8464,
+     "RIM_5m_over_1m": 0.5143,
+     "G_5m_over_1m": 0.4259,
+     "RIM_1m_decay_612_over_03": 0.4112,
+     "G_1m_decay_612_over_03": 0.3646,
+     "d0": 3.53
+    },
+    {
+     "U10": 8.0,
+     "z0.0": {
+      "RIM_per_mm": 0.000427,
+      "RIMlin_per_mm": 0.0004287,
+      "G_per_mm": 0.0001825,
+      "ratio_G_over_RIM": 0.4273
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0003715,
+      "RIMlin_per_mm": 0.0003728,
+      "G_per_mm": 0.0001796,
+      "ratio_G_over_RIM": 0.4835
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0003621,
+      "RIMlin_per_mm": 0.0003633,
+      "G_per_mm": 0.0001715,
+      "ratio_G_over_RIM": 0.4737
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.000191,
+      "RIMlin_per_mm": 0.0001913,
+      "G_per_mm": 7.49e-05,
+      "ratio_G_over_RIM": 0.3921
+     },
+     "RIM_1m_over_0m": 0.848,
+     "RIM_5m_over_1m": 0.5275,
+     "G_5m_over_1m": 0.4367,
+     "RIM_1m_decay_612_over_03": 0.4102,
+     "G_1m_decay_612_over_03": 0.3631,
+     "d0": 3.6
+    },
+    {
+     "U10": 10.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0003078,
+      "RIMlin_per_mm": 0.0003086,
+      "G_per_mm": 0.000146,
+      "ratio_G_over_RIM": 0.4743
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0002686,
+      "RIMlin_per_mm": 0.0002693,
+      "G_per_mm": 0.0001445,
+      "ratio_G_over_RIM": 0.538
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0002642,
+      "RIMlin_per_mm": 0.0002648,
+      "G_per_mm": 0.0001402,
+      "ratio_G_over_RIM": 0.5309
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001692,
+      "RIMlin_per_mm": 0.0001694,
+      "G_per_mm": 7.47e-05,
+      "ratio_G_over_RIM": 0.4415
+     },
+     "RIM_1m_over_0m": 0.8583,
+     "RIM_5m_over_1m": 0.6404,
+     "G_5m_over_1m": 0.5328,
+     "RIM_1m_decay_612_over_03": 0.4035,
+     "G_1m_decay_612_over_03": 0.3527,
+     "d0": 4.0
+    },
+    {
+     "U10": 11.6,
+     "z0.0": {
+      "RIM_per_mm": 0.0002654,
+      "RIMlin_per_mm": 0.0002661,
+      "G_per_mm": 0.0001258,
+      "ratio_G_over_RIM": 0.4741
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0002319,
+      "RIMlin_per_mm": 0.0002324,
+      "G_per_mm": 0.0001249,
+      "ratio_G_over_RIM": 0.5385
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0002291,
+      "RIMlin_per_mm": 0.0002296,
+      "G_per_mm": 0.0001221,
+      "ratio_G_over_RIM": 0.5331
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001622,
+      "RIMlin_per_mm": 0.0001624,
+      "G_per_mm": 7.29e-05,
+      "ratio_G_over_RIM": 0.4498
+     },
+     "RIM_1m_over_0m": 0.8632,
+     "RIM_5m_over_1m": 0.708,
+     "G_5m_over_1m": 0.5971,
+     "RIM_1m_decay_612_over_03": 0.4005,
+     "G_1m_decay_612_over_03": 0.348,
+     "d0": 4.0
+    },
+    {
+     "U10": 14.0,
+     "z0.0": {
+      "RIM_per_mm": 0.00022,
+      "RIMlin_per_mm": 0.0002205,
+      "G_per_mm": 0.0001043,
+      "ratio_G_over_RIM": 0.4739
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0001925,
+      "RIMlin_per_mm": 0.0001928,
+      "G_per_mm": 0.0001037,
+      "ratio_G_over_RIM": 0.5389
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0001909,
+      "RIMlin_per_mm": 0.0001912,
+      "G_per_mm": 0.0001021,
+      "ratio_G_over_RIM": 0.5351
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001491,
+      "RIMlin_per_mm": 0.0001493,
+      "G_per_mm": 6.91e-05,
+      "ratio_G_over_RIM": 0.4637
+     },
+     "RIM_1m_over_0m": 0.8677,
+     "RIM_5m_over_1m": 0.781,
+     "G_5m_over_1m": 0.6768,
+     "RIM_1m_decay_612_over_03": 0.3977,
+     "G_1m_decay_612_over_03": 0.3438,
+     "d0": 4.0
+    }
+   ],
+   "loglog_slope_U4.5_to_11.6": {
+    "RIM_per_mm_z0.0": -1.61,
+    "G_per_mm_z0.0": -1.0,
+    "RIM_per_mm_z0.5": -1.587,
+    "G_per_mm_z0.5": -0.956,
+    "RIM_per_mm_z1.0": -1.518,
+    "G_per_mm_z1.0": -0.838,
+    "RIM_per_mm_z5.0": -0.329,
+    "G_per_mm_z5.0": 0.309
+   }
+  },
+  "5mm_h_x3h": {
+   "rain_mm": 15.0,
+   "rows": [
+    {
+     "U10": 2.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0052318,
+      "RIMlin_per_mm": 0.0055298,
+      "G_per_mm": 0.0006568,
+      "ratio_G_over_RIM": 0.1255
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0039447,
+      "RIMlin_per_mm": 0.0041227,
+      "G_per_mm": 0.0005118,
+      "ratio_G_over_RIM": 0.1298
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0027492,
+      "RIMlin_per_mm": 0.0028371,
+      "G_per_mm": 0.0003108,
+      "ratio_G_over_RIM": 0.1131
+     },
+     "z5.0": {
+      "RIM_per_mm": 1.57e-05,
+      "RIMlin_per_mm": 1.57e-05,
+      "G_per_mm": 1.8e-06,
+      "ratio_G_over_RIM": 0.1125
+     },
+     "RIM_1m_over_0m": 0.5255,
+     "RIM_5m_over_1m": 0.0057,
+     "G_5m_over_1m": 0.0058,
+     "RIM_1m_decay_612_over_03": 1.4865,
+     "G_1m_decay_612_over_03": 1.6186,
+     "d0": 1.0
+    },
+    {
+     "U10": 3.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0024779,
+      "RIMlin_per_mm": 0.0025424,
+      "G_per_mm": 0.0004379,
+      "ratio_G_over_RIM": 0.1767
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0020078,
+      "RIMlin_per_mm": 0.0020528,
+      "G_per_mm": 0.0003892,
+      "ratio_G_over_RIM": 0.1938
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0016744,
+      "RIMlin_per_mm": 0.0017056,
+      "G_per_mm": 0.0002912,
+      "ratio_G_over_RIM": 0.1739
+     },
+     "z5.0": {
+      "RIM_per_mm": 9.2e-05,
+      "RIMlin_per_mm": 9.21e-05,
+      "G_per_mm": 1.48e-05,
+      "ratio_G_over_RIM": 0.1604
+     },
+     "RIM_1m_over_0m": 0.6757,
+     "RIM_5m_over_1m": 0.0549,
+     "G_5m_over_1m": 0.0508,
+     "RIM_1m_decay_612_over_03": 1.0161,
+     "G_1m_decay_612_over_03": 0.921,
+     "d0": 1.45
+    },
+    {
+     "U10": 4.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0014339,
+      "RIMlin_per_mm": 0.0014552,
+      "G_per_mm": 0.0003284,
+      "ratio_G_over_RIM": 0.229
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0011935,
+      "RIMlin_per_mm": 0.0012093,
+      "G_per_mm": 0.0003069,
+      "ratio_G_over_RIM": 0.2571
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0010723,
+      "RIMlin_per_mm": 0.0010849,
+      "G_per_mm": 0.0002559,
+      "ratio_G_over_RIM": 0.2387
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001532,
+      "RIMlin_per_mm": 0.0001536,
+      "G_per_mm": 3.18e-05,
+      "ratio_G_over_RIM": 0.2079
+     },
+     "RIM_1m_over_0m": 0.7478,
+     "RIM_5m_over_1m": 0.1429,
+     "G_5m_over_1m": 0.1243,
+     "RIM_1m_decay_612_over_03": 0.8758,
+     "G_1m_decay_612_over_03": 0.7147,
+     "d0": 1.9
+    },
+    {
+     "U10": 4.5,
+     "z0.0": {
+      "RIM_per_mm": 0.0011844,
+      "RIMlin_per_mm": 0.0011989,
+      "G_per_mm": 0.0002919,
+      "ratio_G_over_RIM": 0.2465
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0009932,
+      "RIMlin_per_mm": 0.0010042,
+      "G_per_mm": 0.0002766,
+      "ratio_G_over_RIM": 0.2785
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0009116,
+      "RIMlin_per_mm": 0.0009207,
+      "G_per_mm": 0.0002386,
+      "ratio_G_over_RIM": 0.2617
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001747,
+      "RIMlin_per_mm": 0.0001752,
+      "G_per_mm": 3.9e-05,
+      "ratio_G_over_RIM": 0.2234
+     },
+     "RIM_1m_over_0m": 0.7697,
+     "RIM_5m_over_1m": 0.1916,
+     "G_5m_over_1m": 0.1635,
+     "RIM_1m_decay_612_over_03": 0.8402,
+     "G_1m_decay_612_over_03": 0.6635,
+     "d0": 2.05
+    },
+    {
+     "U10": 6.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0007318,
+      "RIMlin_per_mm": 0.0007373,
+      "G_per_mm": 0.0002189,
+      "ratio_G_over_RIM": 0.2992
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0006214,
+      "RIMlin_per_mm": 0.0006256,
+      "G_per_mm": 0.0002123,
+      "ratio_G_over_RIM": 0.3417
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0005915,
+      "RIMlin_per_mm": 0.0005953,
+      "G_per_mm": 0.0001946,
+      "ratio_G_over_RIM": 0.329
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001969,
+      "RIMlin_per_mm": 0.0001974,
+      "G_per_mm": 5.31e-05,
+      "ratio_G_over_RIM": 0.2698
+     },
+     "RIM_1m_over_0m": 0.8083,
+     "RIM_5m_over_1m": 0.3329,
+     "G_5m_over_1m": 0.2729,
+     "RIM_1m_decay_612_over_03": 0.7834,
+     "G_1m_decay_612_over_03": 0.5838,
+     "d0": 2.5
+    },
+    {
+     "U10": 7.8,
+     "z0.0": {
+      "RIM_per_mm": 0.0005262,
+      "RIMlin_per_mm": 0.0005291,
+      "G_per_mm": 0.0001684,
+      "ratio_G_over_RIM": 0.32
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0004498,
+      "RIMlin_per_mm": 0.000452,
+      "G_per_mm": 0.0001654,
+      "ratio_G_over_RIM": 0.3677
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0004367,
+      "RIMlin_per_mm": 0.0004388,
+      "G_per_mm": 0.0001568,
+      "ratio_G_over_RIM": 0.3591
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002081,
+      "RIMlin_per_mm": 0.0002086,
+      "G_per_mm": 6.01e-05,
+      "ratio_G_over_RIM": 0.2889
+     },
+     "RIM_1m_over_0m": 0.8299,
+     "RIM_5m_over_1m": 0.4765,
+     "G_5m_over_1m": 0.3833,
+     "RIM_1m_decay_612_over_03": 0.7546,
+     "G_1m_decay_612_over_03": 0.5443,
+     "d0": 2.68
+    },
+    {
+     "U10": 8.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0005094,
+      "RIMlin_per_mm": 0.000512,
+      "G_per_mm": 0.0001642,
+      "ratio_G_over_RIM": 0.3224
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0004356,
+      "RIMlin_per_mm": 0.0004377,
+      "G_per_mm": 0.0001614,
+      "ratio_G_over_RIM": 0.3705
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0004235,
+      "RIMlin_per_mm": 0.0004255,
+      "G_per_mm": 0.0001534,
+      "ratio_G_over_RIM": 0.3623
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002077,
+      "RIMlin_per_mm": 0.0002083,
+      "G_per_mm": 6.05e-05,
+      "ratio_G_over_RIM": 0.2913
+     },
+     "RIM_1m_over_0m": 0.8314,
+     "RIM_5m_over_1m": 0.4904,
+     "G_5m_over_1m": 0.3944,
+     "RIM_1m_decay_612_over_03": 0.7526,
+     "G_1m_decay_612_over_03": 0.5416,
+     "d0": 2.7
+    },
+    {
+     "U10": 10.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0003673,
+      "RIMlin_per_mm": 0.0003687,
+      "G_per_mm": 0.0001314,
+      "ratio_G_over_RIM": 0.3577
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0003151,
+      "RIMlin_per_mm": 0.0003162,
+      "G_per_mm": 0.0001299,
+      "ratio_G_over_RIM": 0.4123
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0003095,
+      "RIMlin_per_mm": 0.0003105,
+      "G_per_mm": 0.0001257,
+      "ratio_G_over_RIM": 0.4063
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001887,
+      "RIMlin_per_mm": 0.0001891,
+      "G_per_mm": 6.22e-05,
+      "ratio_G_over_RIM": 0.3294
+     },
+     "RIM_1m_over_0m": 0.8426,
+     "RIM_5m_over_1m": 0.6097,
+     "G_5m_over_1m": 0.4948,
+     "RIM_1m_decay_612_over_03": 0.7385,
+     "G_1m_decay_612_over_03": 0.5227,
+     "d0": 3.0
+    },
+    {
+     "U10": 11.6,
+     "z0.0": {
+      "RIM_per_mm": 0.0003168,
+      "RIMlin_per_mm": 0.0003178,
+      "G_per_mm": 0.0001132,
+      "ratio_G_over_RIM": 0.3575
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0002722,
+      "RIMlin_per_mm": 0.000273,
+      "G_per_mm": 0.0001123,
+      "ratio_G_over_RIM": 0.4126
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0002686,
+      "RIMlin_per_mm": 0.0002694,
+      "G_per_mm": 0.0001096,
+      "ratio_G_over_RIM": 0.4081
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001832,
+      "RIMlin_per_mm": 0.0001835,
+      "G_per_mm": 6.17e-05,
+      "ratio_G_over_RIM": 0.3368
+     },
+     "RIM_1m_over_0m": 0.8479,
+     "RIM_5m_over_1m": 0.6821,
+     "G_5m_over_1m": 0.563,
+     "RIM_1m_decay_612_over_03": 0.7321,
+     "G_1m_decay_612_over_03": 0.5142,
+     "d0": 3.0
+    },
+    {
+     "U10": 14.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0002626,
+      "RIMlin_per_mm": 0.0002633,
+      "G_per_mm": 9.38e-05,
+      "ratio_G_over_RIM": 0.3573
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.000226,
+      "RIMlin_per_mm": 0.0002265,
+      "G_per_mm": 9.33e-05,
+      "ratio_G_over_RIM": 0.4129
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0002239,
+      "RIMlin_per_mm": 0.0002244,
+      "G_per_mm": 9.17e-05,
+      "ratio_G_over_RIM": 0.4097
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001704,
+      "RIMlin_per_mm": 0.0001707,
+      "G_per_mm": 5.95e-05,
+      "ratio_G_over_RIM": 0.349
+     },
+     "RIM_1m_over_0m": 0.8526,
+     "RIM_5m_over_1m": 0.7611,
+     "G_5m_over_1m": 0.6489,
+     "RIM_1m_decay_612_over_03": 0.7264,
+     "G_1m_decay_612_over_03": 0.5066,
+     "d0": 3.0
+    }
+   ],
+   "loglog_slope_U4.5_to_11.6": {
+    "RIM_per_mm_z0.0": -1.393,
+    "G_per_mm_z0.0": -1.0,
+    "RIM_per_mm_z0.5": -1.367,
+    "G_per_mm_z0.5": -0.952,
+    "RIM_per_mm_z1.0": -1.29,
+    "G_per_mm_z1.0": -0.822,
+    "RIM_per_mm_z5.0": 0.05,
+    "G_per_mm_z5.0": 0.484
+   }
+  },
+  "20mm_h_x0.5h": {
+   "rain_mm": 10.0,
+   "rows": [
+    {
+     "U10": 2.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0058756,
+      "RIMlin_per_mm": 0.0063156,
+      "G_per_mm": 0.0007465,
+      "ratio_G_over_RIM": 0.1271
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0046075,
+      "RIMlin_per_mm": 0.00488,
+      "G_per_mm": 0.0005983,
+      "ratio_G_over_RIM": 0.1299
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0033823,
+      "RIMlin_per_mm": 0.0035148,
+      "G_per_mm": 0.0003882,
+      "ratio_G_over_RIM": 0.1148
+     },
+     "z5.0": {
+      "RIM_per_mm": 3.76e-05,
+      "RIMlin_per_mm": 3.76e-05,
+      "G_per_mm": 4.3e-06,
+      "ratio_G_over_RIM": 0.1142
+     },
+     "RIM_1m_over_0m": 0.5757,
+     "RIM_5m_over_1m": 0.0111,
+     "G_5m_over_1m": 0.0111,
+     "RIM_1m_decay_612_over_03": 0.6546,
+     "G_1m_decay_612_over_03": 0.7667,
+     "d0": 1.0
+    },
+    {
+     "U10": 3.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0027159,
+      "RIMlin_per_mm": 0.0028069,
+      "G_per_mm": 0.0004977,
+      "ratio_G_over_RIM": 0.1833
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0022613,
+      "RIMlin_per_mm": 0.002328,
+      "G_per_mm": 0.000448,
+      "ratio_G_over_RIM": 0.1981
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0019312,
+      "RIMlin_per_mm": 0.0019757,
+      "G_per_mm": 0.0003472,
+      "ratio_G_over_RIM": 0.1798
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001577,
+      "RIMlin_per_mm": 0.0001582,
+      "G_per_mm": 2.66e-05,
+      "ratio_G_over_RIM": 0.1689
+     },
+     "RIM_1m_over_0m": 0.7111,
+     "RIM_5m_over_1m": 0.0817,
+     "G_5m_over_1m": 0.0766,
+     "RIM_1m_decay_612_over_03": 0.4804,
+     "G_1m_decay_612_over_03": 0.5075,
+     "d0": 1.5
+    },
+    {
+     "U10": 4.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0015496,
+      "RIMlin_per_mm": 0.0015789,
+      "G_per_mm": 0.0003733,
+      "ratio_G_over_RIM": 0.2409
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0013206,
+      "RIMlin_per_mm": 0.0013435,
+      "G_per_mm": 0.0003513,
+      "ratio_G_over_RIM": 0.266
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0012021,
+      "RIMlin_per_mm": 0.00122,
+      "G_per_mm": 0.0002991,
+      "ratio_G_over_RIM": 0.2488
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002236,
+      "RIMlin_per_mm": 0.0002243,
+      "G_per_mm": 4.98e-05,
+      "ratio_G_over_RIM": 0.2227
+     },
+     "RIM_1m_over_0m": 0.7757,
+     "RIM_5m_over_1m": 0.186,
+     "G_5m_over_1m": 0.1665,
+     "RIM_1m_decay_612_over_03": 0.4245,
+     "G_1m_decay_612_over_03": 0.4197,
+     "d0": 2.0
+    },
+    {
+     "U10": 4.5,
+     "z0.0": {
+      "RIM_per_mm": 0.0012159,
+      "RIMlin_per_mm": 0.0012338,
+      "G_per_mm": 0.0003318,
+      "ratio_G_over_RIM": 0.2729
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0010429,
+      "RIMlin_per_mm": 0.0010572,
+      "G_per_mm": 0.0003162,
+      "ratio_G_over_RIM": 0.3032
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0009671,
+      "RIMlin_per_mm": 0.0009788,
+      "G_per_mm": 0.0002773,
+      "ratio_G_over_RIM": 0.2868
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002314,
+      "RIMlin_per_mm": 0.0002321,
+      "G_per_mm": 5.83e-05,
+      "ratio_G_over_RIM": 0.2522
+     },
+     "RIM_1m_over_0m": 0.7954,
+     "RIM_5m_over_1m": 0.2393,
+     "G_5m_over_1m": 0.2102,
+     "RIM_1m_decay_612_over_03": 0.4098,
+     "G_1m_decay_612_over_03": 0.3967,
+     "d0": 2.275
+    },
+    {
+     "U10": 6.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0006736,
+      "RIMlin_per_mm": 0.0006791,
+      "G_per_mm": 0.0002488,
+      "ratio_G_over_RIM": 0.3694
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0005842,
+      "RIMlin_per_mm": 0.0005887,
+      "G_per_mm": 0.0002421,
+      "ratio_G_over_RIM": 0.4145
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0005592,
+      "RIMlin_per_mm": 0.0005632,
+      "G_per_mm": 0.000224,
+      "ratio_G_over_RIM": 0.4006
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0002147,
+      "RIMlin_per_mm": 0.0002153,
+      "G_per_mm": 7.3e-05,
+      "ratio_G_over_RIM": 0.34
+     },
+     "RIM_1m_over_0m": 0.8302,
+     "RIM_5m_over_1m": 0.3839,
+     "G_5m_over_1m": 0.3259,
+     "RIM_1m_decay_612_over_03": 0.386,
+     "G_1m_decay_612_over_03": 0.3595,
+     "d0": 3.1
+    },
+    {
+     "U10": 7.8,
+     "z0.0": {
+      "RIM_per_mm": 0.0003941,
+      "RIMlin_per_mm": 0.0003959,
+      "G_per_mm": 0.0001914,
+      "ratio_G_over_RIM": 0.4858
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0003438,
+      "RIMlin_per_mm": 0.0003453,
+      "G_per_mm": 0.0001883,
+      "ratio_G_over_RIM": 0.5478
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0003349,
+      "RIMlin_per_mm": 0.0003363,
+      "G_per_mm": 0.0001796,
+      "ratio_G_over_RIM": 0.5364
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.000175,
+      "RIMlin_per_mm": 0.0001753,
+      "G_per_mm": 7.82e-05,
+      "ratio_G_over_RIM": 0.4467
+     },
+     "RIM_1m_over_0m": 0.8498,
+     "RIM_5m_over_1m": 0.5225,
+     "G_5m_over_1m": 0.4354,
+     "RIM_1m_decay_612_over_03": 0.3737,
+     "G_1m_decay_612_over_03": 0.3404,
+     "d0": 4.09
+    },
+    {
+     "U10": 8.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0003742,
+      "RIMlin_per_mm": 0.0003759,
+      "G_per_mm": 0.0001866,
+      "ratio_G_over_RIM": 0.4987
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0003266,
+      "RIMlin_per_mm": 0.000328,
+      "G_per_mm": 0.0001838,
+      "ratio_G_over_RIM": 0.5626
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0003186,
+      "RIMlin_per_mm": 0.0003199,
+      "G_per_mm": 0.0001757,
+      "ratio_G_over_RIM": 0.5514
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001707,
+      "RIMlin_per_mm": 0.000171,
+      "G_per_mm": 7.83e-05,
+      "ratio_G_over_RIM": 0.4589
+     },
+     "RIM_1m_over_0m": 0.8514,
+     "RIM_5m_over_1m": 0.5358,
+     "G_5m_over_1m": 0.4456,
+     "RIM_1m_decay_612_over_03": 0.3728,
+     "G_1m_decay_612_over_03": 0.3391,
+     "d0": 4.2
+    },
+    {
+     "U10": 10.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0002519,
+      "RIMlin_per_mm": 0.0002526,
+      "G_per_mm": 0.0001493,
+      "ratio_G_over_RIM": 0.5928
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0002205,
+      "RIMlin_per_mm": 0.0002211,
+      "G_per_mm": 0.0001478,
+      "ratio_G_over_RIM": 0.6705
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0002169,
+      "RIMlin_per_mm": 0.0002176,
+      "G_per_mm": 0.0001436,
+      "ratio_G_over_RIM": 0.6618
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001404,
+      "RIMlin_per_mm": 0.0001406,
+      "G_per_mm": 7.76e-05,
+      "ratio_G_over_RIM": 0.5532
+     },
+     "RIM_1m_over_0m": 0.8611,
+     "RIM_5m_over_1m": 0.6473,
+     "G_5m_over_1m": 0.5404,
+     "RIM_1m_decay_612_over_03": 0.3668,
+     "G_1m_decay_612_over_03": 0.3298,
+     "d0": 5.0
+    },
+    {
+     "U10": 11.6,
+     "z0.0": {
+      "RIM_per_mm": 0.0002172,
+      "RIMlin_per_mm": 0.0002178,
+      "G_per_mm": 0.0001287,
+      "ratio_G_over_RIM": 0.5926
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.0001904,
+      "RIMlin_per_mm": 0.0001909,
+      "G_per_mm": 0.0001278,
+      "ratio_G_over_RIM": 0.671
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0001881,
+      "RIMlin_per_mm": 0.0001886,
+      "G_per_mm": 0.000125,
+      "ratio_G_over_RIM": 0.6644
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001342,
+      "RIMlin_per_mm": 0.0001344,
+      "G_per_mm": 7.56e-05,
+      "ratio_G_over_RIM": 0.5631
+     },
+     "RIM_1m_over_0m": 0.866,
+     "RIM_5m_over_1m": 0.7135,
+     "G_5m_over_1m": 0.6048,
+     "RIM_1m_decay_612_over_03": 0.3642,
+     "G_1m_decay_612_over_03": 0.3256,
+     "d0": 5.0
+    },
+    {
+     "U10": 14.0,
+     "z0.0": {
+      "RIM_per_mm": 0.0001801,
+      "RIMlin_per_mm": 0.0001804,
+      "G_per_mm": 0.0001066,
+      "ratio_G_over_RIM": 0.5923
+     },
+     "z0.5": {
+      "RIM_per_mm": 0.000158,
+      "RIMlin_per_mm": 0.0001584,
+      "G_per_mm": 0.0001061,
+      "ratio_G_over_RIM": 0.6714
+     },
+     "z1.0": {
+      "RIM_per_mm": 0.0001567,
+      "RIMlin_per_mm": 0.0001571,
+      "G_per_mm": 0.0001045,
+      "ratio_G_over_RIM": 0.6669
+     },
+     "z5.0": {
+      "RIM_per_mm": 0.0001231,
+      "RIMlin_per_mm": 0.0001232,
+      "G_per_mm": 7.14e-05,
+      "ratio_G_over_RIM": 0.5798
+     },
+     "RIM_1m_over_0m": 0.8701,
+     "RIM_5m_over_1m": 0.7856,
+     "G_5m_over_1m": 0.6833,
+     "RIM_1m_decay_612_over_03": 0.3618,
+     "G_1m_decay_612_over_03": 0.3217,
+     "d0": 5.0
+    }
+   ],
+   "loglog_slope_U4.5_to_11.6": {
+    "RIM_per_mm_z0.0": -1.819,
+    "G_per_mm_z0.0": -1.0,
+    "RIM_per_mm_z0.5": -1.796,
+    "G_per_mm_z0.5": -0.957,
+    "RIM_per_mm_z1.0": -1.729,
+    "G_per_mm_z1.0": -0.841,
+    "RIM_per_mm_z5.0": -0.575,
+    "G_per_mm_z5.0": 0.274
+   }
+  }
+ }
+}

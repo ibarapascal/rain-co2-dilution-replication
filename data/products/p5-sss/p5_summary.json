@@ -1,0 +1,356 @@
+{
+ "script": "p5_sss_sat.py",
+ "version": "p5-2026-09-27a6",
+ "run_utc": "2026-09-27T09:21:14Z",
+ "code_sha256": {
+  "p5_sss_sat.py": "c35c3a06a892af347e19b041028a2c7f52c09bdf9502d29cb3eeb5e942f4ae3e",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p4_mech.py": "cc2ff18f23e58761c9401062cf2ba0997a6b029b53cfa25eb896309769bed38f"
+ },
+ "events": {
+  "events_646": 646,
+  "events_smap_era": 317,
+  "rebuild_d4": 34,
+  "stations_coords": {
+   "TAO165E": [
+    0.0,
+    165.0
+   ],
+   "TAO8S165E": [
+    -8.0,
+    165.0
+   ],
+   "BOBOA": [
+    15.0,
+    90.0
+   ],
+   "TAO170W": [
+    0.0,
+    -170.0
+   ],
+   "TAO155W": [
+    0.0,
+    -155.0
+   ],
+   "TAO140W": [
+    0.0,
+    -140.0
+   ],
+   "TAO125W": [
+    0.0,
+    -125.0
+   ],
+   "TAO110W": [
+    0.0,
+    -110.0
+   ],
+   "KEO": [
+    32.28,
+    144.58
+   ],
+   "MOSEAN/WHOTS": [
+    22.67,
+    -157.98
+   ],
+   "Papa": [
+    50.13,
+    -144.84
+   ],
+   "SOFS": [
+    -46.8,
+    142.0
+   ],
+   "Stratus": [
+    -19.7,
+    -85.6
+   ]
+  }
+ },
+ "passes_loaded": {
+  "TAO110W": 4,
+  "MOSEAN/WHOTS": 100,
+  "KEO": 274,
+  "TAO140W": 8,
+  "BOBOA": 74,
+  "SOFS": 4,
+  "Papa": 209,
+  "TAO165E": 81,
+  "TAO170W": 28
+ },
+ "power_file": "p5_power.json (written before this file)",
+ "primary": {
+  "label": "R_sfc main (A70, [0,12) h, reference [-72,0) h)",
+  "n": 87,
+  "stations": 7,
+  "clusters_station_season": 21,
+  "clusters_station": 7,
+  "sum_num": -49.37508,
+  "sum_den": -29.87495,
+  "R": 1.65273,
+  "ci95_station_season": [
+   1.05832,
+   2.3908
+  ],
+  "ci95_station": [
+   0.65053,
+   2.53267
+  ],
+  "frac_boot_den_nonneg": 0.0,
+  "jackknife_station": {
+   "G": 7,
+   "evaluable": true,
+   "loo_range": [
+    1.36085,
+    2.08115
+   ],
+   "se": 0.54419,
+   "t_ci95": [
+    0.32114,
+    2.98431
+   ]
+  },
+  "slope_through_origin": 0.68046,
+  "slope_ci95_station_season": [
+   0.28852,
+   1.11963
+  ],
+  "evaluable": true
+ },
+ "verdict": {
+  "category": "supports R2 (surface consistent with or larger than RIM-3)",
+  "robust": "robust",
+  "rule": "section 6, rule 3"
+ },
+ "primary_excluded_reasons": {
+  "no_valid_post:none": 216,
+  "no_valid_post:center_qc": 13,
+  "no_valid_post:cmorph_missing": 1
+ },
+ "third_party_mooring": {
+  "n": 87,
+  "R_sfc_subset": 1.65273,
+  "R_sfc_subset_ci95": [
+   1.05832,
+   2.3908
+  ],
+  "R_1m_matched": 0.26586,
+  "R_1m_matched_ci95": [
+   0.15132,
+   0.38574
+  ],
+  "Q_Rsfc_over_R1m": 6.21664,
+  "Q_ci95": [
+   3.16672,
+   12.78416
+  ],
+  "reading": "Q ~ 1 under R1; Q ~ 1/R_1m under R2 (descriptive, not used for interpretation)",
+  "R_05m_matched": 0.17102,
+  "n_05m": 86,
+  "sat_over_obs1m_direct": 9.83364
+ },
+ "descriptive": {
+  "scale_foot_over_pix0": 0.93737,
+  "per_station": {
+   "TAO165E": {
+    "n": 10,
+    "R": 0.47272
+   },
+   "BOBOA": {
+    "n": 10,
+    "R": 1.20372
+   },
+   "TAO170W": {
+    "n": 2,
+    "R": -1.09775
+   },
+   "TAO140W": {
+    "n": 1,
+    "R": 1.66694
+   },
+   "KEO": {
+    "n": 30,
+    "R": 2.10337
+   },
+   "MOSEAN/WHOTS": {
+    "n": 14,
+    "R": 1.27031
+   },
+   "Papa": {
+    "n": 20,
+    "R": 3.45635
+   }
+  },
+  "dt_post_h_median": 5.302,
+  "n_ref_median": 2.0,
+  "imerg_center_post_median": 0.83312,
+  "cmorph_foot_rain_post_median": 0.91029
+ },
+ "sensitivity": {
+  "S1": {
+   "label": "A40 (central cell only)",
+   "n": 87,
+   "clusters": 21,
+   "R": 1.53883,
+   "ci95": [
+    0.894,
+    2.33366
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 216,
+    "no_valid_post:center_qc": 13,
+    "no_valid_post:cmorph_missing": 1
+   }
+  },
+  "S2": {
+   "label": "post-rain window [0,6) h",
+   "n": 47,
+   "clusters": 18,
+   "R": 2.69094,
+   "ci95": [
+    1.51331,
+    4.41241
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 264,
+    "no_valid_post:center_qc": 6
+   }
+  },
+  "S3": {
+   "label": "post-rain window [0,24) h",
+   "n": 135,
+   "clusters": 23,
+   "R": 1.01348,
+   "ci95": [
+    0.48207,
+    1.63278
+   ],
+   "evaluable": true,
+   "category": "cannot distinguish",
+   "same_as_primary": false,
+   "excluded_reasons": {
+    "no_valid_post:none": 166,
+    "no_valid_post:center_qc": 13,
+    "no_valid_post:cmorph_missing": 3
+   }
+  },
+  "S4": {
+   "label": "QC keep bit 10",
+   "n": 93,
+   "clusters": 22,
+   "R": 1.76911,
+   "ci95": [
+    1.12306,
+    2.51394
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 216,
+    "no_valid_post:center_qc": 7,
+    "no_valid_post:cmorph_missing": 1
+   }
+  },
+  "S5": {
+   "label": "additionally exclude bit 12 (wind > 15)",
+   "n": 85,
+   "clusters": 21,
+   "R": 1.71252,
+   "ci95": [
+    1.07803,
+    2.45291
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 216,
+    "no_valid_post:center_qc": 15,
+    "no_valid_post:cmorph_missing": 1
+   }
+  },
+  "S6": {
+   "label": "reference uses the same node only",
+   "n": 80,
+   "clusters": 20,
+   "R": 1.53239,
+   "ci95": [
+    0.92384,
+    2.30882
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 216,
+    "no_valid_post:center_qc": 13,
+    "no_valid_ref": 7,
+    "no_valid_post:cmorph_missing": 1
+   }
+  },
+  "S7": {
+   "label": "RIM driven by footprint-mean rainfall",
+   "n": 87,
+   "clusters": 21,
+   "R": 1.61223,
+   "ci95": [
+    1.03564,
+    2.30802
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 216,
+    "no_valid_post:center_qc": 13,
+    "no_valid_post:cmorph_missing": 1
+   }
+  },
+  "S8": {
+   "label": "excluding KEO, Papa",
+   "n": 37,
+   "clusters": 13,
+   "R": 0.79986,
+   "ci95": [
+    0.14645,
+    1.29223
+   ],
+   "evaluable": true,
+   "category": "cannot distinguish",
+   "same_as_primary": false,
+   "excluded_reasons": {
+    "no_valid_post:none": 117,
+    "no_valid_post:center_qc": 5,
+    "no_valid_post:cmorph_missing": 1
+   }
+  },
+  "S9": {
+   "label": "reference window [-48,0) h",
+   "n": 82,
+   "clusters": 20,
+   "R": 1.71836,
+   "ci95": [
+    1.07593,
+    2.50745
+   ],
+   "evaluable": true,
+   "category": "supports R2 (surface consistent with or larger than RIM-3)",
+   "same_as_primary": true,
+   "excluded_reasons": {
+    "no_valid_post:none": 216,
+    "no_valid_post:center_qc": 13,
+    "no_valid_ref": 5,
+    "no_valid_post:cmorph_missing": 1
+   }
+  }
+ },
+ "nature": "exploratory; blind to satellite SSS"
+}

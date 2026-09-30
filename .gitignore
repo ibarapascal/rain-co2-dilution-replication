@@ -1,0 +1,14 @@
+# local configuration and credentials (never commit a token file)
+code/config.local.toml
+code/config.*.local.toml
+*.token
+# third-party files fetched by code/tools/fetch_witte_capsule.py (not redistributed)
+code/pipeline/witte_capsule/
+# Python and OS artifacts
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# run outputs if placed inside the repository
+runs/
+out/

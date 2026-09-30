@@ -1,0 +1,46 @@
+{
+ "n": 96,
+ "n_with_formal_sigma": 96,
+ "clusters_station_season": 22,
+ "stations": [
+  "BOBOA",
+  "KEO",
+  "MOSEAN/WHOTS",
+  "Papa",
+  "TAO140W",
+  "TAO165E",
+  "TAO170W"
+ ],
+ "sum_x": -34.43878,
+ "mean_x": -0.35874,
+ "rms_x": 0.89498,
+ "median_formal_sigma_event": 0.30766,
+ "note": "formal uncertainties assume independence and omit geophysical representativeness error and real changes in the reference period, hence optimistic; information only, does not change the interpretation",
+ "expected_se_R_formal": 0.10315,
+ "expected_ci_halfwidth_formal": 0.20217,
+ "can_exclude_065_if_R_true_0.3": true,
+ "can_exclude_065_if_R_true_1.0": true,
+ "min_resolvable_abs_diff_from_065": 0.20217,
+ "excluded_reasons": {
+  "no_valid_post:none": 216,
+  "no_valid_post:cmorph_missing": 2,
+  "no_valid_post:center_qc": 3
+ },
+ "sigma_note": "JPL smap_sss_uncertainty = likelihood FWHM estimate (user guide §3.4.1), defined differently from the RSS formal uncertainty; information only",
+ "groups_imerg": {
+  "n_rain": 65,
+  "n_dry": 26,
+  "n_missing": 5
+ },
+ "pairs": {
+  "n": 85,
+  "clusters": 21,
+  "sum_x_R": -29.70908,
+  "sum_x_J": -31.39495,
+  "n_rain": 57,
+  "n_dry": 24,
+  "excluded": {
+   "no_common_post": 232
+  }
+ }
+}

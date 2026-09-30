@@ -1,0 +1,29 @@
+{
+ "n": 87,
+ "n_with_formal_sigma": 87,
+ "clusters_station_season": 21,
+ "stations": [
+  "BOBOA",
+  "KEO",
+  "MOSEAN/WHOTS",
+  "Papa",
+  "TAO140W",
+  "TAO165E",
+  "TAO170W"
+ ],
+ "sum_x": -29.87495,
+ "mean_x": -0.34339,
+ "rms_x": 0.81851,
+ "median_formal_sigma_event": 0.26302,
+ "note": "formal uncertainties assume independence and omit geophysical representativeness error and real changes in the reference period, hence optimistic; information only, does not change the interpretation",
+ "expected_se_R_formal": 0.10518,
+ "expected_ci_halfwidth_formal": 0.20615,
+ "can_exclude_065_if_R_true_0.3": true,
+ "can_exclude_065_if_R_true_1.0": true,
+ "min_resolvable_abs_diff_from_065": 0.20615,
+ "excluded_reasons": {
+  "no_valid_post:none": 216,
+  "no_valid_post:center_qc": 13,
+  "no_valid_post:cmorph_missing": 1
+ }
+}

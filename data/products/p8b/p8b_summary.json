@@ -1,0 +1,631 @@
+{
+ "version": "p8b-2026-09-27a",
+ "code_sha256": {
+  "p8b_ladyamber_layer_ratio.py": "4313c4ce3f465b8d32910f1939c239bd4868c111e6889bf69b59b92e095b1893",
+  "p6_spurs2_profile.py": "407d2ae245124f779b487fa6ecc5d8b4c22f5a5039acb4293173b42a1311f683",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213"
+ },
+ "data_info": {
+  "LA2": {
+   "file": "SPURS2_LadyAmber2.nc",
+   "wind_factor": 0.9514254484700051,
+   "layer_valid_hours": {
+    "snake": null,
+    "la1m": 1335,
+    "tsg5": 1385
+   },
+   "rain_valid_hours": 1383,
+   "rain_strict_valid_hours": 955,
+   "wind_valid_hours": 1383
+  },
+  "LA3": {
+   "file": "SPURS2_LadyAmber3.nc",
+   "wind_factor": 0.9514254484700051,
+   "layer_valid_hours": {
+    "snake": null,
+    "la1m": null,
+    "tsg5": 1106
+   },
+   "rain_valid_hours": 1097,
+   "rain_strict_valid_hours": 294,
+   "wind_valid_hours": 1087
+  },
+  "LA4": {
+   "file": "SPURS2_LadyAmber4.nc",
+   "wind_factor": 0.9514254484700051,
+   "layer_valid_hours": {
+    "snake": null,
+    "la1m": 555,
+    "tsg5": 555
+   },
+   "rain_valid_hours": 552,
+   "rain_strict_valid_hours": 390,
+   "wind_valid_hours": 550
+  },
+  "LA5": {
+   "file": "SPURS2_LadyAmber5.nc",
+   "wind_factor": 0.9514254484700051,
+   "layer_valid_hours": {
+    "snake": 104,
+    "la1m": 1043,
+    "tsg5": 1043
+   },
+   "rain_valid_hours": 1037,
+   "rain_strict_valid_hours": 623,
+   "wind_valid_hours": 1035
+  },
+  "LA6": {
+   "file": "SPURS2_LadyAmber6.nc",
+   "wind_factor": 0.9514254484700051,
+   "layer_valid_hours": {
+    "snake": null,
+    "la1m": null,
+    "tsg5": null
+   },
+   "rain_valid_hours": 996,
+   "rain_strict_valid_hours": 828,
+   "wind_valid_hours": 995
+  },
+  "LA7": {
+   "file": "SPURS2_LadyAmber7.nc",
+   "wind_factor": 0.9514254484700051,
+   "layer_valid_hours": {
+    "snake": 26,
+    "la1m": 869,
+    "tsg5": null
+   },
+   "rain_valid_hours": 867,
+   "rain_strict_valid_hours": 535,
+   "wind_valid_hours": 858
+  }
+ },
+ "primary": {
+  "cfg": {
+   "name": "primary",
+   "dry_h": 6,
+   "thr": 10.0,
+   "win": [
+    0,
+    6
+   ],
+   "sfc": "snake",
+   "z_sfc": 0.0,
+   "t_cur": 1.0,
+   "disp_max": null,
+   "min_hours": 1,
+   "rain": "on"
+  },
+  "n_events_all": 30,
+  "dropped": {
+   "wind_gap": 1
+  },
+  "Q_L": {
+   "n": 0,
+   "note": "fewer than 3 events, not computed",
+   "clusters": 0,
+   "per_cruise": {},
+   "ci95_cluster": [
+    null,
+    null
+   ],
+   "ci95_event": [
+    null,
+    null
+   ],
+   "point": null,
+   "evaluable": false,
+   "evaluable_conditions": {}
+  },
+  "judgement": {
+   "category": "not evaluable",
+   "rule": "6.1 rule 1",
+   "robust": null
+  }
+ },
+ "verdict": {
+  "category": "not evaluable",
+  "rule": "6.1 rule 1",
+  "robust": null
+ },
+ "R_sfc_obs": {
+  "n": 0,
+  "note": "fewer than 3 events, not computed",
+  "per_cruise": {},
+  "evaluable": false,
+  "category_P6_threshold": "not evaluable"
+ },
+ "R_1m_obs": {
+  "n": 27,
+  "sum_obs": -3.78803,
+  "sum_rim": -8.88178,
+  "point": 0.4265,
+  "clusters": 9,
+  "ci95_cluster": [
+   0.26241,
+   0.57684
+  ],
+  "ci95_event": [
+   0.20237,
+   0.65357
+  ],
+  "frac_boot_den_nonneg": 0.0,
+  "per_cruise": {
+   "LA2": 13,
+   "LA4": 5,
+   "LA7": 9
+  },
+  "evaluable": true,
+  "evaluable_conditions": {
+   "n>=15": true,
+   "clusters>=4": true,
+   ">=2_cruises_with>=3": true,
+   "frac_den_nonneg<=0.01": true
+  },
+  "loo_cruise": {
+   "drop_LA2": 0.47164,
+   "drop_LA4": 0.31317,
+   "drop_LA7": 0.50238
+  },
+  "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+ },
+ "R_2m_obs": {
+  "n": 21,
+  "sum_obs": -2.29707,
+  "sum_rim": -4.24135,
+  "point": 0.54159,
+  "clusters": 9,
+  "ci95_cluster": [
+   0.33076,
+   0.70935
+  ],
+  "ci95_event": [
+   0.17083,
+   0.96913
+  ],
+  "frac_boot_den_nonneg": 0.0,
+  "per_cruise": {
+   "LA2": 13,
+   "LA3": 3,
+   "LA4": 5
+  },
+  "evaluable": true,
+  "evaluable_conditions": {
+   "n>=15": true,
+   "clusters>=4": true,
+   ">=2_cruises_with>=3": true,
+   "frac_den_nonneg<=0.01": true
+  },
+  "loo_cruise": {
+   "drop_LA2": 0.69229,
+   "drop_LA3": 0.58606,
+   "drop_LA4": 0.39933
+  }
+ },
+ "Q_12_shape": {
+  "n": 18,
+  "clusters": 7,
+  "per_cruise": {
+   "LA2": 13,
+   "LA4": 5
+  },
+  "sum_obs_a": -3.48801,
+  "sum_rim_a": -6.94296,
+  "sum_obs_b": -2.36359,
+  "sum_rim_b": -4.03304,
+  "R_la1m": 0.50238,
+  "R_la1m_ci95": [
+   0.3412,
+   0.64967
+  ],
+  "R_tsg5": 0.58606,
+  "R_tsg5_ci95": [
+   0.41129,
+   0.75882
+  ],
+  "point": 0.85722,
+  "ci95_cluster": [
+   0.77172,
+   0.9529
+  ],
+  "ci95_event": [
+   0.7089,
+   1.3212
+  ],
+  "loo_cruise": {
+   "drop_LA2": 0.84748,
+   "drop_LA4": 0.8395
+  },
+  "layer_ratio_obs": 1.47572,
+  "layer_ratio_obs_ci95": [
+   1.14865,
+   1.82647
+  ],
+  "layer_ratio_rim": 1.72152,
+  "layer_ratio_rim_ci95": [
+   1.3831,
+   2.02772
+  ],
+  "frac_boot_rim_a_nonneg": 0.0,
+  "frac_boot_rim_b_nonneg": 0.0,
+  "frac_boot_obs_b_nonneg": 0.0,
+  "reading": "observed freshening deeper than RIM-3"
+ },
+ "rain_vs_dry": {
+  "R_sfc": {
+   "rain": {
+    "n": 0,
+    "evaluable": false,
+    "point": null,
+    "hours": 0
+   },
+   "dry": {
+    "n": 0,
+    "evaluable": false,
+    "point": null,
+    "hours": 0
+   },
+   "reading": "not evaluable (in-rain group n < 8 or CI not computable)"
+  },
+  "R_1m": {
+   "rain": {
+    "n": 27,
+    "sum_obs": -3.76614,
+    "sum_rim": -8.57157,
+    "point": 0.43938,
+    "clusters": 9,
+    "ci95_cluster": [
+     0.29582,
+     0.59286
+    ],
+    "ci95_event": [
+     0.183,
+     0.77351
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "hours": 136
+   },
+   "dry": {
+    "n": 27,
+    "sum_obs": -1.82568,
+    "sum_rim": -10.00678,
+    "point": 0.18244,
+    "clusters": 9,
+    "ci95_cluster": [
+     -0.01952,
+     0.44572
+    ],
+    "ci95_event": [
+     -0.07867,
+     0.50972
+    ],
+    "frac_boot_den_nonneg": 0.0,
+    "hours": 188
+   },
+   "paired": {
+    "n": 27,
+    "clusters": 9,
+    "R_rain": 0.43938,
+    "R_dry": 0.18244,
+    "ln_ratio": 0.87891,
+    "ln_ratio_ci95": [
+     0.06382,
+     2.60794
+    ]
+   },
+   "reading": "G1: in situ surface freshening during rain is smaller than RIM-3; the P5 in-rain overpass ratio 1.98 is not reproduced in situ"
+  },
+  "Q_L": {
+   "rain": {
+    "n": 0,
+    "note": "fewer than 3 events, not computed",
+    "clusters": 0,
+    "per_cruise": {},
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "ci95_event": [
+     null,
+     null
+    ],
+    "point": null,
+    "reading": "not evaluable (n < 8)"
+   },
+   "dry": {
+    "n": 0,
+    "note": "fewer than 3 events, not computed",
+    "clusters": 0,
+    "per_cruise": {},
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "ci95_event": [
+     null,
+     null
+    ],
+    "point": null,
+    "reading": "not evaluable (n < 8)"
+   }
+  }
+ },
+ "R_rel2_sfc_minus_2m": {
+  "n": 0,
+  "evaluable": false,
+  "point": null,
+  "category": "not evaluable"
+ },
+ "sensitivity": {
+  "S1_dry24": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 11,
+    "point": 0.34981,
+    "ci95_cluster": [
+     0.20438,
+     0.49165
+    ],
+    "evaluable": false,
+    "reading": "not evaluable"
+   }
+  },
+  "S2_dry12": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 20,
+    "point": 0.42328,
+    "ci95_cluster": [
+     0.22478,
+     0.58968
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S3_thr5": {
+   "Q_L": {
+    "n": 1,
+    "clusters": 1,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 36,
+    "point": 0.59572,
+    "ci95_cluster": [
+     0.29783,
+     1.84365
+    ],
+    "evaluable": true,
+    "reading": "not on the same side as P2 (CI upper bound >= 0.65); CI includes 0.30"
+   }
+  },
+  "S4_win0_3": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 27,
+    "point": 0.575,
+    "ci95_cluster": [
+     0.25546,
+     1.07387
+    ],
+    "evaluable": true,
+    "reading": "not on the same side as P2 (CI upper bound >= 0.65); CI includes 0.30"
+   }
+  },
+  "S5_win0_12": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 27,
+    "point": 0.31454,
+    "ci95_cluster": [
+     0.15243,
+     0.53266
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S6_disp30": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 17,
+    "point": 0.44461,
+    "ci95_cluster": [
+     0.26875,
+     0.61307
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S8_z001": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 27,
+    "point": 0.4265,
+    "ci95_cluster": [
+     0.26241,
+     0.57684
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S9_tcur1800": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 27,
+    "point": 0.35753,
+    "ci95_cluster": [
+     0.21732,
+     0.48636
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S10_min4h": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 27,
+    "point": 0.4265,
+    "ci95_cluster": [
+     0.26241,
+     0.57684
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S11_rain_strict": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 26,
+    "point": 0.43918,
+    "ci95_cluster": [
+     0.26311,
+     0.59306
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  },
+  "S12_acc_le150": {
+   "Q_L": {
+    "n": 0,
+    "clusters": 0,
+    "point": null,
+    "ci95_cluster": [
+     null,
+     null
+    ],
+    "evaluable": false,
+    "category": "not evaluable",
+    "same_as_primary": true
+   },
+   "R_1m": {
+    "n": 26,
+    "point": 0.44523,
+    "ci95_cluster": [
+     0.27988,
+     0.58565
+    ],
+    "evaluable": true,
+    "reading": "same side as P2 (CI upper bound < 0.65); CI includes 0.30"
+   }
+  }
+ },
+ "disp_km_primary": {
+  "median": 28.04138,
+  "max": 56.44121
+ },
+ "elapsed_s": 23.7
+}

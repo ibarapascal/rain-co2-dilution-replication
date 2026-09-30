@@ -1,0 +1,45 @@
+{
+ "pair": {
+  "n": 0,
+  "clusters": 0,
+  "per_cruise": {},
+  "sum_rim_sfc": null,
+  "sum_rim_1m": null
+ },
+ "sfc_all": {
+  "n": 0,
+  "clusters": 0,
+  "per_cruise": {},
+  "sum_rim": null
+ },
+ "one_m_all": {
+  "n": 27,
+  "clusters": 9,
+  "per_cruise": {
+   "LA2": 13,
+   "LA4": 5,
+   "LA7": 9
+  },
+  "sum_rim": -8.88178
+ },
+ "ctrl_snake": {
+  "n_windows": 2,
+  "sd_ctrl_dS": null,
+  "se_R_ctrl": null
+ },
+ "ctrl_la1m": {
+  "n_windows": 380,
+  "sd_ctrl_dS": 0.14666,
+  "se_R_ctrl": 0.0858
+ },
+ "note": "includes only the number of events, model-side sum x and the spread of observed dS in rain-free control windows; information only, does not change the interpretation",
+ "version": "p8b-2026-09-27a",
+ "code_sha256": {
+  "p8b_ladyamber_layer_ratio.py": "4313c4ce3f465b8d32910f1939c239bd4868c111e6889bf69b59b92e095b1893",
+  "p6_spurs2_profile.py": "407d2ae245124f779b487fa6ecc5d8b4c22f5a5039acb4293173b42a1311f683",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213"
+ },
+ "written": "2026-09-27T13:13:24.929726+00:00"
+}

@@ -1,0 +1,1001 @@
+{
+ "script": "p7d_p5_timebin_ci.py",
+ "version": "p7d-2026-09-27a",
+ "run_utc": "2026-09-27T10:40:44Z",
+ "code_sha256": {
+  "p7d_p5_timebin_ci.py": "d865148a5b04b16cbca54f0a60bae557d3d07ae47b35dc00e0a627ba55d1975e",
+  "p5_sss_sat.py": "c35c3a06a892af347e19b041028a2c7f52c09bdf9502d29cb3eeb5e942f4ae3e",
+  "raw_store.py": "8b8cc392dbca5f82b463665cc0ca9ee632155980059ec5171e78b7deb58694d0",
+  "p1_events.py": "c43ae5c97908f7cf557afe9f3fc1d855378268c29efb5110ad5f791678278ce1",
+  "p1b_extend.py": "f686d954341f460cf50a2cb0e2fd8a578ce19a1ae90b19a6f9e72a91fd024213",
+  "p2_rim_test.py": "2e784452c99704b7b77cc82a496f5ffdf8751a11170b6d2838d9364eec8cf495",
+  "p4_mech.py": "cc2ff18f23e58761c9401062cf2ba0997a6b029b53cfa25eb896309769bed38f"
+ },
+ "inputs": {
+  "p5_events_sha256": "7a6d70758d575d180d9f0100579a9b7f6bc014350c9080ca9b5ab84ffd6985fa",
+  "p5_summary_sha256": "e5f66e65fb13d812683eee58c0f9182906f51f1cd3356247bd284bd00385ab4f"
+ },
+ "boot": {
+  "B": 10000,
+  "seed": 20260926,
+  "threshold": 0.65,
+  "den_nonneg_max": 0.01
+ },
+ "selftest": [
+  {
+   "name": "synthetic ratio 0.3 point estimate",
+   "ok": true,
+   "detail": "0.3"
+  },
+  {
+   "name": "synthetic ratio 0.3 class",
+   "ok": true,
+   "detail": "compatible with R1, incompatible with R2"
+  },
+  {
+   "name": "synthetic ratio 1.0 point estimate",
+   "ok": true,
+   "detail": "1.0"
+  },
+  {
+   "name": "synthetic ratio 1.0 class",
+   "ok": true,
+   "detail": "compatible with R2, incompatible with R1"
+  },
+  {
+   "name": "rule: upper < 0.65 -> 1",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: lower > 0.65 -> 2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: straddles -> 3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: unstable denominator -> 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rule: upper exactly 0.65 -> 3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "CSV rows 87",
+   "ok": true,
+   "detail": "87"
+  },
+  {
+   "name": "R versus p5_summary",
+   "ok": true,
+   "detail": "1.65273 vs 1.65273"
+  },
+  {
+   "name": "R versus the reference value 1.65273",
+   "ok": true,
+   "detail": "1.65273"
+  },
+  {
+   "name": "ci95_station_season versus p5_summary",
+   "ok": true,
+   "detail": "[1.05832, 2.3908] vs [1.05832, 2.3908]"
+  },
+  {
+   "name": "ci95_station_season versus reference value",
+   "ok": true,
+   "detail": "[1.05832, 2.3908] vs [1.05832, 2.3908]"
+  },
+  {
+   "name": "ci95_station versus p5_summary",
+   "ok": true,
+   "detail": "[0.65053, 2.53267] vs [0.65053, 2.53267]"
+  },
+  {
+   "name": "ci95_station versus reference value",
+   "ok": true,
+   "detail": "[0.65053, 2.53267] vs [0.65053, 2.53267]"
+  },
+  {
+   "name": "jackknife-t versus p5_summary",
+   "ok": true,
+   "detail": "[0.32114, 2.98431]"
+  },
+  {
+   "name": "clusters / stations",
+   "ok": true,
+   "detail": "21/7/7"
+  },
+  {
+   "name": "T1 n and point estimate reproduced",
+   "ok": true,
+   "detail": "n 16 R 3.5220"
+  },
+  {
+   "name": "T2 n and point estimate reproduced",
+   "ok": true,
+   "detail": "n 31 R 2.5111"
+  },
+  {
+   "name": "T3 n and point estimate reproduced",
+   "ok": true,
+   "detail": "n 23 R 0.8007"
+  },
+  {
+   "name": "T4 n and point estimate reproduced",
+   "ok": true,
+   "detail": "n 17 R 0.8698"
+  },
+  {
+   "name": "W1 n and point estimate reproduced",
+   "ok": true,
+   "detail": "n 58 R 1.9834"
+  },
+  {
+   "name": "W0 n, sum x, sum y reproduced",
+   "ok": true,
+   "detail": "n 25 Σx -1.7088 Σy 6.4540"
+  }
+ ],
+ "primary_reproduced": {
+  "label": "all 87 (reproduces the P5 main result)",
+  "n": 87,
+  "stations": 7,
+  "clusters_station_season": 21,
+  "clusters_station": 7,
+  "sum_num": -49.37508,
+  "sum_den": -29.87495,
+  "R": 1.65273,
+  "ci95_station_season": [
+   1.05832,
+   2.3908
+  ],
+  "ci95_station": [
+   0.65053,
+   2.53267
+  ],
+  "frac_boot_den_nonneg": 0.0,
+  "jackknife_station": {
+   "G": 7,
+   "evaluable": true,
+   "loo_range": [
+    1.36085,
+    2.08115
+   ],
+   "se": 0.54419,
+   "t_ci95": [
+    0.32114,
+    2.98431
+   ]
+  },
+  "slope_through_origin": 0.68046,
+  "slope_ci95_station_season": [
+   0.28852,
+   1.11964
+  ],
+  "p5_gate_met": true,
+  "kind": "selftest",
+  "judgement": {
+   "category_code": 2,
+   "category": "compatible with R2, incompatible with R1",
+   "station_cluster_category": "compatible with R2, incompatible with R1",
+   "station_same_side": true,
+   "jackknife_category": "cannot distinguish in this class",
+   "jackknife_same_side": false,
+   "ci_ss_contains_0.3": false,
+   "ci_ss_contains_1": false,
+   "ci_st_contains_0.3": false,
+   "ci_st_contains_1": true,
+   "jk_contains_0.3": false,
+   "jk_contains_1": true
+  }
+ },
+ "main": {
+  "T1": {
+   "label": "T1 overpass [0,3) h after rain",
+   "n": 16,
+   "stations": 5,
+   "clusters_station_season": 8,
+   "clusters_station": 5,
+   "sum_num": -8.17761,
+   "sum_den": -2.32187,
+   "R": 3.52199,
+   "ci95_station_season": [
+    0.76307,
+    12.95958
+   ],
+   "ci95_station": [
+    1.19891,
+    16.74854
+   ],
+   "frac_boot_den_nonneg": 0.0012,
+   "jackknife_station": {
+    "G": 5,
+    "evaluable": true,
+    "loo_range": [
+     2.27966,
+     5.74105
+    ],
+    "se": 2.52158,
+    "t_ci95": [
+     -3.47905,
+     10.52302
+    ]
+   },
+   "slope_through_origin": 1.26166,
+   "slope_ci95_station_season": [
+    -0.73413,
+    2.93242
+   ],
+   "p5_gate_met": false,
+   "kind": "main",
+   "judgement": {
+    "category_code": 2,
+    "category": "compatible with R2, incompatible with R1",
+    "station_cluster_category": "compatible with R2, incompatible with R1",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": false,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": false,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "T2": {
+   "label": "T2 overpass [3,6) h after rain",
+   "n": 31,
+   "stations": 5,
+   "clusters_station_season": 16,
+   "clusters_station": 5,
+   "sum_num": -26.94948,
+   "sum_den": -10.73196,
+   "R": 2.51114,
+   "ci95_station_season": [
+    1.13679,
+    4.38661
+   ],
+   "ci95_station": [
+    0.68396,
+    4.63613
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 5,
+    "evaluable": true,
+    "loo_range": [
+     1.89651,
+     3.2533
+    ],
+    "se": 0.89105,
+    "t_ci95": [
+     0.0372,
+     4.98508
+    ]
+   },
+   "slope_through_origin": 0.56783,
+   "slope_ci95_station_season": [
+    0.07681,
+    2.55025
+   ],
+   "p5_gate_met": true,
+   "kind": "main",
+   "judgement": {
+    "category_code": 2,
+    "category": "compatible with R2, incompatible with R1",
+    "station_cluster_category": "compatible with R2, incompatible with R1",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": false,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": false,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "T3": {
+   "label": "T3 overpass [6,9) h after rain",
+   "n": 23,
+   "stations": 4,
+   "clusters_station_season": 10,
+   "clusters_station": 4,
+   "sum_num": -4.43786,
+   "sum_den": -5.54248,
+   "R": 0.8007,
+   "ci95_station_season": [
+    -4.89485,
+    2.66908
+   ],
+   "ci95_station": [
+    -15.04006,
+    1.36794
+   ],
+   "frac_boot_den_nonneg": 0.0251,
+   "jackknife_station": {
+    "G": 4,
+    "evaluable": true,
+    "loo_range": [
+     -1.58967,
+     1.16146
+    ],
+    "se": 1.9363,
+    "t_ci95": [
+     -5.36147,
+     6.96286
+    ]
+   },
+   "slope_through_origin": 0.6866,
+   "slope_ci95_station_season": [
+    -1.71813,
+    2.03091
+   ],
+   "p5_gate_met": false,
+   "kind": "main",
+   "judgement": {
+    "category_code": 0,
+    "category": "not evaluable (unstable denominator or interval not computable)",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": null,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": null,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "T4": {
+   "label": "T4 overpass [9,12) h after rain",
+   "n": 17,
+   "stations": 6,
+   "clusters_station_season": 12,
+   "clusters_station": 6,
+   "sum_num": -9.81014,
+   "sum_den": -11.27864,
+   "R": 0.8698,
+   "ci95_station_season": [
+    0.21477,
+    1.92351
+   ],
+   "ci95_station": [
+    0.27203,
+    2.56206
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 6,
+    "evaluable": true,
+    "loo_range": [
+     0.6118,
+     1.27529
+    ],
+    "se": 0.45674,
+    "t_ci95": [
+     -0.30429,
+     2.04388
+    ]
+   },
+   "slope_through_origin": 0.70725,
+   "slope_ci95_station_season": [
+    0.23722,
+    1.78069
+   ],
+   "p5_gate_met": false,
+   "kind": "main",
+   "judgement": {
+    "category_code": 3,
+    "category": "cannot distinguish in this class",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": true,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "W1": {
+   "label": "W1 overpass central cell IMERG > 0.1 mm/h",
+   "n": 58,
+   "stations": 6,
+   "clusters_station_season": 18,
+   "clusters_station": 6,
+   "sum_num": -46.48195,
+   "sum_den": -23.43607,
+   "R": 1.98335,
+   "ci95_station_season": [
+    1.22641,
+    3.27871
+   ],
+   "ci95_station": [
+    0.8161,
+    4.46603
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 6,
+    "evaluable": true,
+    "loo_range": [
+     1.54949,
+     2.70782
+    ],
+    "se": 0.77922,
+    "t_ci95": [
+     -0.01969,
+     3.98639
+    ]
+   },
+   "slope_through_origin": 0.53321,
+   "slope_ci95_station_season": [
+    0.24578,
+    1.27147
+   ],
+   "p5_gate_met": true,
+   "kind": "main",
+   "judgement": {
+    "category_code": 2,
+    "category": "compatible with R2, incompatible with R1",
+    "station_cluster_category": "compatible with R2, incompatible with R1",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": false,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": false,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "W0": {
+   "label": "W0 overpass central cell IMERG <= 0.1 mm/h",
+   "n": 25,
+   "stations": 6,
+   "clusters_station_season": 16,
+   "clusters_station": 6,
+   "sum_num": 6.45399,
+   "sum_den": -1.70881,
+   "R": -3.7769,
+   "ci95_station_season": [
+    -19.58402,
+    2.20923
+   ],
+   "ci95_station": [
+    -10.79162,
+    -0.34252
+   ],
+   "frac_boot_den_nonneg": 0.0263,
+   "jackknife_station": {
+    "G": 6,
+    "evaluable": true,
+    "loo_range": [
+     -6.01143,
+     -2.371
+    ],
+    "se": 2.78574,
+    "t_ci95": [
+     -10.93786,
+     3.38407
+    ]
+   },
+   "slope_through_origin": -1.18618,
+   "slope_ci95_station_season": [
+    -2.78766,
+    -0.26311
+   ],
+   "p5_gate_met": false,
+   "kind": "main",
+   "judgement": {
+    "category_code": 0,
+    "category": "not evaluable (unstable denominator or interval not computable)",
+    "station_cluster_category": "compatible with R1, incompatible with R2",
+    "station_same_side": null,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": null,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": false,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  }
+ },
+ "descriptive": {
+  "D1_6to12": {
+   "label": "D1 [6,12) h combined",
+   "n": 40,
+   "stations": 6,
+   "clusters_station_season": 16,
+   "clusters_station": 6,
+   "sum_num": -14.24799,
+   "sum_den": -16.82112,
+   "R": 0.84703,
+   "ci95_station_season": [
+    -0.05912,
+    1.57597
+   ],
+   "ci95_station": [
+    0.1264,
+    1.54328
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 6,
+    "evaluable": true,
+    "loo_range": [
+     0.52574,
+     1.05561
+    ],
+    "se": 0.40127,
+    "t_ci95": [
+     -0.18448,
+     1.87854
+    ]
+   },
+   "slope_through_origin": 0.7023,
+   "slope_ci95_station_season": [
+    0.22486,
+    1.09084
+   ],
+   "p5_gate_met": true,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 3,
+    "category": "cannot distinguish in this class",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": true,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "D2_T1_noKEOPapa": {
+   "label": "D2 T1 [0,3) h excluding KEO/Papa",
+   "n": 6,
+   "stations": 3,
+   "clusters_station_season": 4,
+   "clusters_station": 3,
+   "sum_num": -6.47998,
+   "sum_den": -0.79238,
+   "R": 8.17785,
+   "ci95_station_season": [
+    -56.21665,
+    471.89556
+   ],
+   "ci95_station": [
+    -56.21665,
+    20.92169
+   ],
+   "frac_boot_den_nonneg": 0.1088,
+   "jackknife_station": {
+    "G": 3,
+    "evaluable": true,
+    "loo_range": [
+     4.69612,
+     52.71456
+    ],
+    "se": 31.54686,
+    "t_ci95": [
+     -127.55735,
+     143.91304
+    ]
+   },
+   "slope_through_origin": 1.36659,
+   "slope_ci95_station_season": [
+    -2.22698,
+    10.07031
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 0,
+    "category": "not evaluable (unstable denominator or interval not computable)",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": null,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": null,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "D2_T2_noKEOPapa": {
+   "label": "D2 T2 [3,6) h excluding KEO/Papa",
+   "n": 13,
+   "stations": 3,
+   "clusters_station_season": 9,
+   "clusters_station": 3,
+   "sum_num": -2.71028,
+   "sum_den": -3.77588,
+   "R": 0.71779,
+   "ci95_station_season": [
+    -0.47131,
+    4.84075
+   ],
+   "ci95_station": [
+    0.35171,
+    1.94176
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 3,
+    "evaluable": true,
+    "loo_range": [
+     0.64821,
+     0.83673
+    ],
+    "se": 0.11026,
+    "t_ci95": [
+     0.24338,
+     1.19219
+    ]
+   },
+   "slope_through_origin": -0.00305,
+   "slope_ci95_station_season": [
+    -0.08788,
+    5.30364
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 3,
+    "category": "cannot distinguish in this class",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": true,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "D2_T3_noKEOPapa": {
+   "label": "D2 T3 [6,9) h excluding KEO/Papa",
+   "n": 6,
+   "stations": 2,
+   "clusters_station_season": 4,
+   "clusters_station": 2,
+   "sum_num": 2.25637,
+   "sum_den": -0.15002,
+   "R": -15.04006,
+   "ci95_station_season": [
+    -43.88638,
+    -10.39369
+   ],
+   "ci95_station": [
+    -24.29698,
+    -13.86224
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 2,
+    "evaluable": false
+   },
+   "slope_through_origin": -5.57012,
+   "slope_ci95_station_season": [
+    -31.92724,
+    -4.04193
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 1,
+    "category": "compatible with R1, incompatible with R2",
+    "station_cluster_category": "compatible with R1, incompatible with R2",
+    "station_same_side": true,
+    "jackknife_category": "jackknife not computable",
+    "jackknife_same_side": null,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": false,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": false,
+    "jk_contains_0.3": null,
+    "jk_contains_1": null
+   }
+  },
+  "D2_T4_noKEOPapa": {
+   "label": "D2 T4 [9,12) h excluding KEO/Papa",
+   "n": 12,
+   "stations": 4,
+   "clusters_station_season": 8,
+   "clusters_station": 4,
+   "sum_num": -4.7821,
+   "sum_den": -9.92919,
+   "R": 0.48162,
+   "ci95_station_season": [
+    -1.10005,
+    0.87217
+   ],
+   "ci95_station": [
+    -0.82908,
+    0.87288
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 4,
+    "evaluable": true,
+    "loo_range": [
+     0.14558,
+     0.62451
+    ],
+    "se": 0.325,
+    "t_ci95": [
+     -0.55268,
+     1.51592
+    ]
+   },
+   "slope_through_origin": 0.67414,
+   "slope_ci95_station_season": [
+    0.00139,
+    1.06395
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 3,
+    "category": "cannot distinguish in this class",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": true,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": false,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": false,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "D2_D1_noKEOPapa": {
+   "label": "D2 D1 [6,12) h excluding KEO/Papa",
+   "n": 18,
+   "stations": 4,
+   "clusters_station_season": 9,
+   "clusters_station": 4,
+   "sum_num": -2.52573,
+   "sum_den": -10.07922,
+   "R": 0.25059,
+   "ci95_station_season": [
+    -1.97865,
+    0.59781
+   ],
+   "ci95_station": [
+    -1.25038,
+    0.44592
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 4,
+    "evaluable": true,
+    "loo_range": [
+     0.0741,
+     0.35447
+    ],
+    "se": 0.18756,
+    "t_ci95": [
+     -0.3463,
+     0.84748
+    ]
+   },
+   "slope_through_origin": 0.6726,
+   "slope_ci95_station_season": [
+    -0.06699,
+    1.06239
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 1,
+    "category": "compatible with R1, incompatible with R2",
+    "station_cluster_category": "compatible with R1, incompatible with R2",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": false,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": false,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": false,
+    "jk_contains_0.3": true,
+    "jk_contains_1": false
+   }
+  },
+  "D3_crosstab": {
+   "T1": {
+    "W1": 16,
+    "W0": 0,
+    "IMERG_missing": 0
+   },
+   "T2": {
+    "W1": 26,
+    "W0": 4,
+    "IMERG_missing": 1
+   },
+   "T3": {
+    "W1": 7,
+    "W0": 14,
+    "IMERG_missing": 2
+   },
+   "T4": {
+    "W1": 9,
+    "W0": 7,
+    "IMERG_missing": 1
+   }
+  },
+  "D3_6to12_W0": {
+   "label": "D3 [6,12) h and IMERG <= 0.1",
+   "n": 21,
+   "stations": 6,
+   "clusters_station_season": 15,
+   "clusters_station": 6,
+   "sum_num": 5.43862,
+   "sum_den": -1.65166,
+   "R": -3.29283,
+   "ci95_station_season": [
+    -18.60015,
+    3.60872
+   ],
+   "ci95_station": [
+    -10.38916,
+    -0.1573
+   ],
+   "frac_boot_den_nonneg": 0.0317,
+   "jackknife_station": {
+    "G": 6,
+    "evaluable": true,
+    "loo_range": [
+     -5.55009,
+     -1.74937
+    ],
+    "se": 2.78618,
+    "t_ci95": [
+     -10.45494,
+     3.86928
+    ]
+   },
+   "slope_through_origin": -1.12538,
+   "slope_ci95_station_season": [
+    -2.55362,
+    -0.19401
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 0,
+    "category": "not evaluable (unstable denominator or interval not computable)",
+    "station_cluster_category": "compatible with R1, incompatible with R2",
+    "station_same_side": null,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": null,
+    "ci_ss_contains_0.3": true,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": false,
+    "ci_st_contains_1": false,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "D3_6to12_W1": {
+   "label": "D3 [6,12) h and IMERG > 0.1 (comparison)",
+   "n": 16,
+   "stations": 5,
+   "clusters_station_season": 10,
+   "clusters_station": 5,
+   "sum_num": -13.5513,
+   "sum_den": -10.51913,
+   "R": 1.28825,
+   "ci95_station_season": [
+    0.44033,
+    3.14823
+   ],
+   "ci95_station": [
+    -0.02569,
+    4.6796
+   ],
+   "frac_boot_den_nonneg": 0.0,
+   "jackknife_station": {
+    "G": 5,
+    "evaluable": true,
+    "loo_range": [
+     0.89972,
+     1.99877
+    ],
+    "se": 0.79297,
+    "t_ci95": [
+     -0.91339,
+     3.4899
+    ]
+   },
+   "slope_through_origin": 0.49026,
+   "slope_ci95_station_season": [
+    0.24354,
+    1.90682
+   ],
+   "p5_gate_met": false,
+   "kind": "descriptive",
+   "judgement": {
+    "category_code": 3,
+    "category": "cannot distinguish in this class",
+    "station_cluster_category": "cannot distinguish in this class",
+    "station_same_side": true,
+    "jackknife_category": "cannot distinguish in this class",
+    "jackknife_same_side": true,
+    "ci_ss_contains_0.3": false,
+    "ci_ss_contains_1": true,
+    "ci_st_contains_0.3": true,
+    "ci_st_contains_1": true,
+    "jk_contains_0.3": true,
+    "jk_contains_1": true
+   }
+  },
+  "D4_6to12_by_station": {
+   "BOBOA": {
+    "n": 4,
+    "sum_x": -0.62189,
+    "sum_y": 0.82665,
+    "R": -1.32926
+   },
+   "KEO": {
+    "n": 14,
+    "sum_x": -5.47128,
+    "sum_y": -8.28097,
+    "R": 1.51353
+   },
+   "MOSEAN/WHOTS": {
+    "n": 7,
+    "sum_x": -4.28847,
+    "sum_y": -2.09665,
+    "R": 0.4889
+   },
+   "Papa": {
+    "n": 8,
+    "sum_x": -1.27062,
+    "sum_y": -3.4413,
+    "R": 2.70835
+   },
+   "TAO165E": {
+    "n": 5,
+    "sum_x": -4.84748,
+    "sum_y": -1.60854,
+    "R": 0.33183
+   },
+   "TAO170W": {
+    "n": 2,
+    "sum_x": -0.32138,
+    "sum_y": 0.3528,
+    "R": -1.09775
+   }
+  }
+ },
+ "contradiction_B_mapping": {
+  "T3": 0,
+  "T4": 3,
+  "text": "at least one class not evaluable (written as observed)"
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "rule": "|mean dS_RIM(z) - mean dS_S20| >= 2.0*SE_obs(z); passes only if satisfied at both z = 0.5 and 1 m (K11)",
+ "z=0.5m": {
+  "n_events": 646,
+  "n_control_windows": 3223,
+  "evaluable": true,
+  "mean_dS_rim": -0.21328,
+  "mean_dS_s20": -0.1201,
+  "diff": -0.09318,
+  "sd_control": 0.05851,
+  "se_obs": 0.0023,
+  "threshold_2se": 0.0046,
+  "pass": true
+ },
+ "z=1.0m": {
+  "n_events": 646,
+  "n_control_windows": 3223,
+  "evaluable": true,
+  "mean_dS_rim": -0.18669,
+  "mean_dS_s20": -0.1201,
+  "diff": -0.06659,
+  "sd_control": 0.03606,
+  "se_obs": 0.00142,
+  "threshold_2se": 0.00284,
+  "pass": true
+ },
+ "pass": true,
+ "verdict": "pass (models can be discriminated)",
+ "written_utc": "2026-09-29T14:03:51Z",
+ "note": "D3 uses only model predictions and control-window observations; this file is written before P5/beta/any ratio (K11)"
+}

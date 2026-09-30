@@ -1,0 +1,1919 @@
+{
+ "script": "p4b_posthoc.py",
+ "version": "p4b-2026-09-27a",
+ "run_utc": "2026-09-27T02:50:23Z",
+ "n_events": 646,
+ "rebuild_validation": {
+  "n_ref": 646,
+  "n_rebuilt": 646,
+  "d4_count": 34
+ },
+ "cmorph_pixel_cache": {
+  "hours_needed": 25400,
+  "hours_present": 25400,
+  "hours_missing_marked": 0
+ },
+ "downloads": {
+  "cache_http_requests": 0,
+  "new_data_bytes_expected": 0
+ },
+ "fd_grid_cells": 271,
+ "n_sim": 2000,
+ "V0": {
+  "this": {
+   "n": 646,
+   "point": 0.29616,
+   "ci95": [
+    0.22631,
+    0.36672
+   ]
+  },
+  "pass": true
+ },
+ "V1_round1_csv": {
+  "pass": true,
+  "n_rows": 646,
+  "n_ref": 646,
+  "missing": 0,
+  "n_compared": 4522,
+  "n_bad": 0,
+  "max_abs_diff": 4.996038693860783e-07
+ },
+ "E1": {
+  "ii": {
+   "label": "E1(ii) gauge-driven R_RIM(1 m)",
+   "n": 646,
+   "point": 0.24858,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    0.20994,
+    0.28062
+   ],
+   "ci95_station": [
+    0.20548,
+    0.29195
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     0.22523,
+     0.25983
+    ],
+    "se": 0.02609,
+    "t_ci95": [
+     0.19116,
+     0.30599
+    ]
+   },
+   "evaluable": true,
+   "p2_sens_reference": {
+    "point": 0.249,
+    "ci95": [
+     0.21,
+     0.281
+    ],
+    "src": "p2-sens stage (p2_sensitivity.json)"
+   }
+  },
+  "iii": {
+   "label": "E1(iii) R_G by λ",
+   "n": 646,
+   "cuts": [
+    -0.300296,
+    0.805334
+   ],
+   "cells": [
+    {
+     "k": 0,
+     "n": 216,
+     "G_station_season": 31,
+     "G_station": 10,
+     "key_median": -0.780309,
+     "point": 0.17602,
+     "ci95": [
+      0.12687,
+      0.22361
+     ],
+     "ci95_station": [
+      0.13238,
+      0.21994
+     ],
+     "evaluable": true
+    },
+    {
+     "k": 1,
+     "n": 215,
+     "G_station_season": 33,
+     "G_station": 12,
+     "key_median": 0.18348,
+     "point": 0.27061,
+     "ci95": [
+      0.2245,
+      0.32839
+     ],
+     "ci95_station": [
+      0.23005,
+      0.34138
+     ],
+     "evaluable": true
+    },
+    {
+     "k": 2,
+     "n": 215,
+     "G_station_season": 31,
+     "G_station": 10,
+     "key_median": 2.083655,
+     "point": 0.25792,
+     "ci95": [
+      0.18039,
+      0.31706
+     ],
+     "ci95_station": [
+      0.14619,
+      0.33198
+     ],
+     "evaluable": true
+    }
+   ],
+   "contrast_top_minus_bottom_ci95_ss": [
+    -0.00542,
+    0.16164
+   ],
+   "contrast_top_minus_bottom_ci95_st": [
+    -0.0396,
+    0.15012
+   ],
+   "contrast_top_minus_bottom_point": 0.0819,
+   "evaluable": true
+  },
+  "observed": {
+   "R_k": [
+    0.0773,
+    0.26914,
+    1.32641
+   ],
+   "R_all": 0.29616,
+   "n0": 0.26101,
+   "n1": 0.90878,
+   "n2": 4.47876,
+   "D": 2.84254
+  },
+  "sim_n_events": 646,
+  "sim_events_excluded": 0,
+  "noise_pool_sizes": {
+   "BOBOA": 270,
+   "KEO": 1045,
+   "MOSEAN/WHOTS": 585,
+   "Papa": 530,
+   "SOFS": 50,
+   "TAO110W": 15,
+   "TAO125W": 5,
+   "TAO140W": 50,
+   "TAO155W": 50,
+   "TAO165E": 335,
+   "TAO170W": 123,
+   "TAO8S165E": 165
+  },
+  "bins": {
+   "0": 41,
+   "1": 41,
+   "2": 40,
+   "3": 41,
+   "4": 41,
+   "5": 89,
+   "6": 88,
+   "7": 88,
+   "8": 88,
+   "9": 89
+  },
+  "g6_vs_round1_g6_max_absdiff": 0.0,
+  "envelopes": {
+   "theta0_R0main": {
+    "n0": {
+     "obs": 0.26101,
+     "joint95": [
+      0.34731,
+      0.48002
+     ],
+     "pointwise95": [
+      0.36207,
+      0.46752
+     ],
+     "median": 0.41339,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 0.0
+    },
+    "n1": {
+     "obs": 0.90878,
+     "joint95": [
+      0.90524,
+      1.16094
+     ],
+     "pointwise95": [
+      0.9265,
+      1.13322
+     ],
+     "median": 1.02382,
+     "n_finite": 2000,
+     "inside_joint": true,
+     "obs_quantile_in_null": 0.008
+    },
+    "n2": {
+     "obs": 4.47876,
+     "joint95": [
+      3.24492,
+      5.65509
+     ],
+     "pointwise95": [
+      3.40271,
+      5.35704
+     ],
+     "median": 4.19706,
+     "n_finite": 2000,
+     "inside_joint": true,
+     "obs_quantile_in_null": 0.695
+    },
+    "D": {
+     "obs": 2.84254,
+     "joint95": [
+      2.014,
+      2.69465
+     ],
+     "pointwise95": [
+      2.07175,
+      2.60887
+     ],
+     "median": 2.31956,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 1.0
+    },
+    "all_inside_joint": false,
+    "levels_info_only": {
+     "R0": {
+      "pointwise95": [
+       0.12438,
+       0.16215
+      ],
+      "median": 0.14245
+     },
+     "R1": {
+      "pointwise95": [
+       0.31666,
+       0.39476
+      ],
+      "median": 0.35302
+     },
+     "R2": {
+      "pointwise95": [
+       1.13998,
+       1.9194
+      ],
+      "median": 1.44153
+     },
+     "Rall": {
+      "pointwise95": [
+       0.31268,
+       0.3805
+      ],
+      "median": 0.34493
+     }
+    },
+    "counts": {
+     "n_invalid_event_draws": 26,
+     "n_clipped_cstar0": 62307,
+     "n_empty_noise_pool_stations": 0,
+     "n_D_nan": 0
+    },
+    "theta": 0.0,
+    "R0": 0.296
+   },
+   "theta05_R0main": {
+    "n0": {
+     "obs": 0.26101,
+     "joint95": [
+      0.54036,
+      0.79598
+     ],
+     "pointwise95": [
+      0.57024,
+      0.77238
+     ],
+     "median": 0.6678,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 0.0
+    },
+    "n1": {
+     "obs": 0.90878,
+     "joint95": [
+      0.96032,
+      1.31317
+     ],
+     "pointwise95": [
+      0.99486,
+      1.28324
+     ],
+     "median": 1.13269,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 0.0005
+    },
+    "n2": {
+     "obs": 4.47876,
+     "joint95": [
+      1.76471,
+      3.04143
+     ],
+     "pointwise95": [
+      1.85887,
+      2.86758
+     ],
+     "median": 2.29023,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 1.0
+    },
+    "D": {
+     "obs": 2.84254,
+     "joint95": [
+      0.86013,
+      1.60908
+     ],
+     "pointwise95": [
+      0.939,
+      1.54247
+     ],
+     "median": 1.23481,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 1.0
+    },
+    "all_inside_joint": false,
+    "levels_info_only": {
+     "R0": {
+      "pointwise95": [
+       0.2709,
+       0.39984
+      ],
+      "median": 0.32847
+     },
+     "R1": {
+      "pointwise95": [
+       0.47674,
+       0.65474
+      ],
+      "median": 0.55716
+     },
+     "R2": {
+      "pointwise95": [
+       0.90343,
+       1.43395
+      ],
+      "median": 1.13294
+     },
+     "Rall": {
+      "pointwise95": [
+       0.44034,
+       0.55082
+      ],
+      "median": 0.49376
+     }
+    },
+    "counts": {
+     "n_invalid_event_draws": 2181,
+     "n_clipped_cstar0": 62307,
+     "n_empty_noise_pool_stations": 0,
+     "n_D_nan": 0
+    },
+    "theta": 0.5,
+    "R0": 0.296
+   },
+   "theta0_R0gauge": {
+    "n0": {
+     "obs": 0.26101,
+     "joint95": [
+      0.34076,
+      0.48777
+     ],
+     "pointwise95": [
+      0.35617,
+      0.47191
+     ],
+     "median": 0.41297,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 0.0
+    },
+    "n1": {
+     "obs": 0.90878,
+     "joint95": [
+      0.89943,
+      1.16609
+     ],
+     "pointwise95": [
+      0.9223,
+      1.13905
+     ],
+     "median": 1.02376,
+     "n_finite": 2000,
+     "inside_joint": true,
+     "obs_quantile_in_null": 0.0125
+    },
+    "n2": {
+     "obs": 4.47876,
+     "joint95": [
+      3.23367,
+      5.65801
+     ],
+     "pointwise95": [
+      3.38809,
+      5.37203
+     ],
+     "median": 4.19706,
+     "n_finite": 2000,
+     "inside_joint": true,
+     "obs_quantile_in_null": 0.6945
+    },
+    "D": {
+     "obs": 2.84254,
+     "joint95": [
+      2.00607,
+      2.70951
+     ],
+     "pointwise95": [
+      2.063,
+      2.62509
+     ],
+     "median": 2.3196,
+     "n_finite": 2000,
+     "inside_joint": false,
+     "obs_quantile_in_null": 0.9995
+    },
+    "all_inside_joint": false,
+    "levels_info_only": {
+     "R0": {
+      "pointwise95": [
+       0.10266,
+       0.13768
+      ],
+      "median": 0.11952
+     },
+     "R1": {
+      "pointwise95": [
+       0.26387,
+       0.33321
+      ],
+      "median": 0.29636
+     },
+     "R2": {
+      "pointwise95": [
+       0.95073,
+       1.61841
+      ],
+      "median": 1.21068
+     },
+     "Rall": {
+      "pointwise95": [
+       0.2616,
+       0.31965
+      ],
+      "median": 0.28948
+     }
+    },
+    "counts": {
+     "n_invalid_event_draws": 26,
+     "n_clipped_cstar0": 62307,
+     "n_empty_noise_pool_stations": 0,
+     "n_D_nan": 0
+    },
+    "theta": 0.0,
+    "R0": 0.24858
+   }
+  },
+  "judgment": {
+   "status": "not resolved",
+   "text": "shape by lambda class exceeds a pure selection artifact (per quantity: {'n0': 'below envelope', 'n1': 'inside', 'n2': 'inside', 'D': 'above envelope'})",
+   "i_inside_theta0": false,
+   "i_inside_theta05": false,
+   "ii_pass": true
+  }
+ },
+ "E2": {
+  "V2_neutral_fd_over_analytic": {
+   "n": 646,
+   "ratio": 1.01236,
+   "pass": true
+  },
+  "order": {
+   "label": "E2 R_RIM(1 m) by ρ_s tercile",
+   "n": 556,
+   "cuts": [
+    0.116546,
+    0.172117
+   ],
+   "cells": [
+    {
+     "k": 0,
+     "n": 186,
+     "G_station_season": 32,
+     "G_station": 11,
+     "key_median": 0.091857,
+     "point": 0.33248,
+     "ci95": [
+      0.21284,
+      0.46826
+     ],
+     "ci95_station": [
+      0.19051,
+      0.44884
+     ],
+     "evaluable": true,
+     "theory_point": 0.08893
+    },
+    {
+     "k": 1,
+     "n": 185,
+     "G_station_season": 29,
+     "G_station": 11,
+     "key_median": 0.140278,
+     "point": 0.21505,
+     "ci95": [
+      0.15548,
+      0.28367
+     ],
+     "ci95_station": [
+      0.13579,
+      0.33263
+     ],
+     "evaluable": true,
+     "theory_point": 0.14387
+    },
+    {
+     "k": 2,
+     "n": 185,
+     "G_station_season": 35,
+     "G_station": 11,
+     "key_median": 0.220566,
+     "point": 0.25659,
+     "ci95": [
+      0.1979,
+      0.32031
+     ],
+     "ci95_station": [
+      0.21203,
+      0.31365
+     ],
+     "evaluable": true,
+     "theory_point": 0.24584
+    }
+   ],
+   "contrast_top_minus_bottom_ci95_ss": [
+    -0.20751,
+    0.04607
+   ],
+   "contrast_top_minus_bottom_ci95_st": [
+    -0.15823,
+    0.05714
+   ],
+   "contrast_top_minus_bottom_point": -0.07589,
+   "evaluable": true
+  },
+  "spearman_rho_s_vs_r_e": {
+   "n": 556,
+   "G": 37,
+   "rho": -0.0324,
+   "ci95": [
+    -0.11605,
+    0.06243
+   ],
+   "n_boot": 10000
+  },
+  "level": {
+   "label": "Lambda_s = sum obs1 / sum stab1 (beta_h=5)",
+   "n": 646,
+   "point": 1.6618,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    1.31799,
+    2.00527
+   ],
+   "ci95_station": [
+    1.34136,
+    2.09258
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     1.47233,
+     1.77901
+    ],
+    "se": 0.23234,
+    "t_ci95": [
+     1.15043,
+     2.17317
+    ]
+   },
+   "evaluable": true,
+   "R_th_stab_pooled": 0.17821
+  },
+  "level_beta78": {
+   "label": "β_h=7.8",
+   "n": 646,
+   "point": 1.50651,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    1.19598,
+    1.81356
+   ],
+   "ci95_station": [
+    1.2212,
+    1.88635
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     1.34039,
+     1.61423
+    ],
+    "se": 0.20678,
+    "t_ci95": [
+     1.05138,
+     1.96164
+    ]
+   },
+   "evaluable": true
+  },
+  "order_beta78": {
+   "label": "ordering with beta_h=7.8",
+   "n": 556,
+   "cuts": [
+    0.126842,
+    0.188343
+   ],
+   "cells": [
+    {
+     "k": 0,
+     "n": 186,
+     "G_station_season": 32,
+     "G_station": 11,
+     "key_median": 0.099265,
+     "point": 0.35068,
+     "ci95": [
+      0.23679,
+      0.48241
+     ],
+     "ci95_station": [
+      0.22288,
+      0.46975
+     ],
+     "evaluable": true,
+     "theory_point": 0.09794
+    },
+    {
+     "k": 1,
+     "n": 185,
+     "G_station_season": 29,
+     "G_station": 11,
+     "key_median": 0.155369,
+     "point": 0.2099,
+     "ci95": [
+      0.15054,
+      0.28162
+     ],
+     "ci95_station": [
+      0.1353,
+      0.33659
+     ],
+     "evaluable": true,
+     "theory_point": 0.15746
+    },
+    {
+     "k": 2,
+     "n": 185,
+     "G_station_season": 35,
+     "G_station": 11,
+     "key_median": 0.245097,
+     "point": 0.24784,
+     "ci95": [
+      0.19019,
+      0.31111
+     ],
+     "ci95_station": [
+      0.20034,
+      0.30867
+     ],
+     "evaluable": true,
+     "theory_point": 0.27175
+    }
+   ],
+   "contrast_top_minus_bottom_ci95_ss": [
+    -0.23122,
+    0.01146
+   ],
+   "contrast_top_minus_bottom_ci95_st": [
+    -0.19091,
+    0.01961
+   ],
+   "contrast_top_minus_bottom_point": -0.10284,
+   "evaluable": true
+  },
+  "level_gauge": {
+   "label": "gauge-driven Lambda_s",
+   "n": 646,
+   "point": 1.31198,
+   "G_station_season": 37,
+   "G_station": 12,
+   "ci95": [
+    1.14187,
+    1.49191
+   ],
+   "ci95_station": [
+    1.16133,
+    1.50218
+   ],
+   "jackknife_station": {
+    "G": 12,
+    "evaluable": true,
+    "loo_range": [
+     1.21599,
+     1.36134
+    ],
+    "se": 0.11304,
+    "t_ci95": [
+     1.06318,
+     1.56077
+    ]
+   },
+   "evaluable": true
+  },
+  "order_gauge": {
+   "label": "gauge-driven ordering (R_G by rho_G)",
+   "n": 644,
+   "cuts": [
+    0.121209,
+    0.187659
+   ],
+   "cells": [
+    {
+     "k": 0,
+     "n": 215,
+     "G_station_season": 35,
+     "G_station": 11,
+     "key_median": 0.094328,
+     "point": 0.18562,
+     "ci95": [
+      0.11554,
+      0.26321
+     ],
+     "ci95_station": [
+      0.09462,
+      0.27887
+     ],
+     "evaluable": true,
+     "theory_point": 0.08495
+    },
+    {
+     "k": 1,
+     "n": 214,
+     "G_station_season": 32,
+     "G_station": 10,
+     "key_median": 0.146195,
+     "point": 0.21494,
+     "ci95": [
+      0.17006,
+      0.25645
+     ],
+     "ci95_station": [
+      0.17514,
+      0.24736
+     ],
+     "evaluable": true,
+     "theory_point": 0.15629
+    },
+    {
+     "k": 2,
+     "n": 215,
+     "G_station_season": 30,
+     "G_station": 12,
+     "key_median": 0.248287,
+     "point": 0.31611,
+     "ci95": [
+      0.27451,
+      0.37054
+     ],
+     "ci95_station": [
+      0.28582,
+      0.36195
+     ],
+     "evaluable": true,
+     "theory_point": 0.28611
+    }
+   ],
+   "contrast_top_minus_bottom_ci95_ss": [
+    0.03524,
+    0.23762
+   ],
+   "contrast_top_minus_bottom_ci95_st": [
+    0.03821,
+    0.24729
+   ],
+   "contrast_top_minus_bottom_point": 0.13049,
+   "evaluable": true
+  },
+  "surface": {
+   "n": 646,
+   "stab_surface_over_rim_surface": 0.20318,
+   "stab_1m_over_rim_1m": 0.17821,
+   "stab_surface_over_stab_1m": 1.56988
+  },
+  "nonblind": {
+   "spearman_rho_s_vs_zeta_gauge": {
+    "n": 556,
+    "rho": 0.1657
+   },
+   "spearman_rho_s_vs_lam": {
+    "n": 556,
+    "rho": -0.3086
+   },
+   "spearman_rho_s_vs_rain24": {
+    "n": 556,
+    "rho": 0.2273
+   }
+  },
+  "judgment": {
+   "order": "cannot be ordered",
+   "rank_corr_support": false,
+   "level": "theory still mixes too strongly (observed freshening exceeds theory)",
+   "status": "cannot be ordered"
+  }
+ },
+ "E3": {
+  "blocks": {
+   "cmorph_0-6h_D10": {
+    "n": 98,
+    "G_station_season": 14,
+    "G_station": 5,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W",
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": true,
+    "Q_ci95_ss": [
+     0.23294,
+     0.7561
+    ],
+    "phi_ci95_ss": [
+     -0.07135,
+     0.44562
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.13188,
+    "sd_phi_boot": 0.37539,
+    "MDE_80": 0.36948,
+    "Q_ci95_st": [
+     0.30113,
+     0.55151
+    ],
+    "phi_ci95_st": [
+     -0.11693,
+     0.21759
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.42921,
+    "R1": 0.36274,
+    "phi": 0.1043,
+    "jackknife_phi_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      -0.00348,
+      0.13752
+     ],
+     "se": 0.1042,
+     "t_ci95": [
+      -0.18499,
+      0.39359
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 98,
+     "G_station_season": 14,
+     "point": 1.17951,
+     "ci95": [
+      0.72968,
+      1.69836
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "cmorph_0-6h_D20": {
+    "n": 61,
+    "G_station_season": 7,
+    "G_station": 3,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     -0.10295,
+     1.62956
+    ],
+    "phi_ci95_ss": [
+     -4.75539,
+     3.3195
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 2.05992,
+    "sd_phi_boot": 32.66993,
+    "MDE_80": 5.77104,
+    "Q_ci95_st": [
+     -0.56422,
+     1.02165
+    ],
+    "phi_ci95_st": [
+     -0.46494,
+     1.14805
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.5699,
+    "R1": 0.44073,
+    "phi": 0.23096,
+    "jackknife_phi_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      -0.14374,
+      0.28199
+     ],
+     "se": 0.26288,
+     "t_ci95": [
+      -0.90014,
+      1.36205
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 61,
+     "G_station_season": 7,
+     "point": 1.44702,
+     "ci95": [
+      -0.37757,
+      2.70914
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "cmorph_0-6h_D25": {
+    "n": 37,
+    "G_station_season": 7,
+    "G_station": 2,
+    "stations": [
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.12378,
+     0.43488
+    ],
+    "phi_ci95_ss": [
+     -0.38832,
+     0.26408
+    ],
+    "phi_nboot_ss": 9999,
+    "se_phi_quantile": 0.16643,
+    "sd_phi_boot": 0.153,
+    "MDE_80": 0.46626,
+    "Q_ci95_st": [
+     0.19214,
+     0.34851
+    ],
+    "phi_ci95_st": [
+     -0.14254,
+     0.05648
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.30027,
+    "R1": 0.30447,
+    "phi": -0.00604,
+    "jackknife_phi_station": {
+     "G": 2,
+     "evaluable": false
+    },
+    "closure_obs_over_gauge": {
+     "n": 37,
+     "G_station_season": 7,
+     "point": 1.08625,
+     "ci95": [
+      0.31584,
+      1.54535
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "cmorph_6-12h_D10": {
+    "n": 96,
+    "G_station_season": 14,
+    "G_station": 5,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W",
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": true,
+    "Q_ci95_ss": [
+     0.25515,
+     0.65491
+    ],
+    "phi_ci95_ss": [
+     0.00955,
+     0.33371
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.08269,
+    "sd_phi_boot": 0.08678,
+    "MDE_80": 0.23167,
+    "Q_ci95_st": [
+     0.21307,
+     0.51172
+    ],
+    "phi_ci95_st": [
+     -0.02355,
+     0.2278
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.37816,
+    "R1": 0.29265,
+    "phi": 0.12089,
+    "jackknife_phi_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      0.01069,
+      0.15971
+     ],
+     "se": 0.10644,
+     "t_ci95": [
+      -0.17462,
+      0.4164
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 96,
+     "G_station_season": 14,
+     "point": 1.03365,
+     "ci95": [
+      0.73971,
+      1.61552
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "cmorph_6-12h_D20": {
+    "n": 61,
+    "G_station_season": 7,
+    "G_station": 3,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.38786,
+     1.25236
+    ],
+    "phi_ci95_ss": [
+     0.05843,
+     2.07206
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.51368,
+    "sd_phi_boot": 5.30607,
+    "MDE_80": 1.43912,
+    "Q_ci95_st": [
+     -1.44753,
+     0.65564
+    ],
+    "phi_ci95_st": [
+     -0.26399,
+     0.44751
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.60817,
+    "R1": 0.36634,
+    "phi": 0.38164,
+    "jackknife_phi_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      0.06881,
+      0.4281
+     ],
+     "se": 0.22156,
+     "t_ci95": [
+      -0.57168,
+      1.33495
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 61,
+     "G_station_season": 7,
+     "point": 1.73881,
+     "ci95": [
+      1.19784,
+      3.00499
+     ],
+     "reading": "excess (lower bound > 1)"
+    }
+   },
+   "cmorph_6-12h_D25": {
+    "n": 35,
+    "G_station_season": 7,
+    "G_station": 2,
+    "stations": [
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.1584,
+     0.3109
+    ],
+    "phi_ci95_ss": [
+     -0.10188,
+     0.07216
+    ],
+    "phi_nboot_ss": 9999,
+    "se_phi_quantile": 0.0444,
+    "sd_phi_boot": 0.04562,
+    "MDE_80": 0.12438,
+    "Q_ci95_st": [
+     0.173,
+     0.28712
+    ],
+    "phi_ci95_st": [
+     0.0017,
+     0.05901
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.24628,
+    "R1": 0.21903,
+    "phi": 0.03489,
+    "jackknife_phi_station": {
+     "G": 2,
+     "evaluable": false
+    },
+    "closure_obs_over_gauge": {
+     "n": 35,
+     "G_station_season": 7,
+     "point": 0.95534,
+     "ci95": [
+      0.46065,
+      1.28012
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_0-6h_D10": {
+    "n": 98,
+    "G_station_season": 14,
+    "G_station": 5,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W",
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": true,
+    "Q_ci95_ss": [
+     0.19028,
+     0.4393
+    ],
+    "phi_ci95_ss": [
+     -0.0343,
+     0.20552
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.06118,
+    "sd_phi_boot": 0.05971,
+    "MDE_80": 0.1714,
+    "Q_ci95_st": [
+     0.20807,
+     0.37925
+    ],
+    "phi_ci95_st": [
+     -0.02106,
+     0.15452
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.32168,
+    "R1": 0.25813,
+    "phi": 0.08565,
+    "jackknife_phi_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      0.01025,
+      0.10821
+     ],
+     "se": 0.07193,
+     "t_ci95": [
+      -0.11404,
+      0.28535
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 98,
+     "G_station_season": 14,
+     "point": 1.17951,
+     "ci95": [
+      0.72968,
+      1.69836
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_0-6h_D20": {
+    "n": 61,
+    "G_station_season": 7,
+    "G_station": 3,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     -0.09688,
+     0.70095
+    ],
+    "phi_ci95_ss": [
+     -0.36898,
+     0.52477
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.228,
+    "sd_phi_boot": 0.20037,
+    "MDE_80": 0.63875,
+    "Q_ci95_st": [
+     -943.27273,
+     0.56386
+    ],
+    "phi_ci95_st": [
+     -4371.64236,
+     0.21718
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.40916,
+    "R1": 0.27268,
+    "phi": 0.18765,
+    "jackknife_phi_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      0.0911,
+      0.20899
+     ],
+     "se": 0.07092,
+     "t_ci95": [
+      -0.11751,
+      0.4928
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 61,
+     "G_station_season": 7,
+     "point": 1.44702,
+     "ci95": [
+      -0.37757,
+      2.70914
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_0-6h_D25": {
+    "n": 37,
+    "G_station_season": 7,
+    "G_station": 2,
+    "stations": [
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.06788,
+     0.35692
+    ],
+    "phi_ci95_ss": [
+     -0.18765,
+     0.15655
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.08781,
+    "sd_phi_boot": 0.08172,
+    "MDE_80": 0.246,
+    "Q_ci95_st": [
+     0.12917,
+     0.31616
+    ],
+    "phi_ci95_st": [
+     -0.06489,
+     0.04509
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.24589,
+    "R1": 0.24406,
+    "phi": 0.00242,
+    "jackknife_phi_station": {
+     "G": 2,
+     "evaluable": false
+    },
+    "closure_obs_over_gauge": {
+     "n": 37,
+     "G_station_season": 7,
+     "point": 1.08625,
+     "ci95": [
+      0.31584,
+      1.54535
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_6-12h_D10": {
+    "n": 96,
+    "G_station_season": 14,
+    "G_station": 5,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W",
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": true,
+    "Q_ci95_ss": [
+     0.23831,
+     0.50131
+    ],
+    "phi_ci95_ss": [
+     0.01943,
+     0.24964
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.05873,
+    "sd_phi_boot": 0.05871,
+    "MDE_80": 0.16452,
+    "Q_ci95_st": [
+     0.18217,
+     0.44272
+    ],
+    "phi_ci95_st": [
+     -0.02609,
+     0.19878
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.34154,
+    "R1": 0.25704,
+    "phi": 0.11374,
+    "jackknife_phi_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      0.01302,
+      0.1453
+     ],
+     "se": 0.09545,
+     "t_ci95": [
+      -0.15127,
+      0.37875
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 96,
+     "G_station_season": 14,
+     "point": 1.03365,
+     "ci95": [
+      0.73971,
+      1.61552
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_6-12h_D20": {
+    "n": 61,
+    "G_station_season": 7,
+    "G_station": 3,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.38449,
+     0.85
+    ],
+    "phi_ci95_ss": [
+     0.08954,
+     0.73919
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.16573,
+    "sd_phi_boot": 0.15922,
+    "MDE_80": 0.4643,
+    "Q_ci95_st": [
+     0.27394,
+     1.67197
+    ],
+    "phi_ci95_st": [
+     -0.18185,
+     2.13725
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.53884,
+    "R1": 0.3084,
+    "phi": 0.3332,
+    "jackknife_phi_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      -0.04544,
+      0.37539
+     ],
+     "se": 0.2654,
+     "t_ci95": [
+      -0.80873,
+      1.47514
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 61,
+     "G_station_season": 7,
+     "point": 1.73881,
+     "ci95": [
+      1.19784,
+      3.00499
+     ],
+     "reading": "excess (lower bound > 1)"
+    }
+   },
+   "gauge_6-12h_D25": {
+    "n": 35,
+    "G_station_season": 7,
+    "G_station": 2,
+    "stations": [
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.11946,
+     0.29333
+    ],
+    "phi_ci95_ss": [
+     -0.06521,
+     0.08602
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.03858,
+    "sd_phi_boot": 0.03833,
+    "MDE_80": 0.10808,
+    "Q_ci95_st": [
+     0.15283,
+     0.28255
+    ],
+    "phi_ci95_st": [
+     0.01938,
+     0.05437
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.23285,
+    "R1": 0.20108,
+    "phi": 0.03977,
+    "jackknife_phi_station": {
+     "G": 2,
+     "evaluable": false
+    },
+    "closure_obs_over_gauge": {
+     "n": 35,
+     "G_station_season": 7,
+     "point": 0.95534,
+     "ci95": [
+      0.46065,
+      1.28012
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_12-24h_D10": {
+    "n": 97,
+    "G_station_season": 14,
+    "G_station": 5,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W",
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": true,
+    "Q_ci95_ss": [
+     0.19641,
+     0.52017
+    ],
+    "phi_ci95_ss": [
+     -0.0108,
+     0.20486
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.05502,
+    "sd_phi_boot": 0.05458,
+    "MDE_80": 0.15414,
+    "Q_ci95_st": [
+     0.1271,
+     0.536
+    ],
+    "phi_ci95_st": [
+     -0.12909,
+     0.20167
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.36115,
+    "R1": 0.29152,
+    "phi": 0.09828,
+    "jackknife_phi_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      -0.01928,
+      0.12957
+     ],
+     "se": 0.11122,
+     "t_ci95": [
+      -0.21051,
+      0.40706
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 97,
+     "G_station_season": 14,
+     "point": 0.74231,
+     "ci95": [
+      0.45487,
+      1.1017
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_12-24h_D20": {
+    "n": 62,
+    "G_station_season": 7,
+    "G_station": 3,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.47343,
+     0.79933
+    ],
+    "phi_ci95_ss": [
+     0.10076,
+     0.58167
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.12268,
+    "sd_phi_boot": 2.753,
+    "MDE_80": 0.3437,
+    "Q_ci95_st": [
+     0.47802,
+     1.46858
+    ],
+    "phi_ci95_st": [
+     -1.35541,
+     2.89817
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.62232,
+    "R1": 0.42673,
+    "phi": 0.34118,
+    "jackknife_phi_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      -0.42365,
+      0.40316
+     ],
+     "se": 0.5251,
+     "t_ci95": [
+      -1.91815,
+      2.60051
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 62,
+     "G_station_season": 7,
+     "point": 1.48675,
+     "ci95": [
+      1.12543,
+      2.20393
+     ],
+     "reading": "excess (lower bound > 1)"
+    }
+   },
+   "gauge_12-24h_D25": {
+    "n": 35,
+    "G_station_season": 7,
+    "G_station": 2,
+    "stations": [
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     -0.04886,
+     0.22751
+    ],
+    "phi_ci95_ss": [
+     -0.11541,
+     0.07746
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.0492,
+    "sd_phi_boot": 0.04875,
+    "MDE_80": 0.13784,
+    "Q_ci95_st": [
+     0.00756,
+     0.18236
+    ],
+    "phi_ci95_st": [
+     -0.0536,
+     0.01661
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.12278,
+    "R1": 0.13506,
+    "phi": -0.0142,
+    "jackknife_phi_station": {
+     "G": 2,
+     "evaluable": false
+    },
+    "closure_obs_over_gauge": {
+     "n": 35,
+     "G_station_season": 7,
+     "point": 0.37995,
+     "ci95": [
+      -0.13846,
+      0.76293
+     ],
+     "reading": "deficit (upper bound < 1)"
+    }
+   },
+   "gauge_24-48h_D10": {
+    "n": 97,
+    "G_station_season": 14,
+    "G_station": 5,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W",
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": true,
+    "Q_ci95_ss": [
+     0.18335,
+     0.9982
+    ],
+    "phi_ci95_ss": [
+     -0.08615,
+     0.9107
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.2543,
+    "sd_phi_boot": 1.29209,
+    "MDE_80": 0.71244,
+    "Q_ci95_st": [
+     0.15234,
+     1.03118
+    ],
+    "phi_ci95_st": [
+     -0.09526,
+     0.77181
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.53315,
+    "R1": 0.39998,
+    "phi": 0.22195,
+    "jackknife_phi_station": {
+     "G": 5,
+     "evaluable": true,
+     "loo_range": [
+      0.06837,
+      0.31668
+     ],
+     "se": 0.16716,
+     "t_ci95": [
+      -0.24216,
+      0.68606
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 96,
+     "G_station_season": 14,
+     "point": 0.38617,
+     "ci95": [
+      0.14084,
+      0.67069
+     ],
+     "reading": "deficit (upper bound < 1)"
+    }
+   },
+   "gauge_24-48h_D20": {
+    "n": 62,
+    "G_station_season": 7,
+    "G_station": 3,
+    "stations": [
+     "BOBOA",
+     "TAO110W",
+     "TAO140W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     0.19068,
+     2.01795
+    ],
+    "phi_ci95_ss": [
+     -12.22739,
+     14.39547
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 6.79155,
+    "sd_phi_boot": 45.77879,
+    "MDE_80": 19.02709,
+    "Q_ci95_st": [
+     0.88966,
+     4.01059
+    ],
+    "phi_ci95_st": [
+     -7.69213,
+     1.10691
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 1.00356,
+    "R1": 0.74339,
+    "phi": 1.01388,
+    "jackknife_phi_station": {
+     "G": 3,
+     "evaluable": true,
+     "loo_range": [
+      -0.14774,
+      0.90449
+     ],
+     "se": 0.65827,
+     "t_ci95": [
+      -1.81841,
+      3.84616
+     ]
+    },
+    "closure_obs_over_gauge": {
+     "n": 61,
+     "G_station_season": 7,
+     "point": 0.80358,
+     "ci95": [
+      0.17983,
+      1.95022
+     ],
+     "reading": "closed (CI includes 1)"
+    }
+   },
+   "gauge_24-48h_D25": {
+    "n": 35,
+    "G_station_season": 7,
+    "G_station": 2,
+    "stations": [
+     "TAO165E",
+     "TAO170W"
+    ],
+    "evaluable": false,
+    "Q_ci95_ss": [
+     -0.63808,
+     0.28508
+    ],
+    "phi_ci95_ss": [
+     -0.39703,
+     0.12237
+    ],
+    "phi_nboot_ss": 10000,
+    "se_phi_quantile": 0.1325,
+    "sd_phi_boot": 0.13412,
+    "MDE_80": 0.37121,
+    "Q_ci95_st": [
+     -0.58699,
+     0.28441
+    ],
+    "phi_ci95_st": [
+     -0.28625,
+     0.11486
+    ],
+    "phi_nboot_st": 10000,
+    "Q": 0.16365,
+    "R1": 0.14859,
+    "phi": 0.01769,
+    "jackknife_phi_station": {
+     "G": 2,
+     "evaluable": false
+    },
+    "closure_obs_over_gauge": {
+     "n": 35,
+     "G_station_season": 7,
+     "point": 0.2095,
+     "ci95": [
+      -0.42332,
+      0.43293
+     ],
+     "reading": "deficit (upper bound < 1)"
+    }
+   }
+  },
+  "V3_phi10_vs_round1": {
+   "this": {
+    "n": 98,
+    "phi": 0.1043,
+    "phi_ci95_ss": [
+     -0.07135,
+     0.44562
+    ]
+   },
+   "round1": {
+    "n": 98,
+    "phi": 0.1043,
+    "phi_ci95_ss": [
+     -0.07135,
+     0.44562
+    ]
+   },
+   "match": true
+  },
+  "primary": {
+   "D": 20,
+   "rule": "phi_25 is the main quantity if evaluable (n >= 40 and >= 8 clusters), otherwise phi_20"
+  },
+  "judgment": {
+   "status": "not_evaluable",
+   "D": 20
+  },
+  "late_freshwater_flag": false,
+  "M_RIM": {
+   "all": {
+    "n": 580,
+    "M_RIM_fine_0_100m": 4.45749,
+    "M_RIM_fine_0_10m": 4.00693,
+    "M_RIM_3pt_0_10m": 4.23484,
+    "M_RIM_fine_0_100m_ci95": [
+     4.26269,
+     4.67584
+    ],
+    "reading": "RIM-3 creates excess freshwater"
+   },
+   "A": {
+    "n": 164,
+    "M_RIM_fine_0_100m": 4.48063,
+    "M_RIM_fine_0_10m": 4.33026,
+    "M_RIM_3pt_0_10m": 4.69323,
+    "M_RIM_fine_0_100m_ci95": [
+     4.01323,
+     5.1894
+    ],
+    "reading": "RIM-3 creates excess freshwater"
+   }
+  }
+ },
+ "total": {
+  "cell": "not evaluable (E1 = not resolved, E3 = not_evaluable); only evaluable items reported",
+  "E2_notes": [
+   "stability correction also cannot explain the per-event differences"
+  ],
+  "label": "exploratory diagnostics",
+  "first_round_verdict_unchanged": "negative_L"
+ },
+ "runtime_s": 120.4
+}

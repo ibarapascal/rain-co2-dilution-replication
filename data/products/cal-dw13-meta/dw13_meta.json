@@ -1,0 +1,2048 @@
+{
+ "ome": [
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Apr2015_Jun2016.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2015-04-01",
+   "to": "2016-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Apr2018_Aug2018_PI_OME.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2018-04-01",
+   "to": "2018-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Apr2019_Mar2020_PI_OME.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-04-01",
+   "to": "2020-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Dec2023_Jan2025_PI_OME.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-12-01",
+   "to": "2025-01-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Feb2023_Dec2023_PI_OME.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-02-01",
+   "to": "2023-12-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Jan2021_Sep2021_PI_OME.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2021-01-01",
+   "to": "2021-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Jun2016_May2017.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-06-01",
+   "to": "2017-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_Mar2014_Apr2015.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-03-01",
+   "to": "2015-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_May2012_Aug2013_PI_OME.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2012-05-01",
+   "to": "2013-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100075/Stratus_85W_20S_May2017_Apr2018.xml",
+   "station": "Stratus",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-05-01",
+   "to": "2018-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Feb2016_Jun2016_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-02-01",
+   "to": "2016-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "58 cm, with bubble equilibration at 14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Jan2017_Jul2018_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-01-01",
+   "to": "2018-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Mar2015_Jul2015_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2015-03-01",
+   "to": "2015-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Mar2022_Nov2023_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-03-01",
+   "to": "2023-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Oct2019_Mar2020_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-10-01",
+   "to": "2020-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Sep2014_Mar2015_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2014-09-01",
+   "to": "2015-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Sea Surface Salinity collected by NOAA/NDBC/TAO provide internally recorded SSS data at 1 hour resolution. NOAA/NDBC/TAO advises to check the TAO site for the most accurate data available.",
+   "intake": "14cm - 20cm",
+   "file": "0100077/TAO140W_0N_Sep2018_Apr2019_PI_OME.xml",
+   "station": "TAO140W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2018-09-01",
+   "to": "2019-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0113238/TAO165E_0N_Aug2017_Nov2018_PI_OME.xml",
+   "station": "TAO165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2017-08-01",
+   "to": "2018-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0113238/TAO165E_0N_Aug2022_Aug2023_PI_OME.xml",
+   "station": "TAO165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2022-08-01",
+   "to": "2023-08-28"
+  },
+  {
+   "loc": null,
+   "model": null,
+   "comment": null,
+   "intake": null,
+   "file": "0113238/TAO165E_0N_Feb2010_Feb2011.xml",
+   "station": "TAO165E",
+   "category": "metadata not parsed",
+   "from": "2010-02-01",
+   "to": "2011-02-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0113238/TAO165E_0N_Jul2016_Feb2017.xml",
+   "station": "TAO165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2016-07-01",
+   "to": "2017-02-28"
+  },
+  {
+   "loc": null,
+   "model": null,
+   "comment": null,
+   "intake": null,
+   "file": "0113238/TAO165E_0N_Mar2011_Feb2013.xml",
+   "station": "TAO165E",
+   "category": "metadata not parsed",
+   "from": "2011-03-01",
+   "to": "2013-02-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0113238/TAO165E_0N_Oct2014_May2016.xml",
+   "station": "TAO165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2014-10-01",
+   "to": "2016-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0113238/TAO165E_0N_Oct2019_Aug2020_PI_OME.xml",
+   "station": "TAO165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2019-10-01",
+   "to": "2020-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0117073/TAO165E_8S_Aug2013_Nov2013.xml",
+   "station": "TAO8S165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2013-08-01",
+   "to": "2013-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Sea Surface Salinity collected by NOAA/NDBC/TAO provide internally recorded SSS data at 1 hour resolution. NOAA/NDBC/TAO advises to check the TAO site for the most accurate data available.",
+   "intake": "14cm - 20cm",
+   "file": "0117073/TAO165E_8S_Jul2016_Jul2018_PI_OME.xml",
+   "station": "TAO8S165E",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2016-07-01",
+   "to": "2018-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0117073/TAO165E_8S_Sep2020_Jun2022_PI_OME.xml",
+   "station": "TAO8S165E",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2020-09-01",
+   "to": "2022-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Aug2014_Jul2015.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-08-01",
+   "to": "2015-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Aug2021_Jul2022_PI_OME.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2021-08-01",
+   "to": "2022-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jul2013_Jul2014.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2013-07-01",
+   "to": "2014-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16 (Select One)",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jul2015_Jun2016.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2015-07-01",
+   "to": "2016-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jul2017_Oct2018.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-07-01",
+   "to": "2018-10-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jul2017_Sep2018.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-07-01",
+   "to": "2018-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jul2022_Jun2023_PI_OME.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-07-01",
+   "to": "2023-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jun2012_Nov2012.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2012-06-01",
+   "to": "2012-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jun2016_Jul2017.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-06-01",
+   "to": "2017-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jun2023_Jun2024_PI_OME.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-06-01",
+   "to": "2024-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Jun2024_Aug2025_PI_OME.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2024-06-01",
+   "to": "2025-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Oct2018_Oct2019_PI_OME.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2018-10-01",
+   "to": "2019-10-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100080/WHOTS_158W_23N_Oct2019_Oct2020_PI_OME.xml",
+   "station": "MOSEAN/WHOTS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-10-01",
+   "to": "2020-10-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Sea Surface Salinity collected by NOAA/NDBC/TAO provide internally recorded SSS data at 10 minute resolution. NOAA/NDBC/TAO advises to check the TAO site for the most accurate data available.",
+   "intake": "14cm - 20cm",
+   "file": "0100076/TAO125W_0N_Feb2017_May2018_PI_OME.xml",
+   "station": "TAO125W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2017-02-01",
+   "to": "2018-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100076/TAO125W_0N_Mar2021_Mar2022_PI_OME.xml",
+   "station": "TAO125W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2021-03-01",
+   "to": "2022-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100076/TAO125W_0N_Mar2022_Jan2024_PI_OME.xml",
+   "station": "TAO125W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-03-01",
+   "to": "2024-01-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100076/TAO125W_0N_Oct2018_Jun2019_PI_OME.xml",
+   "station": "TAO125W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2018-10-01",
+   "to": "2019-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100076/TAO125W_0N_Oct2019_Mar2021_PI_OME.xml",
+   "station": "TAO125W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-10-01",
+   "to": "2021-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Aug2016_Sep2017_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-08-01",
+   "to": "2017-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Aug2024_Dec2024_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2024-08-01",
+   "to": "2024-12-28"
+  },
+  {
+   "loc": null,
+   "model": null,
+   "comment": null,
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Feb2011_May2012_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "metadata not parsed",
+   "from": "2011-02-01",
+   "to": "2012-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Nov2015_Aug2016.xml",
+   "station": "TAO170W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2015-11-01",
+   "to": "2016-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Oct2014_Nov2015.xml",
+   "station": "TAO170W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2014-10-01",
+   "to": "2015-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Oct2022_Sep2023_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-10-01",
+   "to": "2023-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Sep2017_Feb2018_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-09-01",
+   "to": "2018-02-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO170W_0N_Sep2023_Aug2024_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-09-01",
+   "to": "2024-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100078/TAO_170W_0N_Oct2020_Apr2022_PI_OME.xml",
+   "station": "TAO170W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2020-10-01",
+   "to": "2022-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100084/TAO155W_0N_Apr2020_Sep2021_PI_OME.xml",
+   "station": "TAO155W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2020-04-01",
+   "to": "2021-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100084/TAO155W_0N_Nov2014_Dec2015_PI_OME.xml",
+   "station": "TAO155W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-11-01",
+   "to": "2015-12-28"
+  },
+  {
+   "loc": "1m",
+   "model": "ATLAS Temperature and Salinity Module",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0100084/TAO155W_0N_Oct2013_Nov2014_PI_OME.xml",
+   "station": "TAO155W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2013-10-01",
+   "to": "2014-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100084/TAO155W_0N_Oct2016_Sep2017_PI_OME.xml",
+   "station": "TAO155W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-10-01",
+   "to": "2017-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100084/TAO155W_0N_Oct2023_May2025_PI_OME.xml",
+   "station": "TAO155W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-10-01",
+   "to": "2025-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100084/TAO155W_0N_Sep2022_Oct2023_PI_OME.xml",
+   "station": "TAO155W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-09-01",
+   "to": "2023-10-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16 (Select One)",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Apr2015_Apr2016_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2015-04-01",
+   "to": "2016-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16 (Select One)",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Apr2016_Jun2017_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-04-01",
+   "to": "2017-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Apr2023_Nov2023_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-04-01",
+   "to": "2023-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Sea Surface Salinity collected by NOAA/NDBC/TAO provide internally recorded SSS data at 1 hour resolution. NOAA/NDBC/TAO advises to check the TAO site for the most accurate data available.",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Jul2019_Jul2020_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2019-07-01",
+   "to": "2020-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Jul2020_May2021_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2020-07-01",
+   "to": "2021-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16",
+   "comment": "Conductivity data are internally recorded. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact NOAA NDBC for calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Jun2014_Apr2015_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-06-01",
+   "to": "2015-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Sea Surface Salinity collected by NOAA/NDBC/TAO provide internally recorded SSS data at 10 minute resolution. NOAA/NDBC/TAO advises to check the TAO site for the most accurate data available.",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Jun2017_May2018_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2017-06-01",
+   "to": "2018-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Sea Surface Salinity collected by NOAA/NDBC/TAO provide internally recorded SSS data at 10 minute resolution. NOAA/NDBC/TAO advises to check the TAO site for the most accurate data available.",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_May2018_Jul2019_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)",
+   "from": "2018-05-01",
+   "to": "2019-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0112885/TAO110W_0N_Nov2021_Apr2023_PI_OME.xml",
+   "station": "TAO110W",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2021-11-01",
+   "to": "2023-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Apr2021_May2022_PI_OME.xml",
+   "station": "SOFS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2021-04-01",
+   "to": "2022-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Apr2024_Apr2025_PI_OME.xml",
+   "station": "SOFS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2024-04-01",
+   "to": "2025-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Aug2018_Mar2019_PI_OME.xml",
+   "station": "SOFS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2018-08-01",
+   "to": "2019-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Aug2020_Apr2021_PI_OME.xml",
+   "station": "SOFS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2020-08-01",
+   "to": "2021-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16 (Select One)",
+   "comment": "Salinity data is included as reference for pCO2 and fCO2 calculations. Source data available from the Open Access Data Network site at: http://thredds.aodn.org.au/thredds/catalog/IMOS/ABOS/SOTS/2015/catalog.html?dataset=IMOS/ABOS/SOTS/2015/IMOS_ABOS-SOTS_CSTZ_20150312_SOFS_FV01_SOFS-5-2015-SBE37SM-R",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Mar2015_Jul2015_PI_OME.xml",
+   "station": "SOFS",
+   "category": "supplied by another party (CSIRO / IMOS / other group)",
+   "from": "2015-03-01",
+   "to": "2015-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16 (Select One)",
+   "comment": "Salinity data is included as reference for pCO2 and fCO2 calculations. Source data available from the Open Access Data Network site at: http://thredds.aodn.org.au/thredds/catalog/IMOS/ABOS/SOTS/2016/catalog.html?dataset=IMOS/ABOS/SOTS/2016/IMOS_ABOS-SOTS_CSTZ_20160301_FluxPulse_FV01_FluxPulse-1-2016",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Mar2016_Jun2016_PI_OME.xml",
+   "station": "SOFS",
+   "category": "supplied by another party (CSIRO / IMOS / other group)",
+   "from": "2016-03-01",
+   "to": "2016-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": null,
+   "comment": "Sea surface salinity collected and provided by CSIRO.",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Mar2017_Nov2017_PI_OME.xml",
+   "station": "SOFS",
+   "category": "supplied by another party (CSIRO / IMOS / other group)",
+   "from": "2017-03-01",
+   "to": "2017-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_Mar2019_Apr2020_PI_OME.xml",
+   "station": "SOFS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-03-01",
+   "to": "2020-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Conductivity data during the equilibration period is collected from the Australian Integrated Marine Observing System. For metadata information see imos.aodn.org.au.",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_May2013_Oct2013_PI_OME.xml",
+   "station": "SOFS",
+   "category": "supplied by another party (CSIRO / IMOS / other group)",
+   "from": "2013-05-01",
+   "to": "2013-10-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0118546/SOFS_142E_46S_May2023_Apr2024_PI_OME.xml",
+   "station": "SOFS",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-05-01",
+   "to": "2024-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Jul2012_Mar2013.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2012-07-01",
+   "to": "2013-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Jul2013_Jun2014.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2013-07-01",
+   "to": "2014-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Jul2016_Jul2017.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-07-01",
+   "to": "2017-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Jul2017_Jul2018_PI_OME.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-07-01",
+   "to": "2018-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Jul2018_Sep2019_PI_OME.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2018-07-01",
+   "to": "2019-09-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Jun2014_Aug2015.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-06-01",
+   "to": "2015-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Mar2022_Jun2023_PI_OME.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-03-01",
+   "to": "2023-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Nov2024_Apr2025_PI_OME.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2024-11-01",
+   "to": "2025-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Sep2015_Aug2016.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2015-09-01",
+   "to": "2016-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100071/KEO_145E_32N_Sep2019_May2020_PI_OME.xml",
+   "station": "KEO",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-09-01",
+   "to": "2020-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0162473/BOBOA_90E_15N_Dec2014_Jun2015.xml",
+   "station": "BOBOA",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-12-01",
+   "to": "2015-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0162473/BOBOA_90E_15N_Jan2017_Nov2018.xml",
+   "station": "BOBOA",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-01-01",
+   "to": "2018-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0162473/BOBOA_90E_15N_Mar2016_Jan2017.xml",
+   "station": "BOBOA",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-03-01",
+   "to": "2017-01-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37 or 16 (Select One)",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0162473/BOBOA_90E_15N_Nov2013_Dec2014.xml",
+   "station": "BOBOA",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2013-11-01",
+   "to": "2014-12-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0162473/BOBOA_90E_15N_Nov2019_Apr2021_PI_OME.xml",
+   "station": "BOBOA",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-11-01",
+   "to": "2021-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Apr2021_Nov2021_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2021-04-01",
+   "to": "2021-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Apr2023_Aug2024_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2023-04-01",
+   "to": "2024-08-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Aug2020_Mar2021_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2020-08-01",
+   "to": "2021-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Aug2024_May2025_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2024-08-01",
+   "to": "2025-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jul2018_Jun2019_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2018-07-01",
+   "to": "2019-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 37",
+   "comment": "Data collected by another group and are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like the CTD post-calibration information.",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2007_Jun2008.xml",
+   "station": "Papa",
+   "category": "supplied by another party (CSIRO / IMOS / other group)",
+   "from": "2007-06-01",
+   "to": "2008-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2008_Nov2008_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2008-06-01",
+   "to": "2008-11-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2010_Jun2011.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2010-06-01",
+   "to": "2011-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2011_Apr2012.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2011-06-01",
+   "to": "2012-04-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2012_Mar2013.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2012-06-01",
+   "to": "2013-03-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2013_Jun2014.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2013-06-01",
+   "to": "2014-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2014_Jun2015.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2014-06-01",
+   "to": "2015-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2015_Jul2016.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2015-06-01",
+   "to": "2016-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2016_Jun2017.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2016-06-01",
+   "to": "2017-06-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2017_Jul2018.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2017-06-01",
+   "to": "2018-07-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_Jun2019_May2020_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2019-06-01",
+   "to": "2020-05-28"
+  },
+  {
+   "loc": "1m",
+   "model": "SBE 16",
+   "comment": "Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement). Contact us if you would like ",
+   "intake": "14cm - 20cm",
+   "file": "0100074/Papa_145W_50N_May2022_Apr2023_PI_OME.xml",
+   "station": "Papa",
+   "category": "MAPCO2 own SBE (Location recorded as 1 m)",
+   "from": "2022-05-01",
+   "to": "2023-04-28"
+  }
+ ],
+ "wind": [
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_200406_D_TVMBP_32N145E_10m.nc",
+   "start": "2004-06-16",
+   "end": "2020-05-19",
+   "heights_m": {
+    "HEIGHTWIND": 4.0
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_200406_M_TSVMBP_32N145E_hr.nc",
+   "start": "2004-06-16",
+   "end": "2025-03-28",
+   "heights_m": {
+    "HEIGHTWIND": 4.0
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2014KE012_D_MET_10min.nc",
+   "start": "2014-06-25",
+   "end": "2015-09-07",
+   "heights_m": {
+    "HEIGHT_WIND": 3.84,
+    "HEIGHT_WIND2": 4.2
+   },
+   "sensor_height_attrs": [
+    "2.4",
+    "2.56",
+    "3.13",
+    "3.84",
+    "4.2"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2015KE013_D_MET-10min.nc",
+   "start": "2015-09-07",
+   "end": "2016-08-01",
+   "heights_m": {
+    "HEIGHT_WIND": 3.8,
+    "HEIGHT_WIND2": 4.2
+   },
+   "sensor_height_attrs": [
+    "2.4",
+    "2.5",
+    "2.6",
+    "3.1",
+    "3.8",
+    "4.2"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2016KE014_D_MET_10min.nc",
+   "start": "2016-07-31",
+   "end": "2017-07-16",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2017KE015A_D_MET-10min.nc",
+   "start": "2017-07-15",
+   "end": "2017-10-18",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2017KE015B_D_MET-10min.nc",
+   "start": "2017-10-18",
+   "end": "2017-12-23",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2017KE015C_D_MET-10min.nc",
+   "start": "2017-12-23",
+   "end": "2018-07-03",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2018KE016_D_MET-10min.nc",
+   "start": "2018-07-03",
+   "end": "2019-09-26",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2019KE017A_D_MET-10min.nc",
+   "start": "2019-09-26",
+   "end": "2020-05-19",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "KEO",
+   "file": "DATA/KEO/OS_KEO_2020KE017B_D_MET-10min.nc",
+   "start": "2020-05-19",
+   "end": "2020-07-20",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA_GRIDDED/WHOTS/OS_WHOTS_200408-201809_D_FLTS-1H.nc",
+   "start": "2004-08-13",
+   "end": "2018-09-25",
+   "heights_m": {
+    "WND_measurementHeight": 3.47
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_200408-202108_D_FLTS-1H.nc",
+   "start": "2004-08-13",
+   "end": "2021-08-28",
+   "heights_m": {
+    "WND_measurementHeight": 3.47
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_200408-202308_D_MLTS-1H.nc",
+   "start": "2004-08-13",
+   "end": "2023-06-19",
+   "heights_m": {
+    "HEIGHT_WND": 3.47
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2004_D_M.nc",
+   "start": "2004-08-13",
+   "end": "2005-07-25",
+   "heights_m": {
+    "HEIGHT_WND": 3.47
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2005_D_M.nc",
+   "start": "2005-07-28",
+   "end": "2006-06-24",
+   "heights_m": {
+    "HEIGHT_WND": 3.425
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2006_D_M.nc",
+   "start": "2006-06-27",
+   "end": "2007-06-28",
+   "heights_m": {
+    "HEIGHT_WND": 3.35
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2007_D_M.nc",
+   "start": "2007-06-26",
+   "end": "2008-06-06",
+   "heights_m": {
+    "HEIGHT_WND": 3.84
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2008_D_M.nc",
+   "start": "2008-06-05",
+   "end": "2009-07-15",
+   "heights_m": {
+    "HEIGHT_WND": 3.26
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2009_D_M.nc",
+   "start": "2009-07-11",
+   "end": "2010-08-02",
+   "heights_m": {
+    "HEIGHT_WND": 3.42
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2010_D_M.nc",
+   "start": "2010-07-29",
+   "end": "2011-07-11",
+   "heights_m": {
+    "HEIGHT_WND": 3.4
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2011_D_M.nc",
+   "start": "2011-07-07",
+   "end": "2012-06-16",
+   "heights_m": {
+    "HEIGHT_WND": 3.45
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2012_D_M.nc",
+   "start": "2012-06-14",
+   "end": "2013-07-14",
+   "heights_m": {
+    "HEIGHT_WND": 3.28
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2013_D_M.nc",
+   "start": "2013-07-11",
+   "end": "2014-07-20",
+   "heights_m": {
+    "HEIGHT_WND": 3.31
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2014_D_M.nc",
+   "start": "2014-07-17",
+   "end": "2015-07-14",
+   "heights_m": {
+    "HEIGHT_WND": 3.4
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2015_D_M.nc",
+   "start": "2015-07-12",
+   "end": "2016-06-29",
+   "heights_m": {
+    "HEIGHT_WND": 3.31
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2016_D_M.nc",
+   "start": "2016-06-27",
+   "end": "2017-07-31",
+   "heights_m": {
+    "HEIGHT_WND": 3.35
+   },
+   "sensor_height_attrs": [
+    "3.07",
+    "3.13",
+    "3.35",
+    "3.5"
+   ]
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2017_D_M.nc",
+   "start": "2017-07-28",
+   "end": "2018-09-25",
+   "heights_m": {
+    "HEIGHT_WND": 3.3
+   },
+   "sensor_height_attrs": [
+    "2.97",
+    "3.0",
+    "3.16",
+    "3.3",
+    "3.46"
+   ]
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2018_D_M.nc",
+   "start": "2018-09-23",
+   "end": "2019-10-08",
+   "heights_m": {
+    "HEIGHT_WND": 3.5
+   },
+   "sensor_height_attrs": [
+    "3.15",
+    "3.2",
+    "3.5",
+    "3.6"
+   ]
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2019_D_M.nc",
+   "start": "2019-10-06",
+   "end": "2021-08-28",
+   "heights_m": {
+    "HEIGHT_WND": 3.36
+   },
+   "sensor_height_attrs": [
+    "2.95",
+    "3.05",
+    "3.36",
+    "3.46"
+   ]
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2021_D_M.nc",
+   "start": "2021-08-26",
+   "end": "2022-07-25",
+   "heights_m": {
+    "HEIGHT_WND": 3.28
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "3.02",
+    "3.05",
+    "3.28",
+    "3.48"
+   ]
+  },
+  {
+   "station": "MOSEAN/WHOTS",
+   "file": "DATA/WHOTS/OS_WHOTS_2022_D_M.nc",
+   "start": "2022-07-24",
+   "end": "2023-06-19",
+   "heights_m": {
+    "HEIGHT_WND": 3.3
+   },
+   "sensor_height_attrs": [
+    "2.95",
+    "3.02",
+    "3.3",
+    "3.32",
+    "3.45"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA_GRIDDED/PAPA/OS_PAPA_200706_D_TVMBP_50N145W_10m.nc",
+   "start": "2007-06-07",
+   "end": "2025-05-22",
+   "heights_m": {
+    "HEIGHTWIND": 4.0
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Papa",
+   "file": "DATA_GRIDDED/PAPA/OS_PAPA_200706_M_TSVMBP_50N145W_hr.nc",
+   "start": "2007-06-07",
+   "end": "2026-09-24",
+   "heights_m": {
+    "HEIGHTWIND": 4.0
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2007PA001_D_MET-10min.nc",
+   "start": "2007-06-07",
+   "end": "2008-06-10",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.5
+   },
+   "sensor_height_attrs": [
+    "2.5",
+    "3.5",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2008PA002A_D_MET-10min.nc",
+   "start": "2008-06-11",
+   "end": "2008-06-25",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.5
+   },
+   "sensor_height_attrs": [
+    "2.5",
+    "3.5",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2008PA002B_D_MET-10min.nc",
+   "start": "2008-06-25",
+   "end": "2008-11-11",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.5
+   },
+   "sensor_height_attrs": [
+    "2.5",
+    "3.5",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2008PA002C_D_MET-10min.nc",
+   "start": "2008-11-11",
+   "end": "2009-01-11",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.5
+   },
+   "sensor_height_attrs": [
+    "2.5",
+    "3.5",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2009PA003_D_MET_10min.nc",
+   "start": "2009-06-13",
+   "end": "2010-06-08",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 3.5
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2014PA008_D_MET-10min.nc",
+   "start": "2014-06-18",
+   "end": "2015-06-16",
+   "heights_m": {
+    "HEIGHT_WIND": 4.2,
+    "HEIGHT_WIND2": 3.84
+   },
+   "sensor_height_attrs": [
+    "2.4",
+    "2.46",
+    "2.56",
+    "3.13",
+    "3.84",
+    "4.2"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2015PA009_D_MET_10min.nc",
+   "start": "2015-06-16",
+   "end": "2016-07-05",
+   "heights_m": {
+    "HEIGHT_WIND": 4.2,
+    "HEIGHT_WIND2": 3.84
+   },
+   "sensor_height_attrs": [
+    "2.4",
+    "2.46",
+    "2.56",
+    "3.12",
+    "3.84",
+    "4.2"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2016PA010_D_MET_10min.nc",
+   "start": "2016-06-16",
+   "end": "2017-06-15",
+   "heights_m": {
+    "HEIGHT_WIND": 4.2,
+    "HEIGHT_WIND2": 3.8
+   },
+   "sensor_height_attrs": [
+    "2.5",
+    "2.6",
+    "3.1",
+    "3.8",
+    "4.2"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2017PA011_D_MET-10min.nc",
+   "start": "2017-06-15",
+   "end": "2018-07-29",
+   "heights_m": {
+    "HEIGHT_WIND": 3.8,
+    "HEIGHT_WIND2": 4.2
+   },
+   "sensor_height_attrs": [
+    "2.5",
+    "2.6",
+    "3.1",
+    "3.8",
+    "4.2"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2018PA012_D_MET-10min.nc",
+   "start": "2018-07-22",
+   "end": "2019-06-13",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2019PA013_D_MET-10min.nc",
+   "start": "2019-06-13",
+   "end": "2020-08-17",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2020PA014_D_MET-10min.nc",
+   "start": "2020-08-16",
+   "end": "2021-04-25",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2022PA016_D_MET-10min.nc",
+   "start": "2022-05-16",
+   "end": "2023-04-13",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2023PA017_D_MET-10min.nc",
+   "start": "2023-04-12",
+   "end": "2024-07-31",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "Papa",
+   "file": "DATA/PAPA/OS_PAPA_2024PA018_D_MET-10min.nc",
+   "start": "2024-08-01",
+   "end": "2025-05-30",
+   "heights_m": {
+    "HEIGHT_WIND": 4.0,
+    "HEIGHT_WIND2": 4.0
+   },
+   "sensor_height_attrs": [
+    "3.0",
+    "4.0"
+   ]
+  },
+  {
+   "station": "SOFS",
+   "file": "DATA/SOTS/OS_SOTS_SOFS02_D_ASIMET.nc",
+   "start": "2011-11-25",
+   "end": "2012-07-22",
+   "heights_m": {
+    "WSPD_H": 3.32
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "SOFS",
+   "file": "DATA/SOTS/OS_SOTS_SOFS04_D_ASIMET.nc",
+   "start": "2013-05-01",
+   "end": "2013-10-14",
+   "heights_m": {
+    "WSPD_H": 3.55
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "SOFS",
+   "file": "DATA/SOTS/OS_SOTS_SOFS05_D_ASIMET.nc",
+   "start": "2015-03-24",
+   "end": "2016-04-13",
+   "heights_m": {
+    "WSPD_H": 3.305
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "SOFS",
+   "file": "DATA/SOTS/OS_SOTS_SOFS09_D_ASIMET.nc",
+   "start": "2020-09-01",
+   "end": "2021-04-24",
+   "heights_m": {
+    "WSPD_H": 3.29
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Stratus",
+   "file": "DATA/Stratus/OS_Stratus_2006_D_M.nc",
+   "start": "2006-10-16",
+   "end": "2007-10-29",
+   "heights_m": {
+    "HEIGHT_WND": 3.31
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Stratus",
+   "file": "DATA/Stratus/OS_Stratus_2007_D_M.nc",
+   "start": "2007-10-27",
+   "end": "2008-10-27",
+   "heights_m": {
+    "HEIGHT_WND": 3.32
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Stratus",
+   "file": "DATA/Stratus/OS_Stratus_2008_D_M.nc",
+   "start": "2008-10-26",
+   "end": "2010-01-17",
+   "heights_m": {
+    "HEIGHT_WND": 3.29
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Stratus",
+   "file": "DATA/Stratus/OS_Stratus_2010_D_M.nc",
+   "start": "2010-01-17",
+   "end": "2010-07-07",
+   "heights_m": {
+    "HEIGHT_WND": 3.35
+   },
+   "sensor_height_attrs": []
+  },
+  {
+   "station": "Stratus",
+   "file": "DATA/Stratus/OS_Stratus_2011_D_M.nc",
+   "start": "2011-04-06",
+   "end": "2012-05-29",
+   "heights_m": {
+    "HEIGHT_WND": 3.32
+   },
+   "sensor_height_attrs": []
+  }
+ ],
+ "events_by_category": {
+  "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)": 89,
+  "no matching deployment metadata (no NCEI XML for that period)": 202,
+  "MAPCO2 own SBE (Location recorded as 1 m)": 344,
+  "supplied by another party (CSIRO / IMOS / other group)": 11
+ },
+ "events_by_station": {
+  "TAO165E": {
+   "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)": 67
+  },
+  "TAO8S165E": {
+   "no matching deployment metadata (no NCEI XML for that period)": 33
+  },
+  "BOBOA": {
+   "MAPCO2 own SBE (Location recorded as 1 m)": 54
+  },
+  "TAO170W": {
+   "no matching deployment metadata (no NCEI XML for that period)": 2,
+   "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)": 21,
+   "MAPCO2 own SBE (Location recorded as 1 m)": 3
+  },
+  "TAO155W": {
+   "no matching deployment metadata (no NCEI XML for that period)": 10
+  },
+  "TAO140W": {
+   "no matching deployment metadata (no NCEI XML for that period)": 6,
+   "MAPCO2 own SBE (Location recorded as 1 m)": 4
+  },
+  "TAO125W": {
+   "no matching deployment metadata (no NCEI XML for that period)": 1
+  },
+  "TAO110W": {
+   "MAPCO2 own SBE (Location recorded as 1 m)": 2,
+   "TAO 1 m sensor (ATLAS or stated as supplied by NDBC/TAO)": 1
+  },
+  "KEO": {
+   "no matching deployment metadata (no NCEI XML for that period)": 87,
+   "MAPCO2 own SBE (Location recorded as 1 m)": 122
+  },
+  "MOSEAN/WHOTS": {
+   "no matching deployment metadata (no NCEI XML for that period)": 51,
+   "MAPCO2 own SBE (Location recorded as 1 m)": 66
+  },
+  "Papa": {
+   "supplied by another party (CSIRO / IMOS / other group)": 9,
+   "no matching deployment metadata (no NCEI XML for that period)": 5,
+   "MAPCO2 own SBE (Location recorded as 1 m)": 92
+  },
+  "SOFS": {
+   "no matching deployment metadata (no NCEI XML for that period)": 7,
+   "supplied by another party (CSIRO / IMOS / other group)": 2,
+   "MAPCO2 own SBE (Location recorded as 1 m)": 1
+  }
+ },
+ "ome_location_counts": {
+  "1m": 108,
+  "null": 3
+ },
+ "ome_intake_counts": {
+  "14cm - 20cm": 108,
+  "58 cm, with bubble equilibration at 14cm - 20cm": 1,
+  "null": 2
+ },
+ "wind_summary": {
+  "KEO": {
+   "primary_min": 3.8,
+   "primary_max": 4.0,
+   "n_files": 11
+  },
+  "Papa": {
+   "primary_min": 3.8,
+   "primary_max": 4.2,
+   "n_files": 17
+  },
+  "MOSEAN/WHOTS": {
+   "primary_min": 3.26,
+   "primary_max": 3.84,
+   "n_files": 21
+  },
+  "SOFS": {
+   "primary_min": 3.29,
+   "primary_max": 3.55,
+   "n_files": 4
+  },
+  "Stratus": {
+   "primary_min": 3.29,
+   "primary_max": 3.35,
+   "n_files": 5
+  }
+ }
+}
