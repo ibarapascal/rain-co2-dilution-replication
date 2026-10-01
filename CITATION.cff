@@ -9,6 +9,10 @@ authors:
     orcid: "https://orcid.org/0009-0000-8365-367X"
     affiliation: "Makuhari Development Corporation"
 repository-code: "https://github.com/ibarapascal/rain-co2-dilution-replication"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23067878
+    description: "Concept DOI (all versions); resolves to the latest version"
 # Data and documentation: CC BY 4.0 (LICENSE-DATA). Code in code/: MIT (LICENSE).
 license: CC-BY-4.0
 keywords:

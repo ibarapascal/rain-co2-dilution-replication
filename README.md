@@ -86,4 +86,5 @@ third-party sources apply in addition.
 
 ## How to cite
 
-See `CITATION.cff`.
+Archived on Zenodo: https://doi.org/10.5281/zenodo.23067878 (all versions; each release also has its own DOI, listed on the
+Zenodo record). Citation metadata are in `CITATION.cff`.
